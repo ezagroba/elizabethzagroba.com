@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Have I Tried Enough Weird Stuff? | Elizabeth Zagroba: Software Tester</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="canonical" href="http://127.0.0.1:8000/posts/2019/2019-01-25_have-i-tried-enough-weird-stuff/">
+<link rel="icon" href="../../../images/avatar.png" sizes="128x128">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="../../assets/fontawesome-5.13.0/css/all.css" rel="stylesheet">
+<meta name="author" content="Elizabeth Zagroba">
+<link rel="prev" href="../../2017/2017-12-11_regression-testing-wisdom-from-agile-testing-days-2017/" title="Regression Testing Wisdom from Agile Testing Days 2017" type="text/html">
+<link rel="next" href="../2019-02-02_update-your-mac-terminal-to-display-your-current-git-branch-and-status/" title="Update your Mac Terminal to display your current git branch and status" type="text/html">
+<meta property="og:site_name" content="Elizabeth Zagroba: Software Tester">
+<meta property="og:title" content="Have I Tried Enough Weird Stuff?">
+<meta property="og:url" content="http://127.0.0.1:8000/posts/2019/2019-01-25_have-i-tried-enough-weird-stuff/">
+<meta property="og:description" content="I was testing a piece of software that collected a person’s addresses for shipping within the United States. My developer had tried zip codes in the direct vicinity of our office in Manhattan, which a">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2019-01-25T00:00:00+01:00">
+<meta property="article:tag" content="exploratory-testing">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@website">
+<meta name="twitter:creator" content="@username">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="http://127.0.0.1:8000/">
+
+            <span id="blog-title">Elizabeth Zagroba: Software Tester</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../../categories/index.html" class="dropdown-item">Tags</a>
+            </div>
+                </li>
+<li class="nav-item">
+<a href="../../../pages/work" class="nav-link">Work</a>
+                </li>
+<li class="nav-item">
+<a href="../../../pages/speaking" class="nav-link">Speaking</a>
+                </li>
+<li class="nav-item">
+<a href="../../../pages/resources" class="nav-link">Resources</a>
+
+                
+            </li>
+</ul>
+<!-- DuckDuckGo custom search --><form method="get" id="search" action="https://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="http://127.0.0.1:8000/"><input type="hidden" name="k8" value="#444444"><input type="hidden" name="k9" value="#D51920"><input type="hidden" name="kt" value="h"><input type="text" name="q" maxlength="255" placeholder="Search" class="span2" style="margin-top: 4px;"><input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Have I Tried Enough Weird Stuff?</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2019-01-25T00:00:00+01:00" itemprop="datePublished" title="25 January 2019">25 January 2019</time></a>
+            </p>
+            
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p name="fd7f" id="fd7f" class="graf graf--p graf-after--h3">I was testing a piece of software that collected a person’s addresses for shipping within the United States. My developer had tried zip codes in the direct vicinity of our office in Manhattan, which all started with 1. I tried the zip codes for my hometown in New Jersey and the college I attended in Maine, both of which started with 0. Together we determined that the zip codes (and other address fields) needed to be stored differently so leading zeros would not be cut off. But it got me thinking: what other things might occur that were outside the direct experience of me and my developer?</p>
+
+<p name="83bc" id="83bc" class="graf graf--p graf-after--p">So I asked the internet.</p>
+
+<p name="cf4f" id="cf4f" class="graf graf--p graf-after--p">That’s when I first came across <a href="https://www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses/" data-href="https://www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Falsehoods programmers believe about addresses</a>. We were constrained to collecting American shipping addresses, so things like “are the odd street numbers all on the same side?” weren’t our concern. But plenty of them were. Was our form going to allow people whose shipping address was any of these?</p>
+
+<ul class="postList">
+<li name="a522" id="a522" class="graf graf--li graf-after--p">a post office box</li>
+<li name="cf1b" id="cf1b" class="graf graf--li graf-after--li">outside one of the fifty states (Washington D.C., Puerto Rico, Guam, etc.)</li>
+<li name="766c" id="766c" class="graf graf--li graf-after--li">on an American military base</li>
+<li name="dda7" id="dda7" class="graf graf--li graf-after--li">a fractional number</li>
+</ul>
+<p name="57b2" id="57b2" class="graf graf--p graf-after--li">As I tested inputs on other applications, I kept wondering if I was only thinking of things I already knew about, or if the problem space was bigger than I could conceive. I’ve come across a few lists that I love to review with my developers before they start building an input field (or an API parameter) so we can agree on what kind of validation we’re going to do.</p>
+
+<p name="bdeb" id="bdeb" class="graf graf--p graf-after--p"><a href="http://testobsessed.com/wp-content/uploads/2011/04/testheuristicscheatsheetv1.pdf" data-href="http://testobsessed.com/wp-content/uploads/2011/04/testheuristicscheatsheetv1.pdf" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">The Test Heuristics Cheat Sheet</a> provides a great jumping-off point specific inputs for text fields on the first page and different ways to try inputting them on the second page.</p>
+
+<p name="97d8" id="97d8" class="graf graf--p graf-after--p"><a href="https://github.com/minimaxir/big-list-of-naughty-strings" data-href="https://github.com/minimaxir/big-list-of-naughty-strings" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">The Big List of Naughty Strings</a> collects different kinds of characters (languages with non-Roman characters, emojis, Javascript that might trigger script injection, etc.) in one place so I don’t have to search for each of these cases individually. <a href="https://github.com/minimaxir/big-list-of-naughty-strings/blob/master/blns.txt" data-href="https://github.com/minimaxir/big-list-of-naughty-strings/blob/master/blns.txt" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">I usually copy-paste the ones we’ve agreed we want to support from here</a>. [Note: I recommend bookmarking this repository so you’re not accidentally getting NSFW results after searching “naughty strings.”]</p>
+
+<p name="0d24" id="0d24" class="graf graf--p graf-after--p">Searching for “Falsehoods programmers believe about {input type}” is my go-to for more specific types of inputs. <a href="https://github.com/kdeldycke/awesome-falsehood" data-href="https://github.com/kdeldycke/awesome-falsehood" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">There’s a list of a bunch of them</a>, but these are some of my favorites:</p>
+
+<ul class="postList">
+<li name="20c5" id="20c5" class="graf graf--li graf-after--p"><a href="http://falsehoodsabouttime.com" data-href="http://falsehoodsabouttime.com" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Time</a></li>
+<li name="f7e6" id="f7e6" class="graf graf--li graf-after--li"><a href="https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/" data-href="https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Names</a></li>
+<li name="b82f" id="b82f" class="graf graf--li graf-after--li"><a href="https://wiesmann.codiferes.net/wordpress/?p=15187" data-href="https://wiesmann.codiferes.net/wordpress/?p=15187" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Geography</a></li>
+<li name="aed1" id="aed1" class="graf graf--li graf-after--li"><a href="https://haacked.com/archive/2007/08/21/i-knew-how-to-validate-an-email-address-until-i.aspx/" data-href="https://haacked.com/archive/2007/08/21/i-knew-how-to-validate-an-email-address-until-i.aspx/" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Emails</a></li>
+</ul>
+<p name="8e3e" id="8e3e" class="graf graf--p graf-after--li">I encourage you to keep asking “have I tried enough weird stuff?” and deciding together with your developers what constitutes “weird.”</p>
+
+<p></p>
+<p><img alt="" src="../../../images/posts/2019/arrows.jpeg"></p>
+<section name="7d8d" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div>
+<div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="1dd4" id="1dd4" class="graf graf--p graf--leading graf--trailing"><em class="markup--em markup--p-em">Thanks to Trish Khoo and Anne-Marie Charrett for the impetus to publish this, and Joep Schuurkes for pointing out that my headline falls under </em><a href="https://en.wikipedia.org/wiki/Betteridge%27s_law_of_headlines" data-href="https://en.wikipedia.org/wiki/Betteridge%27s_law_of_headlines" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">Betteridge’s law</em></a><em class="markup--em markup--p-em">.</em></p></div></div></section><p><em>Originally published on <a href="https://medium.com/@ezagroba/have-i-tried-enough-weird-stuff-7ed4105ae994">Medium</a>.</em></p>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/exploratory-testing/" rel="tag">exploratory-testing</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../2017/2017-12-11_regression-testing-wisdom-from-agile-testing-days-2017/" rel="prev" title="Regression Testing Wisdom from Agile Testing Days 2017">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../2019-02-02_update-your-mac-terminal-to-display-your-current-git-branch-and-status/" rel="next" title="Update your Mac Terminal to display your current git branch and status">Next post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer"><a href="https://twitter.com/ezagroba" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+<a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+<a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+<a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+<a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
+<a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon"></i></a>
+© 2020 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a>.
+
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>

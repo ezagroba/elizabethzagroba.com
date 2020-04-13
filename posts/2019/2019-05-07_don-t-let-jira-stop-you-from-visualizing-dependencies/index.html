@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Don’t let JIRA stop you from visualizing dependencies | Elizabeth Zagroba: Software Tester</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="canonical" href="http://127.0.0.1:8000/posts/2019/2019-05-07_don-t-let-jira-stop-you-from-visualizing-dependencies/">
+<link rel="icon" href="../../../images/avatar.png" sizes="128x128">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="../../assets/fontawesome-5.13.0/css/all.css" rel="stylesheet">
+<meta name="author" content="Elizabeth Zagroba">
+<link rel="prev" href="../2019-03-29_exploratory-testing-with-the-chrome-network-tab/" title="Exploratory Testing with the Chrome Network Tab" type="text/html">
+<link rel="next" href="../2019-05-20_you-build-it-you-run-it-and-you-fix-it/" title="You build it, you run it, and you fix it" type="text/html">
+<meta property="og:site_name" content="Elizabeth Zagroba: Software Tester">
+<meta property="og:title" content="Don’t let JIRA stop you from visualizing dependencies">
+<meta property="og:url" content="http://127.0.0.1:8000/posts/2019/2019-05-07_don-t-let-jira-stop-you-from-visualizing-dependencies/">
+<meta property="og:description" content="My team is at the beginning of a project. We’ve got a lot of potential features. Our task yesterday was to start breaking down big dreams into specific pieces of work we can pick up.
+
+As we started to">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2019-05-07T00:00:00+02:00">
+<meta property="article:tag" content="dependencies">
+<meta property="article:tag" content="JIRA">
+<meta property="article:tag" content="mind-mapping">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@website">
+<meta name="twitter:creator" content="@username">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="http://127.0.0.1:8000/">
+
+            <span id="blog-title">Elizabeth Zagroba: Software Tester</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../../categories/index.html" class="dropdown-item">Tags</a>
+            </div>
+                </li>
+<li class="nav-item">
+<a href="../../../pages/work" class="nav-link">Work</a>
+                </li>
+<li class="nav-item">
+<a href="../../../pages/speaking" class="nav-link">Speaking</a>
+                </li>
+<li class="nav-item">
+<a href="../../../pages/resources" class="nav-link">Resources</a>
+
+                
+            </li>
+</ul>
+<!-- DuckDuckGo custom search --><form method="get" id="search" action="https://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="http://127.0.0.1:8000/"><input type="hidden" name="k8" value="#444444"><input type="hidden" name="k9" value="#D51920"><input type="hidden" name="kt" value="h"><input type="text" name="q" maxlength="255" placeholder="Search" class="span2" style="margin-top: 4px;"><input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Don’t let JIRA stop you from visualizing dependencies</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2019-05-07T00:00:00+02:00" itemprop="datePublished" title="07 May 2019">07 May 2019</time></a>
+            </p>
+            
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p name="5ee8" id="5ee8" class="graf graf--p graf-after--h3">My team is at the beginning of a project. We’ve got a lot of potential features. Our task yesterday was to start breaking down big dreams into specific pieces of work we can pick up.</p>
+
+<p name="da25" id="da25" class="graf graf--p graf-after--p">As we started to define what we wanted to build, we came across items that had to come first: come up with a proposal before we meet to review it with our stakeholders. Other items weren’t necessarily “blocked,” but would make more sense to pick up in a sequence. As my developers watched me painstakingly searched for completely forgettable JIRA story number so I could mark each story as “blocked” or “is blocked by,” one of my developers asked one of the best questions I heard all day: “Is there a way we can see this visually?”</p>
+
+<p name="4007" id="4007" class="graf graf--p graf-after--p">My developer searched for JIRA solutions to this problem and came across a few that required <a href="https://community.atlassian.com/t5/Jira-questions/Visual-overview-of-related-and-blocked-issues/qaq-p/757970" data-href="https://community.atlassian.com/t5/Jira-questions/Visual-overview-of-related-and-blocked-issues/qaq-p/757970" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">admin access</a> or JIRA version 8. We spent a few minutes getting lost in the text and subsequently interactive credits on the About JIRA page. None of us noticed this yesterday, but the start screen for the game gave us the answer we needed: we have JIRA 7 (Roman numerals on the title page), not JIRA 8.</p>
+
+<p><span class="img_container" style="display: inline-block;"><img alt="" src="../../../images/posts/2019/jira-credits.gif" style="display:block; margin-left: auto; margin-right: auto;" title="JIRA credits: A surprising diversion in our work day."><span class="img_caption" style="display: block; text-align: center;">JIRA credits: A surprising diversion in our work day.</span></span></p>
+<p name="6eb6" id="6eb6" class="graf graf--p graf-after--figure">Without a big sheet of paper (we had post-its, but no where to stick them) or a whiteboard in the conference room we were crammed into, I pulled up my go-to tool for visualizations: <a href="https://www.edrawsoft.com/download-mindmaster.php" data-href="https://www.edrawsoft.com/download-mindmaster.php" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">MindMaster</a>. I’ve got other recommendations for mind mapping software at the bottom of <a href="https://ministryoftesting.com/dojo/lessons/mind-maps-made-easy" data-href="https://ministryoftesting.com/dojo/lessons/mind-maps-made-easy" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">my article here</a>. I’m currently stuck on MindMaster since it’s free and not web-hosted.</p>
+
+<p name="c35b" id="c35b" class="graf graf--p graf-after--p">I added a bunch of <code class="markup--code markup--p-code">Floating topics</code> and connected them with <code class="markup--code markup--p-code">Relationship</code> arrows. We outlined the first group of stories that we’d collected into an epic. We fiddled a bit with aligning the stories that could be picked up in parallel so they appeared at the earliest point we could pick them up. We came back to refine and add a couple items as we outlined other epics. The few minutes we dedicated to creating this diagram gave us enough information to decide what order we should pick up work for the next week or two.</p>
+
+<p><img alt="" src="../../../images/posts/2019/dependencies.png"></p>
+<p name="9e64" id="9e64" class="graf graf--p graf-after--figure">We may be looking at our sprint board in the coming days to review how all the work is going. But I know that no developer is going to trace all the “blocks” and “is blocked by” links in the stories. They’re going to look at this diagram to know when to pair or mob because we can’t pick more things up.</p>
+
+<p name="3249" id="3249" class="graf graf--p graf-after--p graf--trailing">Moral of the story: Don’t let your tools constrain you.</p>
+
+<p>
+</p>
+<p><em>Originally published on <a href="https://medium.com/@ezagroba/dont-let-jira-stop-you-from-visualizing-dependencies-db16d03d4cc1">Medium</a>.</em></p>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/dependencies/" rel="tag">dependencies</a></li>
+            <li><a class="tag p-category" href="../../../categories/jira/" rel="tag">JIRA</a></li>
+            <li><a class="tag p-category" href="../../../categories/mind-mapping/" rel="tag">mind-mapping</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../2019-03-29_exploratory-testing-with-the-chrome-network-tab/" rel="prev" title="Exploratory Testing with the Chrome Network Tab">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../2019-05-20_you-build-it-you-run-it-and-you-fix-it/" rel="next" title="You build it, you run it, and you fix it">Next post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer"><a href="https://twitter.com/ezagroba" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+<a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+<a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+<a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+<a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
+<a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon"></i></a>
+© 2020 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a>.
+
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>
