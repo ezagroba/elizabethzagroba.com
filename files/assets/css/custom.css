@@ -41,6 +41,12 @@ navbar-dark {
 	background-color: white;
 }
 
+/* Pages */
+
+.accordion:hover {
+	text-decoration: none;
+}
+
 /* Footer */
 
 #footer {

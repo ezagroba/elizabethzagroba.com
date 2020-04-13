@@ -33,7 +33,7 @@
 ### Past presentations
 
 
-<a href="#" data-toggle="collapse" data-target="#mob-testing"><i class="fa fa-bullhorn"></i> <i class="fa fa-file-powerpoint"></i></a> Talk (w/Joep Schuurkes) - Mob Testing: Building Good Habits
+<a href="#" class="accordion" data-toggle="collapse" data-target="#mob-testing"><i class="fa fa-bullhorn"></i> <i class="fa fa-file-powerpoint"></i></a> Talk (w/Joep Schuurkes) - Mob Testing: Building Good Habits
 <ul id="mob-testing" class="collapse">
 	<li><a href="https://ezagroba.github.io/mob-testing/" target="_blank">Slides</a></li>
 	<li>Presented at:</li>
@@ -43,7 +43,7 @@
 </ul>
 
 
-<a href="#" data-toggle="collapse" data-target="#wander"><i class="fa fa-users"></i> <i class="fa fa-file-powerpoint"></i> <i class="fas fa-book-open"></i></a> Workshop - Wander With A Purpose: Writing Charters for your Exploratory Testing Sessions
+<a href="#" class="accordion" data-toggle="collapse" data-target="#wander"><i class="fa fa-users"></i> <i class="fa fa-file-powerpoint"></i> <i class="fas fa-book-open"></i></a> Workshop - Wander With A Purpose: Writing Charters for your Exploratory Testing Sessions
 <ul id="wander" class="collapse">
 <li><a href="https://ezagroba.github.io/charters/" target="_blank">Slides</a></li>
 <li><a href="https://www.goodreads.com/book/show/15980494-explore-it">Further reading</a></li>
@@ -54,7 +54,7 @@
 </ul>
 
 
-<a href="#" data-toggle="collapse" data-target="#cegeka"><i class="fa fa-users"></i></a> Workshop (w/Lisa Crispin) - Turn on your headlights: Testing in DevOps and Continuous Delivery
+<a href="#" class="accordion" data-toggle="collapse" data-target="#cegeka"><i class="fa fa-users"></i></a> Workshop (w/Lisa Crispin) - Turn on your headlights: Testing in DevOps and Continuous Delivery
 <ul id="cegeka" class="collapse">
 	<li>Presented at:</li>
 		<ul>
@@ -63,7 +63,7 @@
 </ul>
 
 
-<a href="#" data-toggle="collapse" data-target="#test-reporting"><i class="fa fa-users"></i></a> Workshop (w/Joep Schuurkes) - How test reporting changes your testing
+<a href="#" class="accordion" data-toggle="collapse" data-target="#test-reporting"><i class="fa fa-users"></i></a> Workshop (w/Joep Schuurkes) - How test reporting changes your testing
 <ul id="test-reporting" class="collapse">
 	<li>Presented at:</li>
 		<ul>
@@ -73,7 +73,7 @@
 
 
 
-<a href="#" data-toggle="collapse" data-target="#python-api-framework"><i class="fa fa-users"></i> <i class="fa fa-file-powerpoint"></i></a> Workshop (w/Joep Schuurkes) - Building your own API testing framework</a>
+<a href="#" class="accordion" data-toggle="collapse" data-target="#python-api-framework"><i class="fa fa-users"></i> <i class="fa fa-file-powerpoint"></i></a> Workshop (w/Joep Schuurkes) - Building your own API testing framework</a>
 <ul id="python-api-framework" class="collapse">
 	<li><a href="https://github.com/j19sch/building-an-api-testing-framework" target="_blank">Exercises</a></li>
 	<li>Presented at:</li>
@@ -84,7 +84,7 @@
 </ul>
 
 
-<a href="#" data-toggle="collapse" data-target="#doubt-trust"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i>  <i class="fab fa-youtube"></i> <i class="fa fa-file-powerpoint"></i> <i class="fa fa-book-open"></i></a> Talk - Doubt Builds Trust
+<a href="#" class="accordion" data-toggle="collapse" data-target="#doubt-trust"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i>  <i class="fab fa-youtube"></i> <i class="fa fa-file-powerpoint"></i> <i class="fa fa-book-open"></i></a> Talk - Doubt Builds Trust
 <ul id="doubt-trust" class="collapse">
 <li><a href="https://dojo.ministryoftesting.com/dojo/lessons/doubt-builds-trust-elizabeth-zagroba" target="_blank">Ministry of Testing Dojo video recording [paywall]</a></li>
 <li><a href="https://invidio.us/watch?v=SM57HMJpkZc" target="_blank">Nordic Testing Days video recording</a></li>
@@ -103,7 +103,7 @@
 	</ul>
 </ul>
 
-<a href="#" data-toggle="collapse" data-target="#interview"><i class="fa fa-users"></i></a> Workshop (w/Martin Hynie) - How To Interview Like A Tester</a>
+<a href="#" class="accordion" data-toggle="collapse" data-target="#interview"><i class="fa fa-users"></i></a> Workshop (w/Martin Hynie) - How To Interview Like A Tester</a>
 
 <ul id="interview" class="collapse">
 	<li>Presented at:</li>
@@ -113,7 +113,7 @@
 		</ul>
 </ul>	
 
-<a href="#" data-toggle="collapse" data-target="#mindmaps"><i class="fa fa-bullhorn"></i></a> Talk - Using Mindmaps for Team Communication
+<a href="#" class="accordion" data-toggle="collapse" data-target="#mindmaps"><i class="fa fa-bullhorn"></i></a> Talk - Using Mindmaps for Team Communication
 <ul id="mindmaps" class="collapse">
 	<li>Presented at:</li>
 		<ul>
@@ -122,7 +122,7 @@
 </ul>
 
 
-<a href="#" data-toggle="collapse" data-target="#less-more"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i></a> Talk (w/Diana Wendruff) - Less Is More
+<a href="#" class="accordion" data-toggle="collapse" data-target="#less-more"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i></a> Talk (w/Diana Wendruff) - Less Is More
 <ul id="less-more" class="collapse">
 	<li>Presented at:</li>
 		<ul>
@@ -130,7 +130,7 @@
 		</ul>
 </ul>
 
-<a href="#" data-toggle="collapse" data-target="#introvert"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i> <i class="fa fa-photo-video"></i> <i class="fas fa-book-open"></i></a> Talk - Succeeding as an Introvert
+<a href="#" class="accordion" data-toggle="collapse" data-target="#introvert"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i> <i class="fa fa-photo-video"></i> <i class="fas fa-book-open"></i></a> Talk - Succeeding as an Introvert
 <ul id="introvert" class="collapse">
 <li><a href="https://dojo.ministryoftesting.com/lessons/succeeding-as-an-introvert-elizabeth-zagroba">Ministry of Testing Dojo video recording [paywall]</a></li>
 <li><a href="https://invidio.us/watch?v=3SdoCJQsXB4">Dutch PHP Conference audio + slides recording</a></li>
@@ -149,7 +149,7 @@
 </ul>
 
 
-<a href="#" data-toggle="collapse" data-target="#watching"><i class="fa fa-bullhorn"></i></a> Talk - Testing When The World Is Watching
+<a href="#" class="accordion" data-toggle="collapse" data-target="#watching"><i class="fa fa-bullhorn"></i></a> Talk - Testing When The World Is Watching
 <ul id="watching" class="collapse">
 	<li>Presented at:</li>
 	<ul>
@@ -159,7 +159,7 @@
 </ul>
 
 
-<a href="#" data-toggle="collapse" data-target="#audio-mobile"><i class="fa fa-bullhorn"></i></a> Talk - Challenges in Audio Mobile Testing
+<a href="#" class="accordion" data-toggle="collapse" data-target="#audio-mobile"><i class="fa fa-bullhorn"></i></a> Talk - Challenges in Audio Mobile Testing
 <ul id="audio-mobile" class="collapse">
 	<li>Presented at: <a href="http://www.meetup.com/NYC-Testers/events/224194458/" target="_blank">NYC Testers Meetup (August 2015)</a></li>
 </ul>
