@@ -30,10 +30,6 @@
   <lastmod>2020-04-13T13:01:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://127.0.0.1:8000/categories/conferences.xml</loc>
-  <lastmod>2020-04-12T14:38:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://127.0.0.1:8000/categories/dependencies.xml</loc>
   <lastmod>2020-04-13T13:01:00Z</lastmod>
  </sitemap>
@@ -64,14 +60,6 @@
  <sitemap>
   <loc>http://127.0.0.1:8000/categories/mind-mapping.xml</loc>
   <lastmod>2020-04-13T13:01:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://127.0.0.1:8000/categories/mindmapping.xml</loc>
-  <lastmod>2020-04-13T11:06:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://127.0.0.1:8000/categories/mindmaps.xml</loc>
-  <lastmod>2020-04-13T11:06:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://127.0.0.1:8000/categories/naming.xml</loc>
@@ -115,6 +103,6 @@
  </sitemap>
  <sitemap>
   <loc>http://127.0.0.1:8000/sitemap.xml</loc>
-  <lastmod>2020-04-13T13:01:00Z</lastmod>
+  <lastmod>2020-04-13T13:05:00Z</lastmod>
  </sitemap>
 </sitemapindex>

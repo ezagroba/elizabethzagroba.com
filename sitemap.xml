@@ -10,10 +10,6 @@
   <lastmod>2020-04-13T11:06:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/2012/</loc>
-  <lastmod>2020-04-10T20:19:00Z</lastmod>
- </url>
- <url>
   <loc>http://127.0.0.1:8000/2014/</loc>
   <lastmod>2020-04-12T13:32:00Z</lastmod>
  </url>
@@ -34,16 +30,12 @@
   <lastmod>2020-04-11T07:55:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/2020/</loc>
-  <lastmod>2020-04-11T08:06:00Z</lastmod>
- </url>
- <url>
   <loc>http://127.0.0.1:8000/archive.html</loc>
   <lastmod>2020-04-13T13:01:00Z</lastmod>
  </url>
  <url>
   <loc>http://127.0.0.1:8000/categories/</loc>
-  <lastmod>2020-04-13T11:34:00Z</lastmod>
+  <lastmod>2020-04-13T13:01:00Z</lastmod>
  </url>
  <url>
   <loc>http://127.0.0.1:8000/categories/authentication/</loc>
@@ -68,10 +60,6 @@
  <url>
   <loc>http://127.0.0.1:8000/categories/conference/</loc>
   <lastmod>2020-04-12T14:41:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/categories/conferences/</loc>
-  <lastmod>2020-04-12T14:24:00Z</lastmod>
  </url>
  <url>
   <loc>http://127.0.0.1:8000/categories/dependencies/</loc>
@@ -103,14 +91,6 @@
  </url>
  <url>
   <loc>http://127.0.0.1:8000/categories/mind-mapping/</loc>
-  <lastmod>2020-04-13T11:06:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/categories/mindmapping/</loc>
-  <lastmod>2020-04-13T11:06:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/categories/mindmaps/</loc>
   <lastmod>2020-04-13T11:06:00Z</lastmod>
  </url>
  <url>
@@ -166,56 +146,12 @@
   <lastmod>2020-04-10T20:08:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/pages/social/</loc>
-  <lastmod>2020-04-11T08:23:00Z</lastmod>
- </url>
- <url>
   <loc>http://127.0.0.1:8000/pages/speaking/</loc>
   <lastmod>2020-04-11T08:23:00Z</lastmod>
  </url>
  <url>
   <loc>http://127.0.0.1:8000/pages/work/</loc>
   <lastmod>2020-04-10T20:06:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/posts/2014-02-10_my-biggest-jira-pet-peeve-6350d205451b/</loc>
-  <lastmod>2020-04-12T13:32:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/posts/2014-02-10_my-biggest-jira-pet-peeve/</loc>
-  <lastmod>2020-04-12T13:36:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/posts/2014-02-17_eurostar-webinar-delivering-unwelcome-messages-70cf10a165a/</loc>
-  <lastmod>2020-04-12T13:40:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/posts/2014-02-17_eurostar-webinar-delivering-unwelcome-messages/</loc>
-  <lastmod>2020-04-12T13:42:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/posts/2014-02-24_writing-clear-and-effective-bug-reports-99239a7be1b3/</loc>
-  <lastmod>2020-04-12T14:06:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/posts/2014-02-24_writing-clear-and-effective-bug-reports/</loc>
-  <lastmod>2020-04-12T14:06:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/posts/2014-05-07_stareast-2014-days-1-2-37db44094016/</loc>
-  <lastmod>2020-04-12T14:24:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/posts/2014-05-07_stareast-2014-days-1-2/</loc>
-  <lastmod>2020-04-12T14:24:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/posts/2014-09-09_stareast-2014-days-3-4-f910124df850/</loc>
-  <lastmod>2020-04-12T14:41:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/posts/2014-09-09_stareast-2014-days-3-4/</loc>
-  <lastmod>2020-04-12T14:42:00Z</lastmod>
  </url>
  <url>
   <loc>http://127.0.0.1:8000/posts/2014/2014-02-10_my-biggest-jira-pet-peeve/</loc>
@@ -238,32 +174,12 @@
   <lastmod>2020-04-12T14:55:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2015-08-24_cast-2015-how-i-m-using-reason-and-argument-in-my-testing-5656cd154704/</loc>
-  <lastmod>2020-04-12T14:45:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/posts/2015-08-24_cast-2015-how-i-m-using-reason-and-argument-in-my-testing/</loc>
-  <lastmod>2020-04-12T14:46:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/posts/2015-09-23_testers-who-code-get-more-respect-6db4d230fe37/</loc>
-  <lastmod>2020-04-12T14:48:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/posts/2015-09-23_testers-who-code-get-more-respect/</loc>
-  <lastmod>2020-04-12T14:50:00Z</lastmod>
- </url>
- <url>
   <loc>http://127.0.0.1:8000/posts/2015/2015-08-24_cast-2015-how-i-m-using-reason-and-argument-in-my-testing/</loc>
   <lastmod>2020-04-12T14:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://127.0.0.1:8000/posts/2015/2015-09-23_testers-who-code-get-more-respect/</loc>
   <lastmod>2020-04-12T14:59:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/posts/2016-07-13_some-takeaways-from-let-s-test-2016/</loc>
-  <lastmod>2020-04-12T14:54:00Z</lastmod>
  </url>
  <url>
   <loc>http://127.0.0.1:8000/posts/2016/2016-07-13_some-takeaways-from-let-s-test-2016/</loc>
@@ -274,10 +190,6 @@
   <lastmod>2020-04-12T15:00:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2017/2017-04-09_surviving-the-conference-social-scene-db13099d85aa/</loc>
-  <lastmod>2020-04-12T15:21:00Z</lastmod>
- </url>
- <url>
   <loc>http://127.0.0.1:8000/posts/2017/2017-04-09_surviving-the-conference-social-scene/</loc>
   <lastmod>2020-04-12T15:22:00Z</lastmod>
  </url>
@@ -286,16 +198,8 @@
   <lastmod>2020-04-12T15:26:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2017/2017-08-06_doubt-builds-trust-9cee937dc5d1/</loc>
-  <lastmod>2020-04-12T15:43:00Z</lastmod>
- </url>
- <url>
   <loc>http://127.0.0.1:8000/posts/2017/2017-08-06_doubt-builds-trust/</loc>
   <lastmod>2020-04-12T15:44:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/posts/2017/2017-10-05_choose-one-thing-copenhagen-context-2017-dd7334b54da8/</loc>
-  <lastmod>2020-04-12T15:55:00Z</lastmod>
  </url>
  <url>
   <loc>http://127.0.0.1:8000/posts/2017/2017-10-05_choose-one-thing-copenhagen-context-2017/</loc>
@@ -304,10 +208,6 @@
  <url>
   <loc>http://127.0.0.1:8000/posts/2017/2017-12-11_regression-testing-wisdom-from-agile-testing-days-2017/</loc>
   <lastmod>2020-04-13T10:00:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/posts/2019/2019-01-25_have-i-tried-enough-weird-stuff-7ed4105ae994/</loc>
-  <lastmod>2020-04-13T10:06:00Z</lastmod>
  </url>
  <url>
   <loc>http://127.0.0.1:8000/posts/2019/2019-01-25_have-i-tried-enough-weird-stuff/</loc>
@@ -334,10 +234,6 @@
   <lastmod>2020-04-13T11:02:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2019/2019-05-07_don-t-let-jira-stop-you-from-visualizing-dependencies-db16d03d4cc1/</loc>
-  <lastmod>2020-04-13T11:06:00Z</lastmod>
- </url>
- <url>
   <loc>http://127.0.0.1:8000/posts/2019/2019-05-07_don-t-let-jira-stop-you-from-visualizing-dependencies/</loc>
   <lastmod>2020-04-13T11:06:00Z</lastmod>
  </url>
@@ -350,19 +246,11 @@
   <lastmod>2020-04-13T11:27:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2019/2019-07-28_how-not-to-name-self-verifying-test-data-1225d3c72454/</loc>
-  <lastmod>2020-04-13T11:34:00Z</lastmod>
- </url>
- <url>
   <loc>http://127.0.0.1:8000/posts/2019/2019-07-28_how-not-to-name-self-verifying-test-data/</loc>
   <lastmod>2020-04-13T11:37:00Z</lastmod>
  </url>
  <url>
   <loc>http://127.0.0.1:8000/posts/2019/2019-09-15_reflecting-on-let-s-test-2017/</loc>
   <lastmod>2020-04-13T11:39:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/posts/have-i-tried-enough-weird-stuff/</loc>
-  <lastmod>2020-04-10T20:19:00Z</lastmod>
  </url>
 </urlset>
