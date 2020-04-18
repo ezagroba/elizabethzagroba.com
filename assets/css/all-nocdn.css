@@ -859,11 +859,11 @@ ul.pager li a {
 }
 
 h1, h2, h3, h4, h5, nav, .nav-link {
-	font-family: 'CooperHewittMedium';
+	font-family: 'CooperHewittMedium', Arial, sans-serif;
 }
 
 p, p>a, ul, li, footer {
-   font-family: 'KarmaSemibold';
+   font-family: 'KarmaSemibold', Georgia, serif;
 }
 
 /* Navigation */

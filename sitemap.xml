@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://127.0.0.1:8000/</loc>
-  <lastmod>2020-04-13T11:06:00Z</lastmod>
+  <lastmod>2020-04-18T09:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://127.0.0.1:8000/2014/</loc>
@@ -127,7 +127,15 @@
  </url>
  <url>
   <loc>http://127.0.0.1:8000/galleries/</loc>
-  <lastmod>2020-04-10T18:27:00Z</lastmod>
+  <lastmod>2020-04-18T09:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://127.0.0.1:8000/galleries/resumes/</loc>
+  <lastmod>2020-04-18T09:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://127.0.0.1:8000/galleries/slides/</loc>
+  <lastmod>2020-04-18T09:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://127.0.0.1:8000/index-1.html</loc>
