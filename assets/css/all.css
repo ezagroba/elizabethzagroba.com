@@ -851,6 +851,13 @@ ul.pager li a {
     border-bottom-left-radius: 0;
 }
 
+h1, h2, h3, h4, h5, nav, .nav-link {
+	font-family: 'CooperHewittMedium';
+}
+
+p, p>a, ul, li, footer {
+   font-family: 'KarmaSemibold';
+}
 
 /* Navigation */
 
@@ -898,6 +905,14 @@ navbar-dark {
 
 .accordion:hover {
 	text-decoration: none;
+}
+
+.flag {
+	width: 20px;
+	max-width: 20px;
+	height: 15px;
+	max-height: 15px;
+	margin: 0 5px 0;
 }
 
 /* Footer */

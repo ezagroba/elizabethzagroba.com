@@ -95,7 +95,7 @@
  </sitemap>
  <sitemap>
   <loc>http://127.0.0.1:8000/galleries/rss.xml</loc>
-  <lastmod>2020-04-13T13:01:00Z</lastmod>
+  <lastmod>2020-04-18T08:15:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://127.0.0.1:8000/rss.xml</loc>
@@ -103,6 +103,6 @@
  </sitemap>
  <sitemap>
   <loc>http://127.0.0.1:8000/sitemap.xml</loc>
-  <lastmod>2020-04-13T13:05:00Z</lastmod>
+  <lastmod>2020-04-18T08:15:00Z</lastmod>
  </sitemap>
 </sitemapindex>
