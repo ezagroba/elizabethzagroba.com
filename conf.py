@@ -1206,7 +1206,9 @@ SEARCH_FORM = """
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </head>
 # (translatable)
-EXTRA_HEAD_DATA = """<link href='../../assets/fontawesome-5.13.0/css/all.css' rel='stylesheet'>"""
+EXTRA_HEAD_DATA = """<link href='../../assets/fontawesome-5.13.0/css/all.css' rel='stylesheet'>
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/karma" type="text/css"/>
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cooper-hewitt" type="text/css"/>"""
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)

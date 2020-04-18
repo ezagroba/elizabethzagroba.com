@@ -1,4 +1,4 @@
-<i class="fa fa-microphone-alt"></i> Sometimes I talk to people on purpose.
+I have spoken in these countries: 🇺🇸🇨🇦🇬🇧🇮🇪🇳🇱🇧🇪🇩🇪🇸🇪🇩🇰🇪🇪🇷🇴🇿🇦
 
 #### Key
 
@@ -14,6 +14,8 @@
 	<i class="fab fa-youtube"></i> = free video recording
 	<br/>
 	<i class="fa fa-photo-video"></i> = audio + slides recording
+	<br/>
+	<i class="fa fa-podcast"></i> = podcast
 	<br/>
 	<i class="fa fa-file-powerpoint"></i> = slides
 	<br/>
@@ -46,6 +48,7 @@
 <a href="#" class="accordion" data-toggle="collapse" data-target="#wander"><i class="fa fa-users"></i> <i class="fa fa-file-powerpoint"></i> <i class="fas fa-book-open"></i></a> Workshop - Wander With A Purpose: Writing Charters for your Exploratory Testing Sessions
 <ul id="wander" class="collapse">
 <li><a href="https://ezagroba.github.io/charters/" target="_blank">Slides</a></li>
+<li><a href="https://www.ministryoftesting.com/dojo/series/the-ministry-of-testing-podcast-2020/lessons/mot-podcast-adam-meets-elizabeth-zagroba-huib-schoots-jitesh-gosai" target="_blank">Ministry of Testing Podcast - Adam Meets Elizabeth Zagroba, Huib Schoots & Jitesh Gosai</a></li>
 <li><a href="https://www.goodreads.com/book/show/15980494-explore-it">Further reading</a></li>
 <li>Presented at:</li>
 	<ul>
@@ -84,11 +87,12 @@
 </ul>
 
 
-<a href="#" class="accordion" data-toggle="collapse" data-target="#doubt-trust"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i>  <i class="fab fa-youtube"></i> <i class="fa fa-file-powerpoint"></i> <i class="fa fa-book-open"></i></a> Talk - Doubt Builds Trust
+<a href="#" class="accordion" data-toggle="collapse" data-target="#doubt-trust"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i>  <i class="fab fa-youtube"></i> <i class="fa fa-file-powerpoint"></i> <i class="fa fa-podcast"></i> <i class="fa fa-book-open"></i></a> Talk - Doubt Builds Trust
 <ul id="doubt-trust" class="collapse">
 <li><a href="https://dojo.ministryoftesting.com/dojo/lessons/doubt-builds-trust-elizabeth-zagroba" target="_blank">Ministry of Testing Dojo video recording [paywall]</a></li>
 <li><a href="https://invidio.us/watch?v=SM57HMJpkZc" target="_blank">Nordic Testing Days video recording</a></li>
 <li><a href="../../slides/doubt-builds-trust.pdf">Slides</a></li>
+<li><a href="https://www.ministryoftesting.com/dojo/lessons/testers-island-discs-ep23-elizabeth-zagroba" target="_blank">Testers' Island Discs Podcast Episode 23</a></li>
 <li><a href="https://www.goodreads.com/review/list/5444309-elizabeth?shelf=doubt-builds-trust">Further reading</a></li>
 <li>Presented at:</li>
 	<ul>
@@ -130,10 +134,12 @@
 		</ul>
 </ul>
 
-<a href="#" class="accordion" data-toggle="collapse" data-target="#introvert"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i> <i class="fa fa-photo-video"></i> <i class="fas fa-book-open"></i></a> Talk - Succeeding as an Introvert
+<a href="#" class="accordion" data-toggle="collapse" data-target="#introvert"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i> <i class="fa fa-photo-video"></i> <i class="fa fa-podcast"></i> <i class="fas fa-book-open"></i></a> Talk - Succeeding as an Introvert
 <ul id="introvert" class="collapse">
 <li><a href="https://dojo.ministryoftesting.com/lessons/succeeding-as-an-introvert-elizabeth-zagroba">Ministry of Testing Dojo video recording [paywall]</a></li>
 <li><a href="https://invidio.us/watch?v=3SdoCJQsXB4">Dutch PHP Conference audio + slides recording</a></li>
+<li><a href="https://www.ministryoftesting.com/dojo/series/the-ministry-of-testing-podcast-2016/lessons/elizabeth-live-from-testing-in-the-pub-at-testbash-philadelphia" target="_blank">Testing in the Pub at TestBash Philadelphia</a></li>
+<li><a href="https://www.goodreads.com/review/list/5444309-elizabeth?shelf=introvert">Further reading</a></li>
 <li>Presented at:</li>
 	<ul>
 		<li><a href="https://www.ministryoftesting.com/dojo/series/testbash-philadelphia-2016-ministry-of-testing" target="_blank">TestBash Philadelphia (November 2016)</a></li>
