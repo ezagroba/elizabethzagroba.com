@@ -4,5 +4,3 @@ cache
 __pycache__
 output
 .DS_Store
-# Local Netlify folder
-.netlify
