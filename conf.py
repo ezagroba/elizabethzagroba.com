@@ -21,7 +21,7 @@ BLOG_AUTHOR = "Elizabeth Zagroba"  # (translatable)
 BLOG_TITLE = "Elizabeth Zagroba: Software Tester"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "http://127.0.0.1:8000/"
+SITE_URL = "https://elizabethzagroba.com/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://elizabethzagroba.com/"
@@ -1206,7 +1206,10 @@ SEARCH_FORM = """
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </head>
 # (translatable)
-EXTRA_HEAD_DATA = """<link href='../../assets/fontawesome-5.13.0/css/all.css' rel='stylesheet'>"""
+EXTRA_HEAD_DATA = """<link href='../../assets/fontawesome-5.13.0/css/all.css' rel='stylesheet'>
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script>
+<script async src="//static.getclicky.com/js"></script>
+"""
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)

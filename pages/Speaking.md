@@ -1,4 +1,4 @@
-<i class="fa fa-microphone-alt"></i> Sometimes I talk to people on purpose.
+I have spoken in these countries: 🇺🇸🇨🇦🇬🇧🇮🇪🇳🇱🇧🇪🇩🇪🇸🇪🇩🇰🇪🇪🇷🇴🇿🇦
 
 #### Key
 
@@ -14,6 +14,8 @@
 	<i class="fab fa-youtube"></i> = free video recording
 	<br/>
 	<i class="fa fa-photo-video"></i> = audio + slides recording
+	<br/>
+	<i class="fa fa-podcast"></i> = podcast
 	<br/>
 	<i class="fa fa-file-powerpoint"></i> = slides
 	<br/>
@@ -46,6 +48,7 @@
 <a href="#" class="accordion" data-toggle="collapse" data-target="#wander"><i class="fa fa-users"></i> <i class="fa fa-file-powerpoint"></i> <i class="fas fa-book-open"></i></a> Workshop - Wander With A Purpose: Writing Charters for your Exploratory Testing Sessions
 <ul id="wander" class="collapse">
 <li><a href="https://ezagroba.github.io/charters/" target="_blank">Slides</a></li>
+<li><a href="https://www.ministryoftesting.com/dojo/series/the-ministry-of-testing-podcast-2020/lessons/mot-podcast-adam-meets-elizabeth-zagroba-huib-schoots-jitesh-gosai" target="_blank">Ministry of Testing Podcast - Adam Meets Elizabeth Zagroba, Huib Schoots & Jitesh Gosai</a></li>
 <li><a href="https://www.goodreads.com/book/show/15980494-explore-it">Further reading</a></li>
 <li>Presented at:</li>
 	<ul>
@@ -84,10 +87,11 @@
 </ul>
 
 
-<a href="#" class="accordion" data-toggle="collapse" data-target="#doubt-trust"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i>  <i class="fab fa-youtube"></i> <i class="fa fa-file-powerpoint"></i> <i class="fa fa-book-open"></i></a> Talk - Doubt Builds Trust
+<a href="#" class="accordion" data-toggle="collapse" data-target="#doubt-trust"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i>  <i class="fab fa-youtube"></i> <i class="fa fa-file-powerpoint"></i> <i class="fa fa-podcast"></i> <i class="fa fa-book-open"></i></a> Talk - Doubt Builds Trust
 <ul id="doubt-trust" class="collapse">
 <li><a href="https://dojo.ministryoftesting.com/dojo/lessons/doubt-builds-trust-elizabeth-zagroba" target="_blank">Ministry of Testing Dojo video recording [paywall]</a></li>
 <li><a href="https://invidio.us/watch?v=SM57HMJpkZc" target="_blank">Nordic Testing Days video recording</a></li>
+<li><a href="https://www.ministryoftesting.com/dojo/lessons/testers-island-discs-ep23-elizabeth-zagroba" target="_blank">Testers' Island Discs Podcast Episode 23</a></li>
 <li><a href="../../slides/doubt-builds-trust.pdf">Slides</a></li>
 <li><a href="https://www.goodreads.com/review/list/5444309-elizabeth?shelf=doubt-builds-trust">Further reading</a></li>
 <li>Presented at:</li>
@@ -113,8 +117,9 @@
 		</ul>
 </ul>	
 
-<a href="#" class="accordion" data-toggle="collapse" data-target="#mindmaps"><i class="fa fa-bullhorn"></i></a> Talk - Using Mindmaps for Team Communication
+<a href="#" class="accordion" data-toggle="collapse" data-target="#mindmaps"><i class="fa fa-bullhorn"></i> <i class="fa fa-file-powerpoint"></i></a> Talk - Using Mindmaps for Team Communication
 <ul id="mindmaps" class="collapse">
+	<li><a href="../../assets/slides/mindmaps.pdf">Slides</a></li>
 	<li>Presented at:</li>
 		<ul>
 			<li><a href="https://www.meetup.com/Ministry-of-Testing-Utrecht/events/251673882/" target="_blank">Ministry of Testing - Utrecht Meetup (July 2018)</a></li>
@@ -122,24 +127,27 @@
 </ul>
 
 
-<a href="#" class="accordion" data-toggle="collapse" data-target="#less-more"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i></a> Talk (w/Diana Wendruff) - Less Is More
+<a href="#" class="accordion" data-toggle="collapse" data-target="#less-more"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i> <i class="fa fa-file-powerpoint"></i></a> Talk (w/Diana Wendruff) - Less Is More
 <ul id="less-more" class="collapse">
+	<li><a href="../../assets/slides/less-more.pdf">Slides</a></li>
 	<li>Presented at:</li>
 		<ul>
 			<li><a href="https://dojo.ministryoftesting.com/events/testbash-brighton-2018" target="_blank">TestBash Brighton (March 2018)</a> <a href="https://www.ministryoftesting.com/dojo/lessons/less-is-more-diana-wendruff-elizabeth-zagroba" target="_blank">[paywall video recording]</a></li>
 		</ul>
 </ul>
 
-<a href="#" class="accordion" data-toggle="collapse" data-target="#introvert"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i> <i class="fa fa-photo-video"></i> <i class="fas fa-book-open"></i></a> Talk - Succeeding as an Introvert
+<a href="#" class="accordion" data-toggle="collapse" data-target="#introvert"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i> <i class="fa fa-photo-video"></i> <i class="fa fa-podcast"></i> <i class="fa fa-file-powerpoint"></i> <i class="fas fa-book-open"></i></a> Talk - Succeeding as an Introvert
 <ul id="introvert" class="collapse">
 <li><a href="https://dojo.ministryoftesting.com/lessons/succeeding-as-an-introvert-elizabeth-zagroba">Ministry of Testing Dojo video recording [paywall]</a></li>
 <li><a href="https://invidio.us/watch?v=3SdoCJQsXB4">Dutch PHP Conference audio + slides recording</a></li>
+<li><a href="https://www.ministryoftesting.com/dojo/series/the-ministry-of-testing-podcast-2016/lessons/elizabeth-live-from-testing-in-the-pub-at-testbash-philadelphia" target="_blank">Testing in the Pub at TestBash Philadelphia</a></li>
+<li><a href="../../assets/slides/introvert.pdf">Slides</a></li>
+<li><a href="https://www.goodreads.com/review/list/5444309-elizabeth?shelf=introvert">Further reading</a></li>
 <li>Presented at:</li>
 	<ul>
 		<li><a href="https://www.ministryoftesting.com/dojo/series/testbash-philadelphia-2016-ministry-of-testing" target="_blank">TestBash Philadelphia (November 2016)</a></li>
-		<li><a href="https://confoo.ca/en/yul2017/schedule" target="_blank">ConFoo Montreal (March 2017)</a></li>
 		<li><a href="https://romaniatesting.ro/rtc2017/" target="_blank">Romanian Testing Conference (May 2017)</a></li>
-		<li><a href="https://www.phpconference.nl/" target="_blank">Dutch PHP Conference</a> (June/July 2017)</li>
+		<li><a href="https://www.phpconference.nl/" target="_blank">Dutch PHP Conference (June/July 2017)</a></li>
 		<li><a href="http://copenhagencontext.com/2017-program/" target="_blank">Copenhagen Context (September 2017)</a></li>
 		<li><a href="http://qualityjam.net/uk/" target="_blank">Quality Jam London (October 2017)</a></li>
 		<li><a href="https://agiletestingdays.com/2017/session/succeeding-as-an-introvert/" target="_blank">Agile Testing Days [Germany] (November 2017)</a></li>
@@ -149,18 +157,21 @@
 </ul>
 
 
-<a href="#" class="accordion" data-toggle="collapse" data-target="#watching"><i class="fa fa-bullhorn"></i></a> Talk - Testing When The World Is Watching
+<a href="#" class="accordion" data-toggle="collapse" data-target="#watching"><i class="fa fa-bullhorn"></i> <i class="fa fa-file-powerpoint"></i></a> Talk - Testing When The World Is Watching
 <ul id="watching" class="collapse">
+	<li><a href="../../assets/slides/testing-when-the-world-is-watching.pdf">Slides</a></li>
 	<li>Presented at:</li>
 	<ul>
 		<li><a href="http://lets-test.com/?page_id=4067" target="_blank">Let's Test [Sweden] (May 2016)</a></li>
 		<li><a href="http://www.meetup.com/NYC-Testers/events/230377700/" target="_blank">NYC Testers Meetup (April 2016)</a></li>
+		<li><a href="https://confoo.ca/en/yul2017/schedule" target="_blank">ConFoo Montreal (March 2017)</a></li>
 	</ul>
 </ul>
 
 
-<a href="#" class="accordion" data-toggle="collapse" data-target="#audio-mobile"><i class="fa fa-bullhorn"></i></a> Talk - Challenges in Audio Mobile Testing
+<a href="#" class="accordion" data-toggle="collapse" data-target="#audio-mobile"><i class="fa fa-bullhorn"></i> <i class="fa fa-file-powerpoint"></i></a> Talk - Challenges in Audio Mobile Testing
 <ul id="audio-mobile" class="collapse">
+	<li><a href="../../assets/slides/audio-mobile-testing.pdf">Slides</a></li>
 	<li>Presented at: <a href="http://www.meetup.com/NYC-Testers/events/224194458/" target="_blank">NYC Testers Meetup (August 2015)</a></li>
 </ul>
 
