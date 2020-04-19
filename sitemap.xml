@@ -6,263 +6,259 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>http://127.0.0.1:8000/</loc>
+  <loc>https://elizabethzagroba.com/</loc>
   <lastmod>2020-04-18T09:35:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/2014/</loc>
+  <loc>https://elizabethzagroba.com/2014/</loc>
   <lastmod>2020-04-12T13:32:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/2015/</loc>
+  <loc>https://elizabethzagroba.com/2015/</loc>
   <lastmod>2020-04-12T14:45:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/2016/</loc>
+  <loc>https://elizabethzagroba.com/2016/</loc>
   <lastmod>2020-04-12T14:54:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/2017/</loc>
+  <loc>https://elizabethzagroba.com/2017/</loc>
   <lastmod>2020-04-12T15:00:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/2019/</loc>
+  <loc>https://elizabethzagroba.com/2019/</loc>
   <lastmod>2020-04-11T07:55:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/2020/</loc>
+  <loc>https://elizabethzagroba.com/2020/</loc>
   <lastmod>2020-04-19T14:01:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/archive.html</loc>
-  <lastmod>2020-04-19T14:19:00Z</lastmod>
+  <loc>https://elizabethzagroba.com/archive.html</loc>
+  <lastmod>2020-04-19T14:37:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/</loc>
+  <loc>https://elizabethzagroba.com/categories/</loc>
   <lastmod>2020-04-13T13:01:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/authentication/</loc>
+  <loc>https://elizabethzagroba.com/categories/authentication/</loc>
   <lastmod>2020-04-13T10:56:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/authorization/</loc>
+  <loc>https://elizabethzagroba.com/categories/authorization/</loc>
   <lastmod>2020-04-13T10:56:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/automation/</loc>
+  <loc>https://elizabethzagroba.com/categories/automation/</loc>
   <lastmod>2020-04-13T11:02:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/bug-reporting/</loc>
+  <loc>https://elizabethzagroba.com/categories/bug-reporting/</loc>
   <lastmod>2020-04-12T14:05:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/complaints/</loc>
+  <loc>https://elizabethzagroba.com/categories/complaints/</loc>
   <lastmod>2020-04-12T13:32:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/conference/</loc>
+  <loc>https://elizabethzagroba.com/categories/conference/</loc>
   <lastmod>2020-04-12T14:41:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/dependencies/</loc>
+  <loc>https://elizabethzagroba.com/categories/dependencies/</loc>
   <lastmod>2020-04-13T11:06:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/dewt/</loc>
+  <loc>https://elizabethzagroba.com/categories/dewt/</loc>
   <lastmod>2020-04-13T10:54:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/doubt/</loc>
+  <loc>https://elizabethzagroba.com/categories/doubt/</loc>
   <lastmod>2020-04-12T15:43:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/exploratory-testing/</loc>
+  <loc>https://elizabethzagroba.com/categories/exploratory-testing/</loc>
   <lastmod>2020-04-10T20:19:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/git/</loc>
+  <loc>https://elizabethzagroba.com/categories/git/</loc>
   <lastmod>2020-04-13T10:25:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/jira/</loc>
+  <loc>https://elizabethzagroba.com/categories/jira/</loc>
   <lastmod>2020-04-13T11:06:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/mac/</loc>
+  <loc>https://elizabethzagroba.com/categories/mac/</loc>
   <lastmod>2020-04-13T10:25:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/mind-mapping/</loc>
+  <loc>https://elizabethzagroba.com/categories/mind-mapping/</loc>
   <lastmod>2020-04-13T11:06:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/naming/</loc>
+  <loc>https://elizabethzagroba.com/categories/naming/</loc>
   <lastmod>2020-04-13T11:34:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/peer-conference/</loc>
+  <loc>https://elizabethzagroba.com/categories/peer-conference/</loc>
   <lastmod>2020-04-13T10:54:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/security/</loc>
+  <loc>https://elizabethzagroba.com/categories/security/</loc>
   <lastmod>2020-04-13T10:56:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/terminal/</loc>
+  <loc>https://elizabethzagroba.com/categories/terminal/</loc>
   <lastmod>2020-04-13T10:25:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/test-data/</loc>
+  <loc>https://elizabethzagroba.com/categories/test-data/</loc>
   <lastmod>2020-04-13T11:34:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/testers/</loc>
+  <loc>https://elizabethzagroba.com/categories/testers/</loc>
   <lastmod>2020-04-12T14:48:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/trust/</loc>
+  <loc>https://elizabethzagroba.com/categories/trust/</loc>
   <lastmod>2020-04-12T15:43:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/categories/webinar/</loc>
+  <loc>https://elizabethzagroba.com/categories/webinar/</loc>
   <lastmod>2020-04-12T13:40:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/galleries/</loc>
+  <loc>https://elizabethzagroba.com/galleries/</loc>
   <lastmod>2020-04-18T09:39:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/index-1.html</loc>
-  <lastmod>2020-04-19T14:19:00Z</lastmod>
+  <loc>https://elizabethzagroba.com/index-1.html</loc>
+  <lastmod>2020-04-19T14:37:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/index-2.html</loc>
-  <lastmod>2020-04-19T14:19:00Z</lastmod>
+  <loc>https://elizabethzagroba.com/index-2.html</loc>
+  <lastmod>2020-04-19T14:37:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/listings/</loc>
+  <loc>https://elizabethzagroba.com/listings/</loc>
   <lastmod>2020-04-10T18:27:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/pages/resources/</loc>
+  <loc>https://elizabethzagroba.com/pages/resources/</loc>
   <lastmod>2020-04-10T20:08:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/pages/speaking/</loc>
+  <loc>https://elizabethzagroba.com/pages/speaking/</loc>
   <lastmod>2020-04-11T08:23:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/pages/work/</loc>
+  <loc>https://elizabethzagroba.com/pages/work/</loc>
   <lastmod>2020-04-10T20:06:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2014/2014-02-10_my-biggest-jira-pet-peeve/</loc>
+  <loc>https://elizabethzagroba.com/posts/2014/2014-02-10_my-biggest-jira-pet-peeve/</loc>
   <lastmod>2020-04-12T14:55:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2014/2014-02-17_eurostar-webinar-delivering-unwelcome-messages/</loc>
+  <loc>https://elizabethzagroba.com/posts/2014/2014-02-17_eurostar-webinar-delivering-unwelcome-messages/</loc>
   <lastmod>2020-04-12T14:55:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2014/2014-02-24_writing-clear-and-effective-bug-reports/</loc>
+  <loc>https://elizabethzagroba.com/posts/2014/2014-02-24_writing-clear-and-effective-bug-reports/</loc>
   <lastmod>2020-04-12T14:55:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2014/2014-05-07_stareast-2014-days-1-2/</loc>
+  <loc>https://elizabethzagroba.com/posts/2014/2014-05-07_stareast-2014-days-1-2/</loc>
   <lastmod>2020-04-12T14:55:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2014/2014-09-09_stareast-2014-days-3-4/</loc>
+  <loc>https://elizabethzagroba.com/posts/2014/2014-09-09_stareast-2014-days-3-4/</loc>
   <lastmod>2020-04-12T14:55:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2015/2015-08-24_cast-2015-how-i-m-using-reason-and-argument-in-my-testing/</loc>
+  <loc>https://elizabethzagroba.com/posts/2015/2015-08-24_cast-2015-how-i-m-using-reason-and-argument-in-my-testing/</loc>
   <lastmod>2020-04-12T14:59:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2015/2015-09-23_testers-who-code-get-more-respect/</loc>
+  <loc>https://elizabethzagroba.com/posts/2015/2015-09-23_testers-who-code-get-more-respect/</loc>
   <lastmod>2020-04-12T14:59:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2016/2016-07-13_some-takeaways-from-let-s-test-2016/</loc>
+  <loc>https://elizabethzagroba.com/posts/2016/2016-07-13_some-takeaways-from-let-s-test-2016/</loc>
   <lastmod>2020-04-12T14:59:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2017/2017-01-08_connections-from-testbash-philadelphia/</loc>
+  <loc>https://elizabethzagroba.com/posts/2017/2017-01-08_connections-from-testbash-philadelphia/</loc>
   <lastmod>2020-04-12T15:00:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2017/2017-04-09_surviving-the-conference-social-scene/</loc>
+  <loc>https://elizabethzagroba.com/posts/2017/2017-04-09_surviving-the-conference-social-scene/</loc>
   <lastmod>2020-04-12T15:22:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2017/2017-05-22_romanian-testing-conference-2017/</loc>
+  <loc>https://elizabethzagroba.com/posts/2017/2017-05-22_romanian-testing-conference-2017/</loc>
   <lastmod>2020-04-12T15:26:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2017/2017-08-06_doubt-builds-trust/</loc>
+  <loc>https://elizabethzagroba.com/posts/2017/2017-08-06_doubt-builds-trust/</loc>
   <lastmod>2020-04-12T15:44:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2017/2017-10-05_choose-one-thing-copenhagen-context-2017/</loc>
+  <loc>https://elizabethzagroba.com/posts/2017/2017-10-05_choose-one-thing-copenhagen-context-2017/</loc>
   <lastmod>2020-04-12T15:55:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2017/2017-12-11_regression-testing-wisdom-from-agile-testing-days-2017/</loc>
+  <loc>https://elizabethzagroba.com/posts/2017/2017-12-11_regression-testing-wisdom-from-agile-testing-days-2017/</loc>
   <lastmod>2020-04-13T10:00:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2019/2019-01-25_have-i-tried-enough-weird-stuff/</loc>
+  <loc>https://elizabethzagroba.com/posts/2019/2019-01-25_have-i-tried-enough-weird-stuff/</loc>
   <lastmod>2020-04-13T10:10:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2019/2019-02-02_update-your-mac-terminal-to-display-your-current-git-branch-and-status/</loc>
+  <loc>https://elizabethzagroba.com/posts/2019/2019-02-02_update-your-mac-terminal-to-display-your-current-git-branch-and-status/</loc>
   <lastmod>2020-04-13T10:25:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2019/2019-02-09_nuture-the-bright-spots-dutch-exploratory-workshop-on-testing-2018/</loc>
+  <loc>https://elizabethzagroba.com/posts/2019/2019-02-09_nuture-the-bright-spots-dutch-exploratory-workshop-on-testing-2018/</loc>
   <lastmod>2020-04-13T10:47:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2019/2019-02-24_authorization-authentication-a-tale-of-government-security-clearance/</loc>
+  <loc>https://elizabethzagroba.com/posts/2019/2019-02-24_authorization-authentication-a-tale-of-government-security-clearance/</loc>
   <lastmod>2020-04-13T10:54:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2019/2019-03-29_exploratory-testing-with-the-chrome-network-tab/</loc>
+  <loc>https://elizabethzagroba.com/posts/2019/2019-03-29_exploratory-testing-with-the-chrome-network-tab/</loc>
   <lastmod>2020-04-13T10:58:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2019/2019-03-29_this-too-shall-pass-disposable-test-automation/</loc>
+  <loc>https://elizabethzagroba.com/posts/2019/2019-03-29_this-too-shall-pass-disposable-test-automation/</loc>
   <lastmod>2020-04-13T11:02:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2019/2019-05-07_don-t-let-jira-stop-you-from-visualizing-dependencies/</loc>
+  <loc>https://elizabethzagroba.com/posts/2019/2019-05-07_don-t-let-jira-stop-you-from-visualizing-dependencies/</loc>
   <lastmod>2020-04-13T11:06:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2019/2019-05-20_you-build-it-you-run-it-and-you-fix-it/</loc>
+  <loc>https://elizabethzagroba.com/posts/2019/2019-05-20_you-build-it-you-run-it-and-you-fix-it/</loc>
   <lastmod>2020-04-13T11:11:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2019/2019-07-07_agile-testing-days-2018-a-reflection/</loc>
+  <loc>https://elizabethzagroba.com/posts/2019/2019-07-07_agile-testing-days-2018-a-reflection/</loc>
   <lastmod>2020-04-13T11:27:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2019/2019-07-28_how-not-to-name-self-verifying-test-data/</loc>
+  <loc>https://elizabethzagroba.com/posts/2019/2019-07-28_how-not-to-name-self-verifying-test-data/</loc>
   <lastmod>2020-04-13T11:37:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2019/2019-09-15_reflecting-on-let-s-test-2017/</loc>
+  <loc>https://elizabethzagroba.com/posts/2019/2019-09-15_reflecting-on-let-s-test-2017/</loc>
   <lastmod>2020-04-13T11:39:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/posts/2019/2020-04-19_remembering_testbash_brighton-2018/</loc>
-  <lastmod>2020-04-19T14:01:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/posts/2020/2020-04-19_remembering_testbash_brighton-2018/</loc>
+  <loc>https://elizabethzagroba.com/posts/2020/2020-04-19_remembering_testbash_brighton-2018/</loc>
   <lastmod>2020-04-19T14:02:00Z</lastmod>
  </url>
 </urlset>
