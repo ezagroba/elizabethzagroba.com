@@ -30,8 +30,12 @@
   <lastmod>2020-04-11T07:55:00Z</lastmod>
  </url>
  <url>
+  <loc>http://127.0.0.1:8000/2020/</loc>
+  <lastmod>2020-04-19T14:01:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://127.0.0.1:8000/archive.html</loc>
-  <lastmod>2020-04-18T08:32:00Z</lastmod>
+  <lastmod>2020-04-19T14:19:00Z</lastmod>
  </url>
  <url>
   <loc>http://127.0.0.1:8000/categories/</loc>
@@ -130,20 +134,12 @@
   <lastmod>2020-04-18T09:39:00Z</lastmod>
  </url>
  <url>
-  <loc>http://127.0.0.1:8000/galleries/resumes/</loc>
-  <lastmod>2020-04-18T09:39:00Z</lastmod>
- </url>
- <url>
-  <loc>http://127.0.0.1:8000/galleries/slides/</loc>
-  <lastmod>2020-04-18T09:39:00Z</lastmod>
- </url>
- <url>
   <loc>http://127.0.0.1:8000/index-1.html</loc>
-  <lastmod>2020-04-18T08:32:00Z</lastmod>
+  <lastmod>2020-04-19T14:19:00Z</lastmod>
  </url>
  <url>
   <loc>http://127.0.0.1:8000/index-2.html</loc>
-  <lastmod>2020-04-18T08:32:00Z</lastmod>
+  <lastmod>2020-04-19T14:19:00Z</lastmod>
  </url>
  <url>
   <loc>http://127.0.0.1:8000/listings/</loc>
@@ -260,5 +256,13 @@
  <url>
   <loc>http://127.0.0.1:8000/posts/2019/2019-09-15_reflecting-on-let-s-test-2017/</loc>
   <lastmod>2020-04-13T11:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://127.0.0.1:8000/posts/2019/2020-04-19_remembering_testbash_brighton-2018/</loc>
+  <lastmod>2020-04-19T14:01:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://127.0.0.1:8000/posts/2020/2020-04-19_remembering_testbash_brighton-2018/</loc>
+  <lastmod>2020-04-19T14:02:00Z</lastmod>
  </url>
 </urlset>

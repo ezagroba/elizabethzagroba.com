@@ -27,7 +27,7 @@
  </sitemap>
  <sitemap>
   <loc>http://127.0.0.1:8000/categories/conference.xml</loc>
-  <lastmod>2020-04-13T13:01:00Z</lastmod>
+  <lastmod>2020-04-19T14:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://127.0.0.1:8000/categories/dependencies.xml</loc>
@@ -94,23 +94,15 @@
   <lastmod>2020-04-13T13:01:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://127.0.0.1:8000/galleries/resumes/rss.xml</loc>
-  <lastmod>2020-04-18T09:39:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://127.0.0.1:8000/galleries/rss.xml</loc>
-  <lastmod>2020-04-18T08:32:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://127.0.0.1:8000/galleries/slides/rss.xml</loc>
-  <lastmod>2020-04-18T09:39:00Z</lastmod>
+  <lastmod>2020-04-19T14:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://127.0.0.1:8000/rss.xml</loc>
-  <lastmod>2020-04-13T13:01:00Z</lastmod>
+  <lastmod>2020-04-19T14:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://127.0.0.1:8000/sitemap.xml</loc>
-  <lastmod>2020-04-18T09:39:00Z</lastmod>
+  <lastmod>2020-04-19T14:19:00Z</lastmod>
  </sitemap>
 </sitemapindex>

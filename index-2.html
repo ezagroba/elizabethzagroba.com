@@ -15,8 +15,6 @@
 <link rel="prev" href="." type="text/html">
 <link rel="next" href="index-1.html" type="text/html">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link href="fontawesome-5.13.0/css/all.css" rel="stylesheet">
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/karma" type="text/css">
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cooper-hewitt" type="text/css">
 <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script>
 </head>
 <body>
@@ -80,7 +78,67 @@ navbar-dark bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2019/2019-01-25_have-i-tried-enough-weird-stuff/" class="u-url">Have I Tried Enough Weird Stuff?</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2019/2019-02-02_update-your-mac-terminal-to-display-your-current-git-branch-and-status/" class="u-url">Update your Mac Terminal to display your current git branch and status</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2019/2019-02-02_update-your-mac-terminal-to-display-your-current-git-branch-and-status/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-02-02T00:00:00+01:00" itemprop="datePublished" title="02 February 2019">02 February 2019</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p><strong>TLDR; You can copy <a href="https://github.com/ezagroba/bash-profile-branch-and-color/blob/master/export-PS1.gist">all the code from my github</a>.</strong></p>
+<p name="0fd7" id="0fd7" class="graf graf--p graf-after--h3">I spent the better part of a crafting day at the office updating my <code class="markup--code markup--p-code">.bash_profile</code> on my Mac. If I’m in a git repository, with every command prompt, I see the branch name and an asterisk if there are un-committed changes. The original prompt for the machine, the repository name, and the branch name each appear in different colors. Here’s what it looks like:</p>
+
+<p><img alt="" src="images/posts/2019/command-prompt.png"></p>
+<p name="47d3" id="47d3" class="graf graf--p graf-after--figure">It may look like this one line in my <code class="markup--code markup--p-code">.bash_profile</code> file is where the magic happens, because this is where the colors are set:</p>
+
+<pre class="code literal-block"><span></span><code><span class="nb">export</span> <span class="nv">PS1</span><span class="o">=</span><span class="s2">"\[\033[36m\]\u\[\033[32m\]\w\[\033[33m\]\$(git_branch)\$(parse_git_dirty)\[\033[00m\]</span>$<span class="s2">"</span>
+</code></pre>
+
+
+<p><img alt="" src="images/posts/2019/colors.png"></p>
+<p name="c9ba" id="c9ba" class="graf graf--p graf-after--figure">Unfortunately the colors, branch, and status still need to be variously activated and calculated.
+
+</p>
+<p>This function calculates if the branch has new changes:</p>
+
+
+<pre class="code literal-block"><span></span><code><span class="kd">function</span> <span class="nx">parse_git_dirty</span> <span class="p">{</span>
+  <span class="p">[[</span> <span class="o">-</span><span class="nx">n</span> <span class="s2">"$(git status -s2&gt; /dev/null)"</span> <span class="p">]]</span> <span class="o">&amp;&amp;</span> <span class="nx">echo</span> <span class="s2">"*"</span>
+<span class="p">}</span>
+</code></pre>
+
+
+
+<p name="b7b9" id="b7b9" class="graf graf--p graf-after--figure">The last thing is fetching the branch name:</p>
+
+
+<pre class="code literal-block"><span></span><code>git_branch<span class="o">()</span> <span class="o">{</span>
+  git branch <span class="m">2</span>&gt; /dev/null <span class="p">|</span> sed -e <span class="s1">'/^[^*]/d'</span> -d <span class="s1">'s/* \(.*\)/ (\1)/'</span>
+<span class="o">}</span>
+</code></pre>
+
+
+
+<p name="5ccd" id="5ccd" class="graf graf--p graf-after--figure">It took a lot of internet searching and help from colleagues to set it up. I had the git status and the branch name going separately, but combining them failed. Typing past the width of the window in the command prompt would send text to overwrite the current line instead of wrapping onto a second. <a href="https://askubuntu.com/questions/24358/how-do-i-get-long-command-lines-to-wrap-to-the-next-line" data-href="https://askubuntu.com/questions/24358/how-do-i-get-long-command-lines-to-wrap-to-the-next-line" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">This solved that for me</a>. <a href="http://jafrog.com/2013/11/23/colors-in-terminal.html" data-href="http://jafrog.com/2013/11/23/colors-in-terminal.html" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">There are also other color options</a>. The slashes <code class="markup--code markup--p-code">\</code> help end commands, but it was a lot of trial and error to get them all in the right spots. I was editing my <code class="markup--code markup--p-code">.bash_profile</code> intially in Sublime; any plain-text editor would have worked. I moved to nano in the Terminal when I wanted to see the changes more quickly. I did still have to close all open Terminal sessions before seeing the latest changes.</p>
+<p name="fb1a" id="fb1a" class="graf graf--p graf-after--p">This lovely command prompt doesn’t prevent every mistake, but it does help call my attention to the status so I don’t:</p>
+<ul class="postList">
+<li name="412e" id="412e" class="graf graf--li graf-after--p">open the wrong repository (easy to do when you’re migrating from one to another)</li>
+<li name="9c89" id="9c89" class="graf graf--li graf-after--li">try to commit before the changes are saved</li>
+<li name="8694" id="8694" class="graf graf--li graf-after--li">commit to master instead of a branch</li>
+</ul>
+<p name="7824" id="7824" class="graf graf--p graf-after--li graf--trailing">If nothing else, I enjoy a bit of color in an interface that doesn’t have any to start.</p>
+<section name="c8d0" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div>
+<div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="6696" id="6696" class="graf graf--p graf--leading graf--trailing"><em class="markup--em markup--p-em">Thanks to Maik Nog for suggesting I share this in a more shareable format. It’s available on </em><a href="https://github.com/ezagroba/bash-profile-branch-and-color/blob/master/export-PS1.gist" data-href="https://github.com/ezagroba/bash-profile-branch-and-color/blob/master/export-PS1.gist" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">github</em></a><em class="markup--em markup--p-em">.</em></p></div></div></section>
+
+
+*Originally published on [Medium](https://medium.com/@ezagroba/update-your-mac-terminal-to-display-your-current-git-branch-and-status-471c017436a2).*</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2019/2019-01-25_have-i-tried-enough-weird-stuff/" class="u-url">Have I Tried Enough Weird Stuff?</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Elizabeth Zagroba
