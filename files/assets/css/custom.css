@@ -1,9 +1,30 @@
+@font-face{ 
+	font-family: 'CooperHewittMedium';
+	src: url('/assets/CooperHewitt-OTF-public/CooperHewitt-Medium.otf');
+}
+
+@font-face{ 
+	font-family: 'KarmaSemibold';
+	src: url('/assets/karma/Karma-SemiBold.otf');
+}
+
+@font-face{ 
+	font-family: 'JetBrainsMonoRegular';
+	src: url('/assets/JetBrainsMono-1.0.3/web/eot/JetBrainsMono-Regular.eot');
+	src: url('/assets/JetBrainsMono-1.0.3/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+	     url('/assets/JetBrainsMono-1.0.3/web/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+}
+
 h1, h2, h3, h4, h5, nav, .nav-link {
 	font-family: 'CooperHewittMedium', Arial, sans-serif;
 }
 
 p, p>a, ul, li, footer {
    font-family: 'KarmaSemibold', Georgia, serif;
+}
+
+code {
+	font-family: 'JetBrainsMonoRegular', monospace;
 }
 
 /* Navigation */

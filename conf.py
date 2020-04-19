@@ -1207,8 +1207,6 @@ SEARCH_FORM = """
 # before </head>
 # (translatable)
 EXTRA_HEAD_DATA = """<link href='../../assets/fontawesome-5.13.0/css/all.css' rel='stylesheet'>
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/karma" type="text/css"/>
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cooper-hewitt" type="text/css"/>
 <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script>
 <script async src="//static.getclicky.com/js"></script>
 """
