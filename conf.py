@@ -945,7 +945,8 @@ CONTENT_FOOTER = """
 <a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
 <a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon"></i></a>
 &copy; {date} <a href="mailto:{email}">{author}</a>. 
-Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a>.
+Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
+<a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0.</a>
 """
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
