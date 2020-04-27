@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Errors You Might Encounter While Editing an Open API Specification | Elizabeth Zagroba: Software Tester</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="canonical" href="https://elizabethzagroba.com/posts/2020/2020-04-27_errors_you_might_encounter_while_editing_an_open_api_specification/">
+<link rel="icon" href="../../../images/avatar.png" sizes="128x128">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="../../assets/fontawesome-5.13.0/css/all.css" rel="stylesheet">
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><meta name="author" content="Elizabeth Zagroba">
+<link rel="prev" href="../2020-04-19_remembering_testbash_brighton-2018/" title="Remembering TestBash Brighton 2018" type="text/html">
+<meta property="og:site_name" content="Elizabeth Zagroba: Software Tester">
+<meta property="og:title" content="Errors You Might Encounter While Editing an Open API Specification">
+<meta property="og:url" content="https://elizabethzagroba.com/posts/2020/2020-04-27_errors_you_might_encounter_while_editing_an_open_api_specification/">
+<meta property="og:description" content="One of the tasks for my team last week was updating an existing GET API call in our specification with some new fields. The Open API Specification, formerly known as Swagger, allows you to provide the">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-04-27T00:00:00+02:00">
+<meta property="article:tag" content="api-specs">
+<meta property="article:tag" content="apis">
+<meta property="article:tag" content="open-api">
+<meta property="article:tag" content="swagger">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@website">
+<meta name="twitter:creator" content="@username">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="https://elizabethzagroba.com/">
+
+            <span id="blog-title">Elizabeth Zagroba: Software Tester</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../../categories/index.html" class="dropdown-item">Tags</a>
+            </div>
+                </li>
+<li class="nav-item">
+<a href="../../../pages/work" class="nav-link">Work</a>
+                </li>
+<li class="nav-item">
+<a href="../../../pages/speaking" class="nav-link">Speaking</a>
+                </li>
+<li class="nav-item">
+<a href="../../../pages/resources" class="nav-link">Resources</a>
+
+                
+            </li>
+</ul>
+<!-- DuckDuckGo custom search --><form method="get" id="search" action="https://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="https://elizabethzagroba.com/"><input type="hidden" name="k8" value="#444444"><input type="hidden" name="k9" value="#D51920"><input type="hidden" name="kt" value="h"><input type="text" name="q" maxlength="255" placeholder="Search" class="span2" style="margin-top: 4px;"><input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Errors You Might Encounter While Editing an Open API Specification</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2020-04-27T00:00:00+02:00" itemprop="datePublished" title="27 April 2020">27 April 2020</time></a>
+            </p>
+            
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>One of the tasks for my team last week was updating an existing GET API call in our specification with some new fields. The <a href="https://swagger.io/specification/">Open API Specification</a>, formerly known as Swagger, allows you to provide the details for building in API in a compact, informative way. When you've got the authentication set up correctly, you can use the examples to actually call the API right from the spec!</p>
+<p>My team builds with a framework that has the power to auto-generate API specs in this format. We've chosen to write them ourselves rather than have them auto-generated so we can be more specific in what kinds of errors and error messaging people will encounter for different calls. For example, a 404 Not Found might make sense on a GET call for a specific resource, but not for a search call.</p>
+<p>When you open <a href="http://editor.swagger.io/">http://editor.swagger.io/</a>, you should see a two-pane view of the editor on the left and the rendering on the right. If you've opened this URL before, your browser session will remember and display your most recent changes. If it's the first time you've opened it, the example specification of the Swagger Petstore should appear like this:</p>
+<p><span class="img_container" style="display: inline-block;"><img alt="" src="../../../images/posts/2020/petstore-example-spec.png" style="display:block; margin-left: auto; margin-right: auto;" title="Petstore example spec"><span class="img_caption" style="display: block; text-align: center;">Petstore example spec</span></span></p>
+<p>I hope that in describing the errors I encountered, you can keep an eye on them as you're editing rather than having to go back through the specification at the end to figure out what went wrong. </p>
+<h3>Errors I encountered</h3>
+<h4>Red errors in the box at the top and next to line numbers in editor</h4>
+<p><img alt="" src="../../../images/posts/2020/swagger-red-error-at-top.png"></p>
+<p>Indentation errors and using reserved characters (I found square brackets, dashes, colons at least fall into this category) in unexpected ways will likely give you an error in a red box between the navigation and the title of the spec. </p>
+<p>If you're lucky, the error corresponds to the line it mentions, you find a red X on that line, and you'll be able to figure out what went wrong there. </p>
+<p>If you're less lucky, the line mentioned in the red box will refer to the beginning of the next code block that's unparsable because of the syntax error, or the first place where the reserved character you've used incorrectly is actually used correctly. </p>
+<p>The hardest part about these errors is that you may not notice them. If you're scrolled down the page far enough, you won't see the error box or the red X as you're creating the error. </p>
+<h4>Spinning without loading</h4>
+<p><img alt="" src="../../../images/posts/2020/swagger-spinner-failed-reference.png"></p>
+<p>If you're getting a spinner where a part of the specification should be loading, you've got a issue with the reference to a schema. <a href="https://swagger.io/docs/specification/data-models/">Schemas</a> allow you to chunk out and reuse part of the spec, with a reference to them in another place. </p>
+<p>I kept getting the spinner when I referred to a schema that didn't exist, either because I'd updated the name (but not the reference to it) or because I'd screwed up whether it was singular or plural. Fixing the error isn't always enough to make this particular error disappear. Reloading the page will make it re-evaluate what you've got. </p>
+<h4>😱 could not render this component, see the console.</h4>
+<p>What a fun and exciting mistake you've made in the specification, to cause this very comforting and reassuring error message. </p>
+<p><img alt="" src="../../../images/posts/2020/swagger-scream.png"></p>
+<p>Like the endless spinning error, this one means something very specific: you've designated something as an array, but you haven't explained what kinds of items appear in the array. <a href="https://swagger.io/docs/specification/data-models/data-types/#array">Adding a description or reference in the items section</a> should do the trick. </p>
+<h3>Editing without the Open API editor</h3>
+<p>It's possible the Open API web editor was not the best tool for this job. </p>
+<p><img alt="" src="../../../images/posts/2020/swagger-vs-code.png"></p>
+<p>The <a href="https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi">Visual Studio Code Open API plugin</a> did make the red errors obvious enough that you could see them from anywhere in the document. It also gave me the collapsed version of the longer spec in alphabetical order. This allowed me to navigate around without remembering the line numbers of where I dumped the schema separately from the overall spec. Unfortunately the extension didn't catch when I referred to a spec that didn't exist, but I expect seeing the list of schemas on the side would help discover this mistake. The extension also if I didn't define the objects in an array.  </p>
+<p>There's also an <a href="https://github.com/swagger-api/swagger-ui">Open API spec tool for offline use</a>, but the instructions went beyond the interest I had for this blog post. Try it out yourself, and maybe I will the next time I've got to edit these specs. </p>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/api-specs/" rel="tag">api-specs</a></li>
+            <li><a class="tag p-category" href="../../../categories/apis/" rel="tag">apis</a></li>
+            <li><a class="tag p-category" href="../../../categories/open-api/" rel="tag">open-api</a></li>
+            <li><a class="tag p-category" href="../../../categories/swagger/" rel="tag">swagger</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../2020-04-19_remembering_testbash_brighton-2018/" rel="prev" title="Remembering TestBash Brighton 2018">Previous post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer"><a href="https://twitter.com/ezagroba" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+<a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+<a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+<a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+<a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
+<a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon"></i></a>
+© 2020 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
+<a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0.</a>
+
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>
