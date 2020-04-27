@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://elizabethzagroba.com/</loc>
-  <lastmod>2020-04-24T18:23:00Z</lastmod>
+  <lastmod>2020-04-27T15:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/2014/</loc>
@@ -280,9 +280,5 @@
  <url>
   <loc>https://elizabethzagroba.com/posts/2020/2020-04-27_errors_you_might_encounter_while_editing_an_open_api_specification/</loc>
   <lastmod>2020-04-27T15:13:00Z</lastmod>
- </url>
- <url>
-  <loc>https://elizabethzagroba.com/posts/2020/2020-04-27_kinds_of_errors_you_might_encounter_when_editing_an_open_api_specification/</loc>
-  <lastmod>2020-04-27T13:58:00Z</lastmod>
  </url>
 </urlset>

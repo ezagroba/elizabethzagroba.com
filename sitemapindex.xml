@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/api-specs.xml</loc>
-  <lastmod>2020-04-27T15:13:00Z</lastmod>
+  <lastmod>2020-04-27T15:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/apis.xml</loc>
-  <lastmod>2020-04-27T15:13:00Z</lastmod>
+  <lastmod>2020-04-27T15:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/authentication.xml</loc>
@@ -75,7 +75,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/open-api.xml</loc>
-  <lastmod>2020-04-27T15:13:00Z</lastmod>
+  <lastmod>2020-04-27T15:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/peer-conference.xml</loc>
@@ -87,7 +87,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/swagger.xml</loc>
-  <lastmod>2020-04-27T15:13:00Z</lastmod>
+  <lastmod>2020-04-27T15:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/terminal.xml</loc>
@@ -115,10 +115,10 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/rss.xml</loc>
-  <lastmod>2020-04-27T15:13:00Z</lastmod>
+  <lastmod>2020-04-27T15:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/sitemap.xml</loc>
-  <lastmod>2020-04-27T15:13:00Z</lastmod>
+  <lastmod>2020-04-27T15:29:00Z</lastmod>
  </sitemap>
 </sitemapindex>
