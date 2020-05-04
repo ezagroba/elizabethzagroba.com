@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Elizabeth Zagroba: Software Tester (Posts about development)</title><link>https://elizabethzagroba.com/</link><description></description><atom:link href="https://elizabethzagroba.com/categories/development.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>© 2020 &lt;a href="mailto:me@elizabethzagroba.com"&gt;Elizabeth Zagroba&lt;/a&gt; Mozilla Public License 2.0</copyright><lastBuildDate>Mon, 04 May 2020 18:38:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>You build it, you run it, and you fix it</title><link>https://elizabethzagroba.com/posts/2019/2019-05-20_you-build-it-you-run-it-and-you-fix-it/</link><dc:creator>Elizabeth Zagroba</dc:creator><description>&lt;div&gt;&lt;p name="e646" id="e646" class="graf graf--p graf-after--h3"&gt;During a meeting of our unit at work today, we were asked if we wanted to become a member of the elite squad of people that are on-call for our software. Our philosophy is: we built it, so we know the most about keeping it up and running. In my next meeting, somebody asked if we ever write bug reports for ourselves. Both reminded me that I wanted to use and fix up a piece of software I wrote.&lt;/p&gt;
+
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ python3 httperrors.py
+There are &lt;span class="m"&gt;15&lt;/span&gt; links outside of the &lt;span class="m"&gt;200&lt;/span&gt; or &lt;span class="m"&gt;300&lt;/span&gt; range of http responses on your site.
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p name="d51d" id="d51d" class="graf graf--p graf-after--figure"&gt;After using &lt;a href="https://www.screamingfrog.co.uk/broken-link-checker/" data-href="https://www.screamingfrog.co.uk/broken-link-checker/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"&gt;ScreamingFrog&lt;/a&gt; software to scan the pages for http error response codes, I decided I could build something easier-to-use myself and test it using my own website, &lt;a href="https://elizabethzagroba.com/" data-href="https://elizabethzagroba.com/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"&gt;elizabethzagroba.com&lt;/a&gt;. I wrote a draft that worked initially, but did some things that weren’t great Python. Thanks to my friends &lt;a href="https://twitter.com/DavidaMarion" data-href="https://twitter.com/DavidaMarion" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"&gt;Davida&lt;/a&gt; and Becky who reviewed and improved my code. You can see what they suggested in the &lt;a href="https://github.com/ezagroba/linkchecker/issues?q=is%3Aissue+is%3Aclosed" data-href="https://github.com/ezagroba/linkchecker/issues?q=is%3Aissue+is%3Aclosed" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"&gt;older tickets in my Github repo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p name="c3e3" id="c3e3" class="graf graf--p graf-after--p"&gt;Here’s what I have now:&lt;/p&gt;
+
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Mission: Find http codes that aren't in the 200 or 300 range for all the links on a single page&lt;/span&gt;
+
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;errno&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;http&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;requests&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;ssl&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;string&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;urllib.request&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;bs4&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;BeautifulSoup&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;bs4&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;SoupStrainer&lt;/span&gt;
+
+
+&lt;span class="n"&gt;MY_SITE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"http://www.elizabethzagroba.com"&lt;/span&gt;
+&lt;span class="n"&gt;my_site_response&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;requests&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;MY_SITE&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;only_external_links&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;SoupStrainer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;target&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"_blank"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;page&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;BeautifulSoup&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;my_site_response&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;content&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"html.parser"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;parse_only&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;only_external_links&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;get_url&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;website&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+  &lt;span class="n"&gt;start_link&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;website&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"a href"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;start_link&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kc"&gt;None&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+  &lt;span class="n"&gt;start_quote&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;website&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'"http'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;start_link&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="n"&gt;end_quote&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;website&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'"'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;start_quote&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="n"&gt;stripped_url&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;website&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;start_quote&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;end_quote&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;stripped_url&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;end_quote&lt;/span&gt;
+
+
+&lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+  &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;remove&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'list_of_all_links.txt'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="ne"&gt;OSError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+  &lt;span class="k"&gt;pass&lt;/span&gt;
+
+&lt;span class="n"&gt;count&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'list_of_all_links.txt'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'a'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;file&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+  &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 
+    &lt;span class="n"&gt;url&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_url&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;page&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;:]&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;url&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+      &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;req&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;urllib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;urlopen&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;url&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+      &lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="n"&gt;urllib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;error&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;URLError&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;explanation&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;file&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;explanation&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;" "&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;url&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;count&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+      &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"There are "&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;" links outside of the 200 or 300 range of http responses on your site."&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+      &lt;span class="k"&gt;break&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p name="018e" id="018e" class="graf graf--p graf-after--figure"&gt;It looks for the external links on my website, tries to open them, and writes them to a file if the response code isn’t in the 200 or 300 range. There are things I’d like to improve. I’ve noted some here. But tonight’s scope is: run it and fix it.&lt;/p&gt;
+
+&lt;p name="c4ca" id="c4ca" class="graf graf--p graf-after--p"&gt;I run the file on my machine. Fifteen sites I link to come back with error responses. Here’s the file it generated:&lt;/p&gt;
+
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;HTTP Error 403: Forbidden https://www.mendix.com/
+HTTP Error 403: Forbidden https://medium.com/@ezagroba
+HTTP Error 403: Forbidden https://medium.com/@ezagroba/have-i-tried-enough-weird-stuff-7ed4105ae994
+HTTP Error 403: Forbidden https://medium.com/@ezagroba/doubt-builds-trust-9cee937dc5d1
+HTTP Error 403: Forbidden https://conference.eurostarsoftwaretesting.com/conference/programme/2018/#Wednesday-c67b
+HTTP Error 403: Forbidden https://www.phpconference.nl/
+HTTP Error 404: Not Found http://www.romaniatesting.ro/sessions/succeeding-as-an-introvert/
+HTTP Error 404: Not Found http://www.ministryoftesting.com/training-events/testsbash-philadelphia-2016/
+HTTP Error 403: Forbidden http://www.associationforsoftwaretesting.org/training/courses/
+HTTP Error 403: Forbidden http://codeacademy.com/
+HTTP Error 403: Forbidden http://hackdesign.org
+HTTP Error 403: Forbidden http://testobsessed.com/
+&amp;lt;urlopen error [Errno 8] nodename nor servname provided, or not known&amp;gt; http://developersbestfriend.com
+HTTP Error 999: Request denied http://www.linkedin.com/in/ezagroba/
+HTTP Error 403: Forbidden https://medium.com/@ezagroba
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p name="d0f0" id="d0f0" class="graf graf--p graf-after--figure"&gt;I notice most of the error codes were &lt;code class="markup--code markup--p-code"&gt;403&lt;/code&gt; responses, so I try a few of those pages manually. Those few succeed, so I don’t bother checking the rest. A&lt;code class="markup--code markup--p-code"&gt;403&lt;/code&gt; status is &lt;a href="https://httpstatuses.com/403" data-href="https://httpstatuses.com/403" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"&gt;Forbidden access&lt;/a&gt;, so I think it has something to do with these sites having logins. But I don’t need to logins to see the pages I’m linking to. Then I notice that some of the pages are pointing to http instead of https. I don’t know exactly what’s wrong. It’s getting late, so rather than diving in, I write two bugs: &lt;a href="https://github.com/ezagroba/linkchecker/issues/8" data-href="https://github.com/ezagroba/linkchecker/issues/8" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"&gt;one about investigating 403s&lt;/a&gt;, &lt;a href="https://github.com/ezagroba/linkchecker/issues/9" data-href="https://github.com/ezagroba/linkchecker/issues/9" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"&gt;one about updating http to https&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p name="442c" id="442c" class="graf graf--p graf-after--p"&gt;Next, I look at the other error codes. The &lt;code class="markup--code markup--p-code"&gt;999&lt;/code&gt; one I’ve seen before. It’s some weird LinkedIn thing. I don’t add a bug because it’s not interesting to fix. One site I’m not able to reach the domain of at all, so I message the owner to see if it’s still being maintained. The &lt;code class="markup--code markup--p-code"&gt;404&lt;/code&gt; codes are from sites that still exist where the pages have been taken down; fixable, but frustrating. They prove I spoke at these conferences. When these pages die, so does proof of my hard work. Sigh. I remove those links from my site, reload to confirm the fix made it to production, and run the script again. We’re down from 15 to 13 errors, as expected.&lt;/p&gt;
+
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ python3 httperrors.py
+There are &lt;span class="m"&gt;13&lt;/span&gt; links outside of the &lt;span class="m"&gt;200&lt;/span&gt; or &lt;span class="m"&gt;300&lt;/span&gt; range of http responses on your site.
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p name="a400" id="a400" class="graf graf--p graf-after--figure graf--trailing"&gt;In looking at this code again, I’m reminded of the original motivation and my vision for myself: run it against any site, and know when links break on elizabethzagroba.com. &lt;a href="https://github.com/ezagroba/linkchecker/issues" data-href="https://github.com/ezagroba/linkchecker/issues" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"&gt;I added some issues that I’ll pick up another day&lt;/a&gt;. I’ll be ready to build again. But for now, goodnight.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Originally published on &lt;a href="https://medium.com/@ezagroba/you-build-it-you-run-it-and-you-fix-it-ba24151c3f2b"&gt;Medium&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;</description><category>development</category><category>testing</category><guid>https://elizabethzagroba.com/posts/2019/2019-05-20_you-build-it-you-run-it-and-you-fix-it/</guid><pubDate>Sun, 19 May 2019 22:00:00 GMT</pubDate></item></channel></rss>
