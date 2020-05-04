@@ -1,6 +1,6 @@
 .. title: Reflecting on Let’s Test 2017
 .. date: 15 September 2019
-.. tags: conference
+.. tags: conference, testing
 
 
 <p name="f2d3" id="f2d3" class="graf graf--p graf-after--h3">Good ideas come back around. As I sit here re-reading my notes from Let’s Test 2017, I remember the thrill of coming across so many new ideas there, and realize how much these three things stick out to me even now.</p>

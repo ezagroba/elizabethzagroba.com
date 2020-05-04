@@ -1,6 +1,6 @@
 .. title: Authorization & Authentication: A Tale of Government Security Clearance
 .. date: 24 February 2019
-.. tags: authorization, authentication, security
+.. tags: authorization, authentication, security, testing
 
 <p name="af15" id="af15" class="graf graf--p graf-after--h3">My first job after college was with a contractor to the United States Navy. I had to get a security clearance from the U.S. government to have access to classified data, the lowest category. One piece of the application was getting fingerprinted. From there, federal agencies like the FBI would check my fingerprints against criminal records databases to see if any matches turned up.</p><p name="7241" id="7241" class="graf graf--p graf-after--p">I walked down to the local police station in my college town of Waterville, Maine, which is not exactly a bustling metropolis. I expected a police officer to compare my picture on the driver’s license I’d brought with my actual face to confirm my identity, before taking my fingerprints and shipping them off to the appropriate authority.</p><p name="0ffc" id="0ffc" class="graf graf--p graf-after--p">But they did not.</p>
 

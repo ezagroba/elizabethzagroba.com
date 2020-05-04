@@ -1,6 +1,6 @@
 .. title: Remembering TestBash Brighton 2018
 .. date: 19 April 2020
-.. tags: conference
+.. tags: conference, testing, testbash
 
 TestBash Brighton was one of 10,000 things I had to do in the weeks just before I left my whole life (family, friends, job, apartment, belongings) and moved across the ocean into the unknown. It was the first place I'd gotten to share that big news in person, with people who would become larger parts of my life once I moved. Visiting the city where I'd studied during university and first thought "I could leave the United States" brought things full circle for me. 
 
