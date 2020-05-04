@@ -1,5 +1,6 @@
 .. title: You build it, you run it, and you fix it
 .. date: 20 May 2019
+.. tags: testing, development
 
 <p name="e646" id="e646" class="graf graf--p graf-after--h3">During a meeting of our unit at work today, we were asked if we wanted to become a member of the elite squad of people that are on-call for our software. Our philosophy is: we built it, so we know the most about keeping it up and running. In my next meeting, somebody asked if we ever write bug reports for ourselves. Both reminded me that I wanted to use and fix up a piece of software I wrote.</p>
 

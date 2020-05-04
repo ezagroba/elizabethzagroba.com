@@ -1,6 +1,6 @@
 .. title: Errors You Might Encounter While Editing an Open API Specification
 .. date: 27 April 2020
-.. tags: swagger, open-api, api-specs, apis
+.. tags: swagger, open-api, api-specs, apis, testing
 
 
 One of the tasks for my team last week was updating an existing GET API call in our specification with some new fields. The [Open API Specification](https://swagger.io/specification/), formerly known as Swagger, allows you to provide the details for building in API in a compact, informative way. When you've got the authentication set up correctly, you can use the examples to actually call the API right from the spec!

@@ -1,6 +1,6 @@
 .. title: Nurture the Bright Spots: Dutch Exploratory Workshop on Testing 2018
 .. date: 09 February 2019
-.. tags: conference, peer-conference, DEWT
+.. tags: conference, peer-conference, DEWT, testing
 
 <p name="ec08" id="ec08" class="graf graf--p graf-after--h3">A peer conference is different from a regular conference. If you’re one of the lucky few to get invited, you find yourself in an environment surrounded by the best and the brightest. There will be presentations to spark a discussion, but the facilitated discussion is where the real learning occurs. It certainly puts the “confer” back in conference.</p><p name="3a66" id="3a66" class="graf graf--p graf-after--p">The Dutch Exploratory Workshop on Testing (or DEWT for short, rhymes with newt) in the fall of 2018 was the first one of these I attended outside of work. The theme was “Developing expertise in software testing.” The format of the gathering itself paired nicely with one of the main conclusions I took away from the weekend: choose the best people, foster an environment where they have the energy to learn and inspire others, and set aside time to reflect.</p>
 

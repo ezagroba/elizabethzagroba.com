@@ -1,6 +1,6 @@
 .. title: Update your Mac Terminal to display your current git branch and status
 .. date: 02 February 2019
-.. tags: git, terminal, Mac
+.. tags: git, terminal, Mac, testing
 
 
 **TLDR; You can copy [all the code from my github](https://github.com/ezagroba/bash-profile-branch-and-color/blob/master/export-PS1.gist).**
