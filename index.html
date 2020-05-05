@@ -14,7 +14,7 @@
 <link rel="icon" href="images/avatar.png" sizes="128x128">
 <link rel="next" href="index-2.html" type="text/html">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link href="fontawesome-5.13.0/css/all.css" rel="stylesheet">
-<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2020/2020-04-27_errors_you_might_encounter_while_editing_an_open_api_specification/" type="text/html">
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2020/2020-05-03_testbash-home/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -77,7 +77,78 @@ navbar-dark bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-04-27_errors_you_might_encounter_while_editing_an_open_api_specification/" class="u-url">Errors You Might Encounter While Editing an Open API Specification</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-05-03_testbash-home/" class="u-url">TestBash Home (Spring 2020)</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2020/2020-05-03_testbash-home/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-05-03T00:00:00+02:00" itemprop="datePublished" title="03 May 2020">03 May 2020</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>Typing to the people you usually see in person can have the same energy as tweeting at them from across a big room. </p>
+<p><a href="https://www.ministryoftesting.com/events/testbash-home-2020">TestBash Home</a>, put on by the <a href="https://www.ministryoftesting.com/">Ministry of Testing</a>, was a 24-hour around-the-world tour of talks, panels, and coaching from the best of the best. I <del>missed</del> purposely and prudently skipped a big chunk of the schedule to get a good night's sleep and properly absorb what I could attend.</p>
+<p>I was definitely overloaded with places to chat (Slack, the video streaming app Crowdcast, Twitter, or <a href="https://tbhome.herokuapp.com/">the app built for the occasion</a>) simultaneously with the video stream, the same way I would be at an in-person conference. I got that same "I want to hang out more but I'm so tired" feeling I get in real life. Though as Gwen correctly noted, this is real life now. </p>
+<hr>
+<h3>Cost-Benefit of Automated Tests</h3>
+<p><a href="https://twitter.com/jrosaproenca">João Proença</a> and <a href="https://twitter.com/mgreiler">Michaela Greiler</a> weighed the costs and benefits of continually updating and running automated tests. Coming from two different angles (cognitive biases vs. Ph.D.-level number-crunching), they shared a similar quadrant model to make better decisions about your automation.</p>
+<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/joao-quadrants.jpg" style="display:block; margin-left: auto; margin-right: auto;" title="João's model on my actual TV screen"><span class="img_caption" style="display: block; text-align: center;">João's model on my actual TV screen</span></span>
+<span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/michaela-quadrants.png" style="display:block; margin-left: auto; margin-right: auto;" title="Michaela's model"><span class="img_caption" style="display: block; text-align: center;">Michaela's model</span></span></p>
+<p>João took a stronger "if it's not providing value, do something about it" approach, whether that's editing the test or deleting it altogether. He asked us to consider: If you were asked to write the same test from scratch today, would you do it the same way? When you need fast feedback, what's the opportunity cost of fixing, or even just running, a particular test? João reminded us to ask "what is being tested?" and decide if that still matters before jumping in to fix a failing test. </p>
+<p>Michaela brought a perspective from a much larger software company (Microsoft) than I've worked at before. Her approach left open another option for the fate of tests with questionable value: only run them at certain stages. Only run the tests now where the cost of running them at a later stage is too high. Running tests at the wrong stage can increase false alarms and diagnosis time. Running tests that exercise unchanged code should be avoided. </p>
+<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/michaela-quadrants.png" style="display:block; margin-left: auto; margin-right: auto;" title="Michaela's stages"><span class="img_caption" style="display: block; text-align: center;">Michaela's stages</span></span></p>
+<hr>
+<h3>Learning &amp; Teaching</h3>
+<p><a href="https://twitter.com/witchofthetest">Veerle Verhagen</a>'s 99-second talk got me rethinking some learning experiences I've had. </p>
+<p>It boiled down to this: learning is easy and teaching is hard. Try everything you've had trouble learning again, but with a better teacher this time. Whoa.</p>
+<hr>
+<h3>Evil User Stories</h3>
+<p>Every security talk I've heard tells you to look at the <a href="https://owasp.org/www-project-top-ten/">OWASP Top 10</a> and make a threat model. <a href="https://twitter.com/Anne_Oikarinen">Anne Oikarinen</a> told us what to do next: make an evil user story. If I were a person who made a mistake, shouldn't have access at all, or received more access to the system than anticipated, what would happen? How could we mitigate those risks? </p>
+<p>If your team doesn't know where to start with web security, Anne suggested adding static code analysis tools and exploratory testing to your practice. If you've got outside penetration testers exploring your software, add logging around the issues they trigger so you know better what's happening next time. </p>
+<p>I use the <a href="https://github.com/minimaxir/big-list-of-naughty-strings/blob/master/blns.txt">big list of naughty strings</a> to test for security vulnerabilities I don't always completely understand. Anne also recommended <a href="https://www.hacker101.com/">Hacker 101</a>, a free class about web security. </p>
+<hr>
+<h3>Live Coaching</h3>
+<p><a href="https://twitter.com/workroomprds">James Lyndsay</a>'s coaching session reminded me how valuable gathering information and stepping back to ask "what will I learn by performing this test?" are when you're stuck. I've got to go back to my notes from a workshop I took with him a couple years ago to reinforce some of these lessons for myself.</p>
+<hr>
+<h3>Continuous Delivery Survival Guide</h3>
+<p><a href="https://twitter.com/amyjph">Amy Phillips</a> might be the first person I met where neither of us could remember if we'd met in person before, or if we just knew each other from Twitter. Her talk about surviving continuous delivery from 2017 lives on an essential onboarding guide for testers today.</p>
+<p>Amy wants you to have enough context about your new team and their values before you jump into ideas about what you could change. People probably won't come to you to hand things over for the testing phase, so you have to figure out for yourself where you fit into their process. Amy recommended what I think of as "digital archaeology": reading through all the team artifacts to get a sense of their culture. Even if you don't get write access, looking at the customer support tickets, team backlog, and git commits can show you how the team actually works, rather than how they tell you they should work.</p>
+<p>Amy really made me laugh when she described learning about the different development environments. Ask what the developers use. Ask what sales uses. Ask how many environments there are, how they're different, and what people's expectations are around them.</p>
+<blockquote>
+<p>You can ask questions without knowing what a good answer is.</p>
+</blockquote>
+<p>Even without knowing how to implement something, you can ask questions about it to trigger developers' wheels to start turning. Looking at the structure of the code and what's been changed may give you ideas about what hasn't been covered.</p>
+<hr>
+<h3>Burnout</h3>
+<p><a href="https://twitter.com/maryamumar">Maryam Umar</a> spoke about being burned out from juggling too many priorities, combined with unmedicated anxiety. Maryam called out how difficult it can be to start from scratch and build a support network when you relocate. </p>
+<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/failure-garden.jpg" style="display:block; margin-left: auto; margin-right: auto;" title="Seemed appropriate to watch this one from the garden"><span class="img_caption" style="display: block; text-align: center;">Seemed appropriate to watch this one from the garden</span></span></p>
+<p>I worried a lot about building a support network before I relocated, but not much since. I'm so glad I've been able to recognize the "this is too much" feeling for myself. Saying no to big but overwhelming opportunities has left space in my life for things I know I want, and greener pastures I couldn't have imagined. </p>
+<hr>
+<h3>Leadership</h3>
+<p>This leadership panel made me want to have <a href="https://twitter.com/nicolasedgwick">Nicola Sedgwick</a>, <a href="https://twitter.com/testchick">Alessandra Moreira</a>, and <a href="https://twitter.com/SheyMouse">Shey Compton</a> in my corner as I transition to a manager position. Obviously (to me at this point in my career and after various other trainings I've participated in) leaders do not have to be people managers, and vice versa. People need to give you permission to lead them. Leaders have a vision they can communicate up and down the chain of command. </p>
+<p>The best way to be a leader is to lead by example. Sponsor other people at your organization who you see can be better leaders. Having the technical chops will allow people to believe in your value. It's easy for testers to underestimate our ability to influence behavior, but bug advocacy is a lot about that. </p>
+<p>Nicola's framework for sharing feedback is something I'm defintely going to try in a 1-on-1 meeting this week: share an observation, recount the accompanying behavior, and describe the impact. </p>
+<hr>
+<h3>Morale</h3>
+<p><a href="https://twitter.com/jennydoesthings">Jenny Bramble</a> spoke about bad and good metrics, specifically that morale was the only good one. Morale encompasses psychological safety, emotional health, contentment, pride, deilght, and core values. It's hard to measure, but that also means it's hard to game. </p>
+<p>If your team isn't one where people can have negative emotions, disagree, or talk about mistakes or risks, you're doing it wrong. Genuinely asking people how it's going and taking action on the results is the best thing you can do to improve morale. </p>
+<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/survey-questions.png" style="display:block; margin-left: auto; margin-right: auto;" title="Possible survey questions to help measure morale"><span class="img_caption" style="display: block; text-align: center;">Possible survey questions to help measure morale</span></span></p>
+<p>I look forward to Jenny's proposed next talk about the oral history of bugs on teams. </p>
+<hr>
+<h3>Titles</h3>
+<p>I'd seen this talk from <a href="https://twitter.com/vds4">Martin Hynie</a> on the Ministry of Testing Dojo, and worked with Martin in the past. So I was expecting to be reminded that testing isn't a straightforward observe -&gt; evaluate -&gt; report operation. I'd seen him take on challenges  outside the perceived role of tester, and I'd done so myself. I knew that it's easier to create a good artifact if you start by creating an imperfect one and ask people to correct it, rather than starting from scratch. </p>
+<p>My biggest takeaway was in the Q&amp;A: Someone's association and past experiences of people with my job title are more meaningful than the job title itself in setting up my working relationship with them.</p>
+<hr>
+<h3>Optimism</h3>
+<p>My favorite 99-second talk from the second set was <a href="https://twitter.com/jen_kitson">Jen Kitson</a>'s about optimism. While we discover and often have to report a lot of bad news as testers, optimism is essential to testing. We notice things, report bugs, and pushing for fixes because we can imagine a world that can be better. </p>
+<hr>
+<p>I'm so glad I got to attend TestBash Home. I would listen to <a href="https://twitter.com/TesterFromLeic">Vernon Richards</a> talk about sports balls I don't understand. <a href="https://twitter.com/gwendiagram">Gwen Diagram</a> gives me life and energy in a way that I cannot fully explain. There were people I got to see or chat with that I haven't encountered for months, or years, and it felt good. It felt like home. </p>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-04-27_errors_you_might_encounter_while_editing_an_open_api_specification/" class="u-url">Errors You Might Encounter While Editing an Open API Specification</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Elizabeth Zagroba
@@ -561,42 +632,6 @@ There are <span class="m">13</span> links outside of the <span class="m">200</sp
 <p>
 </p>
 <p><em>Originally published on <a href="https://medium.com/@ezagroba/this-too-shall-pass-disposable-test-automation-6d0dadeff53">Medium</a>.</em></p>
-</div>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2019/2019-02-24_authorization-authentication-a-tale-of-government-security-clearance/" class="u-url">Authorization &amp; Authentication: A Tale of Government Security Clearance</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Elizabeth Zagroba
-            </span></p>
-            <p class="dateline">
-            <a href="posts/2019/2019-02-24_authorization-authentication-a-tale-of-government-security-clearance/" rel="bookmark">
-            <time class="published dt-published" datetime="2019-02-24T00:00:00+01:00" itemprop="datePublished" title="24 February 2019">24 February 2019</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p name="af15" id="af15" class="graf graf--p graf-after--h3">My first job after college was with a contractor to the United States Navy. I had to get a security clearance from the U.S. government to have access to classified data, the lowest category. One piece of the application was getting fingerprinted. From there, federal agencies like the FBI would check my fingerprints against criminal records databases to see if any matches turned up.</p>
-
-<p name="7241" id="7241" class="graf graf--p graf-after--p">I walked down to the local police station in my college town of Waterville, Maine, which is not exactly a bustling metropolis. I expected a police officer to compare my picture on the driver’s license I’d brought with my actual face to confirm my identity, before taking my fingerprints and shipping them off to the appropriate authority.</p>
-
-<p name="0ffc" id="0ffc" class="graf graf--p graf-after--p">But they did not.</p>
-
-<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2019/fingerprints.jpeg" style="display:block; margin-left: auto; margin-right: auto;" title="flickr/cogdog"><span class="img_caption" style="display: block; text-align: center;">flickr/cogdog</span></span></p>
-<p name="f72c" id="f72c" class="graf graf--p graf-after--figure">First, when I arrived at the station, I was told to wait. “We’re questioning a suspect in the booking room!” This was clearly the most action these officers had seen in a while. They were psyched. But I was puzzled about why this was an impediment, so naturally I asked more questions: “Can you tell me more about the ink pad? Is it secured to the table in some fashion? Would it be possible to continue questioning the subject, but take my fingerprints out here in the hallway?”</p>
-
-<p name="8262" id="8262" class="graf graf--p graf-after--p">After explaining this to two different officers and lots more waiting, they discovered that the ink pad was indeed able to be transported by human hands to interact with mine. They filled out the form with my name and some other details I provided verbally and took my fingerprints. I left.</p>
-
-<p name="adeb" id="adeb" class="graf graf--p graf-after--p">It was only after I got back to campus that I realized the crucial step the police officers missed: they forgot to look at my driver’s license. They were so thrown off from their usual routine, both by having a suspect in custody and by moving the fingerprint pad to a different location, that they forgot to verify my identity.</p>
-
-<p name="6e0d" id="6e0d" class="graf graf--p graf-after--p">I have no criminal record, I was only at the job for a short time, and my security clearance expired after five years without getting renewed, so the mistake was of no consequence.</p>
-
-<p name="6b10" id="6b10" class="graf graf--p graf-after--p">But consider the alternative: I have a criminal record. I send my sister or a friend who knew enough about me to the police station. They impersonate me, and the fingerprint check of their prints turns up no suspicious activity. Now I have security clearance to access classified data about the American military when I shouldn’t.</p>
-
-<p name="e1e9" id="e1e9" class="graf graf--p graf-after--p graf--trailing">The moral of this story: authentication and authorization go hand-in-hand. Authorization could have been circumvented by an unauthorized impersonator without the additional check of authentication. Putting someone in a particular security group is not enough: you’ve got to check that it’s them who’s supposed to be there.</p>
-
-<p>
-</p>
-<p><em>Originally published on <a href="https://medium.com/@ezagroba/authorization-authentication-a-tale-of-government-security-clearance-5d8a1c00527e">Medium</a>.</em></p>
 </div>
     </div>
     </article>
