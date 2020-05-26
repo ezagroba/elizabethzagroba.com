@@ -14,7 +14,7 @@
 <link rel="icon" href="images/avatar.png" sizes="128x128">
 <link rel="next" href="index-2.html" type="text/html">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link href="fontawesome-5.13.0/css/all.css" rel="stylesheet">
-<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2020/2020-05-03_testbash-home/" type="text/html">
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2020/2020-05-24_if_a_test_falls_in_a_forest/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -77,7 +77,44 @@ navbar-dark bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-05-03_testbash-home/" class="u-url">TestBash Home (Spring 2020)</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-05-24_if_a_test_falls_in_a_forest/" class="u-url">If a test falls in a forest...</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2020/2020-05-24_if_a_test_falls_in_a_forest/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-05-24T00:00:00+02:00" itemprop="datePublished" title="24 May 2020">24 May 2020</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>The saying goes "If a tree falls in a forest and no one is around to hear it, does it make a sound?" I have similar question that shapes the way I think about software testing: If a test is performed but no one takes action on the results, should I have performed it? I think not. </p>
+<p>If the answer to "Who cares?" is "No one," don't perform that test. If you're not going to take action on the results of your testing in the coming hours, days, or weeks, don't perform that test. The world around you will change in the meantime, and the old results will not be as valuable.</p>
+<p>One of the <a href="https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/">12 Agile Principles</a> is simplicity, or maximizing the work not done. Testing on an agile team provides information to help decide what work should picked up in the coming iteration(s). But without meaningful collaboration or feedback, testing is a pile of work for no reason. Work is not meant to produce waste. Save your time and your sanity by thoughtfully analyzing what should not be done, and coming to an agreement with your team about it.</p>
+<p>My team gets scared about the quality of our product and skeptical about how I'm using my time when I describe what I'm not testing, or which automated tests I'm not going to run. "But isn't testing your job?" says the look on their faces. "But then what are you going to do?" is what they manage to say. Rather than capitulating for appearances, to just "look busy," I take this as a challenge to make my exploratory testing and other work I'm doing for the team more visible. </p>
+<h4>Risk-based testing</h4>
+<p>In her <a href="https://www.ministryoftesting.com/dojo/series/testbash-home/lessons/reverse-engineer-your-way-to-adopting-a-risk-based-testing-approach-nishi-grover-garg">TestBash Home talk</a>, <a href="https://twitter.com/testwithnishi">Nishi Grover Garg</a> asked us to think about estimating impact and likelihood (with possible home intruders as an example). I'd have trouble pinning down our no-estimates team on concrete numbers for undesireable software behavior. </p>
+<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/nishi-impact-likelihood.png" style="display:block; margin-left: auto; margin-right: auto;" title="Slide from Nishi's TestBash Home talk"><span class="img_caption" style="display: block; text-align: center;">Slide from Nishi's TestBash Home talk</span></span></p>
+<p>But it does reflect the conversations <a href="http://quality-intelligence.com/documents/DesignBehindthePlan.pdf">Fiona Charles's test strategy workshop</a> encouraged me to spark on my team. We do talk about "Yes, this would be a problem, but customers can use this work-around." Or "Yes, we could dive in and investigate whether than could ever happen, but is that more important than picking up the next story?" Being able to identify risks and have thoughtful conversations about their threat to stakeholders allows us to make informed decisions about how we should be spending our time. In testing, we don't always want the most information, we want to discover the best information about the product as efficiently as we can. </p>
+<h4>Examples from my current project</h4>
+<h5>Cross-browser testing</h5>
+<p>We were preparing our web application for a big marketing presentation. The presenter had Firefox as the default browser on their PC. We had a script of the actions they'd perform on stage, and which pages the audience would see. I happened to find bugs on pages we weren't showing, or in the way the scroll bars behaved in Chrome rather than Firefox on my Mac. </p>
+<p>I did not add these issues as bugs in our tracking system, or dig into them further. I knew that they did not pose a risk for the presentation, and a new design would be coming along before customers would potentially use those pages in Chrome on a Mac.s </p>
+<h5>The pipeline</h5>
+<p>We have a pipeline. It runs the tests we've automated at the API and the browser levels against the build in our test environment. I hoped it would inspire the team to think about what the next step could be: getting the tests to run against before merging into our main line, setting up an environment where we're not dependent on the (shared) test environment, looking at the results to see where our application or tests need to change. </p>
+<p>But we don't look at the results. We don't have alerts, we don't open the page during standup, we don't use them as a reference when we're debugging, we don't have a habit of looking at the results. If we do happen to look at the results, we don't take action on it. Building the stability of our feedback loop is not seen as high-priority a task as building new features. </p>
+<p>We don't need to run this pipeline. It's using up AWS resources. Looking at the long line of red X's on the results page only provides alert fatigue. We would be better served by not running these tests. </p>
+<h5>Minimum viable deadline</h5>
+<p>We promised to deliver a feature to a dependent team by a sadline. (A sadline is a deadline without consequences.) In the week before the sadline, three stories were left. On the first story, I found a mistake the developer declared "superficial" when he was lamenting our lack of <a href="https://katrinatester.blogspot.com/2016/12/the-testing-pendulum-finding-balance-in.html">deep testing</a>. He decided to review the automated tests I'd written for the second story. He found a couple of use-cases that would require a very particular set of circumstances to occur. I wanted to encourage the behavior of reviewing the tests and thinking about what they're doing more deeply, so I spent the last hour and a half before a holiday weekend automating these two cases. </p>
+<p>I'd drafted some basic automated tests for the third story, but the last feature went relatively unexplored. I should have used my scant time to test the third story more thoroughly instead. The complicated tests for the second story could have waited until next week. While we would be curious about the results, it would not have stopped our delivery of the feature. I should not have written them. </p>
+<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/far-side-tree-falling.jpg" style="display:block; margin-left: auto; margin-right: auto;" title="Far Side cartoon"><span class="img_caption" style="display: block; text-align: center;">Far Side cartoon</span></span></p>
+<hr>
+<p>You may be scared to say no to testing things that don't matter, where the performance will not reveal any risks or cause any follow-up actions to take place. It may be tempting to spend a bunch of time testing all the things you can think of, and only reporting on the tests that yield meaningful results. </p>
+<p>But life is not about keeping busy. Make your time at work meaningful by executing meaningful work and declining to do things that aren't important right now.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-05-03_testbash-home/" class="u-url">TestBash Home (Spring 2020)</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Elizabeth Zagroba
@@ -579,59 +616,6 @@ There are <span class="m">13</span> links outside of the <span class="m">200</sp
 <p>
 </p>
 <p><em>Originally published on <a href="https://medium.com/@ezagroba/exploratory-testing-with-the-chrome-network-tab-f093e1b3d725">Medium</a>.</em></p>
-</div>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2019/2019-03-29_this-too-shall-pass-disposable-test-automation/" class="u-url">This Too Shall Pass: Disposable Test Automation</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Elizabeth Zagroba
-            </span></p>
-            <p class="dateline">
-            <a href="posts/2019/2019-03-29_this-too-shall-pass-disposable-test-automation/" rel="bookmark">
-            <time class="published dt-published" datetime="2019-03-29T00:00:00+01:00" itemprop="datePublished" title="29 March 2019">29 March 2019</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p name="00f1" id="00f1" class="graf graf--p graf-after--h3">A few different times, we wrote some Python code to help us test our products. And then we threw the code out.</p>
-
-<p name="ad39" id="ad39" class="graf graf--p graf-after--p">We had the infrastructure in place to add tests to our continuous integration pipeline in Jenkins. It would have been as simple as merging the branch of our code into master. But it had served its purpose already.</p>
-
-<h5 name="7e5f" id="7e5f" class="graf graf--h4 graf-after--p">Example 1: web feature integrating with desktop software</h5>
-
-<p name="1da2" id="1da2" class="graf graf--p graf-after--h4">Our team owner a web-based product. It had lots of features, but the two we were concerned with for this were: it created an account and a project. These would be used in a desktop product built by different teams at our company. For this story, a flag would be set when you created a project in our product to allow for something new in the desktop software.</p>
-
-<p name="9663" id="9663" class="graf graf--p graf-after--p">Our testing stack was built and maintained by our team alone. It was set up to look at the web UI and APIs, but not the desktop software. We had APIs to create projects and change this new project flag. We didn’t have an automated way to see exactly what would happen in the desktop software under these different circumstances.</p>
-
-<p name="c2c2" id="c2c2" class="graf graf--p graf-after--p">We wrote tests to query the APIs to see that the settings we set were coming back as expected. Those went into the pipeline. We also wrote some Python code to create projects in each of the five different states. Then, we manually went into the desktop software, used each of the projects we created, and looked at what happened in the desktop software. The information we discovered was enough to determine that the work for our team and the work for the desktop software teams was complete.</p>
-
-<p name="8f6c" id="8f6c" class="graf graf--p graf-after--p">We did not add these tests to the pipeline. The branch got removed from the project without getting merged into master once the story was completed.</p>
-
-<h5 name="5b5e" id="5b5e" class="graf graf--h4 graf-after--p">Example 2: crude performance test</h5>
-
-<p name="a60d" id="a60d" class="graf graf--p graf-after--h4">We wanted to simulate the load placed on our product by a different internal app. Unfortunately the owner of the internal app was unavailable in the short period of time we had to complete this task. To do this, we took existing feature tests we had running on our staging environments, parallelize them, and run them on a clone of our production environment.</p>
-
-<p name="4cc3" id="4cc3" class="graf graf--p graf-after--p">Our production clone was available during the few days we were doing this test. It would not be available thereafter, considering the time and money we would have to invest in maintaining it. Our other staging environments had a different enough capacity that running a performance test there would not be meaningful. Our production environment would give us the information we needed once we released this build because the internal app ran there. We maintained a branch for a few days while we were writing and using the performance test, but without an environment to run it on, we threw it out.</p>
-
-<h5 name="eea5" id="eea5" class="graf graf--h4 graf-after--p">Example 3: audit trail Excel export</h5>
-
-<p name="fc7f" id="fc7f" class="graf graf--p graf-after--h4">We added an audit trail to our profile information for GDPR compliance. Our system could display the information in the UI and export it to Excel. We added tests to our pipeline for the UI bit. The exporting to Excel bit we didn’t. We wrote a test that ended by providing us a username and password. Manually, we’d login, go to the page with the Excel export, and confirm that the data in the file matched the changes the test had made.</p>
-
-<p name="c098" id="c098" class="graf graf--p graf-after--p">The Excel exporter wasn’t a piece of code our team maintained. If this test failed, it would have likely been in that functionality, since we also had a UI test for the data integrity. We weren’t changing anything about the Excel export. The audit trail report was an important enough feature that we knew we’d smoke test it manually with every release, so we didn’t add this code to the repository.</p>
-
-<p><img alt="" src="images/posts/2019/windows.png"></p>
-<h5 name="a30f" id="a30f" class="graf graf--h4 graf-after--figure">What we asked ourselves when throwing out our automation</h5>
-
-<ul class="postList">
-<li name="a1f8" id="a1f8" class="graf graf--li graf-after--h4">What would we be asserting at the end of the test?</li>
-<li name="5de9" id="5de9" class="graf graf--li graf-after--li">If those asserts succeeded, would they give us false confidence that the feature was covered when we couldn’t account for the consequences?</li>
-<li name="f15d" id="f15d" class="graf graf--li graf-after--li">If these asserts failed, would that give us information about what to fix in our product?</li>
-<li name="90cc" id="90cc" class="graf graf--li graf-after--li">Would checking the code into the automation repository expose sensitive data about production?</li>
-<li name="2a56" id="2a56" class="graf graf--li graf-after--li graf--trailing">Would running these tests against our staging environments give us the information we needed?</li>
-</ul>
-<p>
-</p>
-<p><em>Originally published on <a href="https://medium.com/@ezagroba/this-too-shall-pass-disposable-test-automation-6d0dadeff53">Medium</a>.</em></p>
 </div>
     </div>
     </article>

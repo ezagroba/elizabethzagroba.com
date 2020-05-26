@@ -35,11 +35,11 @@
  </url>
  <url>
   <loc>https://elizabethzagroba.com/archive.html</loc>
-  <lastmod>2020-05-05T19:05:00Z</lastmod>
+  <lastmod>2020-05-26T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/</loc>
-  <lastmod>2020-05-05T19:05:00Z</lastmod>
+  <lastmod>2020-05-26T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/api-specs/</loc>
@@ -122,6 +122,10 @@
   <lastmod>2020-04-13T10:54:00Z</lastmod>
  </url>
  <url>
+  <loc>https://elizabethzagroba.com/categories/risk-based-testing/</loc>
+  <lastmod>2020-05-26T17:59:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://elizabethzagroba.com/categories/security/</loc>
   <lastmod>2020-04-13T10:56:00Z</lastmod>
  </url>
@@ -171,7 +175,7 @@
  </url>
  <url>
   <loc>https://elizabethzagroba.com/index-2.html</loc>
-  <lastmod>2020-05-05T19:05:00Z</lastmod>
+  <lastmod>2020-05-26T17:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/listings/</loc>
@@ -300,5 +304,9 @@
  <url>
   <loc>https://elizabethzagroba.com/posts/2020/2020-05-03_testbash-home/</loc>
   <lastmod>2020-05-05T19:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/posts/2020/2020-05-24_if_a_test_falls_in_a_forest/</loc>
+  <lastmod>2020-05-26T17:59:00Z</lastmod>
  </url>
 </urlset>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>If a test falls in a forest... | Elizabeth Zagroba: Software Tester</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="canonical" href="https://elizabethzagroba.com/posts/2020/2020-05-24_if_a_test_falls_in_a_forest/">
+<link rel="icon" href="../../../images/avatar.png" sizes="128x128">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="../../assets/fontawesome-5.13.0/css/all.css" rel="stylesheet">
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><meta name="author" content="Elizabeth Zagroba">
+<link rel="prev" href="../2020-05-03_testbash-home/" title="TestBash Home (Spring 2020)" type="text/html">
+<meta property="og:site_name" content="Elizabeth Zagroba: Software Tester">
+<meta property="og:title" content="If a test falls in a forest...">
+<meta property="og:url" content="https://elizabethzagroba.com/posts/2020/2020-05-24_if_a_test_falls_in_a_forest/">
+<meta property="og:description" content='The saying goes "If a tree falls in a forest and no one is around to hear it, does it make a sound?" I have similar question that shapes the way I think about software testing: If a test is performed '>
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-05-24T00:00:00+02:00">
+<meta property="article:tag" content="exploratory-testing">
+<meta property="article:tag" content="risk-based-testing">
+<meta property="article:tag" content="testbash">
+<meta property="article:tag" content="testing">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@website">
+<meta name="twitter:creator" content="@username">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="https://elizabethzagroba.com/">
+
+            <span id="blog-title">Elizabeth Zagroba: Software Tester</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../../categories/index.html" class="dropdown-item">Tags</a>
+            </div>
+                </li>
+<li class="nav-item">
+<a href="../../../pages/work" class="nav-link">Work</a>
+                </li>
+<li class="nav-item">
+<a href="../../../pages/speaking" class="nav-link">Speaking</a>
+                </li>
+<li class="nav-item">
+<a href="../../../pages/resources" class="nav-link">Resources</a>
+
+                
+            </li>
+</ul>
+<!-- DuckDuckGo custom search --><form method="get" id="search" action="https://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="https://elizabethzagroba.com/"><input type="hidden" name="k8" value="#444444"><input type="hidden" name="k9" value="#D51920"><input type="hidden" name="kt" value="h"><input type="text" name="q" maxlength="255" placeholder="Search" class="span2" style="margin-top: 4px;"><input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">If a test falls in a forest...</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2020-05-24T00:00:00+02:00" itemprop="datePublished" title="24 May 2020">24 May 2020</time></a>
+            </p>
+            
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>The saying goes "If a tree falls in a forest and no one is around to hear it, does it make a sound?" I have similar question that shapes the way I think about software testing: If a test is performed but no one takes action on the results, should I have performed it? I think not. </p>
+<p>If the answer to "Who cares?" is "No one," don't perform that test. If you're not going to take action on the results of your testing in the coming hours, days, or weeks, don't perform that test. The world around you will change in the meantime, and the old results will not be as valuable.</p>
+<p>One of the <a href="https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/">12 Agile Principles</a> is simplicity, or maximizing the work not done. Testing on an agile team provides information to help decide what work should picked up in the coming iteration(s). But without meaningful collaboration or feedback, testing is a pile of work for no reason. Work is not meant to produce waste. Save your time and your sanity by thoughtfully analyzing what should not be done, and coming to an agreement with your team about it.</p>
+<p>My team gets scared about the quality of our product and skeptical about how I'm using my time when I describe what I'm not testing, or which automated tests I'm not going to run. "But isn't testing your job?" says the look on their faces. "But then what are you going to do?" is what they manage to say. Rather than capitulating for appearances, to just "look busy," I take this as a challenge to make my exploratory testing and other work I'm doing for the team more visible. </p>
+<h4>Risk-based testing</h4>
+<p>In her <a href="https://www.ministryoftesting.com/dojo/series/testbash-home/lessons/reverse-engineer-your-way-to-adopting-a-risk-based-testing-approach-nishi-grover-garg">TestBash Home talk</a>, <a href="https://twitter.com/testwithnishi">Nishi Grover Garg</a> asked us to think about estimating impact and likelihood (with possible home intruders as an example). I'd have trouble pinning down our no-estimates team on concrete numbers for undesireable software behavior. </p>
+<p><span class="img_container" style="display: inline-block;"><img alt="" src="../../../images/posts/2020/nishi-impact-likelihood.png" style="display:block; margin-left: auto; margin-right: auto;" title="Slide from Nishi's TestBash Home talk"><span class="img_caption" style="display: block; text-align: center;">Slide from Nishi's TestBash Home talk</span></span></p>
+<p>But it does reflect the conversations <a href="http://quality-intelligence.com/documents/DesignBehindthePlan.pdf">Fiona Charles's test strategy workshop</a> encouraged me to spark on my team. We do talk about "Yes, this would be a problem, but customers can use this work-around." Or "Yes, we could dive in and investigate whether than could ever happen, but is that more important than picking up the next story?" Being able to identify risks and have thoughtful conversations about their threat to stakeholders allows us to make informed decisions about how we should be spending our time. In testing, we don't always want the most information, we want to discover the best information about the product as efficiently as we can. </p>
+<h4>Examples from my current project</h4>
+<h5>Cross-browser testing</h5>
+<p>We were preparing our web application for a big marketing presentation. The presenter had Firefox as the default browser on their PC. We had a script of the actions they'd perform on stage, and which pages the audience would see. I happened to find bugs on pages we weren't showing, or in the way the scroll bars behaved in Chrome rather than Firefox on my Mac. </p>
+<p>I did not add these issues as bugs in our tracking system, or dig into them further. I knew that they did not pose a risk for the presentation, and a new design would be coming along before customers would potentially use those pages in Chrome on a Mac.s </p>
+<h5>The pipeline</h5>
+<p>We have a pipeline. It runs the tests we've automated at the API and the browser levels against the build in our test environment. I hoped it would inspire the team to think about what the next step could be: getting the tests to run against before merging into our main line, setting up an environment where we're not dependent on the (shared) test environment, looking at the results to see where our application or tests need to change. </p>
+<p>But we don't look at the results. We don't have alerts, we don't open the page during standup, we don't use them as a reference when we're debugging, we don't have a habit of looking at the results. If we do happen to look at the results, we don't take action on it. Building the stability of our feedback loop is not seen as high-priority a task as building new features. </p>
+<p>We don't need to run this pipeline. It's using up AWS resources. Looking at the long line of red X's on the results page only provides alert fatigue. We would be better served by not running these tests. </p>
+<h5>Minimum viable deadline</h5>
+<p>We promised to deliver a feature to a dependent team by a sadline. (A sadline is a deadline without consequences.) In the week before the sadline, three stories were left. On the first story, I found a mistake the developer declared "superficial" when he was lamenting our lack of <a href="https://katrinatester.blogspot.com/2016/12/the-testing-pendulum-finding-balance-in.html">deep testing</a>. He decided to review the automated tests I'd written for the second story. He found a couple of use-cases that would require a very particular set of circumstances to occur. I wanted to encourage the behavior of reviewing the tests and thinking about what they're doing more deeply, so I spent the last hour and a half before a holiday weekend automating these two cases. </p>
+<p>I'd drafted some basic automated tests for the third story, but the last feature went relatively unexplored. I should have used my scant time to test the third story more thoroughly instead. The complicated tests for the second story could have waited until next week. While we would be curious about the results, it would not have stopped our delivery of the feature. I should not have written them. </p>
+<p><span class="img_container" style="display: inline-block;"><img alt="" src="../../../images/posts/2020/far-side-tree-falling.jpg" style="display:block; margin-left: auto; margin-right: auto;" title="Far Side cartoon"><span class="img_caption" style="display: block; text-align: center;">Far Side cartoon</span></span></p>
+<hr>
+<p>You may be scared to say no to testing things that don't matter, where the performance will not reveal any risks or cause any follow-up actions to take place. It may be tempting to spend a bunch of time testing all the things you can think of, and only reporting on the tests that yield meaningful results. </p>
+<p>But life is not about keeping busy. Make your time at work meaningful by executing meaningful work and declining to do things that aren't important right now.</p>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/exploratory-testing/" rel="tag">exploratory-testing</a></li>
+            <li><a class="tag p-category" href="../../../categories/risk-based-testing/" rel="tag">risk-based-testing</a></li>
+            <li><a class="tag p-category" href="../../../categories/testbash/" rel="tag">testbash</a></li>
+            <li><a class="tag p-category" href="../../../categories/testing/" rel="tag">testing</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../2020-05-03_testbash-home/" rel="prev" title="TestBash Home (Spring 2020)">Previous post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer"><a href="https://twitter.com/ezagroba" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+<a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+<a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+<a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+<a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
+<a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon"></i></a>
+© 2020 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
+<a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0.</a>
+
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>

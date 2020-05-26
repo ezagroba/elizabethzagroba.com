@@ -78,7 +78,60 @@ navbar-dark bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2019/2019-02-24_authorization-authentication-a-tale-of-government-security-clearance/" class="u-url">Authorization &amp; Authentication: A Tale of Government Security Clearance</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2019/2019-03-29_this-too-shall-pass-disposable-test-automation/" class="u-url">This Too Shall Pass: Disposable Test Automation</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2019/2019-03-29_this-too-shall-pass-disposable-test-automation/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-03-29T00:00:00+01:00" itemprop="datePublished" title="29 March 2019">29 March 2019</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p name="00f1" id="00f1" class="graf graf--p graf-after--h3">A few different times, we wrote some Python code to help us test our products. And then we threw the code out.</p>
+
+<p name="ad39" id="ad39" class="graf graf--p graf-after--p">We had the infrastructure in place to add tests to our continuous integration pipeline in Jenkins. It would have been as simple as merging the branch of our code into master. But it had served its purpose already.</p>
+
+<h5 name="7e5f" id="7e5f" class="graf graf--h4 graf-after--p">Example 1: web feature integrating with desktop software</h5>
+
+<p name="1da2" id="1da2" class="graf graf--p graf-after--h4">Our team owner a web-based product. It had lots of features, but the two we were concerned with for this were: it created an account and a project. These would be used in a desktop product built by different teams at our company. For this story, a flag would be set when you created a project in our product to allow for something new in the desktop software.</p>
+
+<p name="9663" id="9663" class="graf graf--p graf-after--p">Our testing stack was built and maintained by our team alone. It was set up to look at the web UI and APIs, but not the desktop software. We had APIs to create projects and change this new project flag. We didn’t have an automated way to see exactly what would happen in the desktop software under these different circumstances.</p>
+
+<p name="c2c2" id="c2c2" class="graf graf--p graf-after--p">We wrote tests to query the APIs to see that the settings we set were coming back as expected. Those went into the pipeline. We also wrote some Python code to create projects in each of the five different states. Then, we manually went into the desktop software, used each of the projects we created, and looked at what happened in the desktop software. The information we discovered was enough to determine that the work for our team and the work for the desktop software teams was complete.</p>
+
+<p name="8f6c" id="8f6c" class="graf graf--p graf-after--p">We did not add these tests to the pipeline. The branch got removed from the project without getting merged into master once the story was completed.</p>
+
+<h5 name="5b5e" id="5b5e" class="graf graf--h4 graf-after--p">Example 2: crude performance test</h5>
+
+<p name="a60d" id="a60d" class="graf graf--p graf-after--h4">We wanted to simulate the load placed on our product by a different internal app. Unfortunately the owner of the internal app was unavailable in the short period of time we had to complete this task. To do this, we took existing feature tests we had running on our staging environments, parallelize them, and run them on a clone of our production environment.</p>
+
+<p name="4cc3" id="4cc3" class="graf graf--p graf-after--p">Our production clone was available during the few days we were doing this test. It would not be available thereafter, considering the time and money we would have to invest in maintaining it. Our other staging environments had a different enough capacity that running a performance test there would not be meaningful. Our production environment would give us the information we needed once we released this build because the internal app ran there. We maintained a branch for a few days while we were writing and using the performance test, but without an environment to run it on, we threw it out.</p>
+
+<h5 name="eea5" id="eea5" class="graf graf--h4 graf-after--p">Example 3: audit trail Excel export</h5>
+
+<p name="fc7f" id="fc7f" class="graf graf--p graf-after--h4">We added an audit trail to our profile information for GDPR compliance. Our system could display the information in the UI and export it to Excel. We added tests to our pipeline for the UI bit. The exporting to Excel bit we didn’t. We wrote a test that ended by providing us a username and password. Manually, we’d login, go to the page with the Excel export, and confirm that the data in the file matched the changes the test had made.</p>
+
+<p name="c098" id="c098" class="graf graf--p graf-after--p">The Excel exporter wasn’t a piece of code our team maintained. If this test failed, it would have likely been in that functionality, since we also had a UI test for the data integrity. We weren’t changing anything about the Excel export. The audit trail report was an important enough feature that we knew we’d smoke test it manually with every release, so we didn’t add this code to the repository.</p>
+
+<p><img alt="" src="images/posts/2019/windows.png"></p>
+<h5 name="a30f" id="a30f" class="graf graf--h4 graf-after--figure">What we asked ourselves when throwing out our automation</h5>
+
+<ul class="postList">
+<li name="a1f8" id="a1f8" class="graf graf--li graf-after--h4">What would we be asserting at the end of the test?</li>
+<li name="5de9" id="5de9" class="graf graf--li graf-after--li">If those asserts succeeded, would they give us false confidence that the feature was covered when we couldn’t account for the consequences?</li>
+<li name="f15d" id="f15d" class="graf graf--li graf-after--li">If these asserts failed, would that give us information about what to fix in our product?</li>
+<li name="90cc" id="90cc" class="graf graf--li graf-after--li">Would checking the code into the automation repository expose sensitive data about production?</li>
+<li name="2a56" id="2a56" class="graf graf--li graf-after--li graf--trailing">Would running these tests against our staging environments give us the information we needed?</li>
+</ul>
+<p>
+</p>
+<p><em>Originally published on <a href="https://medium.com/@ezagroba/this-too-shall-pass-disposable-test-automation-6d0dadeff53">Medium</a>.</em></p>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2019/2019-02-24_authorization-authentication-a-tale-of-government-security-clearance/" class="u-url">Authorization &amp; Authentication: A Tale of Government Security Clearance</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Elizabeth Zagroba
