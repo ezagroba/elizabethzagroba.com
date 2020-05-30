@@ -1,7 +1,8 @@
 .. title: Trying Out Open API Editors
 .. date: 30 May 2020
 .. tags: testing, apis, api-specs, open-api, swagger
-.. previewimage: /images/posts/2020/isnt-she-lovely.png
+.. previewimage: '/images/posts/2020/isnt-she-lovely.png'
+.. image: '/images/posts/2020/isnt-she-lovely.png'
 
 I was editing an Open API with multiple layers of inheritance recently. I [kept  uncovering errors](https://elizabethzagroba.com/posts/2020/2020-04-27_errors_you_might_encounter_while_editing_an_open_api_specification/) long after I created them because of the way they display in [editor.swagger.io](https://editor.swagger.io). 
 
