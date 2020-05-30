@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/api-specs.xml</loc>
-  <lastmod>2020-05-04T18:38:00Z</lastmod>
+  <lastmod>2020-05-30T09:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/apis.xml</loc>
-  <lastmod>2020-05-04T18:38:00Z</lastmod>
+  <lastmod>2020-05-30T09:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/authentication.xml</loc>
@@ -55,7 +55,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/exploratory-testing.xml</loc>
-  <lastmod>2020-05-26T17:59:00Z</lastmod>
+  <lastmod>2020-05-26T18:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/git.xml</loc>
@@ -79,7 +79,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/open-api.xml</loc>
-  <lastmod>2020-05-04T18:38:00Z</lastmod>
+  <lastmod>2020-05-30T09:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/peer-conference.xml</loc>
@@ -87,7 +87,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/risk-based-testing.xml</loc>
-  <lastmod>2020-05-26T17:59:00Z</lastmod>
+  <lastmod>2020-05-26T18:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/security.xml</loc>
@@ -95,7 +95,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/swagger.xml</loc>
-  <lastmod>2020-05-04T18:38:00Z</lastmod>
+  <lastmod>2020-05-30T09:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/terminal.xml</loc>
@@ -107,7 +107,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/testbash.xml</loc>
-  <lastmod>2020-05-26T17:59:00Z</lastmod>
+  <lastmod>2020-05-26T18:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/testbinge.xml</loc>
@@ -119,7 +119,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/testing.xml</loc>
-  <lastmod>2020-05-26T17:59:00Z</lastmod>
+  <lastmod>2020-05-30T09:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/trust.xml</loc>
@@ -135,10 +135,10 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/rss.xml</loc>
-  <lastmod>2020-05-26T17:59:00Z</lastmod>
+  <lastmod>2020-05-30T09:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/sitemap.xml</loc>
-  <lastmod>2020-05-26T17:59:00Z</lastmod>
+  <lastmod>2020-05-30T09:32:00Z</lastmod>
  </sitemap>
 </sitemapindex>
