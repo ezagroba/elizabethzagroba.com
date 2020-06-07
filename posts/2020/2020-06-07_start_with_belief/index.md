@@ -13,7 +13,7 @@ Your colleague may not believe you found a bug, or they may not be sure if you d
 
 ### Does not work on every machine
 
-Instead, they could have started with belief. They could commend you for uncovering something they themselves could not. They could be curious about how your machine and sofwtare are different from what they have running, and look into how many other users this is affecting. They could pair with you to come up with ideas about how to stop the issue from happening. If they have more access to the underlying systems, they could look into the code and configuration settings. They could have a growth mindset, and think that your machine, the software you're running, and most of all you, can change. 
+Instead, they could have started with belief. They could commend you for uncovering something they themselves could not. They could be curious about how your machine and software are different from what they have running, and look into how many other users this is affecting. They could pair with you to come up with ideas about how to stop the issue from happening. If they have more access to the underlying systems, they could look into the code and configuration settings. They could have a growth mindset, and think that your machine, the software you're running, and most of all you, can change. 
 
 ### Start with belief
 
