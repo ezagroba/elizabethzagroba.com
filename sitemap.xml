@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://elizabethzagroba.com/</loc>
-  <lastmod>2020-05-30T09:38:00Z</lastmod>
+  <lastmod>2020-06-07T16:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/2014/</loc>
@@ -35,11 +35,11 @@
  </url>
  <url>
   <loc>https://elizabethzagroba.com/archive.html</loc>
-  <lastmod>2020-05-30T12:07:00Z</lastmod>
+  <lastmod>2020-06-07T16:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/</loc>
-  <lastmod>2020-05-26T17:59:00Z</lastmod>
+  <lastmod>2020-06-07T16:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/api-specs/</loc>
@@ -72,6 +72,10 @@
  <url>
   <loc>https://elizabethzagroba.com/categories/conference/</loc>
   <lastmod>2020-04-12T14:41:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/categories/debugging/</loc>
+  <lastmod>2020-06-07T16:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/dependencies/</loc>
@@ -108,6 +112,10 @@
  <url>
   <loc>https://elizabethzagroba.com/categories/mind-mapping/</loc>
   <lastmod>2020-04-13T11:06:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/categories/mindset/</loc>
+  <lastmod>2020-06-07T16:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/naming/</loc>
@@ -175,7 +183,11 @@
  </url>
  <url>
   <loc>https://elizabethzagroba.com/index-2.html</loc>
-  <lastmod>2020-05-30T12:07:00Z</lastmod>
+  <lastmod>2020-06-07T16:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/index-3.html</loc>
+  <lastmod>2020-06-07T16:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/listings/</loc>
@@ -312,5 +324,9 @@
  <url>
   <loc>https://elizabethzagroba.com/posts/2020/2020-05-30_trying_out_open_api_editors/</loc>
   <lastmod>2020-05-30T09:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/posts/2020/2020-06-07_start_with_belief/</loc>
+  <lastmod>2020-06-07T16:39:00Z</lastmod>
  </url>
 </urlset>
