@@ -35,11 +35,11 @@
  </url>
  <url>
   <loc>https://elizabethzagroba.com/archive.html</loc>
-  <lastmod>2020-06-07T16:39:00Z</lastmod>
+  <lastmod>2020-07-26T18:06:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/</loc>
-  <lastmod>2020-06-07T16:46:00Z</lastmod>
+  <lastmod>2020-07-26T18:07:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/api-specs/</loc>
@@ -100,6 +100,10 @@
  <url>
   <loc>https://elizabethzagroba.com/categories/git/</loc>
   <lastmod>2020-04-13T10:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/categories/humans/</loc>
+  <lastmod>2020-07-26T18:06:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/jira/</loc>
@@ -187,7 +191,7 @@
  </url>
  <url>
   <loc>https://elizabethzagroba.com/index-3.html</loc>
-  <lastmod>2020-06-07T16:39:00Z</lastmod>
+  <lastmod>2020-07-26T18:07:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/listings/</loc>
@@ -328,5 +332,17 @@
  <url>
   <loc>https://elizabethzagroba.com/posts/2020/2020-06-07_start_with_belief/</loc>
   <lastmod>2020-06-07T16:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/posts/2020/2020-07-12_humans_conf_june_2020/</loc>
+  <lastmod>2020-07-26T18:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/posts/2020/2020-07-13_test_automation_day_2018/</loc>
+  <lastmod>2020-07-26T18:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/posts/2020/2020-07-14_testbash_netherlands_2019/</loc>
+  <lastmod>2020-07-26T18:07:00Z</lastmod>
  </url>
 </urlset>
