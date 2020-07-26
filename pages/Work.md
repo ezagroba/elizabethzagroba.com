@@ -7,7 +7,7 @@ Test Engineer and Team Lead
 web apps, mobile apps, APIs, search features, content management systems, probably other things I've forgotten
 
 ### CV
-[regular style](../../resumes/EZresume.pdf) or [experimental](../../resumes/trustworthy-resume.pdf)
+[regular style](../../assets/resumes/EZresume.pdf) or [experimental](../../assets/resumes/trustworthy-resume.pdf)
 
 ### Articles published in the [Ministry of Testing Dojo](https://dojo.ministryoftesting.com/)
 
