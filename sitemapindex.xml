@@ -23,7 +23,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/automation.xml</loc>
-  <lastmod>2020-07-26T18:07:00Z</lastmod>
+  <lastmod>2020-07-26T18:38:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/bug-reporting.xml</loc>
@@ -35,7 +35,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/conference.xml</loc>
-  <lastmod>2020-07-26T18:07:00Z</lastmod>
+  <lastmod>2020-08-03T08:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/debugging.xml</loc>
@@ -67,7 +67,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/humans.xml</loc>
-  <lastmod>2020-07-26T18:07:00Z</lastmod>
+  <lastmod>2020-07-26T18:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/jira.xml</loc>
@@ -88,6 +88,10 @@
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/naming.xml</loc>
   <lastmod>2020-05-04T18:38:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://elizabethzagroba.com/categories/note-taking.xml</loc>
+  <lastmod>2020-08-03T08:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/open-api.xml</loc>
@@ -119,7 +123,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/testbash.xml</loc>
-  <lastmod>2020-07-26T18:07:00Z</lastmod>
+  <lastmod>2020-07-26T18:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/testbinge.xml</loc>
@@ -131,7 +135,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/testing.xml</loc>
-  <lastmod>2020-07-26T18:07:00Z</lastmod>
+  <lastmod>2020-08-03T08:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/trust.xml</loc>
@@ -147,10 +151,10 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/rss.xml</loc>
-  <lastmod>2020-07-26T18:07:00Z</lastmod>
+  <lastmod>2020-08-03T08:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/sitemap.xml</loc>
-  <lastmod>2020-07-26T18:07:00Z</lastmod>
+  <lastmod>2020-08-03T08:55:00Z</lastmod>
  </sitemap>
 </sitemapindex>

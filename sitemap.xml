@@ -35,11 +35,11 @@
  </url>
  <url>
   <loc>https://elizabethzagroba.com/archive.html</loc>
-  <lastmod>2020-07-26T18:06:00Z</lastmod>
+  <lastmod>2020-08-03T08:55:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/</loc>
-  <lastmod>2020-07-26T18:07:00Z</lastmod>
+  <lastmod>2020-08-03T08:55:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/api-specs/</loc>
@@ -126,6 +126,10 @@
   <lastmod>2020-04-13T11:34:00Z</lastmod>
  </url>
  <url>
+  <loc>https://elizabethzagroba.com/categories/note-taking/</loc>
+  <lastmod>2020-08-03T08:55:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://elizabethzagroba.com/categories/open-api/</loc>
   <lastmod>2020-04-27T13:58:00Z</lastmod>
  </url>
@@ -191,7 +195,7 @@
  </url>
  <url>
   <loc>https://elizabethzagroba.com/index-3.html</loc>
-  <lastmod>2020-07-26T18:07:00Z</lastmod>
+  <lastmod>2020-08-03T08:55:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/listings/</loc>
@@ -344,5 +348,9 @@
  <url>
   <loc>https://elizabethzagroba.com/posts/2020/2020-07-14_testbash_netherlands_2019/</loc>
   <lastmod>2020-07-26T18:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/posts/2020/2020-08-02_socrates-uk-august-2020/</loc>
+  <lastmod>2020-08-03T08:55:00Z</lastmod>
  </url>
 </urlset>

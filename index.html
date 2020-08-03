@@ -14,7 +14,7 @@
 <link rel="icon" href="images/avatar.png" sizes="128x128">
 <link rel="next" href="index-3.html" type="text/html">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link href="fontawesome-5.13.0/css/all.css" rel="stylesheet">
-<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2020/2020-07-14_testbash_netherlands_2019/" type="text/html">
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2020/2020-08-02_socrates-uk-august-2020/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -77,7 +77,36 @@ navbar-dark bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-07-14_testbash_netherlands_2019/" class="u-url">TestBash Netherlands 2019</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-08-02_socrates-uk-august-2020/" class="u-url">SoCraTes UK, August 2020</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2020/2020-08-02_socrates-uk-august-2020/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-08-02T00:00:00+02:00" itemprop="datePublished" title="02 August 2020">02 August 2020</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>After years of envying the tweets and stories from SoCraTes conferences, this cursèd disease finally made attending one possible. I could afford the time (part of one day, instead of a whole weekend + travel) and the cost (£2.50, instead of €€€). </p>
+<p>I'm preparing to host an open space of our own in September (<a href="http://testcraftcamp.nl/">TestCraftCamp</a>, tickets are free!), so aside from the sessions, I was also the infrastructure of the event. The hosts hung out in one central Zoom room (a one-month subscription cost them £10). Each attendee was appointed co-host, allowing us to move around among the many breakout rooms as we pleased. (There may have been as many breakout rooms as there were participants, named with varying levels of creativity but functionally the same.) A <a href="https://www.notion.so/">Notion</a> board captured the user-generated schedule, along with links to the <a href="https://www.mural.co/">Mural</a> whiteboards the organizers created for each room, rather than for each session. Chat happened in a <a href="https://discord.com/">Discord</a> channel, but <a href="https://twitter.com/ezagroba/status/1287372791168278529">I wouldn't recommend it</a>. </p>
+<p>The first session I attended was a discussion about the value and hazards of leaving a job. First: decide where you want to go, what kind of thing you're looking for. You're not going to get where you want to go by running away from your current role. Run <em>towards</em> something. Have honest conversations with your peers, manager, mentor, coach, etc. about what change you can affect at the organization. (Things like the nature of the product, the tech stack, or the customer base are unlikely to change quickly.) If you do decide to change jobs, it will take a lot of energy to find something new and build your network at the new place. You may have to prove yourself all over again, and solve the problems you've already solved with this different group of people. </p>
+<p>After taking a total of three bullet points in my notebook, the host of the second session I attended about hypergrowth was having trouble taking notes and listening to/facilitating the session. I volunteered to jump in to take the notes. Here's what I made:</p>
+<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/hypergrowth.png" style="display:block; margin-left: auto; margin-right: auto;" title="Notes from hypergrowth session"><span class="img_caption" style="display: block; text-align: center;">Notes from hypergrowth session</span></span></p>
+<p>I was trying to capture what people said, change the background colors, and move the notes around to put similar ideas next to each other. It was hard to know in the moment whether all of that is legible or helpful for anyone else. Luckily people in the session and in the Discord channel later thanked me for my work. I'm still struggling with how to impart any note-taking skill onto others, particularly when this can be seen as a gendered task.</p>
+<blockquote>
+<p>Men: Wow, you are so good at taking notes!<br>
+Me: You would be too if you got stuck being the one doing it all the time!</p>
+</blockquote>
+<p>But I digress, back to hypergrowth: The things that worked before COVID and at smaller orgs don't work at a bigger org today. Find your people within the smaller org - your department, your mentor, your friends - so you can feel stable even as things around you grow and change. Communicate your expectations clearly, for yourself and for your team. Keep a journal of what you've accomplished to feel more anchored in the value of your work. </p>
+<p>After lunch, I started off in the wrong room because I didn't notice the sessions had been moved, but found my way to the one about coaching your peers. The conversation floated from a definition of terms to how to make space for mentoring. In order for people to mentor, there must be consent from the mentee. Ideally there is also some expertise in the organization around what is good, and someone (mentor or not) to teach the mentee what is good. The conversation reminded me of a talk I saw from Marianne Duijst; <a href="https://youtu.be/vXIZpe-x4o8?t=595">here's the moment she started talking about the difference between coaches, sponsors, teachers, and role models, and how they can support you in different ways</a>.</p>
+<p>Anytime Maaret Pyhäjärvi is running an exploratory testing session, go to it. You will be better for it. This time, we tested a simple web application. We ended up spending most of the time adding scenarios to the automated tests Maaret had already set up in Robot framework. One of the questions it brought up for me: do you leave failed tests in your automation suite to highlight unexpected behavior? I had this problem this week: I'd updated a schema to validate against the current behavior while the story was in progress, instead of the behavior we wanted when it was done, so I could verify other fields in the output. Next time I think I'll separate them into two tests and leave them both as pending (marked as xfail in the pytest framework) so it's clear something needs to change before the software is released.</p>
+<p>Thank you for the SoCraTes organizers for, as I learned a coach does, holding this space for us to examine ourselves and reflect. As someone who is much more fluent in emoji than GIF, I'm grateful to have won the hearts of the participants with this "leting the cat out of the bag" GIF in the GIF challenge.</p>
+<p><span class="img_container" style="display: inline-block;"><img alt="" src="https://media1.tenor.com/images/e49bc18b66056a71171ae6f16046a2a4/tenor.gif?itemid=11543319" style="display:block; margin-left: auto; margin-right: auto;" title="Cat aggressively jumping out of a backpack"><span class="img_caption" style="display: block; text-align: center;">Cat aggressively jumping out of a backpack</span></span></p>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-07-14_testbash_netherlands_2019/" class="u-url">TestBash Netherlands 2019</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Elizabeth Zagroba
@@ -398,55 +427,6 @@ navbar-dark bg-dark
 <hr>
 <p>Reflecting on the open space, the social events, and the atmosphere at TestBash Brighton 2018 makes me wish for the experience we all missed at the now-cancelled event in 2020. Jumping into the unknown seemed so doable when I knew there'd be so many people to share with and learn from on this side of the Atlantic. I don't know when I'll see you all again, but I look forward to that possibility. </p>
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/stamner.jpg" style="display:block; margin-left: auto; margin-right: auto;" title="Can't go to Britain without a proper tea"><span class="img_caption" style="display: block; text-align: center;">Can't go to Britain without a proper tea</span></span></p>
-</div>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2019/2019-09-15_reflecting-on-let-s-test-2017/" class="u-url">Reflecting on Let’s Test 2017</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Elizabeth Zagroba
-            </span></p>
-            <p class="dateline">
-            <a href="posts/2019/2019-09-15_reflecting-on-let-s-test-2017/" rel="bookmark">
-            <time class="published dt-published" datetime="2019-09-15T00:00:00+02:00" itemprop="datePublished" title="15 September 2019">15 September 2019</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p name="f2d3" id="f2d3" class="graf graf--p graf-after--h3">Good ideas come back around. As I sit here re-reading my notes from Let’s Test 2017, I remember the thrill of coming across so many new ideas there, and realize how much these three things stick out to me even now.</p>
-
-<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2019/valley-lodge.jpeg" style="display:block; margin-left: auto; margin-right: auto;" title="Valley Lodge &amp; Spa, Magaliesburg, South Africa"><span class="img_caption" style="display: block; text-align: center;">Valley Lodge &amp; Spa, Magaliesburg, South Africa</span></span></p>
-<ol class="postList"><li name="dc01" id="dc01" class="graf graf--li graf-after--figure">Causal loop diagrams</li></ol>
-<p name="1b99" id="1b99" class="graf graf--p graf-after--li">It’s possible I’d seen a causal loop disgram before, but it wasn’t until I went to Jo Perold and Barry Tandy’s “Visualize your way to better problem solving” workshop that I knew the name for them. <a href="https://www.isixsigma.com/tools-templates/cause-effect/causal-loop-diagrams-little-known-analytical-tool/" data-href="https://www.isixsigma.com/tools-templates/cause-effect/causal-loop-diagrams-little-known-analytical-tool/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Here’s an example of how connecting nouns with verbs via bubbles and letters really clears things up.</a></p>
-
-<p name="0c13" id="0c13" class="graf graf--p graf-after--p">During the workshop, Jo and Barry talked about how drawing a diagram of your software in this way can help you discover interaction points between systems. Sharing the diagram is one way to take the invisible software you’re building into a visible space. That allows us to have a conversation about the model, discover if we’re on the same page, and take steps to improve the model and ultimately the software. The more visualizations I see of process and influence on the job, the more I realize they’re exposing <a href="https://www.thoughtworks.com/insights/articles/demystifying-conways-law" data-href="https://www.thoughtworks.com/insights/articles/demystifying-conways-law" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Conway’s Law</a>.</p>
-
-<p name="b91d" id="b91d" class="graf graf--p graf-after--p">Elisabeth Hendrickson wrote in <a href="https://www.goodreads.com/book/show/15980494-explore-it" data-href="https://www.goodreads.com/book/show/15980494-explore-it" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">Explore It!</em></a><em class="markup--em markup--p-em"> </em>about how causal loop diagrams can help you discover interesting areas to test. She pointed out that transitions from one state to another take time, and there’s lots to be discovered during the moments of transition about interruptions, errors, and incomplete states.</p>
-
-<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2019/causal-loop.png" style="display:block; margin-left: auto; margin-right: auto;" title='Repenning, Nelson &amp; Sterman, John. (2003). "Nobody Ever Gets Credit for Fixing Problems That Never Happened: Creating and Sustaining Process Improvement." Engineering Management Review, IEEE. 30. 64- 64. 10.1109/EMR.2002.1167285.'><span class="img_caption" style="display: block; text-align: center;">Repenning, Nelson &amp; Sterman, John. (2003). "Nobody Ever Gets Credit for Fixing Problems That Never Happened: Creating and Sustaining Process Improvement." Engineering Management Review, IEEE. 30. 64- 64. 10.1109/EMR.2002.1167285.</span></span></p>
-<p name="5105" id="5105" class="graf graf--p graf-after--figure">Nelson Repenning and John Sterman used a causal loop diagram to display a human problem: not prioritizing time for improving. Read their whole article to discover terrifying news about how much time you’re wasting all the time by not stopping to improve!</p>
-
-<p name="50d2" id="50d2" class="graf graf--p graf-after--p">2. Metaphors</p>
-
-<p name="c76c" id="c76c" class="graf graf--p graf-after--p">Leo Hepis and Danie Roux’s “Frames at Work” workshop blew my mind. I would tell you they were talking about how metaphors and context framing shape the way we think about our work. And they did that. But the meandering and level of lost I felt on our path there was unprecedented.</p>
-
-<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2019/rope.jpeg" style="display:block; margin-left: auto; margin-right: auto;" title="Our table selected “Rope of Awesome” and I stand by that answer."><span class="img_caption" style="display: block; text-align: center;">Our table selected “Rope of Awesome” and I stand by that answer.</span></span></p>
-<p name="e4cd" id="e4cd" class="graf graf--p graf-after--figure">One of the exercises had us listening to a story about someone’s work and only writing down the metaphors. There seemed to be one every sentence, so many that I thought the speaker was throwing them in there on purpose. (See: <em class="markup--em markup--p-em">throwing</em>. They’re everywhere!) He talked about “pulling” and “dragging” his team along. Imagine instead if he were “pushing” or “building” his team. How would he think differently about his work? How different would his work be? Listen more closely to the words people are using to discover terrifying news about how they perceive their work!</p>
-
-<p name="bff4" id="bff4" class="graf graf--p graf-after--p">3. Reflection and Learning</p>
-
-<p name="b1ad" id="b1ad" class="graf graf--p graf-after--p">Alison Gitelson hosted a session to help the conference attendees think more about what they’d just learned. I was still reeling from the metaphors and framing session, so I wrote down these questions for myself:</p>
-
-<ul class="postList">
-<li name="00fe" id="00fe" class="graf graf--li graf-after--p">How do I realize when I’m stuck inside my own head?</li>
-<li name="48ba" id="48ba" class="graf graf--li graf-after--li">Does noticing where a behavior would be useful make it less irritating?</li>
-<li name="248b" id="248b" class="graf graf--li graf-after--li">Was there a better discussion because active disagreement was encouraged?</li>
-<li name="0165" id="0165" class="graf graf--li graf-after--li">Who in my life can help me reframe?</li>
-<li name="9408" id="9408" class="graf graf--li graf-after--li">Why do I feel my effort has to achieve something?</li>
-</ul>
-<p name="3b02" id="3b02" class="graf graf--p graf-after--li">Reflect on these questions yourself for terrifying news about how stuck you can be sometimes!</p>
-
-<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2019/double-rainbow.jpeg" style="display:block; margin-left: auto; margin-right: auto;" title="Very slight double rainbow to the right."><span class="img_caption" style="display: block; text-align: center;">Very slight double rainbow to the right.</span></span></p>
-<p><em>Originally published on <a href="https://medium.com/@ezagroba/reflecting-on-lets-test-2017-efb52723598c">Medium</a>.</em></p>
 </div>
     </div>
     </article>
