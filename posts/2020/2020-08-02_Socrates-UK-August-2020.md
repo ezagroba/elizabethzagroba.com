@@ -1,6 +1,7 @@
 .. title: SoCraTes UK, August 2020
 .. date: 2 August 2020
 .. tags: conference, testing, note-taking
+.. previewimage: /images/posts/2020/hypergrowth.png
 
 After years of envying the tweets and stories from SoCraTes conferences, this cursèd disease finally made attending one possible. I could afford the time (part of one day, instead of a whole weekend + travel) and the cost (£2.50, instead of €€€). 
 
