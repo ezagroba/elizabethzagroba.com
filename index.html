@@ -14,7 +14,7 @@
 <link rel="icon" href="images/avatar.png" sizes="128x128">
 <link rel="next" href="index-3.html" type="text/html">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link href="fontawesome-5.13.0/css/all.css" rel="stylesheet">
-<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2020/2020-08-02_socrates-uk-august-2020/" type="text/html">
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2020/2020-09-21_finding_relevant_search_results/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -77,7 +77,47 @@ navbar-dark bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-08-02_socrates-uk-august-2020/" class="u-url">SoCraTes UK, August 2020</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-09-21_finding_relevant_search_results/" class="u-url">Finding relevant search results</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2020/2020-09-21_finding_relevant_search_results/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-09-21T00:00:00+02:00" itemprop="datePublished" title="21 September 2020">21 September 2020</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>In his crafting time, one of our developers decided to fine-tune our search results. He added relevancy scoring to give weights to different text fields. It was my job to determine if the right results were turning up at the top of the list of search results. So I had to ponder: what made a search result relevant? </p>
+<p>First, I realized that feedback from our users is the best way to answer this question. Anything I could do to get this feature out into production, where we'd get real data about what people searched for, would be more valuable that brainstorming test cases for this feature. I set myself a timebox of two and a half hours, the rest of the afternoon on a day in a week filled with competing priorities. We'd agreed as a team ahead of time that I could determine the testing approach, and our product owner would decide what was or wasn't worth fixing before this feature went out. </p>
+<p>I saved the first 45 minutes of my timebox to research what people had to say about search relevancy. Surely I was not the first person contemplating this problem. Over on the Ministry of Testing Club forum, I found what seemed to be a promising title of a post. <a href="https://club.ministryoftesting.com/t/how-would-you-test-a-search-api/28027">It turned out a past Elizabeth from a year ago wrote it, and nobody had answered it satisfactorily in the intervening time</a>. 🤦‍♀️</p>
+<p>After Duck-Duck-Go-ing some actual answers, I found a couple of resources from websites I've trusted and found fruitful in the past: <a href="https://alistapart.com/article/testing-search-for-relevancy-and-precision/">A List Apart</a> and <a href="https://www.philosophe.com/archived_content/search_topics/search_tests.html">philosophe.com</a>. A List Apart suggested honing in on a specific intent, searching for the queries users seek most frequently, and seeing how far those items fall from the top in the search results. The philosophe guidance about testing search gave me something deeper to consider: users shouldn't have to ponder the reasoning behind the search results. That was enough for me to develop some test cases. </p>
+<p>As I searched and adjusted the weights of various fields, plenty of normal things happened: setting the relevancy values to zero meant the result wasn't listed, multiple instances of the same word counted more than a single instance, and giving fields stronger weights caused their results to move up in the rankings. But as a bug magnet, I uncovered things that were both interesting to discover and outside the original scope of the story. </p>
+<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/log-of-zero.png" style="display:block; margin-left: auto; margin-right: auto;" title="Log of zero is negative infinity"><span class="img_caption" style="display: block; text-align: center;">Log of zero is negative infinity</span></span></p>
+<h4>Bugs</h4>
+<ol>
+<li>
+<p>I opted to edit data that was already in our test environment rather than setting up completely new data. In doing so, I discovered a couple description fields that were missing an indexing update in the search results when edited through the UI. </p>
+</li>
+<li>
+<p>I tried to use the default values for everything to see "normal" results. One field was going to add a value to the relevancy rating, so zero seemed like it should be the default option. Unfortunately a couple of the options for the weighting feature transformed the value using the <code>log</code> and <code>ln</code> (natural log) functions, which are undefined at zero. All my search results disappeared. </p>
+</li>
+<li>
+<p>I looked at the data that was already in the database, and used a search term that showed up a lot already. It turned up nothing. I searched for part of the word. That turned up all the results I was expecting. I realized the search term was indexed separately because of the characters we used to break the word apart. Imagine having a bunch of <code>sun-bleached</code> items, but you can only find them if you search for <code>sun</code> or <code>bleached</code>, not <code>sun-bleached</code>. </p>
+</li>
+</ol>
+<p>Bug 1 the developer agreed was a bug, and we fixed as part of the story. Bug 2 was "working as expected" from a developer point-of-view, but seemed a little weird to the product owner. We meant to look into as part of the story and decide if we should eliminate the log functions as options entirely, but other priorities came crashing down upon before we could. It's out on production to the handful of internal users with access to the relevancy tuning. Bug 3 we added to the backlog, and I hope someday a swarm of user complaints make it a priority for us. </p>
+<h4>Morals</h4>
+<ol>
+<li>Users know best.</li>
+<li>Someone else on the internet has had your problem before. </li>
+<li>Report information that matters.</li>
+<li>When the risk is low, let it go. </li>
+</ol>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-08-02_socrates-uk-august-2020/" class="u-url">SoCraTes UK, August 2020</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Elizabeth Zagroba
@@ -394,39 +434,6 @@ Me: You would be too if you got stuck being the one doing it all the time!</p>
 <p><img alt="" src="images/posts/2020/swagger-vs-code.png"></p>
 <p>The <a href="https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi">Visual Studio Code Open API plugin</a> did make the red errors obvious enough that you could see them from anywhere in the document. It also gave me the collapsed version of the longer spec in alphabetical order. This allowed me to navigate around without remembering the line numbers of where I dumped the schema separately from the overall spec. Unfortunately the extension didn't catch when I referred to a spec that didn't exist, but I expect seeing the list of schemas on the side would help discover this mistake. The extension also didn't notice if I didn't define the objects in an array.  </p>
 <p>There's also an <a href="https://github.com/swagger-api/swagger-ui">Open API spec tool for offline use</a>, but the instructions went beyond the interest I had for this blog post. Try it out yourself, and maybe I will the next time I've got to edit these specs. </p>
-</div>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-04-19_remembering_testbash_brighton-2018/" class="u-url">Remembering TestBash Brighton 2018</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Elizabeth Zagroba
-            </span></p>
-            <p class="dateline">
-            <a href="posts/2020/2020-04-19_remembering_testbash_brighton-2018/" rel="bookmark">
-            <time class="published dt-published" datetime="2020-04-19T00:00:00+02:00" itemprop="datePublished" title="19 April 2020">19 April 2020</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p>TestBash Brighton was one of 10,000 things I had to do in the weeks just before I left my whole life (family, friends, job, apartment, belongings) and moved across the ocean into the unknown. It was the first place I'd gotten to share that big news in person, with people who would become larger parts of my life once I moved. Visiting the city where I'd studied during university and first thought "I could leave the United States" brought things full circle for me. </p>
-<p>I paired on presenting a brand-new workshop and talk, with two different people. This would have been a lot, even without all the uncertaincies and distractions swirling in my life those days. After hustling to adjust the schedule of and present our morning workshop, I distinctly remember choosing to skip the afternoon one I'd planned on attending in order to fill out immigration and relocation paperwork. I'm shocked to find I was able to focus enough on some other peoples' talks to take coherent notes about them.</p>
-<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/pavilion.jpg" style="display:block; margin-left: auto; margin-right: auto;" title="Royal Pavilion in downtown Brighton"><span class="img_caption" style="display: block; text-align: center;">Royal Pavilion in downtown Brighton</span></span></p>
-<hr>
-<p><a href="https://twitter.com/anusha_n">Anusha Nirmalananthan</a>'s talk about sharing a chronic illness sticks with me today. One of the things I love to jump into is troubleshooting. I hear about a problem, and I'm already thinking of ways to solve it, and asking about what you've tried already. Anusha reminded us that listening and not saying anything can be more helpful and powerful than all the patronizing "Have you tried...?" questions in the world.</p>
-<hr>
-<p><a href="https://twitter.com/ewebber">Emily Weber</a> spoke about communities of practice, which have always been billed as "guilds" in places where I've worked. Emily encouraged us to connect with people around our organizations in our discipline in a supportive, voluntary group without a hierarchy or an end date. While the occasional guild meeting I've attended has turned into a groan-fest, dedicating time and energy to fostering change (to code, to job descriptions, to your team's way of working, etc.) gives me that "I did something today" feeling. I'm grateful to be able to make time to learn with my colleagues, and build a support network for when I need advice from outside the bubble of my team. </p>
-<hr>
-<p>I loved <a href="https://twitter.com/Rosicadia">Rosie Hamilton</a>'s talk about logic in testing because it drove me back to the basics. How do we decide what is true? How do I describe my thought process? When the availability of relevant cases prevents effective inductive reasoning (determining a heuristic), we have to move to abductive reasoning (determining the likeliest explanation from the available information). Realizing when you're doing this and what other information might be available to you elevates your testing.</p>
-<p><img alt="" src="images/posts/2020/logic.jpg"></p>
-<hr>
-<p>Looking back at my notes from <a href="https://twitter.com/AWGHodder">Aaron Hodder</a>'s talk on structured exploratory testing make me realize how much freedom I can have in my testing when working with an inattentive team. His suggestions about making for easier reporting, fewer rabbit holes, and predictability of a time-table suggest that someone is really breathing down your neck about the status, progress, and depth of your work. The biggest advantage I've had in sharing my testing charters with my team is that I find out which ones aren't valuable before I spend time executing them. Actively choosing not to test something when we don't care about the outcome or the risk it poses is very effective work.</p>
-<hr>
-<p><a href="https://twitter.com/alanpage">Alan Page</a> spoke about the modern testing principles he'd been shaping on his podcast for a while. My notes boil it down to: testers should do less testing and more coaching. This has certainly served me on teams producing too much for me to personally go as deep as I'd like in testing, but it also pays off when I'm out of the office or unavailable at the office. Working on a team that knows how to test means I get to look at higher-quality code, with more interesting bugs. </p>
-<hr>
-<p><a href="https://twitter.com/northern_tester">Ash Winter</a> gave a talk immediately after mine, so perhaps I did not gather everything from it. But I did save these tid-bits: a pipeline is built to prove that something shouldn't go out. A pipeline can provide a massive amount of information, but without a strategy, too much data doesn't help humans make better decisions. Small things you can do to make huge improvements: deploy regularly, and learn source control.</p>
-<hr>
-<p>Reflecting on the open space, the social events, and the atmosphere at TestBash Brighton 2018 makes me wish for the experience we all missed at the now-cancelled event in 2020. Jumping into the unknown seemed so doable when I knew there'd be so many people to share with and learn from on this side of the Atlantic. I don't know when I'll see you all again, but I look forward to that possibility. </p>
-<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/stamner.jpg" style="display:block; margin-left: auto; margin-right: auto;" title="Can't go to Britain without a proper tea"><span class="img_caption" style="display: block; text-align: center;">Can't go to Britain without a proper tea</span></span></p>
 </div>
     </div>
     </article>
