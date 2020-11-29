@@ -35,11 +35,15 @@
  </url>
  <url>
   <loc>https://elizabethzagroba.com/archive.html</loc>
-  <lastmod>2020-09-21T18:42:00Z</lastmod>
+  <lastmod>2020-11-29T20:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/</loc>
-  <lastmod>2020-09-21T18:42:00Z</lastmod>
+  <lastmod>2020-11-29T20:42:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/categories/agile-testing-days/</loc>
+  <lastmod>2020-11-29T20:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/api-specs/</loc>
@@ -199,7 +203,7 @@
  </url>
  <url>
   <loc>https://elizabethzagroba.com/index-3.html</loc>
-  <lastmod>2020-09-21T18:42:00Z</lastmod>
+  <lastmod>2020-11-29T20:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/listings/</loc>
@@ -360,5 +364,9 @@
  <url>
   <loc>https://elizabethzagroba.com/posts/2020/2020-09-21_finding_relevant_search_results/</loc>
   <lastmod>2020-09-21T18:42:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/posts/2020/2020-11-29_agile_testing_days_2020/</loc>
+  <lastmod>2020-11-29T20:42:00Z</lastmod>
  </url>
 </urlset>
