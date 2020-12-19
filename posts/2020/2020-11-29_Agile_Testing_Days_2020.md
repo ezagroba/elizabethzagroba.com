@@ -1,7 +1,7 @@
 .. title: Agile Testing Days 2020
 .. date: 29 November 2020
 .. tags: testing, conference, agile-testing-days
-.. previewimage: /images/posts/2020/log-of-zero.png
+.. previewimage: /images/posts/2020/success.png
 
 When you say no to what you don't have the energy for, you leave your time, attention, and devotion free to pursue what keeps you energized. Through a tumult of plans and dreams that only 2020 could continue to crush, the Agile Testing Days crew put on a revitalizing conference. I only caught a glimpse of the preparation that went into providing a top-notch experience for speakers and participants, and I have to commend the group on their commitment to the cause. Bravo.
 
