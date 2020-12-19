@@ -1,6 +1,7 @@
 .. title: Finding relevant search results
 .. date: 21 September 2020
 .. tags: testing, search, risk-based-testing, exploratory-testing
+.. previewimage: /images/posts/2020/log-of-zero.png
 
 In his crafting time, one of our developers decided to fine-tune our search results. He added relevancy scoring to give weights to different text fields. It was my job to determine if the right results were turning up at the top of the list of search results. So I had to ponder: what made a search result relevant? 
 
