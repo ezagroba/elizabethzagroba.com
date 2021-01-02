@@ -14,7 +14,7 @@
 <link rel="icon" href="images/avatar.png" sizes="128x128">
 <link rel="next" href="index-3.html" type="text/html">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link href="fontawesome-5.13.0/css/all.css" rel="stylesheet">
-<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2020/2020-11-29_agile_testing_days_2020/" type="text/html">
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2020/2020-12-26_anatomy_of_two_exploratory_testing_sessions/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -77,7 +77,43 @@ navbar-dark bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-11-29_agile_testing_days_2020/" class="u-url">Agile Testing Days 2020</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-12-26_anatomy_of_two_exploratory_testing_sessions/" class="u-url">The Anatomy of Two Exploratory Testing Sessions</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2020/2020-12-26_anatomy_of_two_exploratory_testing_sessions/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-12-26T00:00:00+01:00" itemprop="datePublished" title="26 December 2020">26 December 2020</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>The <a href="https://exploratorytesting.org/">Exploratory Testing Peer Conference</a> <a href="https://twitter.com/search?q=%23et19&amp;src=typed_query">#ET19</a> followed the 2019 Valencia edition of the European Testing Conference. I said something that I pretty immediately forgot in the upheaval when I returned to the office, but it really stuck with <a href="https://twitter.com/charrett">Anne-Marie Charrett</a>. I appreciate both that she remembered this at all, and continues to insist that I'm the one who had this stroke of genius when she really brought it to life. Here's the idea: </p>
+<p>It's straightforward to follow one thread or idea through an exploratory testing session. It's not straightforward to decide which path to take, feed information from one path back into another, recognize that there are different paths, or bring others along for this journey. </p>
+<h4>The Ensemble at Work</h4>
+<p>We have a weekly ensemble testing session at my workplace. For an hour and a half, testers from different teams working in the same tech stack come together to share knowledge and build testing skills. In a recent ensemble testing session, a tester on one team brought a ticket they'd been avoiding tackling on their own. They knew they didn't know how to test the fix. But they felt like they'd talked about it enough as a team that they should have understood what to do already. </p>
+<p>We read through the story with the group of testers. We determined that a static code analysis security scan had discovered vulnerabilities in a couple of libraries. The developers had fixed the issue by removing the libraries. It was our mission to make sure those libraries were removed. </p>
+<p>Immediately a plan came to my mind:
+1. Map out what kinds of pages there were, assuming that different pages of the same type would be likely to load the same libraries: list view, detail view, landing page, etc. 
+1. Look at one of each of those pages with the Network tab open in the developer tools.</p>
+<p>In a quick spirt of excitement, I dumped this idea on the group without figuring out if people knew what either of these things meant. (It turns out, not everyone did.) But everyone seemed to understand that there was somewhere in the developer tools where we could tell which libraries were loaded, so we started there. Exploring in a group is not about getting everyone to follow my idea immediately (or ever), it's about making sure everyone is on board and understands what's going on.</p>
+<p>Proving the absence of a thing is harder than proving the presence of something, so we spent a bit of time looking through the Console and Storage tabs, as well as reloading the page with the Network tab opened, to figure out what appeared where. That helped everyone remember or discover that we didn't need to reload the page if the Network tab was open before the page loaded. This sped us up for the rest of the session.</p>
+<p>Next, we looked at a couple of similar-looking list pages. We searched for the libraries in the Network tab. They weren't there. Now that we'd seen a couple of examples, I decided it was the right time to bring up my original idea of grouping pages by type. (Going from the abstract to the concrete doesn't work for everybody, so sometimes going from the concrete to the abstract works better.) I asked "These last two pages both looked like list pages, what other kinds of pages are there? Can we list them? Should we look at a detail page?" This comment blew the mind of the tester who brought this ticket. They'd been testing this product for two years and had never organized the product this way in their brain. It may not have occurred to them that a product <em>could</em> be organized in different ways in their thoughts depending on the circumstance. We got as part as listing the concrete pages we'd checked, but not as far as identifying all the types in the abstract before the energy in the ensemble moved on.</p>
+<p>We looked at a detail page. We looked at a settings page. Then one of the testers who's been looking at a lot of front-end Javascript noticed two things: both the URLs we were searching for had <code>ajax</code> in them, so we only needed to search for one thing on each page we opened. And second, they knew that ajax was used to make changes to pages that had already loaded, so they asked "what kinds of pages change after they're loaded?" In this particular application, it was mostly forms in pop-up windows, so we concentrated our efforts there for the rest of the session. </p>
+<p>The whole session took about an hour and a half. A tester that came in scared and confused left empowered, with information to bring to their developers, and  a plan for how to execute the rest of the testing. Here's one way of looking at our exploratory testing session:</p>
+<p><a href="images/posts/2020/work-ensemble.png"><img src="images/posts/2020/work-ensemble.png"></a></p>
+<p>At every stage, we absorbed a lesson as a group, and used it as our new superpower to make our testing better for the next bit. There were other paths we could have pursued, but many of these weren't consciously mentioned or acknowledged during the session.</p>
+<h4>The Ensemble at the Conference</h4>
+<p>I facilitated a couple of ensemble sessions with groups at Agile Testing Days. Our first emsemble had a couple people drop out, so it ended up being one tester, one developer, and me. We were looking at a <a href="https://eviltester.github.io/TestingApp/apps/7charval/simple7charvalidation.htm">very straightforward application</a> from Alan Richardson where you can decide whether a string contains 7 characters and is valid (in the set A-Z, a-z, 0-9, and * ). A few different times the developer and I asked if we should look at the source code. Rather than trying to interrogate the application based on the behavior from different inputs (black box testing), we wanted to go to the source (white box testing). </p>
+<p>But we never did. We kept trying different inputs, getting increasingly creative with order, special characters, Unicode characters, other languages as we progressed. But we never chose a different path. Even as I tried to encourage us to take notes so we wouldn't try the same things we'd already tried, we didn't. </p>
+<p><a href="images/posts/2020/atd-ensemble.png"><img src="images/posts/2020/atd-ensemble.png"></a></p>
+<p>We did manage to find a good resource for copying and pasting unicode characters, but we didn't learn how to explore the application more efficiently, or take what we learned earlier in the session to apply it to the rest of the session.</p>
+<h4>The Power of Exploratory Testing</h4>
+<p>Brute force will get you somewhere. Trying enough different inputs, or different pages, and you'll gather more information about how the application works. But the power of exploratory testing comes from learning from your earlier results. It's realizing there are different ways to go, different paths to follow, jumping on one of those while it serves you, and making sure everyone else is along for the ride. </p>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-11-29_agile_testing_days_2020/" class="u-url">Agile Testing Days 2020</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Elizabeth Zagroba
@@ -306,7 +342,7 @@ Me: You would be too if you got stuck being the one doing it all the time!</p>
 <p>But I digress, back to hypergrowth: The things that worked before COVID and at smaller orgs don't work at a bigger org today. Find your people within the smaller org - your department, your mentor, your friends - so you can feel stable even as things around you grow and change. Communicate your expectations clearly, for yourself and for your team. Keep a journal of what you've accomplished to feel more anchored in the value of your work. </p>
 <p>After lunch, I started off in the wrong room because I didn't notice the sessions had been moved, but found my way to the one about coaching your peers. The conversation floated from a definition of terms to how to make space for mentoring. In order for people to mentor, there must be consent from the mentee. Ideally there is also some expertise in the organization around what is good, and someone (mentor or not) to teach the mentee what is good. The conversation reminded me of a talk I saw from Marianne Duijst; <a href="https://youtu.be/vXIZpe-x4o8?t=595">here's the moment she started talking about the difference between coaches, sponsors, teachers, and role models, and how they can support you in different ways</a>.</p>
 <p>Anytime Maaret Pyhäjärvi is running an exploratory testing session, go to it. You will be better for it. This time, we tested a simple web application. We ended up spending most of the time adding scenarios to the automated tests Maaret had already set up in Robot framework. One of the questions it brought up for me: do you leave failed tests in your automation suite to highlight unexpected behavior? I had this problem this week: I'd updated a schema to validate against the current behavior while the story was in progress, instead of the behavior we wanted when it was done, so I could verify other fields in the output. Next time I think I'll separate them into two tests and leave them both as pending (marked as xfail in the pytest framework) so it's clear something needs to change before the software is released.</p>
-<p>Thank you for the SoCraTes organizers for, as I learned a coach does, holding this space for us to examine ourselves and reflect. As someone who is much more fluent in emoji than GIF, I'm grateful to have won the hearts of the participants with this "leting the cat out of the bag" GIF in the GIF challenge.</p>
+<p>Thank you for the SoCraTes organizers for, as I learned a coach does, holding this space for us to examine ourselves and reflect. As someone who is much more fluent in emoji than GIF, I'm grateful to have won the hearts of the participants with this "letting the cat out of the bag" GIF in the GIF challenge.</p>
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="https://media1.tenor.com/images/e49bc18b66056a71171ae6f16046a2a4/tenor.gif?itemid=11543319" style="display:block; margin-left: auto; margin-right: auto;" title="Cat aggressively jumping out of a backpack"><span class="img_caption" style="display: block; text-align: center;">Cat aggressively jumping out of a backpack</span></span></p>
 </div>
     </div>
@@ -490,77 +526,6 @@ Me: You would be too if you got stuck being the one doing it all the time!</p>
 <p>But life is not about keeping busy. Make your time at work meaningful by executing meaningful work and declining to do things that aren't important right now.</p>
 </div>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-05-03_testbash-home/" class="u-url">TestBash Home (Spring 2020)</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Elizabeth Zagroba
-            </span></p>
-            <p class="dateline">
-            <a href="posts/2020/2020-05-03_testbash-home/" rel="bookmark">
-            <time class="published dt-published" datetime="2020-05-03T00:00:00+02:00" itemprop="datePublished" title="03 May 2020">03 May 2020</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p>Typing to the people you usually see in person can have the same energy as tweeting at them from across a big room. </p>
-<p><a href="https://www.ministryoftesting.com/events/testbash-home-2020">TestBash Home</a>, put on by the <a href="https://www.ministryoftesting.com/">Ministry of Testing</a>, was a 24-hour around-the-world tour of talks, panels, and coaching from the best of the best. I <del>missed</del> purposely and prudently skipped a big chunk of the schedule to get a good night's sleep and properly absorb what I could attend.</p>
-<p>I was definitely overloaded with places to chat (Slack, the video streaming app Crowdcast, Twitter, or <a href="https://tbhome.herokuapp.com/">the app built for the occasion</a>) simultaneously with the video stream, the same way I would be at an in-person conference. I got that same "I want to hang out more but I'm so tired" feeling I get in real life. Though as Gwen correctly noted, this is real life now. </p>
-<hr>
-<h3>Cost-Benefit of Automated Tests</h3>
-<p><a href="https://twitter.com/jrosaproenca">João Proença</a> and <a href="https://twitter.com/mgreiler">Michaela Greiler</a> weighed the costs and benefits of continually updating and running automated tests. Coming from two different angles (cognitive biases vs. Ph.D.-level number-crunching), they shared a similar quadrant model to make better decisions about your automation.</p>
-<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/joao-quadrants.jpg" style="display:block; margin-left: auto; margin-right: auto;" title="João's model on my actual TV screen"><span class="img_caption" style="display: block; text-align: center;">João's model on my actual TV screen</span></span>
-<span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/michaela-quadrants.png" style="display:block; margin-left: auto; margin-right: auto;" title="Michaela's model"><span class="img_caption" style="display: block; text-align: center;">Michaela's model</span></span></p>
-<p>João took a stronger "if it's not providing value, do something about it" approach, whether that's editing the test or deleting it altogether. He asked us to consider: If you were asked to write the same test from scratch today, would you do it the same way? When you need fast feedback, what's the opportunity cost of fixing, or even just running, a particular test? João reminded us to ask "what is being tested?" and decide if that still matters before jumping in to fix a failing test. </p>
-<p>Michaela brought a perspective from a much larger software company (Microsoft) than I've worked at before. Her approach left open another option for the fate of tests with questionable value: only run them at certain stages. Only run the tests now where the cost of running them at a later stage is too high. Running tests at the wrong stage can increase false alarms and diagnosis time. Running tests that exercise unchanged code should be avoided. </p>
-<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/michaela-quadrants.png" style="display:block; margin-left: auto; margin-right: auto;" title="Michaela's stages"><span class="img_caption" style="display: block; text-align: center;">Michaela's stages</span></span></p>
-<hr>
-<h3>Learning &amp; Teaching</h3>
-<p><a href="https://twitter.com/witchofthetest">Veerle Verhagen</a>'s 99-second talk got me rethinking some learning experiences I've had. </p>
-<p>It boiled down to this: learning is easy and teaching is hard. Try everything you've had trouble learning again, but with a better teacher this time. Whoa.</p>
-<hr>
-<h3>Evil User Stories</h3>
-<p>Every security talk I've heard tells you to look at the <a href="https://owasp.org/www-project-top-ten/">OWASP Top 10</a> and make a threat model. <a href="https://twitter.com/Anne_Oikarinen">Anne Oikarinen</a> told us what to do next: make an evil user story. If I were a person who made a mistake, shouldn't have access at all, or received more access to the system than anticipated, what would happen? How could we mitigate those risks? </p>
-<p>If your team doesn't know where to start with web security, Anne suggested adding static code analysis tools and exploratory testing to your practice. If you've got outside penetration testers exploring your software, add logging around the issues they trigger so you know better what's happening next time. </p>
-<p>I use the <a href="https://github.com/minimaxir/big-list-of-naughty-strings/blob/master/blns.txt">big list of naughty strings</a> to test for security vulnerabilities I don't always completely understand. Anne also recommended <a href="https://www.hacker101.com/">Hacker 101</a>, a free class about web security. </p>
-<hr>
-<h3>Live Coaching</h3>
-<p><a href="https://twitter.com/workroomprds">James Lyndsay</a>'s coaching session reminded me how valuable gathering information and stepping back to ask "what will I learn by performing this test?" are when you're stuck. I've got to go back to my notes from a workshop I took with him a couple years ago to reinforce some of these lessons for myself.</p>
-<hr>
-<h3>Continuous Delivery Survival Guide</h3>
-<p><a href="https://twitter.com/amyjph">Amy Phillips</a> might be the first person I met where neither of us could remember if we'd met in person before, or if we just knew each other from Twitter. Her talk about surviving continuous delivery from 2017 lives on an essential onboarding guide for testers today.</p>
-<p>Amy wants you to have enough context about your new team and their values before you jump into ideas about what you could change. People probably won't come to you to hand things over for the testing phase, so you have to figure out for yourself where you fit into their process. Amy recommended what I think of as "digital archaeology": reading through all the team artifacts to get a sense of their culture. Even if you don't get write access, looking at the customer support tickets, team backlog, and git commits can show you how the team actually works, rather than how they tell you they should work.</p>
-<p>Amy really made me laugh when she described learning about the different development environments. Ask what the developers use. Ask what sales uses. Ask how many environments there are, how they're different, and what people's expectations are around them.</p>
-<blockquote>
-<p>You can ask questions without knowing what a good answer is.</p>
-</blockquote>
-<p>Even without knowing how to implement something, you can ask questions about it to trigger developers' wheels to start turning. Looking at the structure of the code and what's been changed may give you ideas about what hasn't been covered.</p>
-<hr>
-<h3>Burnout</h3>
-<p><a href="https://twitter.com/maryamumar">Maryam Umar</a> spoke about being burned out from juggling too many priorities, combined with unmedicated anxiety. Maryam called out how difficult it can be to start from scratch and build a support network when you relocate. </p>
-<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/failure-garden.jpg" style="display:block; margin-left: auto; margin-right: auto;" title="Seemed appropriate to watch this one from the garden"><span class="img_caption" style="display: block; text-align: center;">Seemed appropriate to watch this one from the garden</span></span></p>
-<p>I worried a lot about building a support network before I relocated, but not much since. I'm so glad I've been able to recognize the "this is too much" feeling for myself. Saying no to big but overwhelming opportunities has left space in my life for things I know I want, and greener pastures I couldn't have imagined. </p>
-<hr>
-<h3>Leadership</h3>
-<p>This leadership panel made me want to have <a href="https://twitter.com/nicolasedgwick">Nicola Sedgwick</a>, <a href="https://twitter.com/testchick">Alessandra Moreira</a>, and <a href="https://twitter.com/SheyMouse">Shey Compton</a> in my corner as I transition to a manager position. Obviously (to me at this point in my career and after various other trainings I've participated in) leaders do not have to be people managers, and vice versa. People need to give you permission to lead them. Leaders have a vision they can communicate up and down the chain of command. </p>
-<p>The best way to be a leader is to lead by example. Sponsor other people at your organization who you see can be better leaders. Having the technical chops will allow people to believe in your value. It's easy for testers to underestimate our ability to influence behavior, but bug advocacy is a lot about that. </p>
-<p>Nicola's framework for sharing feedback is something I'm defintely going to try in a 1-on-1 meeting this week: share an observation, recount the accompanying behavior, and describe the impact. </p>
-<hr>
-<h3>Morale</h3>
-<p><a href="https://twitter.com/jennydoesthings">Jenny Bramble</a> spoke about bad and good metrics, specifically that morale was the only good one. Morale encompasses psychological safety, emotional health, contentment, pride, deilght, and core values. It's hard to measure, but that also means it's hard to game. </p>
-<p>If your team isn't one where people can have negative emotions, disagree, or talk about mistakes or risks, you're doing it wrong. Genuinely asking people how it's going and taking action on the results is the best thing you can do to improve morale. </p>
-<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/survey-questions.png" style="display:block; margin-left: auto; margin-right: auto;" title="Possible survey questions to help measure morale"><span class="img_caption" style="display: block; text-align: center;">Possible survey questions to help measure morale</span></span></p>
-<p>I look forward to Jenny's proposed next talk about the oral history of bugs on teams. </p>
-<hr>
-<h3>Titles</h3>
-<p>I'd seen this talk from <a href="https://twitter.com/vds4">Martin Hynie</a> on the Ministry of Testing Dojo, and worked with Martin in the past. So I was expecting to be reminded that testing isn't a straightforward observe -&gt; evaluate -&gt; report operation. I'd seen him take on challenges  outside the perceived role of tester, and I'd done so myself. I knew that it's easier to create a good artifact if you start by creating an imperfect one and ask people to correct it, rather than starting from scratch. </p>
-<p>My biggest takeaway was in the Q&amp;A: Someone's association and past experiences of people with my job title are more meaningful than the job title itself in setting up my working relationship with them.</p>
-<hr>
-<h3>Optimism</h3>
-<p>My favorite 99-second talk from the second set was <a href="https://twitter.com/jen_kitson">Jen Kitson</a>'s about optimism. While we discover and often have to report a lot of bad news as testers, optimism is essential to testing. We notice things, report bugs, and pushing for fixes because we can imagine a world that can be better. </p>
-<hr>
-<p>I'm so glad I got to attend TestBash Home. I would listen to <a href="https://twitter.com/TesterFromLeic">Vernon Richards</a> talk about sports balls I don't understand. <a href="https://twitter.com/gwendiagram">Gwen Diagram</a> gives me life and energy in a way that I cannot fully explain. There were people I got to see or chat with that I haven't encountered for months, or years, and it felt good. It felt like home. </p>
-</div>
-    </div>
     </article>
 </div>
 
@@ -573,7 +538,7 @@ Me: You would be too if you got stuck being the one doing it all the time!</p>
 <a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
 <a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
 <a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon"></i></a>
-© 2020 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+© 2021 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
 Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
 <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0.</a>
 

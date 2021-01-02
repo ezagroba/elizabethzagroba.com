@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/agile-testing-days.xml</loc>
-  <lastmod>2020-11-29T20:42:00Z</lastmod>
+  <lastmod>2020-12-19T21:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/api-specs.xml</loc>
@@ -39,7 +39,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/conference.xml</loc>
-  <lastmod>2020-11-29T20:42:00Z</lastmod>
+  <lastmod>2021-01-02T10:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/debugging.xml</loc>
@@ -63,7 +63,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/exploratory-testing.xml</loc>
-  <lastmod>2020-09-24T19:21:00Z</lastmod>
+  <lastmod>2021-01-02T10:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/git.xml</loc>
@@ -95,7 +95,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/note-taking.xml</loc>
-  <lastmod>2020-08-06T18:37:00Z</lastmod>
+  <lastmod>2021-01-02T10:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/open-api.xml</loc>
@@ -122,6 +122,10 @@
   <lastmod>2020-05-30T12:14:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://elizabethzagroba.com/categories/teaching.xml</loc>
+  <lastmod>2021-01-02T10:27:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://elizabethzagroba.com/categories/terminal.xml</loc>
   <lastmod>2020-05-04T18:38:00Z</lastmod>
  </sitemap>
@@ -143,7 +147,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/testing.xml</loc>
-  <lastmod>2020-11-29T20:42:00Z</lastmod>
+  <lastmod>2021-01-02T10:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/trust.xml</loc>
@@ -155,14 +159,14 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/galleries/rss.xml</loc>
-  <lastmod>2020-05-30T12:07:00Z</lastmod>
+  <lastmod>2021-01-02T10:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/rss.xml</loc>
-  <lastmod>2020-11-29T20:42:00Z</lastmod>
+  <lastmod>2021-01-02T10:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/sitemap.xml</loc>
-  <lastmod>2020-11-29T20:42:00Z</lastmod>
+  <lastmod>2021-01-02T10:27:00Z</lastmod>
  </sitemap>
 </sitemapindex>
