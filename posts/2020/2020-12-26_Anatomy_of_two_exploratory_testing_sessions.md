@@ -1,7 +1,7 @@
-.. title: The Anatomy of Two Exploratory Testing Sessions
+.. title: The Flow of Two Exploratory Testing Sessions
 .. date: 26 December 2020
 .. tags: exploratory-testing, testing, teaching
-.. previewimage: /images/posts/2020/success.png
+.. previewimage: /images/posts/2020/work-ensemble.png
 
 The [Exploratory Testing Peer Conference](https://exploratorytesting.org/) [#ET19](https://twitter.com/search?q=%23et19&src=typed_query) followed the 2019 Valencia edition of the European Testing Conference. I said something that I pretty immediately forgot in the upheaval when I returned to the office, but it really stuck with [Anne-Marie Charrett](https://twitter.com/charrett). I appreciate both that she remembered this at all, and continues to insist that I'm the one who had this stroke of genius when she really brought it to life. Here's the idea: 
 
