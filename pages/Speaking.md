@@ -24,13 +24,9 @@ I have spoken in these countries: 🇺🇸🇨🇦🇬🇧🇮🇪🇳🇱🇧�
 
 ### Future presentations & peer conferences
 
-<i class="fa fa-users"></i> [Mob Programming Conference ~~(May 2020)~~](https://mobprogrammingnewengland.com/) [postponed due to the coronavirus outbreak]
+<a href="https://www.ministryoftesting.com/events/testing-ask-me-anything-test-reporting-elizabeth-zagroba" target="_blank"><i class="fa fa-bullhorn"></i> Ministry of Testing Ask Me Anything - Test Reporting</a>
 
-- [Test Craft Camp (September 2020)](https://testcraftcamp.nl/) *organizer*
-
-<i class="fa fa-star"></i> <i class="fa fa-bullhorn"></i> [Nordic Testing Days (June ~~2020~~ 2021)](https://nordictestingdays.eu/) *keynote* [postponed due to the coronavirus outbreak]
-
-- [Testing Study Escape (Summer ~~2020~~ 2021)](https://studyescape.tech/) *organizer* [postponed due to the coronavirus outbreak]
+- [Test Craft Camp (13 March 2021)](https://testcraftcamp.nl/) *organizer*
  
 ### Past presentations
 
@@ -180,6 +176,7 @@ I have spoken in these countries: 🇺🇸🇨🇦🇬🇧🇮🇪🇳🇱🇧�
 
 - [Test Craft Camp](https://testcraftcamp.nl/) *organizer*
 	 - September 2019
+	 - September 2020
 - [Exploratory Testing Peer Conference](https://exploratorytesting.org/)
 	- February 2019
 - [Dutch Exploratory Workshop on Testing [DEWT]](https://dewt.wordpress.com/)
