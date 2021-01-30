@@ -24,16 +24,19 @@ I have spoken in these countries: 🇺🇸🇨🇦🇬🇧🇮🇪🇳🇱🇧�
 
 ### Future presentations & peer conferences
 
-<i class="fa fa-users"></i> [Mob Programming Conference ~~(May 2020)~~](https://mobprogrammingnewengland.com/) [postponed due to the coronavirus outbreak]
-
-- [Test Craft Camp (September 2020)](https://testcraftcamp.nl/) *organizer*
-
-<i class="fa fa-star"></i> <i class="fa fa-bullhorn"></i> [Nordic Testing Days (June ~~2020~~ 2021)](https://nordictestingdays.eu/) *keynote* [postponed due to the coronavirus outbreak]
-
-- [Testing Study Escape (Summer ~~2020~~ 2021)](https://studyescape.tech/) *organizer* [postponed due to the coronavirus outbreak]
+- [Test Craft Camp (13 March 2021)](https://testcraftcamp.nl/) *organizer*
  
 ### Past presentations
 
+<a href="#" class="accordion" data-toggle="collapse" data-target="#test-reporting-ama"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i></a> Ask Me Anything - Test Reporting
+<ul id="test-reporting-ama" class="collapse">
+	<li><a href="https://www.ministryoftesting.com/dojo/lessons/testing-ask-me-anything-test-reporting-elizabeth-zagroba" target="_blank">Ministry of Testing Dojo video recording [paywall]</a></li>
+</ul>
+
+<a href="#" class="accordion" data-toggle="collapse" data-target="#mob-programming-agile-new-england"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i></a> Panel Discussion - Mob Programming
+<ul id="mob-programming-agile-new-england" class="collapse">
+	<li><a href="https://www.youtube.com/watch?v=VM7En7eV4ZE" target="_blank">Agile New England video recording</a></li>
+</ul>
 
 <a href="#" class="accordion" data-toggle="collapse" data-target="#mob-testing"><i class="fa fa-bullhorn"></i> <i class="fa fa-file-powerpoint"></i></a> Talk (w/Joep Schuurkes) - Mob Testing: Building Good Habits
 <ul id="mob-testing" class="collapse">
@@ -180,6 +183,7 @@ I have spoken in these countries: 🇺🇸🇨🇦🇬🇧🇮🇪🇳🇱🇧�
 
 - [Test Craft Camp](https://testcraftcamp.nl/) *organizer*
 	 - September 2019
+	 - September 2020
 - [Exploratory Testing Peer Conference](https://exploratorytesting.org/)
 	- February 2019
 - [Dutch Exploratory Workshop on Testing [DEWT]](https://dewt.wordpress.com/)

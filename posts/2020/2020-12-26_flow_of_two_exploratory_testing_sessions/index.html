@@ -4,21 +4,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Anatomy of Two Exploratory Testing Sessions | Elizabeth Zagroba: Software Tester</title>
+<title>The Flow of Two Exploratory Testing Sessions | Elizabeth Zagroba: Software Tester</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
-<link rel="canonical" href="https://elizabethzagroba.com/posts/2020/2020-12-26_anatomy_of_two_exploratory_testing_sessions/">
+<link rel="canonical" href="https://elizabethzagroba.com/posts/2020/2020-12-26_flow_of_two_exploratory_testing_sessions/">
 <link rel="icon" href="../../../images/avatar.png" sizes="128x128">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="../../assets/fontawesome-5.13.0/css/all.css" rel="stylesheet">
 <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><meta name="author" content="Elizabeth Zagroba">
 <link rel="prev" href="../2020-11-29_agile_testing_days_2020/" title="Agile Testing Days 2020" type="text/html">
+<link rel="next" href="../../2021/karen_johnson_moving_testing_forward_cast_2015/" title="Karen Johnson at CAST 2015" type="text/html">
 <meta property="og:site_name" content="Elizabeth Zagroba: Software Tester">
-<meta property="og:title" content="The Anatomy of Two Exploratory Testing Sessions">
-<meta property="og:url" content="https://elizabethzagroba.com/posts/2020/2020-12-26_anatomy_of_two_exploratory_testing_sessions/">
+<meta property="og:title" content="The Flow of Two Exploratory Testing Sessions">
+<meta property="og:url" content="https://elizabethzagroba.com/posts/2020/2020-12-26_flow_of_two_exploratory_testing_sessions/">
 <meta property="og:description" content="The Exploratory Testing Peer Conference #ET19 followed the 2019 Valencia edition of the European Testing Conference. I said something that I pretty immediately forgot in the upheaval when I returned t">
-<meta property="og:image" content="https://elizabethzagroba.com/images/posts/2020/success.png">
+<meta property="og:image" content="https://elizabethzagroba.com/images/posts/2020/work-ensemble.png">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2020-12-26T00:00:00+01:00">
 <meta property="article:tag" content="exploratory-testing">
@@ -83,7 +84,7 @@ navbar-dark bg-dark
         
         
         
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">The Anatomy of Two Exploratory Testing Sessions</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">The Flow of Two Exploratory Testing Sessions</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
@@ -108,9 +109,9 @@ navbar-dark bg-dark
 <p>Immediately a plan came to my mind:
 1. Map out what kinds of pages there were, assuming that different pages of the same type would be likely to load the same libraries: list view, detail view, landing page, etc. 
 1. Look at one of each of those pages with the Network tab open in the developer tools.</p>
-<p>In a quick spirt of excitement, I dumped this idea on the group without figuring out if people knew what either of these things meant. (It turns out, not everyone did.) But everyone seemed to understand that there was somewhere in the developer tools where we could tell which libraries were loaded, so we started there. Exploring in a group is not about getting everyone to follow my idea immediately (or ever), it's about making sure everyone is on board and understands what's going on.</p>
+<p>In a quick spirt of excitement, I dumped this idea on the group without figuring out if people knew what either of these things meant. (It turns out, not everyone did.) But everyone seemed to understand that there was somewhere in the developer tools where we could tell which libraries were loaded, so we started there. Exploring in a group is not about getting everyone to follow my idea immediately (<a href="https://www.showingupforracialjustice.org/white-supremacy-culture-characteristics.html">or ever</a>), it's about making sure everyone is on board and understands what's going on.</p>
 <p>Proving the absence of a thing is harder than proving the presence of something, so we spent a bit of time looking through the Console and Storage tabs, as well as reloading the page with the Network tab opened, to figure out what appeared where. That helped everyone remember or discover that we didn't need to reload the page if the Network tab was open before the page loaded. This sped us up for the rest of the session.</p>
-<p>Next, we looked at a couple of similar-looking list pages. We searched for the libraries in the Network tab. They weren't there. Now that we'd seen a couple of examples, I decided it was the right time to bring up my original idea of grouping pages by type. (Going from the abstract to the concrete doesn't work for everybody, so sometimes going from the concrete to the abstract works better.) I asked "These last two pages both looked like list pages, what other kinds of pages are there? Can we list them? Should we look at a detail page?" This comment blew the mind of the tester who brought this ticket. They'd been testing this product for two years and had never organized the product this way in their brain. It may not have occurred to them that a product <em>could</em> be organized in different ways in their thoughts depending on the circumstance. We got as part as listing the concrete pages we'd checked, but not as far as identifying all the types in the abstract before the energy in the ensemble moved on.</p>
+<p>Next, we looked at a couple of similar-looking list pages. We searched for the libraries in the Network tab. They weren't there. Now that we'd seen a couple of examples, I decided it was the right time to bring up my original idea of grouping pages by type. (Going from the abstract to the concrete doesn't work for everybody, so sometimes going from the concrete to the abstract works better.) I asked "These last two pages both looked like list pages, what other kinds of pages are there? Can we list them? Should we look at a detail page?" This comment blew the mind of the tester who brought this ticket. They'd been testing this product for two years and had never organized the product this way in their brain. It may not have occurred to them that a product <em>could</em> be organized in different ways in their thoughts depending on the circumstance. We got as far as listing the concrete pages we'd checked, but not as far as identifying all the types in the abstract before the energy in the ensemble moved on.</p>
 <p>We looked at a detail page. We looked at a settings page. Then one of the testers who's been looking at a lot of front-end Javascript noticed two things: both the URLs we were searching for had <code>ajax</code> in them, so we only needed to search for one thing on each page we opened. And second, they knew that ajax was used to make changes to pages that had already loaded, so they asked "what kinds of pages change after they're loaded?" In this particular application, it was mostly forms in pop-up windows, so we concentrated our efforts there for the rest of the session. </p>
 <p>The whole session took about an hour and a half. A tester that came in scared and confused left empowered, with information to bring to their developers, and  a plan for how to execute the rest of the testing. Here's one way of looking at our exploratory testing session:</p>
 <p><a href="../../../images/posts/2020/work-ensemble.png"><img src="../../../images/posts/2020/work-ensemble.png"></a></p>
@@ -132,6 +133,9 @@ navbar-dark bg-dark
 <ul class="pager hidden-print">
 <li class="previous">
                 <a href="../2020-11-29_agile_testing_days_2020/" rel="prev" title="Agile Testing Days 2020">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../../2021/karen_johnson_moving_testing_forward_cast_2015/" rel="next" title="Karen Johnson at CAST 2015">Next post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer"><a href="https://twitter.com/ezagroba" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
 <a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>

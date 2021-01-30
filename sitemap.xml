@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://elizabethzagroba.com/</loc>
-  <lastmod>2020-06-07T16:39:00Z</lastmod>
+  <lastmod>2021-01-17T16:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/2014/</loc>
@@ -34,12 +34,16 @@
   <lastmod>2020-04-19T14:01:00Z</lastmod>
  </url>
  <url>
+  <loc>https://elizabethzagroba.com/2021/</loc>
+  <lastmod>2021-01-17T16:54:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://elizabethzagroba.com/archive.html</loc>
-  <lastmod>2021-01-02T10:27:00Z</lastmod>
+  <lastmod>2021-01-30T18:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/</loc>
-  <lastmod>2021-01-02T10:27:00Z</lastmod>
+  <lastmod>2021-01-30T18:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/agile-testing-days/</loc>
@@ -68,6 +72,10 @@
  <url>
   <loc>https://elizabethzagroba.com/categories/bug-reporting/</loc>
   <lastmod>2020-04-12T14:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/categories/career/</loc>
+  <lastmod>2021-01-17T16:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/complaints/</loc>
@@ -142,6 +150,10 @@
   <lastmod>2020-04-13T10:54:00Z</lastmod>
  </url>
  <url>
+  <loc>https://elizabethzagroba.com/categories/reporting/</loc>
+  <lastmod>2021-01-30T18:30:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://elizabethzagroba.com/categories/risk-based-testing/</loc>
   <lastmod>2020-05-26T17:59:00Z</lastmod>
  </url>
@@ -207,7 +219,7 @@
  </url>
  <url>
   <loc>https://elizabethzagroba.com/index-3.html</loc>
-  <lastmod>2021-01-02T10:27:00Z</lastmod>
+  <lastmod>2021-01-30T18:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/listings/</loc>
@@ -376,5 +388,21 @@
  <url>
   <loc>https://elizabethzagroba.com/posts/2020/2020-12-26_anatomy_of_two_exploratory_testing_sessions/</loc>
   <lastmod>2021-01-02T10:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/posts/2020/2020-12-26_flow_of_two_exploratory_testing_sessions/</loc>
+  <lastmod>2021-01-02T15:31:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/posts/2021/karen_johnson_moving_testing_forward_cast_2015/</loc>
+  <lastmod>2021-01-17T16:46:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/posts/2021/strong_opinions_on_test_reporting/</loc>
+  <lastmod>2021-01-30T18:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/posts/2021/test_reporting/</loc>
+  <lastmod>2021-01-30T18:30:00Z</lastmod>
  </url>
 </urlset>
