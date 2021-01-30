@@ -2,7 +2,6 @@
 .. date: 17 January 2021
 .. tags: testing, career, conference
 .. previewimage: /images/posts/2021/karen-johnson.png
-.. youtube: mi5R3mOILrw
 
 I was about to throw away a whole notebook full of conference notes I'd already blogged about. But because I'd already shipped these notes across an ocean and ignored them for a few years, I figured I'd give them a final read first. Luckily I found a few pages of gems. 
 
