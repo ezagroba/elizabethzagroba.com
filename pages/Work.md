@@ -9,6 +9,7 @@ web apps, mobile apps, APIs, search features, content management systems, probab
 ### CV
 [regular style](../../assets/resumes/EZresume.pdf) or [experimental](../../assets/resumes/trustworthy-resume.pdf)
 
+
 ### Articles published for the [Ministry of Testing Dojo](https://dojo.ministryoftesting.com/) and [Test Buddy](https://www.testbuddy.co/)
 
 - [A Balancing Act: Finding a Place for Exploratory Testing](https://www.testbuddy.co/blog/a-balancing-act-finding-a-place-for-exploratory-testing)
@@ -23,3 +24,5 @@ She is one of the organizers of [Test Craft Camp](https://testcraftcamp.nl/), an
 
 ### Email
 [me@elizabethzagroba.com](mailto:me@elizabethzagroba.com)
+
+### <a href="https://elizabethzagroba.com/categories/testing.xml" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i> Subscribe to elizabethzagroba.com</a>
