@@ -1,7 +1,7 @@
 .. title: Doubt builds trust.
 .. date: 06 August 2017
 .. tags: doubt, trust
-
+.. previewimage: /images/posts/2017/dog.jpg
 
 <p name="5d5c" id="5d5c" class="graf graf--p graf-after--h3">I don’t trust people who always say yes. “Yes, I can finish that today.” “Yes, I tested it and it works and I didn’t find any bugs.” “Yes, I captured what you said in these notes.” “Yes, I assert I have accomplished all the things I listed on my resume.”</p>
 
