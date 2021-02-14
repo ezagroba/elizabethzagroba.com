@@ -23,7 +23,7 @@ It's a waste of time and energy (with the latter being in shorter supply these d
 
 ### Collect the feedback in the same way it will be presented, and present feedback in a way that the audience is comfortable with
 
-As much as I love making mindmaps, I decided that might not be the best format in this case. I doubted the customer support lead would bother to download a mind mapping software, company security restrictions prevented me from sharing a web-based one, and I'd probably want to walk him through a mind map I produced. But that felt like too much trouble for something small, plus I didn't want another Zoom call on a day otherwise free from them. 
+As much as I love making mindmaps, I decided that might not be the best format in this case. I doubted the customer support lead would bother to download a mind mapping application, company security restrictions prevented me from sharing a web-based one, and I'd probably want to walk him through a mind map I produced. But that felt like too much trouble for something small, plus I didn't want another Zoom call on a day otherwise free from them. 
 
 Instead, I used my company's go-to document tool of choice: Dropbox Paper. I might not enjoy it as much, but I knew it was a way he was used to receiving and collaborating asynchronously. I confirmed that format with him to be sure, and then I got to testing. 
 
@@ -49,7 +49,7 @@ Somewhat to my surprise, the customer support lead  started implementing my feed
 
 ### Move on
 
-While testing the product, another colleague noticed that the tool the new application had a larger architecture and setup than strictly what was needed for this particular use-case. Also, the application didn't provide an API for applications instead of humans to be sending around secret links to other humans. I defended the customer support lead: he was doing his best to solve his problem with the tools and skills he had. It wasn't the right time or place to come in at the end of a project that was about to provide value to people (myself included) and announce "this was not the optimal way to build this tool." You don't have to share all the feedback you collect. 
+While testing the product, another colleague noticed that the application had a larger architecture and setup than strictly what was needed for this particular use-case. Also, the application didn't provide an API for applications instead of humans to be sending around secret links to other humans. I defended the customer support lead: he was doing his best to solve his problem with the tools and skills he had. It wasn't the right time or place to come in at the end of a project that was about to provide value to people (myself included) and announce "this was not the optimal way to build this tool." You don't have to share all the feedback you collect. 
 
 ## Summary
 The next time you're wondering if you should parachute in to test something new, consider these steps: 
