@@ -141,7 +141,8 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ((('/archive.html', 'Archive'),
-        ('/categories/index.html', 'Tags')), 'Blog'),
+        ('/categories/index.html', 'Tags'), 
+        ('/rss.xml', 'RSS feed')), 'Blog'),
         ('/pages/work', 'Work'),
         ('/pages/speaking', 'Speaking'),
         ('/pages/resources', 'Resources')
@@ -584,11 +585,11 @@ FRONT_INDEX_HEADER = {
 # URL_TYPE = 'rel_path'
 
 # Extension for RSS feed files
-# RSS_EXTENSION = ".xml"
+RSS_EXTENSION = ".xml"
 
 # RSS filename base (without extension); used for indexes and galleries.
 # (translatable)
-# RSS_FILENAME_BASE = "rss"
+RSS_FILENAME_BASE = "rss"
 
 # Final location for the blog main RSS feed is:
 # output / TRANSLATION[lang] / RSS_PATH / RSS_FILENAME_BASE RSS_EXTENSION
@@ -605,7 +606,7 @@ FRONT_INDEX_HEADER = {
 ATOM_FILENAME_BASE = "feed"
 
 # Extension for Atom feed files
-# ATOM_EXTENSION = ".atom"
+ATOM_EXTENSION = ".atom"
 
 # Slug the Tag URL. Easier for users to type, special characters are
 # often removed or replaced as well.
@@ -938,7 +939,6 @@ LICENSE = "Mozilla Public License 2.0"
 
 # (translatable)
 CONTENT_FOOTER = """
-<a href="https://elizabethzagroba.com/categories/testing.xml" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a>
 <a href="https://twitter.com/ezagroba" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
 <a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
 <a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>

@@ -24,5 +24,3 @@ She is one of the organizers of [Test Craft Camp](https://testcraftcamp.nl/), an
 
 ### Email
 [me@elizabethzagroba.com](mailto:me@elizabethzagroba.com)
-
-### <a href="https://elizabethzagroba.com/categories/testing.xml" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i> Subscribe to elizabethzagroba.com</a>
