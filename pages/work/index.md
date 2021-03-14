@@ -9,6 +9,7 @@ web apps, mobile apps, APIs, search features, content management systems, probab
 ### CV
 [regular style](../../assets/resumes/EZresume.pdf) or [experimental](../../assets/resumes/trustworthy-resume.pdf)
 
+
 ### Articles published for the [Ministry of Testing Dojo](https://dojo.ministryoftesting.com/) and [Test Buddy](https://www.testbuddy.co/)
 
 - [A Balancing Act: Finding a Place for Exploratory Testing](https://www.testbuddy.co/blog/a-balancing-act-finding-a-place-for-exploratory-testing)

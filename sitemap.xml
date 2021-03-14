@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://elizabethzagroba.com/</loc>
-  <lastmod>2021-01-17T16:54:00Z</lastmod>
+  <lastmod>2021-02-14T10:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/2014/</loc>
@@ -39,7 +39,7 @@
  </url>
  <url>
   <loc>https://elizabethzagroba.com/archive.html</loc>
-  <lastmod>2021-01-30T18:30:00Z</lastmod>
+  <lastmod>2021-03-14T14:18:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/</loc>
@@ -211,15 +211,19 @@
  </url>
  <url>
   <loc>https://elizabethzagroba.com/index-1.html</loc>
-  <lastmod>2021-01-02T10:27:00Z</lastmod>
+  <lastmod>2021-02-14T17:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/index-2.html</loc>
-  <lastmod>2021-01-02T10:27:00Z</lastmod>
+  <lastmod>2021-02-14T17:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/index-3.html</loc>
-  <lastmod>2021-01-30T18:30:00Z</lastmod>
+  <lastmod>2021-02-14T17:35:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/index-4.html</loc>
+  <lastmod>2021-03-14T14:18:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/listings/</loc>
@@ -386,10 +390,6 @@
   <lastmod>2020-11-29T20:42:00Z</lastmod>
  </url>
  <url>
-  <loc>https://elizabethzagroba.com/posts/2020/2020-12-26_anatomy_of_two_exploratory_testing_sessions/</loc>
-  <lastmod>2021-01-02T10:27:00Z</lastmod>
- </url>
- <url>
   <loc>https://elizabethzagroba.com/posts/2020/2020-12-26_flow_of_two_exploratory_testing_sessions/</loc>
   <lastmod>2021-01-02T15:31:00Z</lastmod>
  </url>
@@ -402,7 +402,19 @@
   <lastmod>2021-01-30T18:34:00Z</lastmod>
  </url>
  <url>
-  <loc>https://elizabethzagroba.com/posts/2021/test_reporting/</loc>
-  <lastmod>2021-01-30T18:30:00Z</lastmod>
+  <loc>https://elizabethzagroba.com/posts/2021/testbash_nyc_2015/</loc>
+  <lastmod>2021-02-27T15:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/posts/2021/testcraftcamp_march_2021/</loc>
+  <lastmod>2021-03-14T14:18:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/posts/2021/testcraftcamp_spice_up_your_relationship_with_your_project/</loc>
+  <lastmod>2021-03-14T14:38:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/posts/2021/when_you_cant_help_much_help_a_little/</loc>
+  <lastmod>2021-02-14T10:59:00Z</lastmod>
  </url>
 </urlset>
