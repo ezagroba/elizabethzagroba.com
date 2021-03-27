@@ -14,7 +14,7 @@
 <link rel="icon" href="images/avatar.png" sizes="128x128">
 <link rel="next" href="index-4.html" type="text/html">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link href="fontawesome-5.13.0/css/all.css" rel="stylesheet">
-<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2021/testcraftcamp_spice_up_your_relationship_with_your_project/" type="text/html">
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2021/recently_encountered_logical_falacies/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -78,7 +78,34 @@ navbar-dark bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/testcraftcamp_spice_up_your_relationship_with_your_project/" class="u-url">TestCraftCamp: Spice Up Your Relationship (with Your Project)</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/recently_encountered_logical_falacies/" class="u-url">Recently Encountered Logical Fallacies</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2021/recently_encountered_logical_falacies/" rel="bookmark">
+            <time class="published dt-published" datetime="2021-03-27T00:00:00+01:00" itemprop="datePublished" title="27 March 2021">27 March 2021</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>I was on <a href="https://www.ministryoftesting.com/dojo/lessons/discussion-critical-thinking">a panel about critical thinking for the Ministry of Testing</a> this week. One of my fellow panelists and commendable ranter <a href="https://twitter.com/Maaikees">Maaike Brinkoff</a> brought up <em>ad hominem</em> (personal) attacks as one example of a failure of critical thinking. It's one of many <a href="http://www.fallacyfiles.org/">logical fallacies</a> that are worth exploring further. Equipping yourself with the name for a thing helps you recognize it when it appears. (<a href="https://leaddev.com/communication-relationships/skill-naming-whats-happening-room">Lara Hogan wrote recently about applying the skill, of being able to name the problem in the room, to defuse tense meetings</a>.) These are some of the fallacies I've across recently when I've been debriefing testing sessions, facilitating refinement sessions, and reviewing submissions for Agile Testing Days.</p>
+<h4>
+<em>Modus ponens</em> (affirming the consequent)</h4>
+<p>Yes, these problems are old enough to have Latin names. Affirming the consequent is applying a conditional without the conditionality. "If I run the pipeline, the latest build will be available on the test environment." If I go and look at the test environment and see the latest build there, I might assume the pipeline was run. But it could be that someone put the build there manually. </p>
+<h4>Fallacy of division</h4>
+<p>This assumes that something that applies to one member of a class applies to them all. "Stephanie is an admin user and can see this page. Therefore, all admin users can see this page." What happens if Stephanie can be assigned more than one role, a more restrictive/regular user role in addition to the admin page? Can she still see it?</p>
+<h4>
+<em>Post hoc ergo propter hoc</em> (correlation without causation)</h4>
+<p>This one is easiest to see when others are debreifing their testing to me, but I've also learned to catch for myself. "On the test environment, I clicked the button, then a whole bunch of logs appeared." Did clicking the button trigger the log messages? What do the log messages say? Did you read them? Who else could be using the test environment? Does the same thing happen every time you click the button, or when you run the application locally? </p>
+<h4>Argument from repetition</h4>
+<p>When someone says the same thing enough times, or brings up the same unimportant issue in a refinement meeting week after week, it can become easier to address the issue than convincing them yet again why it's not a priority. I've been facilitating refinement meetings every week for my teams for the past two years. <a href="https://butyoudontlooksick.com/articles/written-by-christine/the-spoon-theory/">I only have a finite amount of energy</a> that is not always worth expending by refuting the case for a small edge case week after week. </p>
+<hr>
+<p>Shoutout to my logic professor Dan Cohen at Colby College, who had us memorize and distinguish logical fallacies as part of his brilliant Logic and Argumentation course, and pointing out that an ease and comfort with truth tables would translate well to a computer science course. </p>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/testcraftcamp_spice_up_your_relationship_with_your_project/" class="u-url">TestCraftCamp: Spice Up Your Relationship (with Your Project)</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Elizabeth Zagroba
@@ -533,36 +560,6 @@ Me: You would be too if you got stuck being the one doing it all the time!</p>
 <p>Anytime Maaret Pyhäjärvi is running an exploratory testing session, go to it. You will be better for it. This time, we tested a simple web application. We ended up spending most of the time adding scenarios to the automated tests Maaret had already set up in Robot framework. One of the questions it brought up for me: do you leave failed tests in your automation suite to highlight unexpected behavior? I had this problem this week: I'd updated a schema to validate against the current behavior while the story was in progress, instead of the behavior we wanted when it was done, so I could verify other fields in the output. Next time I think I'll separate them into two tests and leave them both as pending (marked as xfail in the pytest framework) so it's clear something needs to change before the software is released.</p>
 <p>Thank you for the SoCraTes organizers for, as I learned a coach does, holding this space for us to examine ourselves and reflect. As someone who is much more fluent in emoji than GIF, I'm grateful to have won the hearts of the participants with this "letting the cat out of the bag" GIF in the GIF challenge.</p>
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="https://media1.tenor.com/images/e49bc18b66056a71171ae6f16046a2a4/tenor.gif?itemid=11543319" style="display:block; margin-left: auto; margin-right: auto;" title="Cat aggressively jumping out of a backpack"><span class="img_caption" style="display: block; text-align: center;">Cat aggressively jumping out of a backpack</span></span></p>
-</div>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-07-14_testbash_netherlands_2019/" class="u-url">TestBash Netherlands 2019</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Elizabeth Zagroba
-            </span></p>
-            <p class="dateline">
-            <a href="posts/2020/2020-07-14_testbash_netherlands_2019/" rel="bookmark">
-            <time class="published dt-published" datetime="2020-07-14T00:00:00+02:00" itemprop="datePublished" title="14 July 2020">14 July 2020</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p>In reviewing my notes from the TestBash Netherlands that occurred in May of 2019, two big, related themes jump out at me: </p>
-<ol>
-<li>keep exploratory testing</li>
-<li>learn by sharing</li>
-</ol>
-<p>Andy Brown gave a talk about human factors in highly automated systems. As flying airplanes becomes more automated, pilots know less about how to switch to manual overrides in a time of crisis. You might not have more than a few hours a year of practice for when things go down. Continuing to share stories from the past and learn from them is one way out.</p>
-<p>For <a href="https://twitter.com/Godtesen">Gitte Ottosen</a>, who gave us a tester's perspective on Agile, learning never ends. Understanding the customer journey and tying your work back to the business value are essential for making informed decisions about what to test, and which subset of those things to automate. Teaching, knowledge-sharing, coaching, and pairing can get the whole team involved in advancing quality, even if they're not all strong exploratory testers. </p>
-<p><a href="https://twitter.com/JitGo">Jit Gosai</a> spoke about continuous testing. Practice test-driven development, story mapping, and three amigos meetings before the code is written. Improve automation test suites, use exploratory and mob testing, and incorporate feedback from the customer. When you're exploratory testing, you're not just confirming that the software functions as expected, you're testing the goal of your whole organization. Jit found that getting everybody on the team exploratory testing caught more bugs than automated tests. </p>
-<p><a href="https://twitter.com/MaritvanDijk77">Marit van Dijk</a> hit the nail on the head with her talk: keep exploratory testing. Maintaining a consistent state of test data across mutliple teams is difficult. Rather than spend your time setting up control mechanisms for those systems, explore the systems themselves. Bugs are found not in the things we can control or know about, but in the space between systems. Pairing a developer with a tester was a lot faster than testing solo, because nobody had to go back and reproduce bugs. Spread the risk across systems by hooking them up one at a time.</p>
-<p><a href="https://twitter.com/VeraGeBa">Vera Gehlen-Baum</a> and <a href="https://twitter.com/isleoftesting">Beren Van Daele</a> spoke about incorporating your learning into your backlog. Identify what you want to learn, and write actionable acceptance criteria for your learning. This should include sharing what you've learned individually or with the team; it doesn't have to be confined to same sprint as the work for the team. Linking personal goals to business goals will ensure that people see they're improving.</p>
-<p><a href="https://twitter.com/j19sch">Joep Schuurkes</a> talked us through what he was thinking as he was live-coding, which is learning and sharing at the most granular level. Separate concerns when you automate: keep what the code is supposed to accomplish separate from how it's accomplishing it. He expanded the CRUD heuristic that helps me decide what to automate, and added an extra DERR to make it CRUDDERR to ensure you can also debug, explore, run, and report on your code. </p>
-<p><a href="https://twitter.com/Annosofie">Anne Colder</a> and <a href="https://twitter.com/VinWijNL">Vincent Wijnen</a> gave an experience report about their mentor-mentee relationship. Mentoring is different from teaching. Ask questions about your mentee's experience, and expect different questions from them than you'd receive from your more experienced colleagues. Mentoring stimulates reflection on both sides. </p>
-<p>Drew Pontikis spoke about the illusion of control. Challenge your own thinking by listening to new voices. Recognize when you can affect change in a situation.</p>
-<p><a href="https://twitter.com/QualityFrog">Ben Simo</a> gave the last talk of the day about the art of scientific investigation. Design your next experiment based on your previous ones, and adapt as you go along. </p>
-<p>There was a whole slew of 99-second talks, but the only memorable and explicable thing I wrote down from them was something Ilena said: "Understand your team doesn't function the way that you do." </p>
-<p>The day prior to the day of talks, I helped facilitate and debrief a workshop that Joep Schuurkes developed around building an API testing framework. It was the first time we'd given it together, so that whole day was a 'learn by sharing' experience for me.</p>
 </div>
     </div>
     </article>
