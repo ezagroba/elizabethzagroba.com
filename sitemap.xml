@@ -39,11 +39,11 @@
  </url>
  <url>
   <loc>https://elizabethzagroba.com/archive.html</loc>
-  <lastmod>2021-04-11T16:07:00Z</lastmod>
+  <lastmod>2021-05-08T12:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/</loc>
-  <lastmod>2021-03-27T10:10:00Z</lastmod>
+  <lastmod>2021-05-08T12:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/agile-testing-days/</loc>
@@ -76,6 +76,10 @@
  <url>
   <loc>https://elizabethzagroba.com/categories/career/</loc>
   <lastmod>2021-01-17T16:46:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/categories/charters/</loc>
+  <lastmod>2021-05-01T07:56:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/complaints/</loc>
@@ -124,6 +128,10 @@
  <url>
   <loc>https://elizabethzagroba.com/categories/jira/</loc>
   <lastmod>2020-04-13T11:06:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/categories/leadership/</loc>
+  <lastmod>2021-05-08T12:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/categories/logic/</loc>
@@ -231,7 +239,7 @@
  </url>
  <url>
   <loc>https://elizabethzagroba.com/index-4.html</loc>
-  <lastmod>2021-04-11T16:07:00Z</lastmod>
+  <lastmod>2021-05-08T12:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/listings/</loc>
@@ -410,6 +418,10 @@
   <lastmod>2021-01-17T16:46:00Z</lastmod>
  </url>
  <url>
+  <loc>https://elizabethzagroba.com/posts/2021/questions_from_exploratory_week_on_writing_exploratory_testing_charters/</loc>
+  <lastmod>2021-05-01T07:56:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://elizabethzagroba.com/posts/2021/recently_encountered_logical_falacies/</loc>
   <lastmod>2021-03-27T09:59:00Z</lastmod>
  </url>
@@ -424,6 +436,10 @@
  <url>
   <loc>https://elizabethzagroba.com/posts/2021/testcraftcamp_spice_up_your_relationship_with_your_project/</loc>
   <lastmod>2021-03-14T14:38:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elizabethzagroba.com/posts/2021/the_long_haul/</loc>
+  <lastmod>2021-05-08T12:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://elizabethzagroba.com/posts/2021/when_you_cant_help_much_help_a_little/</loc>
