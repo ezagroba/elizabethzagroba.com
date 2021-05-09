@@ -95,7 +95,7 @@ I have spoken in these countries: 🇺🇸🇨🇦🇬🇧🇮🇪🇳🇱🇧�
 <li><a href="https://dojo.ministryoftesting.com/dojo/lessons/doubt-builds-trust-elizabeth-zagroba" target="_blank">Ministry of Testing Dojo video recording [paywall]</a></li>
 <li><a href="https://invidio.us/watch?v=SM57HMJpkZc" target="_blank">Nordic Testing Days video recording</a></li>
 <li><a href="https://www.ministryoftesting.com/dojo/lessons/testers-island-discs-ep23-elizabeth-zagroba" target="_blank">Testers' Island Discs podcast episode 23</a></li>
-<li><a href="../../slides/doubt-builds-trust.pdf">Slides</a></li>
+<li><a href="../../assets/slides/doubt-builds-trust.pdf">Slides</a></li>
 <li><a href="https://www.goodreads.com/review/list/5444309-elizabeth?shelf=doubt-builds-trust">Further reading</a></li>
 <li>Presented at:</li>
 	<ul>
