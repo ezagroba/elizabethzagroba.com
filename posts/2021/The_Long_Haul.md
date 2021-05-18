@@ -1,7 +1,6 @@
 .. title: The Long Haul
 .. date: 8 May 2021
 .. tags: testing, teaching, career, critical-thinking, humans, mindset, leadership
-.. previewimage: 
 
 I've been both the lead of my team and a tester on that team for a year now. Getting answers, adapting to change, and identifying solutions have completely different time horizons in each of these roles. 
 
