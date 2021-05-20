@@ -13,7 +13,7 @@ For some of the people attending today, they showed up without preparing, and di
 
 3. When I scheduled the follow-up, I made the title of the Outlook invitation "review the comments you've already added to the document" so the purpose and expectations were both clear and impossible to miss. I added the document to review to the body of the invitation. I let the two inquiring minds know that this occurred. I found a couple of 45-minute blocks when all four people present at the planning meeting, plus the one person that had been forgotten, were available simultaneously. I chose the one on Tuesday, giving the person who was out for a week Monday to catch up.
 
-4. I added a Slackbot reminder for Monday afternoon for the person who's out the previous week. They're on my team and typically have trouble saying no when someone tries to pull their focus. We've found that Slackbots help. 
+4. I added a Slackbot reminder for Monday afternoon for the person who's out the previous week. They're on my team and typically have trouble saying no when someone tries to pull their focus. [We've found that Slackbots help](https://elizabethzagroba.com/posts/2021/the_long_haul/). 
 
 5. The meeting time arrives. The Slackbot reminder person and I have reviewed the document. The others haven't. I check in and ask whether we should hold this meeting after they're available to do so. Silence. I move on, facilitating the discussion, taking notes, and keeping us on track.
 
