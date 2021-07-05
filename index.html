@@ -12,9 +12,9 @@
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://elizabethzagroba.com/">
 <link rel="icon" href="images/avatar.png" sizes="128x128">
-<link rel="next" href="index-4.html" type="text/html">
+<link rel="next" href="index-5.html" type="text/html">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link href="fontawesome-5.13.0/css/all.css" rel="stylesheet">
-<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2021/praise_the_messenger/" type="text/html">
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2021/complete_the_main_quest_first/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -78,7 +78,39 @@ navbar-dark bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/praise_the_messenger/" class="u-url">Praise the Messenger</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/complete_the_main_quest_first/" class="u-url">Complete the Main Quest First</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2021/complete_the_main_quest_first/" rel="bookmark">
+            <time class="published dt-published" datetime="2021-07-04T00:00:00+02:00" itemprop="datePublished" title="04 July 2021">04 July 2021</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>Recently, I made an outline for a tester (who was still onboarding) for what kinds of things to test on a new API endpoint we added. They explored, wrote a bunch of automated tests to capture their work, and came back with a list of interesting and good catches in the error responses. My first question in our debrief was: did you try a successful response? They hadn't. I sent them back to tackle that too. </p>
+<p>Because a successful response is the first thing our product owner is going to ask about. That's what we'd want to show off at the review meeting internally to demonstrate the new API endpoint. That's the first the customer is going to try. They're going to copy the request from our OpenAPI specification, paste it in Postman (or the tool of their choice, but our customers so far have been using Postman), and see if their credentials will get them the response that matches the specification. These stakeholders share a common concern, and that's the risk we should be migitating with testing. First. </p>
+<h3>Complete the main quest first.</h3>
+<p>Complete the main quest first. Come back to the side quests. </p>
+<p>A customer had asked for this API endpoint to be added. If we'd tested the happy path first, we would have had the option of releasing the API for the customer to use. The risk of discovering a successful request wouldn't yield a successful response was relatively low in this case, since our developers tend to try one happy path themselves.</p>
+<p>But what if the main quest had required a lot of setup, explanations to build knowledge and context for the onboarding tester, or yielded an issue? I'd done a risk-based analysis of what all to complete as part of our definition of done for this story. But I hadn't shared my approach to completing the main quest first, so the tester did what testers do, and went on a hunt to find weird stuff. </p>
+<p><img alt="" src="images/posts/2021/iceland.jpg"></p>
+<h3>Note down and follow-up on werid stuff; do not get distracted by it</h3>
+<p>Software will break in all sorts of ways. The more time and curiosity you have to dig into it, the more you'll discover. But are those the most important things? </p>
+<p>In this API, the tester discovered that if you paste 10,000 characters into a field that's meant for a UUID, you get a 400 response. But did they try a regular old UUID first? What if they get a 400 response no matter what they put in that field, because the field name in the specification doesn't match what's in the code? Is trying 10,000 characters the first and biggest risk they have to face when presenting this API to a customer?</p>
+<p>I'm not saying don't try 10,000 characters. <a href="https://twitter.com/ezagroba/status/1234822805709053953">I love that shit</a>. But decide if it's a risk you care about first. <a href="https://elizabethzagroba.com/posts/2020/2020-05-24_if_a_test_falls_in_a_forest/">If you don't care about the outcome, don't test it</a>. Don't make busy-work for yourself just to fill the time. </p>
+<h3>Make side quests a concious choice</h3>
+<p>Before you start throwing 10,000 characters at your API, talk to your team. Your developer can probably tell you if they never built something to deal with that situation. Your product owner can tell you they'd rather have it to the customer sooner. Your data analyst can tell you if there's already longer stuff than that in the database, or if you should be trying Japanese instead. </p>
+<p>Make side quests a deliberate choice. Share them to increase their value or figure out who on the team is best-suited to execute them. </p>
+<h3>Recognize when the quest is a journey, not a destination</h3>
+<p>Throwing 10,000 characters at an API may be a way to start a discussion about the speed at which responses are returned. It might be a way of showing <a href="http://coffeeipsum.com/">your favorite random text generator</a> to your fellow tester. It might be an exercise at an ensemble testing session, where everyone can practice pausing before executing an idea to describe the expected behavior first. </p>
+<p>Quests can be valuable in ways that are not directly related to the finishing the quest. </p>
+<p><em>Note: I got asked recently if I use the word charter much with non-testers. I don't. Try reading this again but replacing every mention of "quest" with "charter".</em></p>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/praise_the_messenger/" class="u-url">Praise the Messenger</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Elizabeth Zagroba
@@ -455,68 +487,11 @@ navbar-dark bg-dark
 <p>Why am I revisiting my notes from this conference six years later? I might be feeling a bit nostalgic for the seeing-people-in-person events a year into pandemic-induced isolation. I'm also in the middle of reading "Becoming a Technical Leader" by Jerry Weinberg. One of the questions asks you to read an autobiography of someone you admire. It turns out none of the people I shared TestBash NYC with have published autobiographies...yet. </p>
 </div>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/when_you_cant_help_much_help_a_little/" class="u-url">When You Can't Help Much, Help A Little</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Elizabeth Zagroba
-            </span></p>
-            <p class="dateline">
-            <a href="posts/2021/when_you_cant_help_much_help_a_little/" rel="bookmark">
-            <time class="published dt-published" datetime="2021-02-14T00:00:00+01:00" itemprop="datePublished" title="14 February 2021">14 February 2021</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<h4>Check that you have time</h4>
-<p>At my current job, everyone in the R&amp;D department gets a budget of two days per month to spend "crafting," or researching, building, testing, etc. what interests them. Most often people use this time to bring work they're passionate about up from the bottom of the backlog to be worked on now.</p>
-<p>I was in the middle of adding a security scanning tool to our CI pipeline when I happened upon something interesting to test: a new web application. An old application that had been widely-used around the company, and as it turns out, with our customers too, had gone down. It allowed you to share a piece of text with a link. The text was only visible once. It wouldn't be viewable subsequent times you followed the link, so the application was good for sending passwords around securely. </p>
-<p>The person who'd built the application had left the company. In inquiring about who/how we might maintain it now, one of the customer support leads mentioned in a public Slack channel that he'd built a replacement. "Great!" I thought. "This is the one day I have an hour to test it." I was waiting for code review feedback on my pipeline scan, so it was perfect timing.</p>
-<h4>Check that the feedback will be heard</h4>
-<p>It's a waste of time and energy (with the latter being in shorter supply these days) to test something if nobody's going to do anything with the results of your testing. More on that in <a href="https://elizabethzagroba.com/posts/2020/2020-05-24_if_a_test_falls_in_a_forest/">this post</a>. So I checked with the customer support person first. After taking a quick look at the new application and confirming that it seemed to work, but could use some tweaks, I asked the customer support person in a direct message if he was ready for usability and accessibility feedback. </p>
-<blockquote>
-<p>Me: Hi there, I have a bit of usability and accessibility feedback about the secrets app. Is it at a stage where this feedback would be useful?</p>
-<p>Him: Yes, definitely 🙂</p>
-<p>Me: Great, I'll send you a Paper doc this afternoon.</p>
-</blockquote>
-<h4>Collect the feedback in the same way it will be presented, and present feedback in a way that the audience is comfortable with</h4>
-<p>As much as I love making mindmaps, I decided that might not be the best format in this case. I doubted the customer support lead would bother to download a mind mapping application, company security restrictions prevented me from sharing a web-based one, and I'd probably want to walk him through a mind map I produced. But that felt like too much trouble for something small, plus I didn't want another Zoom call on a day otherwise free from them. </p>
-<p>Instead, I used my company's go-to document tool of choice: Dropbox Paper. I might not enjoy it as much, but I knew it was a way he was used to receiving and collaborating asynchronously. I confirmed that format with him to be sure, and then I got to testing. </p>
-<h4>Share your oracles (reasons why you have feedback)</h4>
-<p>Once I opened a one-time link the application created, there was a page with an animated GIF, the piece of text that was shared, and a button to <code>Copy Value</code>. My immediate testing notes were something like:</p>
-<ul>
-<li>Remove GIF/make it stop rotating</li>
-<li>Move button to the top</li>
-<li>Make font bigger</li>
-</ul>
-<p>This customer support lead might have just taken than feedback and made the changes. But since I don't have an existing relationship where I provide feedback about his work, and developing applications is not his normal line of work, I provided more details: </p>
-<ul>
-<li>Animated GIFs (that can't be turned off) can trigger people with epilepsy or motion disorders (vertigo for example). <a href="https://www.w3.org/WAI/tips/designing/#provide-controls-for-content-that-starts-automatically">Here's the W3C guideline on this</a>. </li>
-<li>Move the <code>Copy Value</code> button above the text you're sharing so it's visible even if the text is ~5000 characters long.</li>
-<li>Increase the font size from the current 14px to 16px for vision-impaired peoeple. The ADA and typography geeks recommend 16, Apple has 17 as their font size. </li>
-</ul>
-<p>Now the customer support lead  understands why I'm asking for these changes. He can make different decisions than exactly what I've suggested while still addressing the problem I'm reporting. Plus he'll know more for next time he's building something. </p>
-<h4>Acknowledge the limits of the situation</h4>
-<p>Somewhat to my surprise, the customer support lead  started implementing my feedback right away! He took what I said into account, including removing the animated GIF entirely. He appreciated my feedback and wanted me to look at the application again the next day. Unfortunately, the next day was back to a regular work day filled with priorities, pressure, meetings, etc. I told him I wasn't going to have time to test it again. He went ahead and launched a functioning product. </p>
-<h4>Move on</h4>
-<p>While testing the product, another colleague noticed that the application had a larger architecture and setup than strictly what was needed for this particular use-case. Also, the application didn't provide an API for applications instead of humans to be sending around secret links to other humans. I defended the customer support lead: he was doing his best to solve his problem with the tools and skills he had. It wasn't the right time or place to come in at the end of a project that was about to provide value to people (myself included) and announce "this was not the optimal way to build this tool." You don't have to share all the feedback you collect. </p>
-<h3>Summary</h3>
-<p>The next time you're wondering if you should parachute in to test something new, consider these steps: </p>
-<ul>
-<li>check that you have time</li>
-<li>check that the feedback will be heard</li>
-<li>collect the feedback in the same way it will be presented</li>
-<li>present feedback in a way that the audience is comfortable with</li>
-<li>share your oracles (reasons why you have feedback)</li>
-<li>acknowledge the limits of the situation</li>
-<li>move on</li>
-</ul>
-</div>
-    </div>
     </article>
 </div>
 
         <ul class="pager postindexpager clearfix">
-<li class="next"><a href="index-4.html" rel="next">Older posts</a></li>
+<li class="next"><a href="index-5.html" rel="next">Older posts</a></li>
         </ul>
 <!--End of body content--><footer id="footer"><a href="https://twitter.com/ezagroba" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
 <a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>

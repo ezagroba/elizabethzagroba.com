@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Elizabeth Zagroba: Software Tester">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elizabeth Zagroba: Software Tester (old posts, page 5) | Elizabeth Zagroba: Software Tester</title>
+<link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<link rel="canonical" href="https://elizabethzagroba.com/index-5.html">
+<link rel="icon" href="images/avatar.png" sizes="128x128">
+<link rel="prev" href="." type="text/html">
+<link rel="next" href="index-4.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link href="fontawesome-5.13.0/css/all.css" rel="stylesheet">
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script>
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="https://elizabethzagroba.com/">
+
+            <span id="blog-title">Elizabeth Zagroba: Software Tester</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="archive.html" class="dropdown-item">Archive</a>
+                    <a href="categories/index.html" class="dropdown-item">Tags</a>
+                    <a href="rss.xml" class="dropdown-item">RSS feed</a>
+            </div>
+                </li>
+<li class="nav-item">
+<a href="pages/work" class="nav-link">Work</a>
+                </li>
+<li class="nav-item">
+<a href="pages/speaking" class="nav-link">Speaking</a>
+                </li>
+<li class="nav-item">
+<a href="pages/resources" class="nav-link">Resources</a>
+
+                
+            </li>
+</ul>
+<!-- DuckDuckGo custom search --><form method="get" id="search" action="https://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="https://elizabethzagroba.com/"><input type="hidden" name="k8" value="#444444"><input type="hidden" name="k9" value="#D51920"><input type="hidden" name="kt" value="h"><input type="text" name="q" maxlength="255" placeholder="Search" class="span2" style="margin-top: 4px;"><input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+
+    
+
+
+    
+<div class="postindex">
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/when_you_cant_help_much_help_a_little/" class="u-url">When You Can't Help Much, Help A Little</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2021/when_you_cant_help_much_help_a_little/" rel="bookmark">
+            <time class="published dt-published" datetime="2021-02-14T00:00:00+01:00" itemprop="datePublished" title="14 February 2021">14 February 2021</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<h4>Check that you have time</h4>
+<p>At my current job, everyone in the R&amp;D department gets a budget of two days per month to spend "crafting," or researching, building, testing, etc. what interests them. Most often people use this time to bring work they're passionate about up from the bottom of the backlog to be worked on now.</p>
+<p>I was in the middle of adding a security scanning tool to our CI pipeline when I happened upon something interesting to test: a new web application. An old application that had been widely-used around the company, and as it turns out, with our customers too, had gone down. It allowed you to share a piece of text with a link. The text was only visible once. It wouldn't be viewable subsequent times you followed the link, so the application was good for sending passwords around securely. </p>
+<p>The person who'd built the application had left the company. In inquiring about who/how we might maintain it now, one of the customer support leads mentioned in a public Slack channel that he'd built a replacement. "Great!" I thought. "This is the one day I have an hour to test it." I was waiting for code review feedback on my pipeline scan, so it was perfect timing.</p>
+<h4>Check that the feedback will be heard</h4>
+<p>It's a waste of time and energy (with the latter being in shorter supply these days) to test something if nobody's going to do anything with the results of your testing. More on that in <a href="https://elizabethzagroba.com/posts/2020/2020-05-24_if_a_test_falls_in_a_forest/">this post</a>. So I checked with the customer support person first. After taking a quick look at the new application and confirming that it seemed to work, but could use some tweaks, I asked the customer support person in a direct message if he was ready for usability and accessibility feedback. </p>
+<blockquote>
+<p>Me: Hi there, I have a bit of usability and accessibility feedback about the secrets app. Is it at a stage where this feedback would be useful?</p>
+<p>Him: Yes, definitely 🙂</p>
+<p>Me: Great, I'll send you a Paper doc this afternoon.</p>
+</blockquote>
+<h4>Collect the feedback in the same way it will be presented, and present feedback in a way that the audience is comfortable with</h4>
+<p>As much as I love making mindmaps, I decided that might not be the best format in this case. I doubted the customer support lead would bother to download a mind mapping application, company security restrictions prevented me from sharing a web-based one, and I'd probably want to walk him through a mind map I produced. But that felt like too much trouble for something small, plus I didn't want another Zoom call on a day otherwise free from them. </p>
+<p>Instead, I used my company's go-to document tool of choice: Dropbox Paper. I might not enjoy it as much, but I knew it was a way he was used to receiving and collaborating asynchronously. I confirmed that format with him to be sure, and then I got to testing. </p>
+<h4>Share your oracles (reasons why you have feedback)</h4>
+<p>Once I opened a one-time link the application created, there was a page with an animated GIF, the piece of text that was shared, and a button to <code>Copy Value</code>. My immediate testing notes were something like:</p>
+<ul>
+<li>Remove GIF/make it stop rotating</li>
+<li>Move button to the top</li>
+<li>Make font bigger</li>
+</ul>
+<p>This customer support lead might have just taken than feedback and made the changes. But since I don't have an existing relationship where I provide feedback about his work, and developing applications is not his normal line of work, I provided more details: </p>
+<ul>
+<li>Animated GIFs (that can't be turned off) can trigger people with epilepsy or motion disorders (vertigo for example). <a href="https://www.w3.org/WAI/tips/designing/#provide-controls-for-content-that-starts-automatically">Here's the W3C guideline on this</a>. </li>
+<li>Move the <code>Copy Value</code> button above the text you're sharing so it's visible even if the text is ~5000 characters long.</li>
+<li>Increase the font size from the current 14px to 16px for vision-impaired peoeple. The ADA and typography geeks recommend 16, Apple has 17 as their font size. </li>
+</ul>
+<p>Now the customer support lead  understands why I'm asking for these changes. He can make different decisions than exactly what I've suggested while still addressing the problem I'm reporting. Plus he'll know more for next time he's building something. </p>
+<h4>Acknowledge the limits of the situation</h4>
+<p>Somewhat to my surprise, the customer support lead  started implementing my feedback right away! He took what I said into account, including removing the animated GIF entirely. He appreciated my feedback and wanted me to look at the application again the next day. Unfortunately, the next day was back to a regular work day filled with priorities, pressure, meetings, etc. I told him I wasn't going to have time to test it again. He went ahead and launched a functioning product. </p>
+<h4>Move on</h4>
+<p>While testing the product, another colleague noticed that the application had a larger architecture and setup than strictly what was needed for this particular use-case. Also, the application didn't provide an API for applications instead of humans to be sending around secret links to other humans. I defended the customer support lead: he was doing his best to solve his problem with the tools and skills he had. It wasn't the right time or place to come in at the end of a project that was about to provide value to people (myself included) and announce "this was not the optimal way to build this tool." You don't have to share all the feedback you collect. </p>
+<h3>Summary</h3>
+<p>The next time you're wondering if you should parachute in to test something new, consider these steps: </p>
+<ul>
+<li>check that you have time</li>
+<li>check that the feedback will be heard</li>
+<li>collect the feedback in the same way it will be presented</li>
+<li>present feedback in a way that the audience is comfortable with</li>
+<li>share your oracles (reasons why you have feedback)</li>
+<li>acknowledge the limits of the situation</li>
+<li>move on</li>
+</ul>
+</div>
+    </div>
+    </article>
+</div>
+
+        <ul class="pager postindexpager clearfix">
+<li class="previous"><a href="." rel="prev">Newer posts</a></li>
+            <li class="next"><a href="index-4.html" rel="next">Older posts</a></li>
+        </ul>
+<!--End of body content--><footer id="footer"><a href="https://twitter.com/ezagroba" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+<a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+<a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+<a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+<a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
+<a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon" aria-hidden="true"></i></a>
+© 2021 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
+<a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0.</a>
+
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>
