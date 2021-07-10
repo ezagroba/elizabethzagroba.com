@@ -24,7 +24,8 @@ I have spoken in these countries: 🇺🇸🇨🇦🇬🇧🇮🇪🇳🇱🇧�
 
 ### Future presentations & peer conferences
 
-- [Test Craft Camp (13 March 2021)](https://testcraftcamp.nl/) *organizer*
+- Panel Discussion - Ensemble Testing [[Agile2021] (22 July 2021)](https://www.agilealliance.org/agile2021/schedule/)
+- [Friends of Good Software [FroGS conf] (4 September 2021)](http://frogsconf.nl/) *organizer*
  
 ### Past presentations
 
@@ -184,6 +185,7 @@ I have spoken in these countries: 🇺🇸🇨🇦🇬🇧🇮🇪🇳🇱🇧�
 - [Test Craft Camp](https://testcraftcamp.nl/) *organizer*
 	 - September 2019
 	 - September 2020
+	 - March 2021
 - [Exploratory Testing Peer Conference](https://exploratorytesting.org/)
 	- February 2019
 - [Dutch Exploratory Workshop on Testing [DEWT]](https://dewt.wordpress.com/)
