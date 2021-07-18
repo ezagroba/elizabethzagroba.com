@@ -37,6 +37,10 @@ I have spoken in these countries: 🇺🇸🇨🇦🇬🇧🇮🇪🇳🇱🇧�
 <a href="#" class="accordion" data-toggle="collapse" data-target="#mob-programming-agile-new-england"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i></a> Panel Discussion - Mob Programming
 <ul id="mob-programming-agile-new-england" class="collapse">
 	<li><a href="https://www.youtube.com/watch?v=VM7En7eV4ZE" target="_blank">Agile New England video recording</a></li>
+	<li>Presented at:</li>
+		<ul>
+			<li><a href="https://mobprogrammingnewengland.com/speaker-information/" target="_blank">Agile New England (June 2020)</a></li>
+		</ul>
 </ul>
 
 <a href="#" class="accordion" data-toggle="collapse" data-target="#mob-testing"><i class="fa fa-bullhorn"></i> <i class="fa fa-file-powerpoint"></i></a> Talk (w/Joep Schuurkes) - Mob Testing: Building Good Habits
@@ -57,6 +61,7 @@ I have spoken in these countries: 🇺🇸🇨🇦🇬🇧🇮🇪🇳🇱🇧�
 <li>Presented at:</li>
 	<ul>
 		<li><a href="http://lets-test.com/?page_id=5726" target="_blank">Let's Test (South Africa) November 2019</a></li>
+		<li><a href="https://club.ministryoftesting.com/t/wander-with-a-purpose-writing-charters-for-your-exploratory-test-sessions/49746" target="_blank">Exploratory Testing Week (Ministry of Testing) April 2021</a></li>
 	</ul>
 </ul>
 
