@@ -79,7 +79,86 @@ navbar-dark bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/testcraftcamp_spice_up_your_relationship_with_your_project/" class="u-url">TestCraftCamp: Spice Up Your Relationship (with Your Project)</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/agile_testing_days_2017/" class="u-url">My First Agile Testing Days: Four Years Later</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2021/agile_testing_days_2017/" rel="bookmark">
+            <time class="published dt-published" datetime="2021-04-11T00:00:00+02:00" itemprop="datePublished" title="11 April 2021">11 April 2021</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>After years of getting rejected, the talk I submitted to Agile Testing Days in 2017 finally got me accepted. It was such a privilege and an honor to meet so many of the people I'd only know from the internet. Reading through my notes now, much of what I wrote down has become engrained into how I go about my work everyday. What a blessing it was to encounter the people I needed to learn from in my career at the time I needed to learn from them. I'm glad to see how routine their wisdom has become for me.</p>
+<hr>
+<ul>
+<li>
+<a href="https://twitter.com/lisihocke">Lisi Hocke</a> gave a talk about growth. I've since seen more of her talks and prepared a workshop with her; I see how she embodies this in her approach to the world. </li>
+<li>
+<a href="https://twitter.com/NativeWired">Gitte Klitgaard</a> reminded me that believing in people will allow them to be better. Stay curious about why people are doing what they do before placing judgment.</li>
+<li>
+<a href="https://twitter.com/Punkmik">Kim Knup</a> spoke about a zero bug policy (not any bugs in your backlog). I was not ready to hear this message at the time, having come from places with years-old products and tens or hundreds of bugs in the backlog. But now I see exactly what she was describing: the psychological relief that comes from less time in JIRA and fewer meetings about priorities.</li>
+<li>
+<a href="https://twitter.com/katrinaclokie">Katrina Clokie</a> pulled up Noah Sussman's reimagining of the testing pyrmaid (lots of small tests, fewer large ones) upside-down as a bug filter. And suddenly, it clicked for me. </li>
+<li>
+<a href="https://twitter.com/alex_schl">Alex Schladebeck</a> and <a href="https://twitter.com/huibschoots">Huib Schoots</a> challenged me to think on a meta-level about the testing I was doing, to name the skills and techniques I was using. It would help me as I spent the following years sharing exploratory testing skills with other testers.</li>
+<li>
+<a href="https://twitter.com/ewebber">Emily Webber</a> spoke about building trust on teams. I find myself recommending the <a href="https://emilywebber.co.uk/the-team-manual-a-exercise-to-help-build-empathy-in-teams/">team manual</a> she developed to somebody about once a month, plus she helped spark an idea for a future conference talk I developed.</li>
+<li>
+<a href="https://twitter.com/lunivore">Liz Keogh</a> gave me the words I needed to build a safe-to-fail environment for my team members, where failure is an expected, inevitable part of complex systems. </li>
+</ul>
+<hr>
+<p>I realized in compiling this blog post that I'd already written about Agile Testing Days just one month after I'd attended in 2017. At that point, I was looking specifically at regression testing advice, which is what I was in the thick of at work. What am I in the thick of now, and when will it become clear to me?</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/recently_encountered_logical_falacies/" class="u-url">Recently Encountered Logical Fallacies</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2021/recently_encountered_logical_falacies/" rel="bookmark">
+            <time class="published dt-published" datetime="2021-03-31T00:00:00+02:00" itemprop="datePublished" title="31 March 2021">31 March 2021</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>I was on <a href="https://www.ministryoftesting.com/dojo/lessons/discussion-critical-thinking">a panel about critical thinking for the Ministry of Testing</a> last week. One of my fellow panelists and commendable ranter <a href="https://twitter.com/Maaikees">Maaike Brinkoff</a> brought up <em>ad hominem</em> (personal) attacks as one example of a failure of critical thinking. It's one of many <a href="https://fallacyinlogic.com/">logical fallacies</a> that are worth exploring further. </p>
+<p>Equipping yourself with the name for a thing helps you recognize it when it appears. (Lara Hogan wrote recently about applying the skill, of <a href="https://leaddev.com/communication-relationships/skill-naming-whats-happening-room">being able to name the problem in the room</a>, to defuse tense meetings.) These are some of the fallacies I've across recently when I've been debriefing testing sessions, facilitating refinement sessions, and reviewing conference submissions.</p>
+<h4>Affirming the consequent</h4>
+<p>Affirming the consequent is applying a conditional without the conditionality, or assuming something happened because you see a result. </p>
+<ol>
+<li>If P (I run the pipeline) then Q (the latest build will be available on the test environment)</li>
+<li>Q (the latest build is available on the test environment)</li>
+<li>Therefore P (I ran the pipeline) </li>
+</ol>
+<p>We can't assume the converse: if Q, then P. Just because the latest build is on the test environment doesn't mean I ran the pipeline. Maybe someone else ran the pipeline, or put the build there manually. Maybe there haven't been any changes since yesterday, and the build from yesterday is still the latest one.</p>
+<h4>Fallacy of composition</h4>
+<p>This assumes that something that applies to one member of a class applies to them all.</p>
+<ol>
+<li>Y is part of X (Stephanie is an admin user)</li>
+<li>Y has property P (Stephanie can see this page)</li>
+<li>X has property P (any admin user can see this page)</li>
+</ol>
+<p>We can't assume that what's true for one member of a class applies to all of them. What happens if Stephanie can be assigned more than one role, a more restrictive/regular user role in addition to the admin role? Can she still see it? What if Stephanie being able to see the page has nothing to do with her status as an admin user?</p>
+<h4>
+<em>Post hoc ergo propter hoc</em> (correlation without causation)</h4>
+<p>This one is easiest to see when others are debreifing their testing to me, but I've also learned to catch for myself. </p>
+<ol>
+<li>Event A occurred (I clicked the button)</li>
+<li>Then event B occurred (a whole bunch of log messages appeared)</li>
+<li>Therefore A caused B (clicking the button caused a whole bunch of log messages)</li>
+</ol>
+<p>We can't assume that events that occur in a particular sequence in time are necessarily causal. Did clicking the button trigger the log messages? What do the log messages say? Did you read them? Who else could be using this environment? Does the same thing happen every time you click the button, or when you run the application in a different environment? </p>
+<h4>Argument from repetition</h4>
+<p>When someone says the same thing enough times, or brings up the same unimportant issue in a refinement meeting week after week, it can become easier to address the issue rather than convincing them yet again why it's not a priority. I've been facilitating refinement meetings every week for my teams for the past two years. <a href="https://butyoudontlooksick.com/articles/written-by-christine/the-spoon-theory/">I only have a finite amount of energy</a> that is not always worth expending by refuting the case for a small edge case week after week. </p>
+<hr>
+<p>Shoutout to my logic professor Dan Cohen at Colby College, who had us memorize and distinguish logical fallacies as part of his brilliant Logic and Argumentation course, and pointing out that an ease and comfort with truth tables would translate well to a computer science course. Special thanks to Joep Schuurkes for his philosophical and technological opinions on this piece.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/testcraftcamp_spice_up_your_relationship_with_your_project/" class="u-url">TestCraftCamp: Spice Up Your Relationship (with Your Project)</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Elizabeth Zagroba

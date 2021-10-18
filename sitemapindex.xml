@@ -47,7 +47,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/communication.xml</loc>
-  <lastmod>2021-06-27T12:44:00Z</lastmod>
+  <lastmod>2021-10-18T18:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/complaints.xml</loc>
@@ -59,7 +59,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/critical-thinking.xml</loc>
-  <lastmod>2021-08-08T10:10:00Z</lastmod>
+  <lastmod>2021-08-08T10:18:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/debugging.xml</loc>
@@ -90,8 +90,12 @@
   <lastmod>2020-05-04T18:38:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://elizabethzagroba.com/categories/handoff.xml</loc>
+  <lastmod>2021-10-09T10:44:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://elizabethzagroba.com/categories/humans.xml</loc>
-  <lastmod>2021-05-20T06:31:00Z</lastmod>
+  <lastmod>2021-10-18T18:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/jira.xml</loc>
@@ -99,7 +103,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/leadership.xml</loc>
-  <lastmod>2021-08-08T10:10:00Z</lastmod>
+  <lastmod>2021-10-18T18:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/logic.xml</loc>
@@ -110,12 +114,16 @@
   <lastmod>2020-05-04T18:38:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://elizabethzagroba.com/categories/meetings.xml</loc>
+  <lastmod>2021-10-18T18:03:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://elizabethzagroba.com/categories/mind-mapping.xml</loc>
   <lastmod>2020-05-04T18:38:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/mindset.xml</loc>
-  <lastmod>2021-08-08T10:10:00Z</lastmod>
+  <lastmod>2021-10-09T10:44:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/naming.xml</loc>
@@ -155,7 +163,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/teaching.xml</loc>
-  <lastmod>2021-08-08T10:10:00Z</lastmod>
+  <lastmod>2021-08-08T10:18:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/terminal.xml</loc>
@@ -179,7 +187,7 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/testing.xml</loc>
-  <lastmod>2021-08-08T10:10:00Z</lastmod>
+  <lastmod>2021-10-09T10:44:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/trust.xml</loc>
@@ -195,10 +203,10 @@
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/rss.xml</loc>
-  <lastmod>2021-08-08T10:10:00Z</lastmod>
+  <lastmod>2021-10-18T18:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/sitemap.xml</loc>
-  <lastmod>2021-08-08T10:10:00Z</lastmod>
+  <lastmod>2021-10-18T18:03:00Z</lastmod>
  </sitemap>
 </sitemapindex>
