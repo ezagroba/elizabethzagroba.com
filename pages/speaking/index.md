@@ -24,10 +24,18 @@ I have spoken in these countries: 🇺🇸🇨🇦🇬🇧🇮🇪🇳🇱🇧�
 
 ### Future presentations & peer conferences
 
-- Panel Discussion - Ensemble Testing [[Agile2021] (22 July 2021)](https://www.agilealliance.org/agile2021/schedule/)
-- [Friends of Good Software [FroGS conf] (4 September 2021)](http://frogsconf.nl/) *organizer*
+- [Ministry of Testing Essentials: An Introduction To Reporting Your Testing](https://www.ministryoftesting.com/events/essentials-an-introduction-to-reporting-your-testing) (October 2021)
+- [Dutch Exploratory Workshop on Testing [DEWT]](https://dewt.wordpress.com/) (February 2022)
  
 ### Past presentations
+
+<a href="#" class="accordion" data-toggle="collapse" data-target="#agile-2021-ensemble-testing-panel"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i></a> Panel Discussion - Ensemble Testing
+<ul id="agile-2021-ensemble-testing-panel" class="collapse">
+	<li>Presented at:</li>
+		<ul>
+			<li><a href="https://www.agilealliance.org/agile2021/schedule/" target="_blank">Agile2021 (July 2021)</a></li>
+		</ul>
+</ul>
 
 <a href="#" class="accordion" data-toggle="collapse" data-target="#test-reporting-ama"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i></a> Ask Me Anything - Test Reporting
 <ul id="test-reporting-ama" class="collapse">
@@ -187,7 +195,9 @@ I have spoken in these countries: 🇺🇸🇨🇦🇬🇧🇮🇪🇳🇱🇧�
 
 ### Past peer conferences
 
-- [Test Craft Camp](https://testcraftcamp.nl/) *organizer*
+- [Friends of Good Software [FroGS conf]](http://frogsconf.nl/) *organizer*
+	- September 2021
+- [TestCraftCamp](https://testcraftcamp.nl/) *organizer*
 	 - September 2019
 	 - September 2020
 	 - March 2021

@@ -14,7 +14,7 @@
 <link rel="icon" href="images/avatar.png" sizes="128x128">
 <link rel="next" href="index-5.html" type="text/html">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link href="fontawesome-5.13.0/css/all.css" rel="stylesheet">
-<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2021/cutting_people_off/" type="text/html">
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2021/test_bash_manchester_2019/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -78,7 +78,99 @@ navbar-dark bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/cutting_people_off/" class="u-url">Cutting People Off</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/test_bash_manchester_2019/" class="u-url">TestBash Manchester 2019, The Last One</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2021/test_bash_manchester_2019/" rel="bookmark">
+            <time class="published dt-published" datetime="2021-11-10T00:00:00+01:00" itemprop="datePublished" title="10 November 2021">10 November 2021</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>I didn't know in September of 2019 that TestBash Manchester was the last TestBash I'd be attending for a while. I've revisited my notes from the workshop Joep Schuurkes and I ran about test reporting several times since then: for a video series, an <a href="https://www.ministryoftesting.com/dojo/series/testing-ask-me-anything">Ask Me Anything</a>, a <a href="https://club.ministryoftesting.com/t/ask-me-anything-test-reporting/46827">forum thread</a>, a <a href="https://www.ministryoftesting.com/events/essentials-an-introduction-to-reporting-your-testing">99-minute workshop</a>, and a <a href="https://elizabethzagroba.com/posts/2021/map_out_your_stakeholders/">blog post</a>. I'm just revisiting my notes now from the talks I was able to attend in the couple days after our workshop.</p>
+<hr>
+<p>My notes from Pierre Vincent's talk on observability read like a wishlist of features I'd already been asking for in the app I was testing: unit testing, centralized logging, trace ids for integration debugging, etc. The app was also in a private beta at the time, so data collected from production would be filled with more anomalies than patterns. I'm still discovering how much more influence I have in my new role as Quality Lead to present the impact and influence the improvement of testability features.</p>
+<p>Dan Smart and Yong He spoke about failure. The quote "Hey failors, how's the failing?" captures the essence of their talk: expect failure, and celebrate it, together. I get psyched anytime distinguishes between a fixed and a growth mindset as they did, which I still find best described in <a href="https://www.themarginalian.org/2014/01/29/carol-dweck-mindset/">this Marginalian (formerly Brain Pickings) piece</a>. </p>
+<p>I see in my notes from Conor Fitzgerald's talk on Kanban that kan = visual and ban = card. In the two years I spent running a Kanban team in the meantime, I can't remember how many times a week (a day? a minute of standup?) I asked "should we visualize that on the board?" Two of my big legacies on my former team were reinforced by Conor's talk: 1) eliminating of context-switching, and 2) not waiting until the retro to make changes.</p>
+<p>"What does it mean to be responsible for quality?" asks Past Elizabeth to Present Elizabeth from the notes on Gary Fleming's continuous testing talk. It doesn't have a straightforward answer, and exploring this is part of what my job gets to be now. Some of his examples (separating deployment from release, example mapping) are what I get to inspire my whole department to consider as part of their strategy. </p>
+<p>Saskia Coplans's talk on security testing really stuck with me. Her ability to make the unnamable company she consulted for a joke every time she mentioned it was a level of comedy I can only dream of aspiring to in a talk. Familiarity with the STRIDE model and the OWASP Top 10 gives me a leg up in thinking about how to identify and mitigate risk in our software. </p>
+<p>Areti Panou's talk about a deployment pipeline resonates more deeply now, after two years of running and maintaining a pipeline, than it did at the time, when a pipeline was just a glimmer in the eye of a teammate. I held an expectation setting and reaffirmation workshop about one pipeline in my department last week. Areti's expectations that a pipeline should have a clear purpose, failure criteria, and fix deadlines could help fix the bystander effect I've experienced myself. </p>
+<p>The incomparable and unstoppable Lisi Hocke gave a talk about becoming more code-confident that still influences how I approach goals and objectives. Specifically: it's ok to re-evaluate if goals should still apply, and to establish pause or exit criteria to know when to give up. While I can be strong in saying no to what others expect, giving up on something I expect of myself can still be a struggle. </p>
+<p>Bill Matthews's talk on technical risks with AI prompted me to add a "write about these times when you tested a machine learning application" card to the backlog for this blog. I wonder if I'll get around to writing that, since it would be hard to explain it better than Bill did that day. He talked about how training data reinforces stereotypes, and how understanding the domain is crucial to determining what's a random failure vs. what's a systematic failure. </p>
+<p>Louise Gibbs gave a talk on starting her automation journey with a record and playback tool. That's also what got me excited about automation originally, and I'm etnerally grateful to have had the right people steer me towards tests at a lower application level before UI auomation became the only tool in my toolbelt. </p>
+<p>Suman Bala's introduction to Charles Proxy was a memorable one. She'd hooked up her phone to the projected screen without turning her notifications off, so we got to see all the tweets streaming in in real time! If you're just diving into Charles Proxy, the <a href="https://www.ministryoftesting.com/dojo/lessons/breaking-boundaries-using-charles-suman-bala">recording of this talk</a> is a great place to start. </p>
+<p>Dominic Kua's talk on bash commands, Wim Selles's talk on Appium, and Henrik Stene's talks on consumer-driven contracts definitely fell into the "these people really know their tool" category. If they were tools I was using, I'd certainly consult their tips and advice. </p>
+<p>Emily Bache's talk shared the ideas from the State of DevOps reports and ultimately the Accelerate book. As a team lead and co-host for a testing ensemble, I was able to help empower people across teams and help build a culture of psychological safety. In my new role as Quality Lead, I'm just starting to collect the DORA metrics to help me decide where I should focus my efforts within the department. </p>
+<hr>
+<p>What a memorable group of people, location, and journey it was to TestBash Manchester 2019. I hope the <a href="https://www.ministryoftesting.com/news/testbash-brighton-2022-cancellation-and-testbash-uk">upcoming TestBash UK</a> is in the cards for me this coming year, and not only because I still dream about <a href="https://www.mowglistreetfood.com/">this Indian food</a> I had on the way in and out of Manchester.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/map_out_your_stakeholders/" class="u-url">Map Out Your Stakeholders</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2021/map_out_your_stakeholders/" rel="bookmark">
+            <time class="published dt-published" datetime="2021-10-29T00:00:00+02:00" itemprop="datePublished" title="29 October 2021">29 October 2021</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>Test reporting is part of a feedback loop. It's the beginning of a conversation, not the end. Knowing who you're having that conversation with allows you to provide those individuals better information for their context. </p>
+<p>If you find a big nasty bug, you might report it differently if your audience is a developer on your team who you work with everyday, a developer on another team who you haven't met, or the Head of Product looking to give an important demo. Reporting on the breath, depth, focus, and impediments to your testing can help your audience guide your upcoming testing. </p>
+<p>Joep Schuurkes and I had an activity as part of workshop on test reporting at TestBash Manchester 2019. I believe he articulated the key idea: if your test reporting depends on your audience, you have to know who your audience is. We had participants map out (with paper and markers) who the stakeholders were for their testing. Some people drew org charts, other drew mind maps.</p>
+<p>In the test reporting workshop I held yesterday, we used a Miro board to map out our stakeholders. As examples, I made an overview of how I was thinking about my recent team. </p>
+<p><img alt="" src="images/posts/2021/stakeholder-mind-map.png"></p>
+<p>And a version of Dan Ashby's Layers of Influence model, the "shallot" of influence, if you will. </p>
+<p><img alt="" src="images/posts/2021/stakeholder-shallot.png"></p>
+<p>While these are stated with people's roles, doing this for yourself using people's actual names (or names + roles) will help you think about who they are and what they listening for. </p>
+<p>Identifying the audience for your test report allows you to tailor it to the risks they care about. If you're not sure how to tailor the report, present them with something and find out if that's what they want. Even better, share with them that you're trying to figure out how to make your work most effective for them. </p>
+<p>More things to read:</p>
+<ul>
+<li>Other posts on <a href="https://elizabethzagroba.com/categories/reporting/">test reporting</a>
+</li>
+<li><a href="https://club.ministryoftesting.com/t/ask-me-anything-test-reporting/46827">Questions left over from an Ask Me Anything on test reporting</a></li>
+<li>Having the conversation about the conversation, or <a href="https://elizabethzagroba.com/posts/2021/delivering_information_vs_delivering_meta_information/">delivering meta-information</a>
+</li>
+</ul>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/unblocking_your_test_strategy/" class="u-url">Unblocking Your Test Strategy</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2021/unblocking_your_test_strategy/" rel="bookmark">
+            <time class="published dt-published" datetime="2021-10-22T00:00:00+02:00" itemprop="datePublished" title="22 October 2021">22 October 2021</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>In my new role as Quality Lead for my department, I get to figure out how to infuse everybody's work with "quality", and also figure out what that means exactly. </p>
+<p>One of my colleagues made it easy for me on my second day by coming with a relatively concrete problem: they wanted an acceptance environment for their team. Their team (henceforth: Eager Team) integrated with chronically overloaded and busy team (henceforth: Busy Team), so they wanted an environment where they could test their stuff together before it went into production. They wanted me to help set that up. </p>
+<p>I started my conversation with Eager Team Lead by taking one step back: why did they want this environment? They'd proposed a solution, but I wanted to spend at least a few minutes digging into the problem space with them to hear more about why they wanted this.</p>
+<hr>
+<h4>Come up with dream scenario</h4>
+<p>I asked Eager Team Lead what their dream setup would be for their test automation, and why that was the dream.</p>
+<p>Eager Team and Busy Team already had a test environment hooked up to one another. But they both threw whatever they were in the middle of on that environment. Eager Team couldn't count on a stable, usable version of Busy Team's software, and vice versa. Eager Team wanted a place to see what would happen against the production version of Busy Team's code. They wanted to automate all the things they could, and have a place to run that automation. </p>
+<h4>Identify (and confirm they are indeed) constraints</h4>
+<p>Unfortunately Busy Team was busy. They wouldn't be able to make setting up an environment for Eager Team a priority in the next few months. I had that impression, and so did Eager Team Lead. They were, after all, Busy Team. But I wanted to make sure that the busyness of Busy Team was a constraint. I took on the action point to follow up with Boss Person about how we could both (1) check that Busy Team was indeed too busy, and (2) how to get this request on Busy Team's long list for the future.</p>
+<p>I also dispelled one of assumptions underlying Eager Team Lead's dream setup: it was important to test everything, in an automated way, in the ideal environment, or else testing wouldn't be valuable. I explained that it's <a href="https://app.thestorygraph.com/books/8ba29269-1843-4ac1-be0c-226752b17937">impossible to test everything</a>. Testing in an automated way would be more likely to reveal known unknowns than the unknown unknowns their team was interested in. And that it wasn't all-or-nothing - every little bit would help.</p>
+<h4>Choose achieveable pieces within constraints</h4>
+<p>Rather than killing the dream, I identified a valuable first step in the direction of the dream. Eager Team would write down, in English to start, 3-5 things that they want to test using both their software and Busy Team's. They'd show those to their product owner to make sure they were things customers cared about. From there, we could look at whether to build automation, and if so, where to run it. There was that test environment already. We had production, could we use feature flags? Could we keep the data only visible to our employees internally? </p>
+<p>I knew I'd hit a nerve when Eager Team Lead said "Oh, we can just start iterating over this!" Because of course, the software itself is not the only thing you can build in an iterative way. Your test automation can also mitigate risk, confirm assumptions, and provide value along the way. </p>
+<hr>
+<p>So how'd it go? I confirmed Busy Team's busyness, and got more details on how and when to add this request to their list. I'm following up with Eager Team next week to see where they are in identifying valuable scenarios, or if I should jump in there too. </p>
+<p>But wow, what a feeling to be able to lift the weight of "I need a thing I don't know how to build and don't think I can ever get" off someone's shoulders and replace it with "I know what to do next and it's achievable." </p>
+<p>Stay tuned for more quality leading to come. 😎</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/cutting_people_off/" class="u-url">Cutting People Off</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Elizabeth Zagroba
@@ -109,10 +201,12 @@ navbar-dark bg-dark
 <li>It sounds like we're still discussing Thing B after we just agreed not to, am I understanding that correctly?</li>
 <li>Can we leave it there for now?</li>
 </ul>
-<p>If you're not sure if it's the right time for a question, try a meta-question:
-- Is now the right time to decide if we should keep talking about Thing B?
-- Are we going to be able to come to Decision D today?
-- Did we decide on a next step towards Thing B, or is that what you were describing?</p>
+<p>If you're not sure if it's the right time for a question, try a meta-question:</p>
+<ul>
+<li>Is now the right time to decide if we should keep talking about Thing B?</li>
+<li>Are we going to be able to come to Decision D today?</li>
+<li>Did we decide on a next step towards Thing B, or is that what you were describing?</li>
+</ul>
 <p>Give the group a chance to decide, but don't be afraid to hold them to their decision. These are not questions:</p>
 <ul>
 <li>We've agreed to that. Let's move on.</li>
@@ -374,135 +468,6 @@ navbar-dark bg-dark
 </li>
 </ol>
 </div>
-</div>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/the_mental_load_of_one_meeting/" class="u-url">The Mental Load of One Meeting</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Elizabeth Zagroba
-            </span></p>
-            <p class="dateline">
-            <a href="posts/2021/the_mental_load_of_one_meeting/" rel="bookmark">
-            <time class="published dt-published" datetime="2021-05-18T00:00:00+02:00" itemprop="datePublished" title="18 May 2021">18 May 2021</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p>I facilitated a meeting today. It was scheduled for 45 minutes on my agenda, for me and some other tech and team leads in my unit. We covered what we needed to move forward planning an epic with a set of relatively straightforward stories, both in execution and work distribution among the teams. </p>
-<p>For some of the people attending today, they showed up without preparing, and didn't remember what the topic was. I filled them in. Because this is what the meeting preparation looked like from my side: </p>
-<ol>
-<li>
-<p>I was in a planning meeting two weeks ago with a variety of people from the unit. I picked up the implication that that follow-up (combination solo thinking/document review followed by meeting) was needed soon with a few tech and team leads. I checked the out of office schedule (that I created and keep updated as people mention when they'll be out) and noticed that two weeks was an achievable time span for "soon". I mentioned this while we were still in that planning meeting. </p>
-</li>
-<li>
-<p>Within the next 48 hours, two people from the planning meeting asked when I'd scheduled the follow-up. I explained that I was giving the other leads a chance to schedule it first.</p>
-</li>
-<li>
-<p>When I scheduled the follow-up, I made the title of the Outlook invitation "review the comments you've already added to the document" so the purpose and expectations were both clear and impossible to miss. I added the document to review to the body of the invitation. I let the two inquiring minds know that this occurred. I found a couple of 45-minute blocks when all four people present at the planning meeting, plus the one person that had been forgotten, were available simultaneously. I chose the one on Tuesday, giving the person who was out for a week Monday to catch up.</p>
-</li>
-<li>
-<p>I added a Slackbot reminder for Monday afternoon for the person who's out the previous week. They're on my team and typically have trouble saying no when someone tries to pull their focus. <a href="https://elizabethzagroba.com/posts/2021/the_long_haul/">We've found that Slackbots help</a>. </p>
-</li>
-<li>
-<p>The meeting time arrives. The Slackbot reminder person and I have reviewed the document. The others haven't. I check in and ask whether we should hold this meeting after they're available to do so. Silence. I move on, facilitating the discussion, taking notes, and keeping us on track.</p>
-</li>
-</ol>
-<hr>
-<p>I am not the only person capable of scheduling a meeting. I am not the person best equipped to review this document. It is not my responsibility to come up with systems for my peers to remember to do their work. I can let this fail, just not follow-up, and I do with smaller, safer-to-fail experiments. But it doesn't solve the problem. </p>
-<p>I can't do a better job of explaining <a href="https://english.emmaclit.com/2017/05/20/you-shouldve-asked/">the burden of carrying the mental load than Emma does in her comic</a>. But to summarize: a lot of work is the work of noticing what work needs doing. It's the difference between "Let me know if you need help" and finding a way to actually help. It's the difference between having 45 minutes blocked on your calendar, and <a href="https://j19sch.github.io/slides/atd2020-making-meetings-work.html#/">everything else that had to happen to make it successful</a>.</p>
-<p>What I wonder now is: how much is this skill of carrying the mental load noticed? How much is it valued? How do we interview for this skill? How do I train my fellow team members to have it? How do I teach the ownership of a team and a project? How do I get people to ask each other about the next step in picking up the work instead of coming to me to be the dispatcher? How do I make myself, instead of irreplacable, completely replaceable? </p>
-</div>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/the_long_haul/" class="u-url">The Long Haul</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Elizabeth Zagroba
-            </span></p>
-            <p class="dateline">
-            <a href="posts/2021/the_long_haul/" rel="bookmark">
-            <time class="published dt-published" datetime="2021-05-08T00:00:00+02:00" itemprop="datePublished" title="08 May 2021">08 May 2021</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p>I've been both the lead of my team and a tester on that team for a year now. Getting answers, adapting to change, and identifying solutions have completely different time horizons in each of these roles. </p>
-<hr>
-<h4>Tester experiments</h4>
-<p>Testing experiments can run quickly. A testing experiment might look like this:</p>
-<ol>
-<li>Call an API</li>
-<li>Inspect the output</li>
-<li>Compare that to the specification</li>
-<li>Question whether either or both need changing</li>
-<li>Talk to a developer about the changes</li>
-<li>Update the specification and/or tests</li>
-</ol>
-<p>All of that happens within minutes or hours, or days if schedules are extremely incompatible and asynchronous communication is failing. I can be confident in the experiment's outcome. I can weigh the relative merits of caring vs. not caring about a particular error response code or required field, and leave my work at work. The next time I see a particular error response, I know what to look for and where changes might be needed. A failing test is evidence that something used to work in a particular way. </p>
-<h4>Team lead experiments</h4>
-<p>Team lead experiments take longer. A team lead experiment might look something more like this:</p>
-<ol>
-<li>Team members complain that it's hard to get their ideas in during refinement.</li>
-<li>I mention this to the talking-dominant team member at a 1-on-1.</li>
-<li>Talking-dominant team member dominates following refinement.</li>
-<li>I remind talking-dominant team member in Slack about our previous conversation.</li>
-<li>Talking-dominant team member spills over their allotted time during big unit meeting.</li>
-<li>I bring both of these instances in our 1-on-1, sharing the consequences (they're the single point of failure, other team members aren't heard) of their actions.</li>
-<li>Talking-dominant team member does it again.</li>
-<li>I ask team member what I can do to help them change their behavior, given that we are both adults in control of our own behavior. They agree that change is their responsibility. We agree that setting their microphone on mute at the start of the meeting would help.</li>
-<li>Talking-dominant team member dominates some of the following refinement, until I remind them to mute, after which other team members have time to think and contribute too.</li>
-<li>I ask talking-dominant team member to set up a Slackbot to send them a reminder to mute their microphone each week before the meeting.</li>
-<li>Other people are able to contribute at the following refinement. </li>
-</ol>
-<p>This took place over months. We're not to a point where we have a solution that works every time. I went in with a different hypothesis each time, not knowing when I'd hit on the right one:</p>
-<p>2. I think the talking-dominant team member isn't aware of their behavior.<br>
-4. I think the team member has forgotten our first conversation.<br>
-6. I think the team member doesn't understand the impact of their behavior.<br>
-8. I think the team member hasn't found a tool or a trigger to change their habit.<br>
-10. I think the team member needs both a tool and a trigger to change their habit.</p>
-<p>Any of the first four experiments taken by itself looks like a failure. The talking-dominant team member prevents other team members from contributing effectively. It takes me time as a leader to come up with a different hypothesis, try something else, and discover where to go from there. And this was a relatively straightforward issue to assess. Imagine how long it might take to find an effective response to a problem with more variables and more consequences.</p>
-<hr>
-<p>I'm also thinking not just about the experiments themselves, but how they might come across to the wider team. For the testing experiment, I could present my results in standup the next day as "I tested it, everything's good" but it's more valuable for everyone if I <a href="https://www.ministryoftesting.com/dojo/lessons/defining-story-completion-as-a-software-tester">tell a bit more of the story</a>. In the team lead experiment, I can imagine my team member telling my boss "Elizabeth told me to be quiet" or me telling my boss "The talking-dominant team member is giving room for others to contribute." Telling a slightly longer story of the journey displays my value as a team lead in a better light. </p>
-<p>What experiments are you running right now? Is something that looks or feels like a failure getting you closer to a solution? How long is your time horizon?</p>
-</div>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/questions_from_exploratory_week_on_writing_exploratory_testing_charters/" class="u-url">Questions from Exploratory Week on Writing Exploratory Testing Charters</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Elizabeth Zagroba
-            </span></p>
-            <p class="dateline">
-            <a href="posts/2021/questions_from_exploratory_week_on_writing_exploratory_testing_charters/" rel="bookmark">
-            <time class="published dt-published" datetime="2021-05-01T00:00:00+02:00" itemprop="datePublished" title="01 May 2021">01 May 2021</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p>The Ministry of Testing hosted a week all about exploratory testing. I had the honor and privilege to help shepherd a small group of testers on the path of writing charters for their exploration. The most interesting part for me is where people had questions. It helps me figure out what sunk in, what could use more explanation, and helps me know that I've answered at least one person's burning question. Here are some of the ones I remember from the live Q&amp;A at the end:</p>
-<h4>Q. Do you use the word charter?</h4>
-<p>A. Basically no. I've only heard testers who've specifically dug into this topic use the word charter. Almost all of the people I collaborate with on a daily basis (developers, product owner, UX, managers, other testers) do not have this as part of their experience. Most of my colleagues are not working in their first language. As a native speaker, I need to have more than one word to describe any particular phenomenon in case the first one doesn't resonate, or isn't understandable in my accent. (Everyone has an accent.) I've called charters:</p>
-<ul>
-<li>questions</li>
-<li>missions</li>
-<li>paths</li>
-<li>plans</li>
-<li>goals</li>
-<li>investigations</li>
-<li>journeys</li>
-</ul>
-<p>It's less important to use the word charter than it is to get across the intent: you're going on an exploration, in a particular direction, with specific set of tools, and you hope to come away with more information on this topic than when you set out. Sharing your charters helps you get feedback about where to look more deeply, more broadly, and <a href="https://elizabethzagroba.com/posts/2020/2020-05-24_if_a_test_falls_in_a_forest/">where not to look at all</a>. </p>
-<h4>Q. Where do you bring charters up?</h4>
-<p>A. Where <em>don't</em> I bring charters up? It bleeds into conversations I have about my work. <a href="https://youtu.be/SM57HMJpkZc?t=974">Sharing my work and getting feedback about it is what ensures I'm providing valuable work for my team in the right direction</a>. I tend to discover points of interest for my developers once or twice a day when development is starting, and more often when testing is at its peak, which often escalates to pairing. Here are some other moments in time where I share charters: </p>
-<h5>Standup</h5>
-<p>It's how I explain what I tested yesterday, what pieces I might have time for today, and what directions I haven't or won't have time for before we want to release the story. Sharing where I'm looking prevents me from being the one gatekeeper on quality for our product. "I've successfully called the API as an admin user and a regular user. Today I'm going to dig into what happens with the non-required fields." will solicit a completely different type of feedback than "I have an hour or two left on this story."</p>
-<h5>Refinement</h5>
-<p>Any clues I can give my team about what I'll be looking into, what kind of test data I might set up, and what tools I'll be using to test a particular feature will help them figure out the whole scope of the story. "I'm going to try names at the character limit to see how they wrap on the page." helps us all figure out that we need to talk about our expectations for a character limit, we need to talk to UX about what should happen when you try to input something too long, I need to test what happens on the API side for the same field, and we might need a frontend dev to help us with the wrapping or truncation depending on what UX decides.</p>
-<h5>Testing starts executing</h5>
-<p>This is the point in time where there's enough built that I can add test execution to the setup and planning I've already been doing on a story. It might be that the API spec is published, it might be that the application has one happy path built. The developers are still going, but there's somewhere for me to start. Depending on the size and complexity of the story, I'll reflect for myself, or share my ideas with someone else on the team. If it involves an integration with another team, I'd reach out to them too. </p>
-<h4>Q. Isn't that just a test case?</h4>
-<p>A. After almost two hours of technical difficulties and explaining things, I have to say I did not write the most elegant charter as an example during the workshop. You got me! I'm glad that this workshop participant has a good feel for what is too specific or too broad. I find this so hard to explain because so much of that depends on the context. </p>
-<p>But it wasn't terribly important to me to get the level of detail correct. Charters are a place to reflect on your testing and spark conversation. This charter did exactly that. </p>
-<hr>
-<p>You can find other questions there weren't time for during the workshop on the <a href="https://club.ministryoftesting.com/t/wander-with-a-purpose-writing-charters-for-your-exploratory-test-sessions/49746">Ministry of Testing club</a>. The <a href="http://ezagroba.github.io/charters">slides from the workshop are on github</a>. </p>
 </div>
     </div>
     </article>

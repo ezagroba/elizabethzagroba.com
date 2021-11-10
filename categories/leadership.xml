@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Elizabeth Zagroba: Software Tester (Posts about leadership)</title><link>https://elizabethzagroba.com/</link><description></description><atom:link href="https://elizabethzagroba.com/categories/leadership.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>© 2021 &lt;a href="mailto:me@elizabethzagroba.com"&gt;Elizabeth Zagroba&lt;/a&gt; Mozilla Public License 2.0</copyright><lastBuildDate>Mon, 18 Oct 2021 18:03:09 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Cutting People Off</title><link>https://elizabethzagroba.com/posts/2021/cutting_people_off/</link><dc:creator>Elizabeth Zagroba</dc:creator><description>&lt;figure&gt;&lt;img src="https://elizabethzagroba.com/images/posts/2021/shushing.jpeg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;Impatience is a virtue. &lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Elizabeth Zagroba: Software Tester (Posts about leadership)</title><link>https://elizabethzagroba.com/</link><description></description><atom:link href="https://elizabethzagroba.com/categories/leadership.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>© 2021 &lt;a href="mailto:me@elizabethzagroba.com"&gt;Elizabeth Zagroba&lt;/a&gt; Mozilla Public License 2.0</copyright><lastBuildDate>Wed, 20 Oct 2021 19:49:40 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Cutting People Off</title><link>https://elizabethzagroba.com/posts/2021/cutting_people_off/</link><dc:creator>Elizabeth Zagroba</dc:creator><description>&lt;figure&gt;&lt;img src="https://elizabethzagroba.com/images/posts/2021/shushing.jpeg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;Impatience is a virtue. &lt;/p&gt;
 &lt;p&gt;If impatience is solely your own, sorry, but you're the asshole. But if impatience is shared, saving your colleagues from a tiresome conversation will make their day. &lt;/p&gt;
 &lt;h4&gt;Notice that a topic should come to a close&lt;/h4&gt;
 &lt;p&gt;When you listen actively, you'll notice when something has already been said. It is much easier (particularly when remote) to give up, zone out, and think about something else. Don't be that person.&lt;/p&gt;
@@ -18,10 +18,12 @@
 &lt;li&gt;It sounds like we're still discussing Thing B after we just agreed not to, am I understanding that correctly?&lt;/li&gt;
 &lt;li&gt;Can we leave it there for now?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;If you're not sure if it's the right time for a question, try a meta-question:
-- Is now the right time to decide if we should keep talking about Thing B?
-- Are we going to be able to come to Decision D today?
-- Did we decide on a next step towards Thing B, or is that what you were describing?&lt;/p&gt;
+&lt;p&gt;If you're not sure if it's the right time for a question, try a meta-question:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Is now the right time to decide if we should keep talking about Thing B?&lt;/li&gt;
+&lt;li&gt;Are we going to be able to come to Decision D today?&lt;/li&gt;
+&lt;li&gt;Did we decide on a next step towards Thing B, or is that what you were describing?&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Give the group a chance to decide, but don't be afraid to hold them to their decision. These are not questions:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;We've agreed to that. Let's move on.&lt;/li&gt;

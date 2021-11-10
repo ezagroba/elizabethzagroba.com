@@ -32,6 +32,7 @@ I'm not always in the best position to decide whether now is the right time for 
 - Can we leave it there for now?
 
 If you're not sure if it's the right time for a question, try a meta-question:
+
 - Is now the right time to decide if we should keep talking about Thing B?
 - Are we going to be able to come to Decision D today?
 - Did we decide on a next step towards Thing B, or is that what you were describing?
