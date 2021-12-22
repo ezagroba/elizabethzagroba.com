@@ -1,33 +1,32 @@
-I have spoken in these countries: 🇺🇸🇨🇦🇬🇧🇮🇪🇳🇱🇧🇪🇩🇪🇸🇪🇩🇰🇪🇪🇷🇴🇿🇦
+### Software communities I'm a part of
 
-#### Key
+- I co-organize Friends of Good Software conference ([FroGSConf](https://frogsconf.nl/))
+- I am a member of the Dutch Exploratory Workshop on Testing ([DEWT](https://dewt.wordpress.com/))
 
-<p>
-	<i class="fa fa-bullhorn"></i> = talk
-	<br/>
-	<i class="fa fa-star"></i> = keynote
-	<br/>
-	<i class="fa fa-users"></i> = workshop
-	<br/>
-	<i class="fa fa-video"></i> = paywall video recording
-	<br/>
-	<i class="fab fa-youtube"></i> = free video recording
-	<br/>
-	<i class="fa fa-photo-video"></i> = audio + slides recording
-	<br/>
-	<i class="fa fa-podcast"></i> = podcast
-	<br/>
-	<i class="fa fa-file-powerpoint"></i> = slides
-	<br/>
-	<i class="fas fa-book-open"></i> = reading list
-</p>
+### Topics I've prepared presentations about
 
-### Future presentations & peer conferences
+- test reporting
+- ensemble testing (mob testing)
+- exploratory testing
+- testing in devops
+- test reporting
+- API testing
+- communication
+- interviewing
 
-- [Ministry of Testing Essentials: An Introduction To Reporting Your Testing](https://www.ministryoftesting.com/events/essentials-an-introduction-to-reporting-your-testing) (October 2021)
-- [Dutch Exploratory Workshop on Testing [DEWT]](https://dewt.wordpress.com/) (February 2022)
- 
+### Upcoming events
+
+- [FroGSConf](https://frogsconf.nl/), March 2022
+
 ### Past presentations
+
+<a href="#" class="accordion" data-toggle="collapse" data-target="#reporting-your-testing-99-minute-workshop"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i></a> 99 Minute Workshop - An Introduction to Reporting Your Testing
+<ul id="reporting-your-testing-99-minute-workshop" class="collapse">
+	<li>Presented at:</li>
+		<ul>
+			<li><a href="https://www.ministryoftesting.com/dojo/series/99-minute-workshops-essentials/lessons/an-introduction-to-reporting-your-testing" target="_blank">Ministry of Testing Dojo video recording [paywall]</a></li>
+		</ul>
+</ul>
 
 <a href="#" class="accordion" data-toggle="collapse" data-target="#agile-2021-ensemble-testing-panel"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i></a> Panel Discussion - Ensemble Testing
 <ul id="agile-2021-ensemble-testing-panel" class="collapse">
@@ -191,7 +190,6 @@ I have spoken in these countries: 🇺🇸🇨🇦🇬🇧🇮🇪🇳🇱🇧�
 	<li><a href="../../assets/slides/audio-mobile-testing.pdf">Slides</a></li>
 	<li>Presented at: <a href="http://www.meetup.com/NYC-Testers/events/224194458/" target="_blank">NYC Testers Meetup (August 2015)</a></li>
 </ul>
-
 
 ### Past peer conferences
 

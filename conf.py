@@ -943,7 +943,7 @@ CONTENT_FOOTER = """
 <a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
 <a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
 <a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-<a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
+<a href="https://app.thestorygraph.com/profile/e_z" target="_blank"><i class="fa fa-book-open"></i></a>
 <a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon" aria-hidden="true"></i></a>
 &copy; {date} <a href="mailto:{email}">{author}</a>. 
 Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
