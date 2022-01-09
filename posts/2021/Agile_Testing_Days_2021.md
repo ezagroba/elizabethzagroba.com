@@ -1,5 +1,5 @@
-.. title: 🦄 Agile Testing Days 2021
-.. date: 4 December 2021
+.. title: Agile Testing Days 2021
+.. date: 2021-12-28 11:08:16 UTC+01:00
 .. tags: testing, conference, agile-testing-days
 .. description: I saw the other humans draping their ballgowns over their flesh prisons. 
 .. previewimage: /images/posts/2021/unicorn-colors.jpeg
@@ -82,7 +82,7 @@ Reward structures can promote anti-patterns. Be comfortable with silence. Stay i
 
 ---
 
-I have the urge to name-drop all my friends here, but also, who cares? This isn't a popularity contest. Just look at [Twitter](https://twitter.com/search?q=%23agiletd) to see who was there.  I'm grateful to everyone who I was able to give an suspicious eyebrow across the table to, everyone who shared commentary during sessions, everyone whose conversations caused me to skip a session, everyone who patiently waited for me to poorly construct and pronounce Dutch sentences at them, everyone who thought it was fine for me to have a mask on, and most especially, whoever left a piano unlocked. Thank you, and please leave the grand piano unlocked next year. 🙏 
+I have the urge to name-drop all my friends here, but also, who cares? This isn't a popularity contest. Just look at [Twitter](https://twitter.com/search?q=%23agiletd) to see who was there.  I'm grateful to everyone who I was able to give an suspicious eyebrow across the table to, everyone who shared commentary during sessions, everyone whose conversations caused me to skip a session, everyone who patiently waited for me to poorly construct and pronounce Dutch sentences at them, everyone who thought it was fine for me to have a mask on, and most especially, whoever left a piano unlocked. Thank you, and please leave the grand piano unlocked next year. 
 
 I also have the urge to apologize for all the exclamation points in these notes, but I regret to inform you that (1) they do reflect my actual enthusiasm over hearing these message delivered directly from someone's mouth into my ears, and (2) I look forward to the day when our writing can reflect how we'd like to communicate instead of how the patriarchy expects us to. 
 

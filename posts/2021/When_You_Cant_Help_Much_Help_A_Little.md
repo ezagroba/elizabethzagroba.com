@@ -17,7 +17,7 @@ It's a waste of time and energy (with the latter being in shorter supply these d
 
 > Me: Hi there, I have a bit of usability and accessibility feedback about the secrets app. Is it at a stage where this feedback would be useful?
 
-> Him: Yes, definitely 🙂
+> Him: Yes, definitely
 
 > Me: Great, I'll send you a Paper doc this afternoon.
 

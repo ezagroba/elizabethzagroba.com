@@ -35,4 +35,4 @@ So how'd it go? I confirmed Busy Team's busyness, and got more details on how an
 
 But wow, what a feeling to be able to lift the weight of "I need a thing I don't know how to build and don't think I can ever get" off someone's shoulders and replace it with "I know what to do next and it's achievable." 
 
-Stay tuned for more quality leading to come. 😎
+Stay tuned for more quality leading to come.
