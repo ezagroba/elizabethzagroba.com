@@ -52,7 +52,7 @@ Overall: If I had a license, I'd use SwaggerHub to look at existing APIs, but no
 Have you ever used [sequencediagram.org](https://sequencediagram.org/) to create a UML diagram and thought "What if this looked more 90's?" Well, you're in luck! OAIE Sketch will make you nostalgic for Windows 95. After cloning the github repo and open the .html file locally (whatever works I guess?), you'll see something like this. 
 
 
-![](/images/posts/2020/isnt-she-lovely.png "😍😍😍")
+![](/images/posts/2020/isnt-she-lovely.png)
 
 I liked the way it was built for you to either update the YAML or the visualization, then decide when to push changes to the other side. But I couldn't figure out how to paste in a spec I had somewhere else and get the visualization to update. 
 

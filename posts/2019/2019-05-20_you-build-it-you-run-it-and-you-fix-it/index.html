@@ -8,7 +8,7 @@
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
 <link rel="canonical" href="https://elizabethzagroba.com/posts/2019/2019-05-20_you-build-it-you-run-it-and-you-fix-it/">
 <link rel="icon" href="../../../images/avatar.png" sizes="128x128">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="../../assets/fontawesome-5.13.0/css/all.css" rel="stylesheet">
@@ -33,10 +33,11 @@
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="https://elizabethzagroba.com/">
+        <a class="navbar-brand" href="../../../">
 
             <span id="blog-title">Elizabeth Zagroba: Software Tester</span>
         </a>
@@ -99,19 +100,15 @@ navbar-dark bg-dark
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p name="e646" id="e646" class="graf graf--p graf-after--h3">During a meeting of our unit at work today, we were asked if we wanted to become a member of the elite squad of people that are on-call for our software. Our philosophy is: we built it, so we know the most about keeping it up and running. In my next meeting, somebody asked if we ever write bug reports for ourselves. Both reminded me that I wanted to use and fix up a piece of software I wrote.</p>
+    <p name="e646" id="e646" class="graf graf--p graf-after--h3">During a meeting of our unit at work today, we were asked if we wanted to become a member of the elite squad of people that are on-call for our software. Our philosophy is: we built it, so we know the most about keeping it up and running. In my next meeting, somebody asked if we ever write bug reports for ourselves. Both reminded me that I wanted to use and fix up a piece of software I wrote.</p>
 
-<pre class="code literal-block"><span></span><code>$ python3 httperrors.py
+<pre class="code literal-block">$ python3 httperrors.py
 There are <span class="m">15</span> links outside of the <span class="m">200</span> or <span class="m">300</span> range of http responses on your site.
-</code></pre>
-
-
+</pre>
 <p name="d51d" id="d51d" class="graf graf--p graf-after--figure">After using <a href="https://www.screamingfrog.co.uk/broken-link-checker/" data-href="https://www.screamingfrog.co.uk/broken-link-checker/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">ScreamingFrog</a> software to scan the pages for http error response codes, I decided I could build something easier-to-use myself and test it using my own website, <a href="https://elizabethzagroba.com/" data-href="https://elizabethzagroba.com/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">elizabethzagroba.com</a>. I wrote a draft that worked initially, but did some things that weren’t great Python. Thanks to my friends <a href="https://twitter.com/DavidaMarion" data-href="https://twitter.com/DavidaMarion" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Davida</a> and Becky who reviewed and improved my code. You can see what they suggested in the <a href="https://github.com/ezagroba/linkchecker/issues?q=is%3Aissue+is%3Aclosed" data-href="https://github.com/ezagroba/linkchecker/issues?q=is%3Aissue+is%3Aclosed" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">older tickets in my Github repo</a>.</p>
-
 <p name="c3e3" id="c3e3" class="graf graf--p graf-after--p">Here’s what I have now:</p>
 
-<pre class="code literal-block"><span></span><code><span class="c1"># Mission: Find http codes that aren't in the 200 or 300 range for all the links on a single page</span>
+<pre class="code literal-block"><span class="c1"># Mission: Find http codes that aren't in the 200 or 300 range for all the links on a single page</span>
 
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">errno</span>
@@ -159,14 +156,11 @@ There are <span class="m">15</span> links outside of the <span class="m">200</sp
     <span class="k">else</span><span class="p">:</span>
       <span class="nb">print</span><span class="p">(</span><span class="s2">"There are "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">count</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" links outside of the 200 or 300 range of http responses on your site."</span><span class="p">)</span>
       <span class="k">break</span>
-</code></pre>
-
-
+</pre>
 <p name="018e" id="018e" class="graf graf--p graf-after--figure">It looks for the external links on my website, tries to open them, and writes them to a file if the response code isn’t in the 200 or 300 range. There are things I’d like to improve. I’ve noted some here. But tonight’s scope is: run it and fix it.</p>
-
 <p name="c4ca" id="c4ca" class="graf graf--p graf-after--p">I run the file on my machine. Fifteen sites I link to come back with error responses. Here’s the file it generated:</p>
 
-<pre class="code literal-block"><span></span><code>HTTP Error 403: Forbidden https://www.mendix.com/
+<pre class="code literal-block">HTTP Error 403: Forbidden https://www.mendix.com/
 HTTP Error 403: Forbidden https://medium.com/@ezagroba
 HTTP Error 403: Forbidden https://medium.com/@ezagroba/have-i-tried-enough-weird-stuff-7ed4105ae994
 HTTP Error 403: Forbidden https://medium.com/@ezagroba/doubt-builds-trust-9cee937dc5d1
@@ -181,24 +175,17 @@ HTTP Error 403: Forbidden http://testobsessed.com/
 &lt;urlopen error [Errno 8] nodename nor servname provided, or not known&gt; http://developersbestfriend.com
 HTTP Error 999: Request denied http://www.linkedin.com/in/ezagroba/
 HTTP Error 403: Forbidden https://medium.com/@ezagroba
-</code></pre>
-
-
+</pre>
 <p name="d0f0" id="d0f0" class="graf graf--p graf-after--figure">I notice most of the error codes were <code class="markup--code markup--p-code">403</code> responses, so I try a few of those pages manually. Those few succeed, so I don’t bother checking the rest. A<code class="markup--code markup--p-code">403</code> status is <a href="https://httpstatuses.com/403" data-href="https://httpstatuses.com/403" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Forbidden access</a>, so I think it has something to do with these sites having logins. But I don’t need to logins to see the pages I’m linking to. Then I notice that some of the pages are pointing to http instead of https. I don’t know exactly what’s wrong. It’s getting late, so rather than diving in, I write two bugs: <a href="https://github.com/ezagroba/linkchecker/issues/8" data-href="https://github.com/ezagroba/linkchecker/issues/8" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">one about investigating 403s</a>, <a href="https://github.com/ezagroba/linkchecker/issues/9" data-href="https://github.com/ezagroba/linkchecker/issues/9" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">one about updating http to https</a>.</p>
-
 <p name="442c" id="442c" class="graf graf--p graf-after--p">Next, I look at the other error codes. The <code class="markup--code markup--p-code">999</code> one I’ve seen before. It’s some weird LinkedIn thing. I don’t add a bug because it’s not interesting to fix. One site I’m not able to reach the domain of at all, so I message the owner to see if it’s still being maintained. The <code class="markup--code markup--p-code">404</code> codes are from sites that still exist where the pages have been taken down; fixable, but frustrating. They prove I spoke at these conferences. When these pages die, so does proof of my hard work. Sigh. I remove those links from my site, reload to confirm the fix made it to production, and run the script again. We’re down from 15 to 13 errors, as expected.</p>
 
-<pre class="code literal-block"><span></span><code>$ python3 httperrors.py
+<pre class="code literal-block">$ python3 httperrors.py
 There are <span class="m">13</span> links outside of the <span class="m">200</span> or <span class="m">300</span> range of http responses on your site.
-</code></pre>
-
-
+</pre>
 <p name="a400" id="a400" class="graf graf--p graf-after--figure graf--trailing">In looking at this code again, I’m reminded of the original motivation and my vision for myself: run it against any site, and know when links break on elizabethzagroba.com. <a href="https://github.com/ezagroba/linkchecker/issues" data-href="https://github.com/ezagroba/linkchecker/issues" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">I added some issues that I’ll pick up another day</a>. I’ll be ready to build again. But for now, goodnight.</p>
-
 <p>
 </p>
 <p><em>Originally published on <a href="https://medium.com/@ezagroba/you-build-it-you-run-it-and-you-fix-it-ba24151c3f2b">Medium</a>.</em></p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../../categories/development/" rel="tag">development</a></li>
@@ -215,9 +202,9 @@ There are <span class="m">13</span> links outside of the <span class="m">200</sp
 <a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
 <a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
 <a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-<a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
+<a href="https://app.thestorygraph.com/profile/e_z" target="_blank"><i class="fa fa-book-open"></i></a>
 <a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon" aria-hidden="true"></i></a>
-© 2021 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+© 2022 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
 Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
 <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0.</a>
 
@@ -231,9 +218,7 @@ Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola
         <script src="../../../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

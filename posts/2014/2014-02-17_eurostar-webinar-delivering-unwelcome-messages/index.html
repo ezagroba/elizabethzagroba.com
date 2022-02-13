@@ -8,7 +8,7 @@
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
 <link rel="canonical" href="https://elizabethzagroba.com/posts/2014/2014-02-17_eurostar-webinar-delivering-unwelcome-messages/">
 <link rel="icon" href="../../../images/avatar.png" sizes="128x128">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="../../assets/fontawesome-5.13.0/css/all.css" rel="stylesheet">
@@ -32,10 +32,11 @@
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="https://elizabethzagroba.com/">
+        <a class="navbar-brand" href="../../../">
 
             <span id="blog-title">Elizabeth Zagroba: Software Tester</span>
         </a>
@@ -98,8 +99,7 @@ navbar-dark bg-dark
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>A big part of my job as Quality Assurance Manager is delivering bad news. The EuroStar webinar “<a href="https://www.youtube.com/watch?v=QcMlCby9AVE">I think we have an issue — Delivering Unwelcome Messages</a>” hosted by Fiona Charles on Tuesday reinforced the communication conventions we should practice when delivering the bad news but don’t consciously consider all the time. We have to (1) deliver the bad news (2) to the right person/people (3) at the right time (4) with facts rather than emotion.</p>
+    <p>A big part of my job as Quality Assurance Manager is delivering bad news. The EuroStar webinar “<a href="https://www.youtube.com/watch?v=QcMlCby9AVE">I think we have an issue — Delivering Unwelcome Messages</a>” hosted by Fiona Charles on Tuesday reinforced the communication conventions we should practice when delivering the bad news but don’t consciously consider all the time. We have to (1) deliver the bad news (2) to the right person/people (3) at the right time (4) with facts rather than emotion.</p>
 <h5>1. Deliver the bad news.</h5>
 <p>Fiona began with a counterexample of what happens when the first step — actually delivering the bad news — is ignored.</p>
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="../../../images/posts/2014/have-an-issue-1.png" style="display:block; margin-left: auto; margin-right: auto;" title="My favorite slide"><span class="img_caption" style="display: block; text-align: center;">My favorite slide</span></span></p>
@@ -114,7 +114,6 @@ navbar-dark bg-dark
 <p>In summary, be sure to (1) deliver the bad news (2) to the right person/people (3) at the right time (4) with facts rather than emotion. If the recipient believes your information is valuable, you’ve done your duty.</p>
 <p>Many thanks to Fiona Charles for hosting the webinar. Check out the EuroStarConferences website for the <a href="http://www.eurostarconferences.com/community/member/webinar-archive/webinar-91-i-think-we-have-an-issue-%E2%80%93-delivering-unwelcome-messages" target="_blank">complete slides and video archive of the webinar</a>.</p>
 <p><em>Originally published at <a href="https://murphyslawtester.wordpress.com/2014/02/17/eurostar-webinar-fiona-charles-delivering-unwelcome-messages/">murphyslawtester.wordpress.com</a> on February 17, 2014 and duplicated on <a href="https://medium.com/@ezagroba/eurostar-webinar-delivering-unwelcome-messages-70cf10a165a">Medium</a>.</em></p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../../categories/webinar/" rel="tag">webinar</a></li>
@@ -130,9 +129,9 @@ navbar-dark bg-dark
 <a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
 <a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
 <a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-<a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
+<a href="https://app.thestorygraph.com/profile/e_z" target="_blank"><i class="fa fa-book-open"></i></a>
 <a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon" aria-hidden="true"></i></a>
-© 2021 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+© 2022 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
 Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
 <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0.</a>
 
@@ -146,9 +145,7 @@ Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola
         <script src="../../../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

@@ -8,7 +8,7 @@
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
 <link rel="canonical" href="https://elizabethzagroba.com/posts/2020/2020-04-27_errors_you_might_encounter_while_editing_an_open_api_specification/">
 <link rel="icon" href="../../../images/avatar.png" sizes="128x128">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="../../assets/fontawesome-5.13.0/css/all.css" rel="stylesheet">
@@ -36,10 +36,11 @@
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="https://elizabethzagroba.com/">
+        <a class="navbar-brand" href="../../../">
 
             <span id="blog-title">Elizabeth Zagroba: Software Tester</span>
         </a>
@@ -102,8 +103,7 @@ navbar-dark bg-dark
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>One of the tasks for my team last week was updating an existing GET API call in our specification with some new fields. The <a href="https://swagger.io/specification/">Open API Specification</a>, formerly known as Swagger, allows you to provide the details for building in API in a compact, informative way. When you've got the authentication set up correctly, you can use the examples to actually call the API right from the spec!</p>
+    <p>One of the tasks for my team last week was updating an existing GET API call in our specification with some new fields. The <a href="https://swagger.io/specification/">Open API Specification</a>, formerly known as Swagger, allows you to provide the details for building in API in a compact, informative way. When you've got the authentication set up correctly, you can use the examples to actually call the API right from the spec!</p>
 <p>My team builds with a framework that has the power to auto-generate API specs in this format. We've chosen to write them ourselves rather than have them auto-generated so we can be more specific in what kinds of errors and error messaging people will encounter for different calls. For example, a 404 Not Found might make sense on a GET call for a specific resource, but not for a search call.</p>
 <p>When you open <a href="http://editor.swagger.io/">http://editor.swagger.io/</a>, you should see a two-pane view of the editor on the left and the rendering on the right. If you've opened this URL before, your browser session will remember and display your most recent changes. If it's the first time you've opened it, the example specification of the Swagger Petstore should appear like this:</p>
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="../../../images/posts/2020/petstore-example-spec.png" style="display:block; margin-left: auto; margin-right: auto;" title="Petstore example spec"><span class="img_caption" style="display: block; text-align: center;">Petstore example spec</span></span></p>
@@ -119,7 +119,7 @@ navbar-dark bg-dark
 <p><img alt="" src="../../../images/posts/2020/swagger-spinner-failed-reference.png"></p>
 <p>If you're getting a spinner where a part of the specification should be loading, you've got a issue with the reference to a schema. <a href="https://swagger.io/docs/specification/data-models/">Schemas</a> allow you to chunk out and reuse part of the spec, with a reference to them in another place. </p>
 <p>I kept getting the spinner when I referred to a schema that didn't exist, either because I'd updated the name (but not the reference to it) or because I'd screwed up whether it was singular or plural. Fixing the error isn't always enough to make this particular error disappear. Reloading the page will make it re-evaluate what you've got. </p>
-<h4>😱 could not render this component, see the console.</h4>
+<h4>Could not render this component, see the console.</h4>
 <p>What a fun and exciting mistake you've made in the specification, to cause this very comforting and reassuring error message. </p>
 <p><img alt="" src="../../../images/posts/2020/swagger-scream.png"></p>
 <p>Like the endless spinning error, this one means something very specific: you've designated something as an array, but you haven't explained what kinds of items appear in the array. <a href="https://swagger.io/docs/specification/data-models/data-types/#array">Adding a description or reference in the items section</a> should do the trick. </p>
@@ -128,7 +128,6 @@ navbar-dark bg-dark
 <p><img alt="" src="../../../images/posts/2020/swagger-vs-code.png"></p>
 <p>The <a href="https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi">Visual Studio Code Open API plugin</a> did make the red errors obvious enough that you could see them from anywhere in the document. It also gave me the collapsed version of the longer spec in alphabetical order. This allowed me to navigate around without remembering the line numbers of where I dumped the schema separately from the overall spec. Unfortunately the extension didn't catch when I referred to a spec that didn't exist, but I expect seeing the list of schemas on the side would help discover this mistake. The extension also didn't notice if I didn't define the objects in an array.  </p>
 <p>There's also an <a href="https://github.com/swagger-api/swagger-ui">Open API spec tool for offline use</a>, but the instructions went beyond the interest I had for this blog post. Try it out yourself, and maybe I will the next time I've got to edit these specs. </p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../../categories/api-specs/" rel="tag">api-specs</a></li>
@@ -148,9 +147,9 @@ navbar-dark bg-dark
 <a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
 <a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
 <a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-<a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
+<a href="https://app.thestorygraph.com/profile/e_z" target="_blank"><i class="fa fa-book-open"></i></a>
 <a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon" aria-hidden="true"></i></a>
-© 2021 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+© 2022 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
 Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
 <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0.</a>
 
@@ -164,9 +163,7 @@ Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola
         <script src="../../../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

@@ -8,7 +8,7 @@
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
 <link rel="canonical" href="https://elizabethzagroba.com/posts/2014/2014-02-24_writing-clear-and-effective-bug-reports/">
 <link rel="icon" href="../../../images/avatar.png" sizes="128x128">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="../../assets/fontawesome-5.13.0/css/all.css" rel="stylesheet">
@@ -32,10 +32,11 @@
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="https://elizabethzagroba.com/">
+        <a class="navbar-brand" href="../../../">
 
             <span id="blog-title">Elizabeth Zagroba: Software Tester</span>
         </a>
@@ -98,8 +99,7 @@ navbar-dark bg-dark
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>You’re looking at an existing product and you think you’ve found a bug. You want to get the bug fixed, so you collect the necessary information and get into the hands of someone who can do something about it. Now you need a clear and effective bug report.</p>
+    <p>You’re looking at an existing product and you think you’ve found a bug. You want to get the bug fixed, so you collect the necessary information and get into the hands of someone who can do something about it. Now you need a clear and effective bug report.</p>
 <h5>Clear Bug Reports</h5>
 <p>A clear bug report includes (1) what the feature is, (2) how you’re expecting the feature to work, and (3) what the feature is doing at the moment.</p>
 <p><strong>1. What the feature is</strong>: For the front end of the website, the admin view of the CMS, or an API point, a URL can be sufficient. If it’s a certain part of a page, call out the title of the section and include a screenshot. If it’s a visual thing rather than a data thing, try it on more than one browser or mobile device. Specify the environment where you saw the error.</p>
@@ -118,7 +118,6 @@ navbar-dark bg-dark
 <p>Add the ticket to the current <strong>Sprint</strong> if the priority has been set higher than the default and the project manager requests it. If there’s an upcoming sprint with a theme that the bug falls into, put it there. Otherwise leave it in the backlog for the project and product managers to prioritize. Include the ticket in an <strong>Epic</strong> if the Project designation is too broad or the ticket will get lost in the backlog without it.</p>
 <p>JIRA automatically assigns a unique ticket number to each new ticket using the Project slug and the next available integer that corresponds to the {permalink_domain}/browse/{project_slug}-{integer}. When tickets are moved between projects, old URLs redirect to new ones.</p>
 <p><em>Originally published at <a href="https://murphyslawtester.wordpress.com/2014/02/23/writing-clear-and-effective-bug-reports/">murphyslawtester.wordpress.com</a> on February 24, 2014 and duplicated on <a href="https://medium.com/@ezagroba/writing-clear-and-effective-bug-reports-99239a7be1b3">Medium</a>.</em></p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../../categories/bug-reporting/" rel="tag">bug-reporting</a></li>
@@ -134,9 +133,9 @@ navbar-dark bg-dark
 <a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
 <a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
 <a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-<a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
+<a href="https://app.thestorygraph.com/profile/e_z" target="_blank"><i class="fa fa-book-open"></i></a>
 <a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon" aria-hidden="true"></i></a>
-© 2021 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+© 2022 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
 Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
 <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0.</a>
 
@@ -150,9 +149,7 @@ Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola
         <script src="../../../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

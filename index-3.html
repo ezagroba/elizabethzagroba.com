@@ -9,7 +9,7 @@
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="rss.xml">
 <link rel="canonical" href="https://elizabethzagroba.com/index-3.html">
 <link rel="icon" href="images/avatar.png" sizes="128x128">
 <link rel="prev" href="index-4.html" type="text/html">
@@ -23,10 +23,11 @@
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="https://elizabethzagroba.com/">
+        <a class="navbar-brand" href=".">
 
             <span id="blog-title">Elizabeth Zagroba: Software Tester</span>
         </a>
@@ -90,8 +91,7 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p>I was editing an Open API with multiple layers of inheritance recently. I <a href="https://elizabethzagroba.com/posts/2020/2020-04-27_errors_you_might_encounter_while_editing_an_open_api_specification/">kept  uncovering errors</a> long after I created them because of the way they display in <a href="https://editor.swagger.io">editor.swagger.io</a>. </p>
+    <p>I was editing an Open API with multiple layers of inheritance recently. I <a href="https://elizabethzagroba.com/posts/2020/2020-04-27_errors_you_might_encounter_while_editing_an_open_api_specification/">kept  uncovering errors</a> long after I created them because of the way they display in <a href="https://editor.swagger.io">editor.swagger.io</a>. </p>
 <p><a href="https://www.youtube.com/watch?v=s9u3mXQZbXI">This great talk from Lorna Jane Mitchell about Open APIs</a> made me realize how many other tools I could use to edit these specs. There's a whole list at <a href="https://openapi.tools/">openapi.tools</a>. During my crafting days, I resolved to try some new editors. I decided to see what it was like to edit the existing complicated spec, and write a spec we were missing for a very simple API (two GET calls).</p>
 <h3>TL;DR</h3>
 <p>I'm going to use the <a href="https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi">Visual Studio Code Open API plugin</a> to write and navigate through our specs. We're rendering our specs with editor.swagger.io, so I'm going to keep running it through there to confirm they appear as expected for our stakeholders.</p>
@@ -116,12 +116,11 @@ navbar-dark bg-dark
 <p>Overall: If I had a license, I'd use SwaggerHub to look at existing APIs, but not to write new ones. I didn't look into using it to run a mock server, but I bet that'd be useful.</p>
 <h4><a href="https://github.com/OAIE/oaie-sketch">OAIE Sketch</a></h4>
 <p>Have you ever used <a href="https://sequencediagram.org/">sequencediagram.org</a> to create a UML diagram and thought "What if this looked more 90's?" Well, you're in luck! OAIE Sketch will make you nostalgic for Windows 95. After cloning the github repo and open the .html file locally (whatever works I guess?), you'll see something like this. </p>
-<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/isnt-she-lovely.png" style="display:block; margin-left: auto; margin-right: auto;" title="😍😍😍"><span class="img_caption" style="display: block; text-align: center;">😍😍😍</span></span></p>
+<p><img alt="" src="images/posts/2020/isnt-she-lovely.png"></p>
 <p>I liked the way it was built for you to either update the YAML or the visualization, then decide when to push changes to the other side. But I couldn't figure out how to paste in a spec I had somewhere else and get the visualization to update. </p>
 <p>Overall: Might be a good way to think about shared outputs if it updated?</p>
 <h4><a href="https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi">Visual Studio Code Open API plugin</a></h4>
 <p>This put me back where I started: the plugin for Visual Studio Code. It's got syntax highlighting. (It made me realize that my export from SwaggerHub added <code>style</code> and <code>explode</code> fields to my request parameters! <a href="https://swagger.io/docs/specification/serialization/">I guess I'll save figuring out if I should keep those for another day.</a>) It's got a schema, so I can navigate around the spec based on how the things are connected without having to remember line numbers. It's got error messaging that is clear enough without being invasive: red squigglies appear on affected lines and red trangles appear next to the line number on the left. They're small enough to ignore if you're in the middle of writing, but easy enough to find and notice without going on for too long. I'm sticking with this.</p>
-</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-05-24_if_a_test_falls_in_a_forest/" class="u-url">If a test falls in a forest...</a></h1>
         <div class="metadata">
@@ -134,8 +133,7 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p>The saying goes "If a tree falls in a forest and no one is around to hear it, does it make a sound?" I have similar question that shapes the way I think about software testing: If a test is performed but no one takes action on the results, should I have performed it? I think not. </p>
+    <p>The saying goes "If a tree falls in a forest and no one is around to hear it, does it make a sound?" I have similar question that shapes the way I think about software testing: If a test is performed but no one takes action on the results, should I have performed it? I think not. </p>
 <p>If the answer to "Who cares?" is "No one," don't perform that test. If you're not going to take action on the results of your testing in the coming hours, days, or weeks, don't perform that test. The world around you will change in the meantime, and the old results will not be as valuable.</p>
 <p>One of the <a href="https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/">12 Agile Principles</a> is simplicity, or maximizing the work not done. Testing on an agile team provides information to help decide what work should picked up in the coming iteration(s). But without meaningful collaboration or feedback, testing is a pile of work for no reason. Work is not meant to produce waste. Save your time and your sanity by thoughtfully analyzing what should not be done, and coming to an agreement with your team about it.</p>
 <p>My team gets scared about the quality of our product and skeptical about how I'm using my time when I describe what I'm not testing, or which automated tests I'm not going to run. "But isn't testing your job?" says the look on their faces. "But then what are you going to do?" is what they manage to say. Rather than capitulating for appearances, to just "look busy," I take this as a challenge to make my exploratory testing and other work I'm doing for the team more visible. </p>
@@ -158,7 +156,6 @@ navbar-dark bg-dark
 <hr>
 <p>You may be scared to say no to testing things that don't matter, where the performance will not reveal any risks or cause any follow-up actions to take place. It may be tempting to spend a bunch of time testing all the things you can think of, and only reporting on the tests that yield meaningful results. </p>
 <p>But life is not about keeping busy. Make your time at work meaningful by executing meaningful work and declining to do things that aren't important right now.</p>
-</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-05-03_testbash-home/" class="u-url">TestBash Home (Spring 2020)</a></h1>
         <div class="metadata">
@@ -171,8 +168,7 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p>Typing to the people you usually see in person can have the same energy as tweeting at them from across a big room. </p>
+    <p>Typing to the people you usually see in person can have the same energy as tweeting at them from across a big room. </p>
 <p><a href="https://www.ministryoftesting.com/events/testbash-home-2020">TestBash Home</a>, put on by the <a href="https://www.ministryoftesting.com/">Ministry of Testing</a>, was a 24-hour around-the-world tour of talks, panels, and coaching from the best of the best. I <del>missed</del> purposely and prudently skipped a big chunk of the schedule to get a good night's sleep and properly absorb what I could attend.</p>
 <p>I was definitely overloaded with places to chat (Slack, the video streaming app Crowdcast, Twitter, or <a href="https://tbhome.herokuapp.com/">the app built for the occasion</a>) simultaneously with the video stream, the same way I would be at an in-person conference. I got that same "I want to hang out more but I'm so tired" feeling I get in real life. Though as Gwen correctly noted, this is real life now. </p>
 <hr>
@@ -229,7 +225,6 @@ navbar-dark bg-dark
 <p>My favorite 99-second talk from the second set was <a href="https://twitter.com/jen_kitson">Jen Kitson</a>'s about optimism. While we discover and often have to report a lot of bad news as testers, optimism is essential to testing. We notice things, report bugs, and pushing for fixes because we can imagine a world that can be better. </p>
 <hr>
 <p>I'm so glad I got to attend TestBash Home. I would listen to <a href="https://twitter.com/TesterFromLeic">Vernon Richards</a> talk about sports balls I don't understand. <a href="https://twitter.com/gwendiagram">Gwen Diagram</a> gives me life and energy in a way that I cannot fully explain. There were people I got to see or chat with that I haven't encountered for months, or years, and it felt good. It felt like home. </p>
-</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-04-27_errors_you_might_encounter_while_editing_an_open_api_specification/" class="u-url">Errors You Might Encounter While Editing an Open API Specification</a></h1>
         <div class="metadata">
@@ -242,8 +237,7 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p>One of the tasks for my team last week was updating an existing GET API call in our specification with some new fields. The <a href="https://swagger.io/specification/">Open API Specification</a>, formerly known as Swagger, allows you to provide the details for building in API in a compact, informative way. When you've got the authentication set up correctly, you can use the examples to actually call the API right from the spec!</p>
+    <p>One of the tasks for my team last week was updating an existing GET API call in our specification with some new fields. The <a href="https://swagger.io/specification/">Open API Specification</a>, formerly known as Swagger, allows you to provide the details for building in API in a compact, informative way. When you've got the authentication set up correctly, you can use the examples to actually call the API right from the spec!</p>
 <p>My team builds with a framework that has the power to auto-generate API specs in this format. We've chosen to write them ourselves rather than have them auto-generated so we can be more specific in what kinds of errors and error messaging people will encounter for different calls. For example, a 404 Not Found might make sense on a GET call for a specific resource, but not for a search call.</p>
 <p>When you open <a href="http://editor.swagger.io/">http://editor.swagger.io/</a>, you should see a two-pane view of the editor on the left and the rendering on the right. If you've opened this URL before, your browser session will remember and display your most recent changes. If it's the first time you've opened it, the example specification of the Swagger Petstore should appear like this:</p>
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/petstore-example-spec.png" style="display:block; margin-left: auto; margin-right: auto;" title="Petstore example spec"><span class="img_caption" style="display: block; text-align: center;">Petstore example spec</span></span></p>
@@ -259,7 +253,7 @@ navbar-dark bg-dark
 <p><img alt="" src="images/posts/2020/swagger-spinner-failed-reference.png"></p>
 <p>If you're getting a spinner where a part of the specification should be loading, you've got a issue with the reference to a schema. <a href="https://swagger.io/docs/specification/data-models/">Schemas</a> allow you to chunk out and reuse part of the spec, with a reference to them in another place. </p>
 <p>I kept getting the spinner when I referred to a schema that didn't exist, either because I'd updated the name (but not the reference to it) or because I'd screwed up whether it was singular or plural. Fixing the error isn't always enough to make this particular error disappear. Reloading the page will make it re-evaluate what you've got. </p>
-<h4>😱 could not render this component, see the console.</h4>
+<h4>Could not render this component, see the console.</h4>
 <p>What a fun and exciting mistake you've made in the specification, to cause this very comforting and reassuring error message. </p>
 <p><img alt="" src="images/posts/2020/swagger-scream.png"></p>
 <p>Like the endless spinning error, this one means something very specific: you've designated something as an array, but you haven't explained what kinds of items appear in the array. <a href="https://swagger.io/docs/specification/data-models/data-types/#array">Adding a description or reference in the items section</a> should do the trick. </p>
@@ -268,7 +262,6 @@ navbar-dark bg-dark
 <p><img alt="" src="images/posts/2020/swagger-vs-code.png"></p>
 <p>The <a href="https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi">Visual Studio Code Open API plugin</a> did make the red errors obvious enough that you could see them from anywhere in the document. It also gave me the collapsed version of the longer spec in alphabetical order. This allowed me to navigate around without remembering the line numbers of where I dumped the schema separately from the overall spec. Unfortunately the extension didn't catch when I referred to a spec that didn't exist, but I expect seeing the list of schemas on the side would help discover this mistake. The extension also didn't notice if I didn't define the objects in an array.  </p>
 <p>There's also an <a href="https://github.com/swagger-api/swagger-ui">Open API spec tool for offline use</a>, but the instructions went beyond the interest I had for this blog post. Try it out yourself, and maybe I will the next time I've got to edit these specs. </p>
-</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2020/2020-04-19_remembering_testbash_brighton-2018/" class="u-url">Remembering TestBash Brighton 2018</a></h1>
         <div class="metadata">
@@ -281,8 +274,7 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p>TestBash Brighton was one of 10,000 things I had to do in the weeks just before I left my whole life (family, friends, job, apartment, belongings) and moved across the ocean into the unknown. It was the first place I'd gotten to share that big news in person, with people who would become larger parts of my life once I moved. Visiting the city where I'd studied during university and first thought "I could leave the United States" brought things full circle for me. </p>
+    <p>TestBash Brighton was one of 10,000 things I had to do in the weeks just before I left my whole life (family, friends, job, apartment, belongings) and moved across the ocean into the unknown. It was the first place I'd gotten to share that big news in person, with people who would become larger parts of my life once I moved. Visiting the city where I'd studied during university and first thought "I could leave the United States" brought things full circle for me. </p>
 <p>I paired on presenting a brand-new workshop and talk, with two different people. This would have been a lot, even without all the uncertaincies and distractions swirling in my life those days. After hustling to adjust the schedule of and present our morning workshop, I distinctly remember choosing to skip the afternoon one I'd planned on attending in order to fill out immigration and relocation paperwork. I'm shocked to find I was able to focus enough on some other peoples' talks to take coherent notes about them.</p>
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/pavilion.jpg" style="display:block; margin-left: auto; margin-right: auto;" title="Royal Pavilion in downtown Brighton"><span class="img_caption" style="display: block; text-align: center;">Royal Pavilion in downtown Brighton</span></span></p>
 <hr>
@@ -301,7 +293,6 @@ navbar-dark bg-dark
 <hr>
 <p>Reflecting on the open space, the social events, and the atmosphere at TestBash Brighton 2018 makes me wish for the experience we all missed at the now-cancelled event in 2020. Jumping into the unknown seemed so doable when I knew there'd be so many people to share with and learn from on this side of the Atlantic. I don't know when I'll see you all again, but I look forward to that possibility. </p>
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2020/stamner.jpg" style="display:block; margin-left: auto; margin-right: auto;" title="Can't go to Britain without a proper tea"><span class="img_caption" style="display: block; text-align: center;">Can't go to Britain without a proper tea</span></span></p>
-</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2019/2019-09-15_reflecting-on-let-s-test-2017/" class="u-url">Reflecting on Let’s Test 2017</a></h1>
         <div class="metadata">
@@ -314,31 +305,23 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p name="f2d3" id="f2d3" class="graf graf--p graf-after--h3">Good ideas come back around. As I sit here re-reading my notes from Let’s Test 2017, I remember the thrill of coming across so many new ideas there, and realize how much these three things stick out to me even now.</p>
+    <p name="f2d3" id="f2d3" class="graf graf--p graf-after--h3">Good ideas come back around. As I sit here re-reading my notes from Let’s Test 2017, I remember the thrill of coming across so many new ideas there, and realize how much these three things stick out to me even now.</p>
 
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2019/valley-lodge.jpeg" style="display:block; margin-left: auto; margin-right: auto;" title="Valley Lodge &amp; Spa, Magaliesburg, South Africa"><span class="img_caption" style="display: block; text-align: center;">Valley Lodge &amp; Spa, Magaliesburg, South Africa</span></span></p>
 <ol class="postList"><li name="dc01" id="dc01" class="graf graf--li graf-after--figure">Causal loop diagrams</li></ol>
 <p name="1b99" id="1b99" class="graf graf--p graf-after--li">It’s possible I’d seen a causal loop disgram before, but it wasn’t until I went to Jo Perold and Barry Tandy’s “Visualize your way to better problem solving” workshop that I knew the name for them. <a href="https://www.isixsigma.com/tools-templates/cause-effect/causal-loop-diagrams-little-known-analytical-tool/" data-href="https://www.isixsigma.com/tools-templates/cause-effect/causal-loop-diagrams-little-known-analytical-tool/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Here’s an example of how connecting nouns with verbs via bubbles and letters really clears things up.</a></p>
-
 <p name="0c13" id="0c13" class="graf graf--p graf-after--p">During the workshop, Jo and Barry talked about how drawing a diagram of your software in this way can help you discover interaction points between systems. Sharing the diagram is one way to take the invisible software you’re building into a visible space. That allows us to have a conversation about the model, discover if we’re on the same page, and take steps to improve the model and ultimately the software. The more visualizations I see of process and influence on the job, the more I realize they’re exposing <a href="https://www.thoughtworks.com/insights/articles/demystifying-conways-law" data-href="https://www.thoughtworks.com/insights/articles/demystifying-conways-law" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Conway’s Law</a>.</p>
-
 <p name="b91d" id="b91d" class="graf graf--p graf-after--p">Elisabeth Hendrickson wrote in <a href="https://www.goodreads.com/book/show/15980494-explore-it" data-href="https://www.goodreads.com/book/show/15980494-explore-it" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">Explore It!</em></a><em class="markup--em markup--p-em"> </em>about how causal loop diagrams can help you discover interesting areas to test. She pointed out that transitions from one state to another take time, and there’s lots to be discovered during the moments of transition about interruptions, errors, and incomplete states.</p>
 
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2019/causal-loop.png" style="display:block; margin-left: auto; margin-right: auto;" title='Repenning, Nelson &amp; Sterman, John. (2003). "Nobody Ever Gets Credit for Fixing Problems That Never Happened: Creating and Sustaining Process Improvement." Engineering Management Review, IEEE. 30. 64- 64. 10.1109/EMR.2002.1167285.'><span class="img_caption" style="display: block; text-align: center;">Repenning, Nelson &amp; Sterman, John. (2003). "Nobody Ever Gets Credit for Fixing Problems That Never Happened: Creating and Sustaining Process Improvement." Engineering Management Review, IEEE. 30. 64- 64. 10.1109/EMR.2002.1167285.</span></span></p>
 <p name="5105" id="5105" class="graf graf--p graf-after--figure">Nelson Repenning and John Sterman used a causal loop diagram to display a human problem: not prioritizing time for improving. Read their whole article to discover terrifying news about how much time you’re wasting all the time by not stopping to improve!</p>
-
 <p name="50d2" id="50d2" class="graf graf--p graf-after--p">2. Metaphors</p>
-
 <p name="c76c" id="c76c" class="graf graf--p graf-after--p">Leo Hepis and Danie Roux’s “Frames at Work” workshop blew my mind. I would tell you they were talking about how metaphors and context framing shape the way we think about our work. And they did that. But the meandering and level of lost I felt on our path there was unprecedented.</p>
 
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2019/rope.jpeg" style="display:block; margin-left: auto; margin-right: auto;" title="Our table selected “Rope of Awesome” and I stand by that answer."><span class="img_caption" style="display: block; text-align: center;">Our table selected “Rope of Awesome” and I stand by that answer.</span></span></p>
 <p name="e4cd" id="e4cd" class="graf graf--p graf-after--figure">One of the exercises had us listening to a story about someone’s work and only writing down the metaphors. There seemed to be one every sentence, so many that I thought the speaker was throwing them in there on purpose. (See: <em class="markup--em markup--p-em">throwing</em>. They’re everywhere!) He talked about “pulling” and “dragging” his team along. Imagine instead if he were “pushing” or “building” his team. How would he think differently about his work? How different would his work be? Listen more closely to the words people are using to discover terrifying news about how they perceive their work!</p>
-
 <p name="bff4" id="bff4" class="graf graf--p graf-after--p">3. Reflection and Learning</p>
-
 <p name="b1ad" id="b1ad" class="graf graf--p graf-after--p">Alison Gitelson hosted a session to help the conference attendees think more about what they’d just learned. I was still reeling from the metaphors and framing session, so I wrote down these questions for myself:</p>
-
 <ul class="postList">
 <li name="00fe" id="00fe" class="graf graf--li graf-after--p">How do I realize when I’m stuck inside my own head?</li>
 <li name="48ba" id="48ba" class="graf graf--li graf-after--li">Does noticing where a behavior would be useful make it less irritating?</li>
@@ -350,7 +333,6 @@ navbar-dark bg-dark
 
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2019/double-rainbow.jpeg" style="display:block; margin-left: auto; margin-right: auto;" title="Very slight double rainbow to the right."><span class="img_caption" style="display: block; text-align: center;">Very slight double rainbow to the right.</span></span></p>
 <p><em>Originally published on <a href="https://medium.com/@ezagroba/reflecting-on-lets-test-2017-efb52723598c">Medium</a>.</em></p>
-</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2019/2019-07-28_how-not-to-name-self-verifying-test-data/" class="u-url">How not to name self-verifying test data</a></h1>
         <div class="metadata">
@@ -363,14 +345,11 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p name="3e80" id="3e80" class="graf graf--p graf-after--h3">Self-verifying test data makes it easy to determine if it’s right. You don’t need to go check somewhere else. It is its own oracle. Here’s an example:</p>
-
+    <p name="3e80" id="3e80" class="graf graf--p graf-after--h3">Self-verifying test data makes it easy to determine if it’s right. You don’t need to go check somewhere else. It is its own oracle. Here’s an example:</p>
 <p name="9278" id="9278" class="graf graf--p graf-after--p">Address: <code class="markup--code markup--p-code">My last name</code></p>
-
 <p name="1393" id="1393" class="graf graf--p graf-after--p graf--trailing">Something is wrong. It’s obvious from the data itself. We don’t know exactly where the problem is or how to fix it, but we can tell there’s something funky with either <code class="markup--code markup--p-code">Address</code> or <code class="markup--code markup--p-code">Last Name</code> or both. If you feel like there must be more to it than this, <a href="https://www.stickyminds.com/sites/default/files/article/file/2012/XDD2918filelistfilename1_0.pdf" data-href="https://www.stickyminds.com/sites/default/files/article/file/2012/XDD2918filelistfilename1_0.pdf" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">read Noel Nyman’s 13-page paper to see that there isn’t.</a></p>
-
-<p><section name="d869" class="section section--body"><div class="section-divider"><hr class="section-divider"></div>
+<p></p>
+<section name="d869" class="section section--body"><div class="section-divider"><hr class="section-divider"></div>
 <div class="section-content"><div class="section-inner sectionLayout--insetColumn">
 <p name="2031" id="2031" class="graf graf--p graf--leading">Let’s look at a real-life example: I’m writing an automated test for an API. First, I create (POST) an item, then I read (GET) the database to see if it’s there. One of the fields in the body of the POST call is a Universally Unique Identifier, or UUID.</p>
 <p name="9c80" id="9c80" class="graf graf--p graf-after--p">A UUID is a 128-bit identifier; we’re using them as unique keys in our database. Here’s an example of a version 4 UUID: <code class="markup--code markup--p-code">74ee94d-d32f-4844-9def-81f0d7fea2d8</code>. (If you’re a human that can’t read regex, <a href="https://www.regextester.com/99148" data-href="https://www.regextester.com/99148" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">you might find this useful</a>.) I generated that using the <a href="https://www.uuidgenerator.net" data-href="https://www.uuidgenerator.net" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Online UUID Generator Tool</a>.</p>
@@ -378,28 +357,23 @@ navbar-dark bg-dark
 <p name="16e0" id="16e0" class="graf graf--p graf-after--p">I decided to name my UUID <code class="markup--code markup--p-code">This is not a valid UUID.</code>I wanted to easily be able to tell from the GET call if it succeeded, or the error message in the POST call if it failed. It would be clear when running or debugging the test what value was being passed in, why, and to which field it belongs.</p>
 <p name="78ab" id="78ab" class="graf graf--p graf-after--p">Or so I thought.</p>
 <p name="ca5b" id="ca5b" class="graf graf--p graf-after--p">I ran the test. This was the output.</p>
-<p><img alt="" src="images/posts/2019/output.png"></p>
+
+![](/images/posts/2019/output.png)
+
 <p name="950f" id="950f" class="graf graf--p graf-after--figure">I sat starting at it for a while. The first line where the red <code class="markup--code markup--p-code">AssertionError</code> starts looks confusingly similar: The left side looks like the right, so the assert should have passed instead of failed. The message below had <code class="markup--code markup--p-code">is not a valid UUID</code> twice. Huh? Finally, I realized what I did, and highlighted the part you now see in blue. I gave my self-verifying test data a name too similar to the error message. Let me boil this down:</p>
-
 <p name="a80f" id="a80f" class="graf graf--p graf-after--p">Error message I expected: <code class="markup--code markup--p-code">UUID not valid</code><br>Error message I got: <code class="markup--code markup--p-code">Published service UUID {{insert UUID here}} is not a valid UUID.</code></p>
-
 <p name="a0fb" id="a0fb" class="graf graf--p graf-after--p">Unfortunately, I’d named my UUID <code class="markup--code markup--p-code">This is not a valid UUID.</code> so the whole invalid input error message was:</p>
-
 <p name="9e42" id="9e42" class="graf graf--p graf-after--p"><code class="markup--code markup--p-code">Published service UUID This is not a valid UUID. is not a valid UUID.</code></p>
-
 <p name="64d9" id="64d9" class="graf graf--p graf-after--p">Fans of 30 Rock may recognize <a href="https://www.youtube.com/watch?v=zh2k5YAnP8g" data-href="https://www.youtube.com/watch?v=zh2k5YAnP8g" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">this problem</a>:</p>
 
-<p><img alt="" src="images/posts/2019/single-dropping.jpg"></p>
-<p name="4fdd" id="4fdd" class="graf graf--p graf-after--figure graf--trailing">My self-verifying test data would have worked fine if the error message was exactly how I expected it. The test would have passed, and I may not have taken a closer look at the text of the error message. But of course, my developers had changed it to be more meaningful and give more context, the bastards. Thus, I uncovered my perfect-turned-nonsensical name. I changed the UUID in my test data to be called<code class="markup--code markup--p-code">FAKE UUID</code>. It may not be the perfect name, but at least the code is <a href="https://www.youtube.com/watch?v=aWiwDdx_rdo" data-href="https://www.youtube.com/watch?v=aWiwDdx_rdo" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">better</a>.</p>
+![](/images/posts/2019/single-dropping.jpg)
 
-<p></p>
+<p name="4fdd" id="4fdd" class="graf graf--p graf-after--figure graf--trailing">My self-verifying test data would have worked fine if the error message was exactly how I expected it. The test would have passed, and I may not have taken a closer look at the text of the error message. But of course, my developers had changed it to be more meaningful and give more context, the bastards. Thus, I uncovered my perfect-turned-nonsensical name. I changed the UUID in my test data to be called<code class="markup--code markup--p-code">FAKE UUID</code>. It may not be the perfect name, but at least the code is <a href="https://www.youtube.com/watch?v=aWiwDdx_rdo" data-href="https://www.youtube.com/watch?v=aWiwDdx_rdo" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">better</a>.</p>
 </div></div></section><section name="5fb0" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div>
 <div class="section-content"><div class="section-inner sectionLayout--insetColumn">
 <p name="81c8" id="81c8" class="graf graf--p graf--leading">Calling things names related to the thing they are: great!</p>
 <p name="e145" id="e145" class="graf graf--p graf-after--p graf--trailing">Calling things names too similar to the thing that you’re trying to test: confusing.</p>
-</div></div></section></p>
-<p><em>Originally published on <a href="https://medium.com/@ezagroba/how-not-to-name-self-verifying-test-data-1225d3c72454">Medium</a>.</em></p>
-</div>
+</div></div></section><p><em>Originally published on <a href="https://medium.com/@ezagroba/how-not-to-name-self-verifying-test-data-1225d3c72454">Medium</a>.</em></p>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2019/2019-07-07_agile-testing-days-2018-a-reflection/" class="u-url">Agile Testing Days 2018: A Reflection</a></h1>
         <div class="metadata">
@@ -412,71 +386,45 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p name="4f54" id="4f54" class="graf graf--p graf-after--h3">I was beyond excited to attend Agile Testing Days in Potsdam, Germany for the first time a year and a half ago. Anywhere I went, I met women who I’d previously only known from the internet. It was refreshing.</p>
-
+    <p name="4f54" id="4f54" class="graf graf--p graf-after--h3">I was beyond excited to attend Agile Testing Days in Potsdam, Germany for the first time a year and a half ago. Anywhere I went, I met women who I’d previously only known from the internet. It was refreshing.</p>
 <p name="bd6a" id="bd6a" class="graf graf--p graf-after--p">Based on the pages of notes I’ve got, I can tell you that the lessons I took away from that week have seeped into the way I work everyday.</p>
-
 <blockquote name="14da" id="14da" class="graf graf--pullquote graf--startsWithDoubleQuote graf-after--p">“Humans should not be regression testing.”</blockquote>
-
 <p name="d815" id="d815" class="graf graf--p graf-after--pullquote"><a href="https://twitter.com/jezhumble" data-href="https://twitter.com/jezhumble" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Jez Humble</a> kicked off the conference with a session about continuous delivery. He described the barriers of organizational culture and software architecture that can prevent you from getting to a point where you can deliver continuously. Previous places where I worked made this feel like an insurmountable feat; now when I imagine continuous delivery, I can imagine concrete steps we could take to get there.</p>
-
 <blockquote name="0481" id="0481" class="graf graf--pullquote graf--startsWithDoubleQuote graf-after--p">“Let’s create a small habit everyday to trigger me to learn more.”</blockquote>
-
 <p name="7bbd" id="7bbd" class="graf graf--p graf-after--pullquote"><a href="https://twitter.com/lisihocke" data-href="https://twitter.com/lisihocke" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Lisi Hocke</a> certainly took this idea from her talk and ran with it. She’s been pair testing remotely with people around the world and learning so much from it. I’ve taken pairing on a smaller scale, with my colleagues or in-person. There are still times when it tests my patience, but the benefits of being able to more precisely explain what I’m doing and what I expect of the software vastly outweigh that investment. All my notes from Lisi’s talk have me nodding my head, like these are the most obvious things in the world. The biggest I’d come across about a year beforehand: having a growth mindset rather than a fixed mindset. <a href="https://www.brainpickings.org/2014/01/29/carol-dweck-mindset/" data-href="https://www.brainpickings.org/2014/01/29/carol-dweck-mindset/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">This explanation from Brain Pickings sticks with me</a>.</p>
 
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2019/sanssouci-palace.jpeg" style="display:block; margin-left: auto; margin-right: auto;" title="Sanssouci Palace in Potsdam."><span class="img_caption" style="display: block; text-align: center;">Sanssouci Palace in Potsdam.</span></span></p>
 <blockquote name="f3ae" id="f3ae" class="graf graf--pullquote graf--startsWithDoubleQuote graf-after--figure">“I am curious why they’re doing what they do.”</blockquote>
-
 <p name="7ad0" id="7ad0" class="graf graf--p graf-after--pullquote"><a href="https://twitter.com/NativeWired" data-href="https://twitter.com/NativeWired" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Gitte Klitgaard</a> and <a href="https://twitter.com/andreasschliep" data-href="https://twitter.com/andreasschliep" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Andreas Schliep</a> had an improvised conversation about good and evil. You know, like you do with your friends for fun, but on stage. It can be so hard to believe that people are acting with good intentions at heart. But remembering to have empathy for the situations people find themselves in will help you choose to be the person to repair relationships when things go awry. If you believe in people, they can be better.</p>
-
 <blockquote name="c286" id="c286" class="graf graf--pullquote graf--startsWithDoubleQuote graf-after--p">“People don’t want to collaborate with you when you have twelve spreadsheets for them to go through.”</blockquote>
-
 <p name="7691" id="7691" class="graf graf--p graf-after--pullquote">I’m sure <a href="https://twitter.com/techgirl1908" data-href="https://twitter.com/techgirl1908" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Angie Jones</a> had other, more profound takeaways from her talk. But this one sticks to my bones. I think of it anytime I open a spreadsheet with more than one sheet in it. I think of it when I’m deciding on a tool to use, and wondering not what’s easiest for me to set up, but what’s easiest for my fellow collaborators to use. Thank you for this gem Angie.</p>
 
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2019/sanssouci-park.jpeg" style="display:block; margin-left: auto; margin-right: auto;" title="Some dramatic structure in Sanssouci Park."><span class="img_caption" style="display: block; text-align: center;">Some dramatic structure in Sanssouci Park.</span></span></p>
 <blockquote name="f5ac" id="f5ac" class="graf graf--pullquote graf--startsWithDoubleQuote graf-after--figure">“Get ready to fire people to maintain the culture you want.”</blockquote>
-
 <p name="f967" id="f967" class="graf graf--p graf-after--pullquote"><a href="https://twitter.com/poornima" data-href="https://twitter.com/poornima" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Poornima Vijayashanker</a> spoke about concrete ways to successfully onboard new employees. But I’m curious about this provocative statement. I haven’t ever worked at a place bold enough to get rid of managers whose direct reports displayed a pattern of escaping them that no one could ignore. I wonder what kind of company is bold enough to take this step.</p>
-
 <blockquote name="deaf" id="deaf" class="graf graf--pullquote graf--startsWithDoubleQuote graf-after--p">“Only put off until tomorrow what you are willing to die having left undone.”</blockquote>
-
 <p name="c0ca" id="c0ca" class="graf graf--p graf-after--pullquote"><a href="https://twitter.com/Punkmik" data-href="https://twitter.com/Punkmik" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Kim Knup</a> said Pablo Picasso came up with this doozie. At my first job, we used a physical board with sticky notes. If the sticky note had been moved around too many times or stuck in one place too long, it would literally fall off the board. At the time this felt like a failure. Now I see it for the blessing it was. Forgetting is a part of life, even if our digital tools would prefer us to forget that.</p>
-
 <blockquote name="af08" id="af08" class="graf graf--pullquote graf--startsWithDoubleQuote graf-after--p">“Do what you say you will. Integrity is important.”</blockquote>
-
 <p name="f653" id="f653" class="graf graf--p graf-after--pullquote"><a href="https://twitter.com/Rob_Lambert" data-href="https://twitter.com/Rob_Lambert" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Rob Lambert</a> spoke about behaviors of effective Agile teams. It’s resonating with me again now because it’s something I’m addressing in a talk I’m giving about how to build trust. I’m digging into authenticity, which I think goes a step beyond integrity. Doing what you say you will is being externally congruent. Authentic people are also internally congruent; the vision they have of themselves is the one they present to the world.</p>
 
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2019/downtown.jpeg" style="display:block; margin-left: auto; margin-right: auto;" title="I forget what this is but it’s across from the museum downtown and damn the light was lovely."><span class="img_caption" style="display: block; text-align: center;">I forget what this is but it’s across from the museum downtown and damn the light was lovely.</span></span></p>
 <blockquote name="7969" id="7969" class="graf graf--pullquote graf--startsWithDoubleQuote graf-after--figure">“If you never get feedback, you have one year of experience ten times.”</blockquote>
-
 <p name="a539" id="a539" class="graf graf--p graf-after--pullquote">This came out in <a href="https://twitter.com/huibschoots" data-href="https://twitter.com/huibschoots" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Huib Schoots</a> and <a href="https://twitter.com/alex_schl" data-href="https://twitter.com/alex_schl" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Alex Schladebeck</a>’s workshop on dissecting your testing and discovering the skills present in your exploratory testing. We practiced observing the skills we were using on the meta-level. It allowed me to both see and share how much a year of mob testing for an hour every day had expanded at least two things. First: my field of vision for how to dig and explore software had grown. Second: I was able to explain what I was thinking such that the other people present could understand, contribute to, and question which path we’d take next. It was life-affirming!</p>
-
 <blockquote name="b8f8" id="b8f8" class="graf graf--pullquote graf--startsWithDoubleQuote graf-after--p">“When we set our own limits, we can change them.”</blockquote>
-
 <p name="c8b4" id="c8b4" class="graf graf--p graf-after--pullquote">This came up in the context of Natalie Wenert’s talk about cross-team functionality. She chided organizations for relying on hero-worship and fire-fighting over breaking down silos and contributing to the whole. One of my conference buddies was frustrated at Agile Testing Days because they viewed so much of the content as “work therapy.” They weren’t wrong.</p>
-
 <blockquote name="e6da" id="e6da" class="graf graf--pullquote graf--startsWithDoubleQuote graf-after--p">“As a user, I want to be locked out of the system after three incorrect password attempts.”</blockquote>
-
 <p name="1723" id="1723" class="graf graf--p graf-after--pullquote"><a href="https://twitter.com/DavidEvans66" data-href="https://twitter.com/DavidEvans66" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">David Evans</a> presented a memorable talk about how the template we stick to for writing user stories does not serve us well. This particular example made me laugh out loud. This story gets the “why” wrong. It’s about security of our system and the user’s data. Being honest about why we’re building the software would make the user story less absurd, and hopefully get us on the path to making better software too.</p>
 
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2019/barberini.jpeg" style="display:block; margin-left: auto; margin-right: auto;" title="This doozie is in the Museum Barberini, which is worth checking out if you're in Potsdam."><span class="img_caption" style="display: block; text-align: center;">This doozie is in the Museum Barberini, which is worth checking out if you're in Potsdam.</span></span></p>
 <blockquote name="710c" id="710c" class="graf graf--pullquote graf--startsWithDoubleQuote graf-after--figure">“Uncertainty is more stressful than inevitable pain.”</blockquote>
-
 <p name="7f33" id="7f33" class="graf graf--p graf-after--pullquote"><a href="https://twitter.com/ewebber" data-href="https://twitter.com/ewebber" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Emily Webber</a> spoke about team interactions and organizational change. (Shout out to all the people who’ve tweet me instead of this other brown-haired white lady with glasses!) I’m on my fifth team in a year at my current company. I’m tired of the change. I know how important it is to build relationships with the people you work with. I’ve expressed that knowing who’s on my team is more important than having the perfect set of people. I look forward to more stability there because I don’t envy the alternative.</p>
-
 <blockquote name="fc3c" id="fc3c" class="graf graf--pullquote graf--startsWithDoubleQuote graf-after--p">“Mistakes were made.”</blockquote>
-
 <p name="7aee" id="7aee" class="graf graf--p graf-after--pullquote"><a href="https://twitter.com/lunivore" data-href="https://twitter.com/lunivore" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Liz Keogh</a> spoke about how to deliver failure messages. Her message was essentially: don’t. Pointing out the mistake without pointing fingers is enough. Encourage good existing behavior and create more options so that failure can occur safely.</p>
-
 <blockquote name="20f1" id="20f1" class="graf graf--pullquote graf--startsWithDoubleQuote graf-after--p">“Are we advocating for those doing a good job?”</blockquote>
-
 <p name="2163" id="2163" class="graf graf--p graf-after--pullquote graf--trailing"><a href="https://twitter.com/AshColeman30" data-href="https://twitter.com/AshColeman30" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Ash Coleman</a> and <a href="https://twitter.com/keithklain" data-href="https://twitter.com/keithklain" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Keith Klain</a> had a late-night after-dinner (over-hyphenated?) bonus-keynote to talk about how culture is a mindset and what we can do to change it. They encouraged allies in the majority to stop talking, and start listening, so you can do something. If you’re uncomfortable, good. You’re learning.</p>
-
 <p>
 </p>
 <p><em>Originally published on <a href="https://medium.com/@ezagroba/agile-testing-days-2017-a-reflection-2ea505b09eec">Medium</a>.</em></p>
-</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2019/2019-05-20_you-build-it-you-run-it-and-you-fix-it/" class="u-url">You build it, you run it, and you fix it</a></h1>
         <div class="metadata">
@@ -489,19 +437,15 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p name="e646" id="e646" class="graf graf--p graf-after--h3">During a meeting of our unit at work today, we were asked if we wanted to become a member of the elite squad of people that are on-call for our software. Our philosophy is: we built it, so we know the most about keeping it up and running. In my next meeting, somebody asked if we ever write bug reports for ourselves. Both reminded me that I wanted to use and fix up a piece of software I wrote.</p>
+    <p name="e646" id="e646" class="graf graf--p graf-after--h3">During a meeting of our unit at work today, we were asked if we wanted to become a member of the elite squad of people that are on-call for our software. Our philosophy is: we built it, so we know the most about keeping it up and running. In my next meeting, somebody asked if we ever write bug reports for ourselves. Both reminded me that I wanted to use and fix up a piece of software I wrote.</p>
 
-<pre class="code literal-block"><span></span><code>$ python3 httperrors.py
+<pre class="code literal-block">$ python3 httperrors.py
 There are <span class="m">15</span> links outside of the <span class="m">200</span> or <span class="m">300</span> range of http responses on your site.
-</code></pre>
-
-
+</pre>
 <p name="d51d" id="d51d" class="graf graf--p graf-after--figure">After using <a href="https://www.screamingfrog.co.uk/broken-link-checker/" data-href="https://www.screamingfrog.co.uk/broken-link-checker/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">ScreamingFrog</a> software to scan the pages for http error response codes, I decided I could build something easier-to-use myself and test it using my own website, <a href="https://elizabethzagroba.com/" data-href="https://elizabethzagroba.com/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">elizabethzagroba.com</a>. I wrote a draft that worked initially, but did some things that weren’t great Python. Thanks to my friends <a href="https://twitter.com/DavidaMarion" data-href="https://twitter.com/DavidaMarion" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Davida</a> and Becky who reviewed and improved my code. You can see what they suggested in the <a href="https://github.com/ezagroba/linkchecker/issues?q=is%3Aissue+is%3Aclosed" data-href="https://github.com/ezagroba/linkchecker/issues?q=is%3Aissue+is%3Aclosed" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">older tickets in my Github repo</a>.</p>
-
 <p name="c3e3" id="c3e3" class="graf graf--p graf-after--p">Here’s what I have now:</p>
 
-<pre class="code literal-block"><span></span><code><span class="c1"># Mission: Find http codes that aren't in the 200 or 300 range for all the links on a single page</span>
+<pre class="code literal-block"><span class="c1"># Mission: Find http codes that aren't in the 200 or 300 range for all the links on a single page</span>
 
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">errno</span>
@@ -549,14 +493,11 @@ There are <span class="m">15</span> links outside of the <span class="m">200</sp
     <span class="k">else</span><span class="p">:</span>
       <span class="nb">print</span><span class="p">(</span><span class="s2">"There are "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">count</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" links outside of the 200 or 300 range of http responses on your site."</span><span class="p">)</span>
       <span class="k">break</span>
-</code></pre>
-
-
+</pre>
 <p name="018e" id="018e" class="graf graf--p graf-after--figure">It looks for the external links on my website, tries to open them, and writes them to a file if the response code isn’t in the 200 or 300 range. There are things I’d like to improve. I’ve noted some here. But tonight’s scope is: run it and fix it.</p>
-
 <p name="c4ca" id="c4ca" class="graf graf--p graf-after--p">I run the file on my machine. Fifteen sites I link to come back with error responses. Here’s the file it generated:</p>
 
-<pre class="code literal-block"><span></span><code>HTTP Error 403: Forbidden https://www.mendix.com/
+<pre class="code literal-block">HTTP Error 403: Forbidden https://www.mendix.com/
 HTTP Error 403: Forbidden https://medium.com/@ezagroba
 HTTP Error 403: Forbidden https://medium.com/@ezagroba/have-i-tried-enough-weird-stuff-7ed4105ae994
 HTTP Error 403: Forbidden https://medium.com/@ezagroba/doubt-builds-trust-9cee937dc5d1
@@ -571,24 +512,17 @@ HTTP Error 403: Forbidden http://testobsessed.com/
 &lt;urlopen error [Errno 8] nodename nor servname provided, or not known&gt; http://developersbestfriend.com
 HTTP Error 999: Request denied http://www.linkedin.com/in/ezagroba/
 HTTP Error 403: Forbidden https://medium.com/@ezagroba
-</code></pre>
-
-
+</pre>
 <p name="d0f0" id="d0f0" class="graf graf--p graf-after--figure">I notice most of the error codes were <code class="markup--code markup--p-code">403</code> responses, so I try a few of those pages manually. Those few succeed, so I don’t bother checking the rest. A<code class="markup--code markup--p-code">403</code> status is <a href="https://httpstatuses.com/403" data-href="https://httpstatuses.com/403" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Forbidden access</a>, so I think it has something to do with these sites having logins. But I don’t need to logins to see the pages I’m linking to. Then I notice that some of the pages are pointing to http instead of https. I don’t know exactly what’s wrong. It’s getting late, so rather than diving in, I write two bugs: <a href="https://github.com/ezagroba/linkchecker/issues/8" data-href="https://github.com/ezagroba/linkchecker/issues/8" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">one about investigating 403s</a>, <a href="https://github.com/ezagroba/linkchecker/issues/9" data-href="https://github.com/ezagroba/linkchecker/issues/9" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">one about updating http to https</a>.</p>
-
 <p name="442c" id="442c" class="graf graf--p graf-after--p">Next, I look at the other error codes. The <code class="markup--code markup--p-code">999</code> one I’ve seen before. It’s some weird LinkedIn thing. I don’t add a bug because it’s not interesting to fix. One site I’m not able to reach the domain of at all, so I message the owner to see if it’s still being maintained. The <code class="markup--code markup--p-code">404</code> codes are from sites that still exist where the pages have been taken down; fixable, but frustrating. They prove I spoke at these conferences. When these pages die, so does proof of my hard work. Sigh. I remove those links from my site, reload to confirm the fix made it to production, and run the script again. We’re down from 15 to 13 errors, as expected.</p>
 
-<pre class="code literal-block"><span></span><code>$ python3 httperrors.py
+<pre class="code literal-block">$ python3 httperrors.py
 There are <span class="m">13</span> links outside of the <span class="m">200</span> or <span class="m">300</span> range of http responses on your site.
-</code></pre>
-
-
+</pre>
 <p name="a400" id="a400" class="graf graf--p graf-after--figure graf--trailing">In looking at this code again, I’m reminded of the original motivation and my vision for myself: run it against any site, and know when links break on elizabethzagroba.com. <a href="https://github.com/ezagroba/linkchecker/issues" data-href="https://github.com/ezagroba/linkchecker/issues" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">I added some issues that I’ll pick up another day</a>. I’ll be ready to build again. But for now, goodnight.</p>
-
 <p>
 </p>
 <p><em>Originally published on <a href="https://medium.com/@ezagroba/you-build-it-you-run-it-and-you-fix-it-ba24151c3f2b">Medium</a>.</em></p>
-</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2019/2019-05-07_don-t-let-jira-stop-you-from-visualizing-dependencies/" class="u-url">Don’t let JIRA stop you from visualizing dependencies</a></h1>
         <div class="metadata">
@@ -601,27 +535,20 @@ There are <span class="m">13</span> links outside of the <span class="m">200</sp
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p name="5ee8" id="5ee8" class="graf graf--p graf-after--h3">My team is at the beginning of a project. We’ve got a lot of potential features. Our task yesterday was to start breaking down big dreams into specific pieces of work we can pick up.</p>
-
+    <p name="5ee8" id="5ee8" class="graf graf--p graf-after--h3">My team is at the beginning of a project. We’ve got a lot of potential features. Our task yesterday was to start breaking down big dreams into specific pieces of work we can pick up.</p>
 <p name="da25" id="da25" class="graf graf--p graf-after--p">As we started to define what we wanted to build, we came across items that had to come first: come up with a proposal before we meet to review it with our stakeholders. Other items weren’t necessarily “blocked,” but would make more sense to pick up in a sequence. As my developers watched me painstakingly searched for completely forgettable JIRA story number so I could mark each story as “blocked” or “is blocked by,” one of my developers asked one of the best questions I heard all day: “Is there a way we can see this visually?”</p>
-
 <p name="4007" id="4007" class="graf graf--p graf-after--p">My developer searched for JIRA solutions to this problem and came across a few that required <a href="https://community.atlassian.com/t5/Jira-questions/Visual-overview-of-related-and-blocked-issues/qaq-p/757970" data-href="https://community.atlassian.com/t5/Jira-questions/Visual-overview-of-related-and-blocked-issues/qaq-p/757970" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">admin access</a> or JIRA version 8. We spent a few minutes getting lost in the text and subsequently interactive credits on the About JIRA page. None of us noticed this yesterday, but the start screen for the game gave us the answer we needed: we have JIRA 7 (Roman numerals on the title page), not JIRA 8.</p>
 
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2019/jira-credits.gif" style="display:block; margin-left: auto; margin-right: auto;" title="JIRA credits: A surprising diversion in our work day."><span class="img_caption" style="display: block; text-align: center;">JIRA credits: A surprising diversion in our work day.</span></span></p>
 <p name="6eb6" id="6eb6" class="graf graf--p graf-after--figure">Without a big sheet of paper (we had post-its, but no where to stick them) or a whiteboard in the conference room we were crammed into, I pulled up my go-to tool for visualizations: <a href="https://www.edrawsoft.com/download-mindmaster.php" data-href="https://www.edrawsoft.com/download-mindmaster.php" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">MindMaster</a>. I’ve got other recommendations for mind mapping software at the bottom of <a href="https://ministryoftesting.com/dojo/lessons/mind-maps-made-easy" data-href="https://ministryoftesting.com/dojo/lessons/mind-maps-made-easy" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">my article here</a>. I’m currently stuck on MindMaster since it’s free and not web-hosted.</p>
-
 <p name="c35b" id="c35b" class="graf graf--p graf-after--p">I added a bunch of <code class="markup--code markup--p-code">Floating topics</code> and connected them with <code class="markup--code markup--p-code">Relationship</code> arrows. We outlined the first group of stories that we’d collected into an epic. We fiddled a bit with aligning the stories that could be picked up in parallel so they appeared at the earliest point we could pick them up. We came back to refine and add a couple items as we outlined other epics. The few minutes we dedicated to creating this diagram gave us enough information to decide what order we should pick up work for the next week or two.</p>
 
 <p><img alt="" src="images/posts/2019/dependencies.png"></p>
 <p name="9e64" id="9e64" class="graf graf--p graf-after--figure">We may be looking at our sprint board in the coming days to review how all the work is going. But I know that no developer is going to trace all the “blocks” and “is blocked by” links in the stories. They’re going to look at this diagram to know when to pair or mob because we can’t pick more things up.</p>
-
 <p name="3249" id="3249" class="graf graf--p graf-after--p graf--trailing">Moral of the story: Don’t let your tools constrain you.</p>
-
 <p>
 </p>
 <p><em>Originally published on <a href="https://medium.com/@ezagroba/dont-let-jira-stop-you-from-visualizing-dependencies-db16d03d4cc1">Medium</a>.</em></p>
-</div>
     </div>
     </article>
 </div>
@@ -634,9 +561,9 @@ There are <span class="m">13</span> links outside of the <span class="m">200</sp
 <a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
 <a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
 <a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-<a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
+<a href="https://app.thestorygraph.com/profile/e_z" target="_blank"><i class="fa fa-book-open"></i></a>
 <a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon" aria-hidden="true"></i></a>
-© 2021 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+© 2022 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
 Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
 <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0.</a>
 
@@ -650,9 +577,7 @@ Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola
         <script src="assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

@@ -35,7 +35,7 @@ If you're getting a spinner where a part of the specification should be loading,
 
 I kept getting the spinner when I referred to a schema that didn't exist, either because I'd updated the name (but not the reference to it) or because I'd screwed up whether it was singular or plural. Fixing the error isn't always enough to make this particular error disappear. Reloading the page will make it re-evaluate what you've got. 
 
-### 😱 could not render this component, see the console.
+### Could not render this component, see the console.
 
 What a fun and exciting mistake you've made in the specification, to cause this very comforting and reassuring error message. 
 

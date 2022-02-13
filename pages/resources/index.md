@@ -32,6 +32,20 @@ I've learned things from these places.
 	<li><a href="http://www.satisfice.com/info_rst.shtml" target="_blank">Rapid Software Testing</a></li>
 </ul>
 
+<h3><a href="#" data-toggle="collapse" data-target="#software"><i class="fa fa-bug"></i></a> Software to test</h3>
+<ul id="software" class="collapse">
+	<li><a href="https://eviltester.github.io/TestingApp/apps/index.html" target="_blank">Evil Tester Applications</a></li>
+	<li><a href="http://blackboxpuzzles.workroomprds.com/" target="_blank">James Lyndsay's Black Box Puzzles</a></li>
+	<li><a href="https://jsonplaceholder.typicode.com/" target="_blank">JSON Placeholder</a></li>
+	<li><a href="https://randomuser.me/" target="_blank">Random User Generator</a></li>
+	<li><a href="https://restful-booker.herokuapp.com/" target="_blank">Restful Booker</a></li>
+	<li><a href="https://testersplayground.herokuapp.com/devtools.php" target="_blank">Testers Playground</a></li>
+	<li><a href="https://www.decisionproblem.com/paperclips/" target="_blank">Universal Paperclips</a></li>
+	<li><a href="https://the-internet.herokuapp.com/" target="_blank">Welcome to the-internet</a></li>
+	<li><a href="http://zero.webappsecurity.com/" target="_blank">Zero Bank</a></li>
+	<li><a href="https://zippopotam.us/" target="_blank">Zippotam.us</a></li>
+</ul>
+
 
 <h3><a href="#" data-toggle="collapse" data-target="#blogs"><i class="fa fa-rss"></i></a> Blogs</h3>
 <ul id="blogs" class="collapse">
@@ -50,5 +64,3 @@ I've learned things from these places.
 	<li><a href="http://www.developsense.com/blog/" target="_blank">Michael Bolton</a></li>
 	<li><a href="https://www.youtube.com/user/sdelesie" target="_blank">Selena Delesie</a></li>
 </ul>
-
-<h3><a href="https://twitter.com/ezagroba/lists/software-testing" target="_blank"><i class="fab fa-twitter-square"></i></a> Software Testing Twitter list</h3>

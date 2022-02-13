@@ -8,7 +8,7 @@
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
 <link rel="canonical" href="https://elizabethzagroba.com/posts/2021/unblocking_your_test_strategy/">
 <link rel="icon" href="../../../images/avatar.png" sizes="128x128">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="../../assets/fontawesome-5.13.0/css/all.css" rel="stylesheet">
@@ -37,10 +37,11 @@ One of my colleagues made it easy for">
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="https://elizabethzagroba.com/">
+        <a class="navbar-brand" href="../../../">
 
             <span id="blog-title">Elizabeth Zagroba: Software Tester</span>
         </a>
@@ -103,8 +104,7 @@ navbar-dark bg-dark
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>In my new role as Quality Lead for my department, I get to figure out how to infuse everybody's work with "quality", and also figure out what that means exactly. </p>
+    <p>In my new role as Quality Lead for my department, I get to figure out how to infuse everybody's work with "quality", and also figure out what that means exactly. </p>
 <p>One of my colleagues made it easy for me on my second day by coming with a relatively concrete problem: they wanted an acceptance environment for their team. Their team (henceforth: Eager Team) integrated with chronically overloaded and busy team (henceforth: Busy Team), so they wanted an environment where they could test their stuff together before it went into production. They wanted me to help set that up. </p>
 <p>I started my conversation with Eager Team Lead by taking one step back: why did they want this environment? They'd proposed a solution, but I wanted to spend at least a few minutes digging into the problem space with them to hear more about why they wanted this.</p>
 <hr>
@@ -120,8 +120,7 @@ navbar-dark bg-dark
 <hr>
 <p>So how'd it go? I confirmed Busy Team's busyness, and got more details on how and when to add this request to their list. I'm following up with Eager Team next week to see where they are in identifying valuable scenarios, or if I should jump in there too. </p>
 <p>But wow, what a feeling to be able to lift the weight of "I need a thing I don't know how to build and don't think I can ever get" off someone's shoulders and replace it with "I know what to do next and it's achievable." </p>
-<p>Stay tuned for more quality leading to come. 😎</p>
-</div>
+<p>Stay tuned for more quality leading to come.</p>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../../categories/automation/" rel="tag">automation</a></li>
@@ -140,9 +139,9 @@ navbar-dark bg-dark
 <a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
 <a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
 <a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-<a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
+<a href="https://app.thestorygraph.com/profile/e_z" target="_blank"><i class="fa fa-book-open"></i></a>
 <a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon" aria-hidden="true"></i></a>
-© 2021 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+© 2022 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
 Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
 <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0.</a>
 
@@ -156,9 +155,7 @@ Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola
         <script src="../../../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

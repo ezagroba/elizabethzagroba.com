@@ -8,7 +8,7 @@
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
 <link rel="canonical" href="https://elizabethzagroba.com/posts/2021/that_i_did_it_feeling/">
 <link rel="icon" href="../../../images/avatar.png" sizes="128x128">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="../../assets/fontawesome-5.13.0/css/all.css" rel="stylesheet">
@@ -36,10 +36,11 @@
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="https://elizabethzagroba.com/">
+        <a class="navbar-brand" href="../../../">
 
             <span id="blog-title">Elizabeth Zagroba: Software Tester</span>
         </a>
@@ -102,8 +103,7 @@ navbar-dark bg-dark
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>I moved into a different role at work this week. I handed off my former team to the new team lead with a final 1-on-1 (and coincidentally performance review) for each team member. Each of them has a different variety of skills, motivators driving them, and awareness of either. This blog post focuses on just one team member. </p>
+    <p>I moved into a different role at work this week. I handed off my former team to the new team lead with a final 1-on-1 (and coincidentally performance review) for each team member. Each of them has a different variety of skills, motivators driving them, and awareness of either. This blog post focuses on just one team member. </p>
 <h3>"I did it!"</h3>
 <p>One team member is really driven by that "I did it!" feeling. They're early in their career. Both the product and the company are new to them. They spend a lot of their time pairing, asking for help, or floudering while wondering if they should be pairing or asking for help. Every 1-on-1, they'd report feeling that they hadn't learned or accomplished anything. They weren't getting that "I did it!" feeling.</p>
 <p>But they were doing a great job. They were making progress in all the different technologies our team uses (Mendix, Docker, OpenAPI, pytest, gitlab pipelines, etc.), learning as they went. They were able to accept feedback to course-correct when necessary. They knew they were learning a lot, but this alone wasn't motivating enough for them.</p>
@@ -121,7 +121,7 @@ navbar-dark bg-dark
 <h3>Done</h3>
 <p>I gave them homework to fill in the Done column. They took time to list things they had learned and accomplished in the previous months. Scrolling through the Done list got them pretty close to that "I did it!" feeling. Taking a moment to reflect during our 1-on-1's helped give them that feeling. But they weren't getting that feeling right away. They needed to celebrate their accomplishments as they were happening, to keep up the motivation and momentum. </p>
 <p>I did what was possibly my best management move for this person: I threw confetti.</p>
-<p>Trello has a feature where if you add the confetti ball emoji 🎊 to the title of a column, moving an item to that column throws a little confetti around the item. It's very cute, and it finally gave my team member that "I did it!" feeling. </p>
+<p>Trello has a feature where if you add the confetti ball emoji to the title of a column, moving an item to that column throws a little confetti around the item. It's very cute, and it finally gave my team member that "I did it!" feeling. </p>
 <h3>Setting expectations around the feeling</h3>
 <p>In the handoff to the new team lead, I explained this need my team member had, the ways I'd tried to meet it, and the confetti ball that finally worked. I pointed out that the need for the "I did it!" feeling can be found in other ways. The important thing for the team lead is not a particular action, but checking in with the team member about the feeling. I wanted to leave them space to take a different approach, so I used the "Mary had a little lamb" heuristic to explain what a different approach should include. </p>
 <h4>
@@ -142,7 +142,6 @@ navbar-dark bg-dark
 <li>When you do handoffs, do you describe the actions you took or the needs they were serving? </li>
 </ul>
 </div>
-    </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../../categories/handoff/" rel="tag">handoff</a></li>
             <li><a class="tag p-category" href="../../../categories/leadership/" rel="tag">leadership</a></li>
@@ -160,9 +159,9 @@ navbar-dark bg-dark
 <a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
 <a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
 <a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-<a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
+<a href="https://app.thestorygraph.com/profile/e_z" target="_blank"><i class="fa fa-book-open"></i></a>
 <a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon" aria-hidden="true"></i></a>
-© 2021 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+© 2022 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
 Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
 <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0.</a>
 
@@ -176,9 +175,7 @@ Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola
         <script src="../../../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

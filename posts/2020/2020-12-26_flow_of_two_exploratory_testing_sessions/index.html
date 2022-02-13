@@ -8,7 +8,7 @@
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
 <link rel="canonical" href="https://elizabethzagroba.com/posts/2020/2020-12-26_flow_of_two_exploratory_testing_sessions/">
 <link rel="icon" href="../../../images/avatar.png" sizes="128x128">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="../../assets/fontawesome-5.13.0/css/all.css" rel="stylesheet">
@@ -35,10 +35,11 @@
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="https://elizabethzagroba.com/">
+        <a class="navbar-brand" href="../../../">
 
             <span id="blog-title">Elizabeth Zagroba: Software Tester</span>
         </a>
@@ -101,8 +102,7 @@ navbar-dark bg-dark
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>The <a href="https://exploratorytesting.org/">Exploratory Testing Peer Conference</a> <a href="https://twitter.com/search?q=%23et19&amp;src=typed_query">#ET19</a> followed the 2019 Valencia edition of the European Testing Conference. I said something that I pretty immediately forgot in the upheaval when I returned to the office, but it really stuck with <a href="https://twitter.com/charrett">Anne-Marie Charrett</a>. I appreciate both that she remembered this at all, and continues to insist that I'm the one who had this stroke of genius when she really brought it to life. Here's the idea: </p>
+    <p>The <a href="https://exploratorytesting.org/">Exploratory Testing Peer Conference</a> <a href="https://twitter.com/search?q=%23et19&amp;src=typed_query">#ET19</a> followed the 2019 Valencia edition of the European Testing Conference. I said something that I pretty immediately forgot in the upheaval when I returned to the office, but it really stuck with <a href="https://twitter.com/charrett">Anne-Marie Charrett</a>. I appreciate both that she remembered this at all, and continues to insist that I'm the one who had this stroke of genius when she really brought it to life. Here's the idea: </p>
 <p>It's straightforward to follow one thread or idea through an exploratory testing session. It's not straightforward to decide which path to take, feed information from one path back into another, recognize that there are different paths, or bring others along for this journey. </p>
 <h4>The Ensemble at Work</h4>
 <p>We have a weekly ensemble testing session at my workplace. For an hour and a half, testers from different teams working in the same tech stack come together to share knowledge and build testing skills. In a recent ensemble testing session, a tester on one team brought a ticket they'd been avoiding tackling on their own. They knew they didn't know how to test the fix. But they felt like they'd talked about it enough as a team that they should have understood what to do already. </p>
@@ -124,7 +124,6 @@ navbar-dark bg-dark
 <p>We did manage to find a good resource for copying and pasting unicode characters, but we didn't learn how to explore the application more efficiently, or take what we learned earlier in the session to apply it to the rest of the session.</p>
 <h4>The Power of Exploratory Testing</h4>
 <p>Brute force will get you somewhere. Trying enough different inputs, or different pages, and you'll gather more information about how the application works. But the power of exploratory testing comes from learning from your earlier results. It's realizing there are different ways to go, different paths to follow, jumping on one of those while it serves you, and making sure everyone else is along for the ride. </p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../../categories/exploratory-testing/" rel="tag">exploratory-testing</a></li>
@@ -142,9 +141,9 @@ navbar-dark bg-dark
 <a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
 <a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
 <a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-<a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
+<a href="https://app.thestorygraph.com/profile/e_z" target="_blank"><i class="fa fa-book-open"></i></a>
 <a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon" aria-hidden="true"></i></a>
-© 2021 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+© 2022 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
 Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
 <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0.</a>
 
@@ -158,9 +157,7 @@ Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola
         <script src="../../../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

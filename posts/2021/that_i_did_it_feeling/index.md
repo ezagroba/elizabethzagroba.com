@@ -39,7 +39,7 @@ I gave them homework to fill in the Done column. They took time to list things t
 
 I did what was possibly my best management move for this person: I threw confetti.
 
-Trello has a feature where if you add the confetti ball emoji 🎊 to the title of a column, moving an item to that column throws a little confetti around the item. It's very cute, and it finally gave my team member that "I did it!" feeling. 
+Trello has a feature where if you add the confetti ball emoji to the title of a column, moving an item to that column throws a little confetti around the item. It's very cute, and it finally gave my team member that "I did it!" feeling. 
 
 ## Setting expectations around the feeling
 

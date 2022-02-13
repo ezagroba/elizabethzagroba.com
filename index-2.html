@@ -9,7 +9,7 @@
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="rss.xml">
 <link rel="canonical" href="https://elizabethzagroba.com/index-2.html">
 <link rel="icon" href="images/avatar.png" sizes="128x128">
 <link rel="prev" href="index-3.html" type="text/html">
@@ -23,10 +23,11 @@
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="https://elizabethzagroba.com/">
+        <a class="navbar-brand" href=".">
 
             <span id="blog-title">Elizabeth Zagroba: Software Tester</span>
         </a>
@@ -90,13 +91,9 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p name="6c32" id="6c32" class="graf graf--p graf-after--h3">I needed to the loading time of a login over a slow network. The internet connection I had was too fast to see all the visual behavior and the backend redirects happening during the process. I opened the Network tab in the Chrome developer tools and switched the throttling option to <code class="markup--code markup--p-code">Slow 3G</code>. (A yellow triangular yield symbol appeared next to the Network tab to remind me that I’d throttled my network.) Running over <code class="markup--code markup--p-code">Slow 3G</code> allowed me to see what someone trying access the site from a phone or tablet might experience.</p>
-
+    <p name="6c32" id="6c32" class="graf graf--p graf-after--h3">I needed to the loading time of a login over a slow network. The internet connection I had was too fast to see all the visual behavior and the backend redirects happening during the process. I opened the Network tab in the Chrome developer tools and switched the throttling option to <code class="markup--code markup--p-code">Slow 3G</code>. (A yellow triangular yield symbol appeared next to the Network tab to remind me that I’d throttled my network.) Running over <code class="markup--code markup--p-code">Slow 3G</code> allowed me to see what someone trying access the site from a phone or tablet might experience.</p>
 <p name="cd6d" id="cd6d" class="graf graf--p graf-after--p"><em class="markup--em markup--p-em">The screenshots below are from the login on hackdesign.org, a program I highly recommend for getting up-to-speed on user experience design.</em></p>
-
 <p name="29ea" id="29ea" class="graf graf--p graf-after--p">With the Network tab open, I could do a few things:</p>
-
 <ol class="postList">
 <li name="8374" id="8374" class="graf graf--li graf-after--p">I could see what API calls were being made. I looked at the bottom of the <code class="markup--code markup--li-code">Name</code> column to see how many calls there were overall, and sorted it to discover if we were retrieving things from the server that I expected to be cached. I clicked the <code class="markup--code markup--li-code">Preserve log</code> checkbox before I started so I could see what happened even after I went to another page.</li>
 <li name="ef06" id="ef06" class="graf graf--li graf-after--li">I could see which calls were redirects. The <code class="markup--code markup--li-code">Status</code>column had numbers in the 300 range for redirects. I love<a href="https://httpstatuses.com/" data-href="https://httpstatuses.com/" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank"> httpstatuses.com</a> for what each one means more precisely. Redirects might indicate something could be optimized.</li>
@@ -104,21 +101,14 @@ navbar-dark bg-dark
 </ol>
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2019/chrome-network-tab.png" style="display:block; margin-left: auto; margin-right: auto;" title="What I used in the Network tab of the Chrome developer tools. HackDesign.org login only took 6 seconds."><span class="img_caption" style="display: block; text-align: center;">What I used in the Network tab of the Chrome developer tools. HackDesign.org login only took 6 seconds.</span></span></p>
 <p name="de62" id="de62" class="graf graf--p graf-after--figure">I discovered logging in and logging out took about 20 seconds on the test environment over Slow 3G. (This time appeared in the <code class="markup--code markup--p-code">Load</code> text in red at the bottom of the Network tab.) Was this too slow? To answer this question, I needed an oracle.</p>
-
 <p name="7704" id="7704" class="graf graf--p graf-after--p">I decided to compare the behavior on the test environment to our production environment. On production, login took 60 seconds! When I sorted the network calls by <code class="markup--code markup--p-code">Time</code>, I could see that the bulk of loading time was spent retrieving messages to display on the logged-in page. Both 20 and 60 seconds for a login seemed unacceptably slow to me, so I took it to my team.</p>
-
 <p name="d153" id="d153" class="graf graf--p graf-after--p">My team agreed that this behavior was bad. Unfortunately, we decided to prioritize users on fast networks over users on slow ones, and changing this behavior wasn’t a priority for our release.</p>
-
 <p name="f224" id="f224" class="graf graf--p graf-after--p">When I sorted the network calls by <code class="markup--code markup--p-code">Name</code>, I found some unexpected URLs I did not expect to be involved during a login. I tested a bit more around the feature in different places, found a bug in the behavior, and asked around a few different teams before I got the bug reported to the correct team.</p>
-
 <h5 name="d83e" id="d83e" class="graf graf--h4 graf-after--p">Moral of the story</h5>
-
 <p name="715e" id="715e" class="graf graf--p graf-after--h4 graf--trailing">You have a powerful web performance testing tool at your disposal. Give it a try and see what you find.</p>
-
 <p>
 </p>
 <p><em>Originally published on <a href="https://medium.com/@ezagroba/exploratory-testing-with-the-chrome-network-tab-f093e1b3d725">Medium</a>.</em></p>
-</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2019/2019-03-29_this-too-shall-pass-disposable-test-automation/" class="u-url">This Too Shall Pass: Disposable Test Automation</a></h1>
         <div class="metadata">
@@ -131,36 +121,22 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p name="00f1" id="00f1" class="graf graf--p graf-after--h3">A few different times, we wrote some Python code to help us test our products. And then we threw the code out.</p>
-
+    <p name="00f1" id="00f1" class="graf graf--p graf-after--h3">A few different times, we wrote some Python code to help us test our products. And then we threw the code out.</p>
 <p name="ad39" id="ad39" class="graf graf--p graf-after--p">We had the infrastructure in place to add tests to our continuous integration pipeline in Jenkins. It would have been as simple as merging the branch of our code into master. But it had served its purpose already.</p>
-
 <h5 name="7e5f" id="7e5f" class="graf graf--h4 graf-after--p">Example 1: web feature integrating with desktop software</h5>
-
 <p name="1da2" id="1da2" class="graf graf--p graf-after--h4">Our team owner a web-based product. It had lots of features, but the two we were concerned with for this were: it created an account and a project. These would be used in a desktop product built by different teams at our company. For this story, a flag would be set when you created a project in our product to allow for something new in the desktop software.</p>
-
 <p name="9663" id="9663" class="graf graf--p graf-after--p">Our testing stack was built and maintained by our team alone. It was set up to look at the web UI and APIs, but not the desktop software. We had APIs to create projects and change this new project flag. We didn’t have an automated way to see exactly what would happen in the desktop software under these different circumstances.</p>
-
 <p name="c2c2" id="c2c2" class="graf graf--p graf-after--p">We wrote tests to query the APIs to see that the settings we set were coming back as expected. Those went into the pipeline. We also wrote some Python code to create projects in each of the five different states. Then, we manually went into the desktop software, used each of the projects we created, and looked at what happened in the desktop software. The information we discovered was enough to determine that the work for our team and the work for the desktop software teams was complete.</p>
-
 <p name="8f6c" id="8f6c" class="graf graf--p graf-after--p">We did not add these tests to the pipeline. The branch got removed from the project without getting merged into master once the story was completed.</p>
-
 <h5 name="5b5e" id="5b5e" class="graf graf--h4 graf-after--p">Example 2: crude performance test</h5>
-
 <p name="a60d" id="a60d" class="graf graf--p graf-after--h4">We wanted to simulate the load placed on our product by a different internal app. Unfortunately the owner of the internal app was unavailable in the short period of time we had to complete this task. To do this, we took existing feature tests we had running on our staging environments, parallelize them, and run them on a clone of our production environment.</p>
-
 <p name="4cc3" id="4cc3" class="graf graf--p graf-after--p">Our production clone was available during the few days we were doing this test. It would not be available thereafter, considering the time and money we would have to invest in maintaining it. Our other staging environments had a different enough capacity that running a performance test there would not be meaningful. Our production environment would give us the information we needed once we released this build because the internal app ran there. We maintained a branch for a few days while we were writing and using the performance test, but without an environment to run it on, we threw it out.</p>
-
 <h5 name="eea5" id="eea5" class="graf graf--h4 graf-after--p">Example 3: audit trail Excel export</h5>
-
 <p name="fc7f" id="fc7f" class="graf graf--p graf-after--h4">We added an audit trail to our profile information for GDPR compliance. Our system could display the information in the UI and export it to Excel. We added tests to our pipeline for the UI bit. The exporting to Excel bit we didn’t. We wrote a test that ended by providing us a username and password. Manually, we’d login, go to the page with the Excel export, and confirm that the data in the file matched the changes the test had made.</p>
-
 <p name="c098" id="c098" class="graf graf--p graf-after--p">The Excel exporter wasn’t a piece of code our team maintained. If this test failed, it would have likely been in that functionality, since we also had a UI test for the data integrity. We weren’t changing anything about the Excel export. The audit trail report was an important enough feature that we knew we’d smoke test it manually with every release, so we didn’t add this code to the repository.</p>
 
 <p><img alt="" src="images/posts/2019/windows.png"></p>
 <h5 name="a30f" id="a30f" class="graf graf--h4 graf-after--figure">What we asked ourselves when throwing out our automation</h5>
-
 <ul class="postList">
 <li name="a1f8" id="a1f8" class="graf graf--li graf-after--h4">What would we be asserting at the end of the test?</li>
 <li name="5de9" id="5de9" class="graf graf--li graf-after--li">If those asserts succeeded, would they give us false confidence that the feature was covered when we couldn’t account for the consequences?</li>
@@ -171,7 +147,6 @@ navbar-dark bg-dark
 <p>
 </p>
 <p><em>Originally published on <a href="https://medium.com/@ezagroba/this-too-shall-pass-disposable-test-automation-6d0dadeff53">Medium</a>.</em></p>
-</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2019/2019-02-24_authorization-authentication-a-tale-of-government-security-clearance/" class="u-url">Authorization &amp; Authentication: A Tale of Government Security Clearance</a></h1>
         <div class="metadata">
@@ -184,30 +159,20 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p name="af15" id="af15" class="graf graf--p graf-after--h3">My first job after college was with a contractor to the United States Navy. I had to get a security clearance from the U.S. government to have access to classified data, the lowest category. One piece of the application was getting fingerprinted. From there, federal agencies like the FBI would check my fingerprints against criminal records databases to see if any matches turned up.</p>
-
+    <p name="af15" id="af15" class="graf graf--p graf-after--h3">My first job after college was with a contractor to the United States Navy. I had to get a security clearance from the U.S. government to have access to classified data, the lowest category. One piece of the application was getting fingerprinted. From there, federal agencies like the FBI would check my fingerprints against criminal records databases to see if any matches turned up.</p>
 <p name="7241" id="7241" class="graf graf--p graf-after--p">I walked down to the local police station in my college town of Waterville, Maine, which is not exactly a bustling metropolis. I expected a police officer to compare my picture on the driver’s license I’d brought with my actual face to confirm my identity, before taking my fingerprints and shipping them off to the appropriate authority.</p>
-
 <p name="0ffc" id="0ffc" class="graf graf--p graf-after--p">But they did not.</p>
 
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2019/fingerprints.jpeg" style="display:block; margin-left: auto; margin-right: auto;" title="flickr/cogdog"><span class="img_caption" style="display: block; text-align: center;">flickr/cogdog</span></span></p>
 <p name="f72c" id="f72c" class="graf graf--p graf-after--figure">First, when I arrived at the station, I was told to wait. “We’re questioning a suspect in the booking room!” This was clearly the most action these officers had seen in a while. They were psyched. But I was puzzled about why this was an impediment, so naturally I asked more questions: “Can you tell me more about the ink pad? Is it secured to the table in some fashion? Would it be possible to continue questioning the subject, but take my fingerprints out here in the hallway?”</p>
-
 <p name="8262" id="8262" class="graf graf--p graf-after--p">After explaining this to two different officers and lots more waiting, they discovered that the ink pad was indeed able to be transported by human hands to interact with mine. They filled out the form with my name and some other details I provided verbally and took my fingerprints. I left.</p>
-
 <p name="adeb" id="adeb" class="graf graf--p graf-after--p">It was only after I got back to campus that I realized the crucial step the police officers missed: they forgot to look at my driver’s license. They were so thrown off from their usual routine, both by having a suspect in custody and by moving the fingerprint pad to a different location, that they forgot to verify my identity.</p>
-
 <p name="6e0d" id="6e0d" class="graf graf--p graf-after--p">I have no criminal record, I was only at the job for a short time, and my security clearance expired after five years without getting renewed, so the mistake was of no consequence.</p>
-
 <p name="6b10" id="6b10" class="graf graf--p graf-after--p">But consider the alternative: I have a criminal record. I send my sister or a friend who knew enough about me to the police station. They impersonate me, and the fingerprint check of their prints turns up no suspicious activity. Now I have security clearance to access classified data about the American military when I shouldn’t.</p>
-
 <p name="e1e9" id="e1e9" class="graf graf--p graf-after--p graf--trailing">The moral of this story: authentication and authorization go hand-in-hand. Authorization could have been circumvented by an unauthorized impersonator without the additional check of authentication. Putting someone in a particular security group is not enough: you’ve got to check that it’s them who’s supposed to be there.</p>
-
 <p>
 </p>
 <p><em>Originally published on <a href="https://medium.com/@ezagroba/authorization-authentication-a-tale-of-government-security-clearance-5d8a1c00527e">Medium</a>.</em></p>
-</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2019/2019-02-09_nuture-the-bright-spots-dutch-exploratory-workshop-on-testing-2018/" class="u-url">Nurture the Bright Spots: Dutch Exploratory Workshop on Testing 2018</a></h1>
         <div class="metadata">
@@ -220,9 +185,7 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p name="ec08" id="ec08" class="graf graf--p graf-after--h3">A peer conference is different from a regular conference. If you’re one of the lucky few to get invited, you find yourself in an environment surrounded by the best and the brightest. There will be presentations to spark a discussion, but the facilitated discussion is where the real learning occurs. It certainly puts the “confer” back in conference.</p>
-
+    <p name="ec08" id="ec08" class="graf graf--p graf-after--h3">A peer conference is different from a regular conference. If you’re one of the lucky few to get invited, you find yourself in an environment surrounded by the best and the brightest. There will be presentations to spark a discussion, but the facilitated discussion is where the real learning occurs. It certainly puts the “confer” back in conference.</p>
 <p name="3a66" id="3a66" class="graf graf--p graf-after--p">The Dutch Exploratory Workshop on Testing (or DEWT for short, rhymes with newt) in the fall of 2018 was the first one of these I attended outside of work. The theme was “Developing expertise in software testing.” The format of the gathering itself paired nicely with one of the main conclusions I took away from the weekend: choose the best people, foster an environment where they have the energy to learn and inspire others, and set aside time to reflect.</p>
 
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2019/sunrise.jpeg" style="display:block; margin-left: auto; margin-right: auto;" title="Gorgeous sunrise on our morning run"><span class="img_caption" style="display: block; text-align: center;">Gorgeous sunrise on our morning run</span></span></p>
@@ -272,12 +235,9 @@ navbar-dark bg-dark
 </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><div class="section-inner sectionLayout--insetColumn"><p name="0f62" id="0f62" class="graf graf--p graf--leading graf--trailing"><em class="markup--em markup--p-em">Thanks to </em><a href="https://twitter.com/Arborosa" data-href="https://twitter.com/Arborosa" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">Jean-Paul Varwijk</em></a><em class="markup--em markup--p-em"> and </em><a href="https://twitter.com/JorisMeerts" data-href="https://twitter.com/JorisMeerts" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">Joris Meerts</em></a><em class="markup--em markup--p-em"> for organizing DEWT 2018, and </em><a href="https://twitter.com/klaartjejulia" data-href="https://twitter.com/klaartjejulia" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">Klaartje van Zwoll</em></a><em class="markup--em markup--p-em">, </em><a href="https://twitter.com/ClaireMGoss" data-href="https://twitter.com/ClaireMGoss" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">Claire Goss</em></a><em class="markup--em markup--p-em">, and </em><a href="https://twitter.com/Maaikees" data-href="https://twitter.com/Maaikees" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">Maaike Brinkhof</em></a><em class="markup--em markup--p-em"> for reminding me how refreshing peers can be. If you don’t have an entire weekend to discover deep truths with your peers, try watching Vera Gehlen-Baum’s </em><a href="https://www.ministryoftesting.com/events/a-software-tester-s-guide-to-expertise-vera-gehlen-baum" data-href="https://www.ministryoftesting.com/events/a-software-tester-s-guide-to-expertise-vera-gehlen-baum" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">A Software Tester’s Guide to Expertise</em></a><em class="markup--em markup--p-em"> instead.</em></p></div>
 </div>
 
-
-
 <p><em>Originally published on <a href="https://medium.com/@ezagroba/nuture-the-bright-spots-dutch-exploratory-workshop-on-testing-2018-90c45555ca19">Medium</a>.</em></p>
 </div></section>
 </div>
-    </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2019/2019-02-02_update-your-mac-terminal-to-display-your-current-git-branch-and-status/" class="u-url">Update your Mac Terminal to display your current git branch and status</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
@@ -289,39 +249,34 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p><strong>TLDR; You can copy <a href="https://github.com/ezagroba/bash-profile-branch-and-color/blob/master/export-PS1.gist">all the code from my github</a>.</strong></p>
+    <p><strong>TLDR; You can copy <a href="https://github.com/ezagroba/bash-profile-branch-and-color/blob/master/export-PS1.gist">all the code from my github</a>.</strong></p>
 <p name="0fd7" id="0fd7" class="graf graf--p graf-after--h3">I spent the better part of a crafting day at the office updating my <code class="markup--code markup--p-code">.bash_profile</code> on my Mac. If I’m in a git repository, with every command prompt, I see the branch name and an asterisk if there are un-committed changes. The original prompt for the machine, the repository name, and the branch name each appear in different colors. Here’s what it looks like:</p>
 
 <p><img alt="" src="images/posts/2019/command-prompt.png"></p>
 <p name="47d3" id="47d3" class="graf graf--p graf-after--figure">It may look like this one line in my <code class="markup--code markup--p-code">.bash_profile</code> file is where the magic happens, because this is where the colors are set:</p>
 
-<pre class="code literal-block"><span></span><code><span class="nb">export</span> <span class="nv">PS1</span><span class="o">=</span><span class="s2">"\[\033[36m\]\u\[\033[32m\]\w\[\033[33m\]\$(git_branch)\$(parse_git_dirty)\[\033[00m\]</span>$<span class="s2">"</span>
-</code></pre>
-
-
+<pre class="code literal-block"><span class="nb">export</span> <span class="nv">PS1</span><span class="o">=</span><span class="s2">"\[\033[36m\]\u\[\033[32m\]\w\[\033[33m\]\$(git_branch)\$(parse_git_dirty)\[\033[00m\]</span>$<span class="s2">"</span>
+</pre>
 <p><img alt="" src="images/posts/2019/colors.png"></p>
-<p name="c9ba" id="c9ba" class="graf graf--p graf-after--figure">Unfortunately the colors, branch, and status still need to be variously activated and calculated.
+<p name="c9ba" id="c9ba" class="graf graf--p graf-after--figure">Unfortunately the colors, branch, and status still need to be variously activated and calculated. 
 
 </p>
 <p>This function calculates if the branch has new changes:</p>
 
 
-<pre class="code literal-block"><span></span><code><span class="kd">function</span> <span class="nx">parse_git_dirty</span> <span class="p">{</span>
+<pre class="code literal-block"><span class="kd">function</span> <span class="nx">parse_git_dirty</span> <span class="p">{</span>
   <span class="p">[[</span> <span class="o">-</span><span class="nx">n</span> <span class="s2">"$(git status -s2&gt; /dev/null)"</span> <span class="p">]]</span> <span class="o">&amp;&amp;</span> <span class="nx">echo</span> <span class="s2">"*"</span>
 <span class="p">}</span>
-</code></pre>
-
+</pre>
 
 
 <p name="b7b9" id="b7b9" class="graf graf--p graf-after--figure">The last thing is fetching the branch name:</p>
 
 
-<pre class="code literal-block"><span></span><code>git_branch<span class="o">()</span> <span class="o">{</span>
+<pre class="code literal-block">git_branch<span class="o">()</span> <span class="o">{</span>
   git branch <span class="m">2</span>&gt; /dev/null <span class="p">|</span> sed -e <span class="s1">'/^[^*]/d'</span> -d <span class="s1">'s/* \(.*\)/ (\1)/'</span>
 <span class="o">}</span>
-</code></pre>
-
+</pre>
 
 
 <p name="5ccd" id="5ccd" class="graf graf--p graf-after--figure">It took a lot of internet searching and help from colleagues to set it up. I had the git status and the branch name going separately, but combining them failed. Typing past the width of the window in the command prompt would send text to overwrite the current line instead of wrapping onto a second. <a href="https://askubuntu.com/questions/24358/how-do-i-get-long-command-lines-to-wrap-to-the-next-line" data-href="https://askubuntu.com/questions/24358/how-do-i-get-long-command-lines-to-wrap-to-the-next-line" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">This solved that for me</a>. <a href="http://jafrog.com/2013/11/23/colors-in-terminal.html" data-href="http://jafrog.com/2013/11/23/colors-in-terminal.html" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">There are also other color options</a>. The slashes <code class="markup--code markup--p-code">\</code> help end commands, but it was a lot of trial and error to get them all in the right spots. I was editing my <code class="markup--code markup--p-code">.bash_profile</code> intially in Sublime; any plain-text editor would have worked. I moved to nano in the Terminal when I wanted to see the changes more quickly. I did still have to close all open Terminal sessions before seeing the latest changes.</p>
@@ -336,7 +291,7 @@ navbar-dark bg-dark
 <div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="6696" id="6696" class="graf graf--p graf--leading graf--trailing"><em class="markup--em markup--p-em">Thanks to Maik Nog for suggesting I share this in a more shareable format. It’s available on </em><a href="https://github.com/ezagroba/bash-profile-branch-and-color/blob/master/export-PS1.gist" data-href="https://github.com/ezagroba/bash-profile-branch-and-color/blob/master/export-PS1.gist" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">github</em></a><em class="markup--em markup--p-em">.</em></p></div></div></section>
 
 
-*Originally published on [Medium](https://medium.com/@ezagroba/update-your-mac-terminal-to-display-your-current-git-branch-and-status-471c017436a2).*</div>
+*Originally published on [Medium](https://medium.com/@ezagroba/update-your-mac-terminal-to-display-your-current-git-branch-and-status-471c017436a2).*
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2019/2019-01-25_have-i-tried-enough-weird-stuff/" class="u-url">Have I Tried Enough Weird Stuff?</a></h1>
         <div class="metadata">
@@ -349,13 +304,9 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p name="fd7f" id="fd7f" class="graf graf--p graf-after--h3">I was testing a piece of software that collected a person’s addresses for shipping within the United States. My developer had tried zip codes in the direct vicinity of our office in Manhattan, which all started with 1. I tried the zip codes for my hometown in New Jersey and the college I attended in Maine, both of which started with 0. Together we determined that the zip codes (and other address fields) needed to be stored differently so leading zeros would not be cut off. But it got me thinking: what other things might occur that were outside the direct experience of me and my developer?</p>
-
+    <p name="fd7f" id="fd7f" class="graf graf--p graf-after--h3">I was testing a piece of software that collected a person’s addresses for shipping within the United States. My developer had tried zip codes in the direct vicinity of our office in Manhattan, which all started with 1. I tried the zip codes for my hometown in New Jersey and the college I attended in Maine, both of which started with 0. Together we determined that the zip codes (and other address fields) needed to be stored differently so leading zeros would not be cut off. But it got me thinking: what other things might occur that were outside the direct experience of me and my developer?</p>
 <p name="83bc" id="83bc" class="graf graf--p graf-after--p">So I asked the internet.</p>
-
 <p name="cf4f" id="cf4f" class="graf graf--p graf-after--p">That’s when I first came across <a href="https://www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses/" data-href="https://www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Falsehoods programmers believe about addresses</a>. We were constrained to collecting American shipping addresses, so things like “are the odd street numbers all on the same side?” weren’t our concern. But plenty of them were. Was our form going to allow people whose shipping address was any of these?</p>
-
 <ul class="postList">
 <li name="a522" id="a522" class="graf graf--li graf-after--p">a post office box</li>
 <li name="cf1b" id="cf1b" class="graf graf--li graf-after--li">outside one of the fifty states (Washington D.C., Puerto Rico, Guam, etc.)</li>
@@ -363,13 +314,9 @@ navbar-dark bg-dark
 <li name="dda7" id="dda7" class="graf graf--li graf-after--li">a fractional number</li>
 </ul>
 <p name="57b2" id="57b2" class="graf graf--p graf-after--li">As I tested inputs on other applications, I kept wondering if I was only thinking of things I already knew about, or if the problem space was bigger than I could conceive. I’ve come across a few lists that I love to review with my developers before they start building an input field (or an API parameter) so we can agree on what kind of validation we’re going to do.</p>
-
 <p name="bdeb" id="bdeb" class="graf graf--p graf-after--p"><a href="http://testobsessed.com/wp-content/uploads/2011/04/testheuristicscheatsheetv1.pdf" data-href="http://testobsessed.com/wp-content/uploads/2011/04/testheuristicscheatsheetv1.pdf" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">The Test Heuristics Cheat Sheet</a> provides a great jumping-off point specific inputs for text fields on the first page and different ways to try inputting them on the second page.</p>
-
 <p name="97d8" id="97d8" class="graf graf--p graf-after--p"><a href="https://github.com/minimaxir/big-list-of-naughty-strings" data-href="https://github.com/minimaxir/big-list-of-naughty-strings" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">The Big List of Naughty Strings</a> collects different kinds of characters (languages with non-Roman characters, emojis, Javascript that might trigger script injection, etc.) in one place so I don’t have to search for each of these cases individually. <a href="https://github.com/minimaxir/big-list-of-naughty-strings/blob/master/blns.txt" data-href="https://github.com/minimaxir/big-list-of-naughty-strings/blob/master/blns.txt" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">I usually copy-paste the ones we’ve agreed we want to support from here</a>. [Note: I recommend bookmarking this repository so you’re not accidentally getting NSFW results after searching “naughty strings.”]</p>
-
 <p name="0d24" id="0d24" class="graf graf--p graf-after--p">Searching for “Falsehoods programmers believe about {input type}” is my go-to for more specific types of inputs. <a href="https://github.com/kdeldycke/awesome-falsehood" data-href="https://github.com/kdeldycke/awesome-falsehood" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">There’s a list of a bunch of them</a>, but these are some of my favorites:</p>
-
 <ul class="postList">
 <li name="20c5" id="20c5" class="graf graf--li graf-after--p"><a href="http://falsehoodsabouttime.com" data-href="http://falsehoodsabouttime.com" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Time</a></li>
 <li name="f7e6" id="f7e6" class="graf graf--li graf-after--li"><a href="https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/" data-href="https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Names</a></li>
@@ -377,12 +324,10 @@ navbar-dark bg-dark
 <li name="aed1" id="aed1" class="graf graf--li graf-after--li"><a href="https://haacked.com/archive/2007/08/21/i-knew-how-to-validate-an-email-address-until-i.aspx/" data-href="https://haacked.com/archive/2007/08/21/i-knew-how-to-validate-an-email-address-until-i.aspx/" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Emails</a></li>
 </ul>
 <p name="8e3e" id="8e3e" class="graf graf--p graf-after--li">I encourage you to keep asking “have I tried enough weird stuff?” and deciding together with your developers what constitutes “weird.”</p>
-
 <p></p>
 <p><img alt="" src="images/posts/2019/arrows.jpeg"></p>
 <section name="7d8d" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div>
 <div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="1dd4" id="1dd4" class="graf graf--p graf--leading graf--trailing"><em class="markup--em markup--p-em">Thanks to Trish Khoo and Anne-Marie Charrett for the impetus to publish this, and Joep Schuurkes for pointing out that my headline falls under </em><a href="https://en.wikipedia.org/wiki/Betteridge%27s_law_of_headlines" data-href="https://en.wikipedia.org/wiki/Betteridge%27s_law_of_headlines" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">Betteridge’s law</em></a><em class="markup--em markup--p-em">.</em></p></div></div></section><p><em>Originally published on <a href="https://medium.com/@ezagroba/have-i-tried-enough-weird-stuff-7ed4105ae994">Medium</a>.</em></p>
-</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2017/2017-12-11_regression-testing-wisdom-from-agile-testing-days-2017/" class="u-url">Regression Testing Wisdom from Agile Testing Days 2017</a></h1>
         <div class="metadata">
@@ -395,13 +340,12 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p>At my current job in a regulated industry, our software goes through a validation testing period before it goes live. A build is cut. It gets deployed to the validation environment, integrated with our other products. Depending on the size of the product or service, the testers have a few days to a few weeks to generate documentation that describe the features and the environment in case of an audit. Ideally, we’re regression testing during this time. While we continue to look for unexpected behavior, finding anything out of the ordinary means a headache for more people than I care to admit.</p>
+    <p>At my current job in a regulated industry, our software goes through a validation testing period before it goes live. A build is cut. It gets deployed to the validation environment, integrated with our other products. Depending on the size of the product or service, the testers have a few days to a few weeks to generate documentation that describe the features and the environment in case of an audit. Ideally, we’re regression testing during this time. While we continue to look for unexpected behavior, finding anything out of the ordinary means a headache for more people than I care to admit.</p>
 
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2017/sansoucci.jpeg" style="display:block; margin-left: auto; margin-right: auto;" title="Sansoucci Park in Potsdam, Germany"><span class="img_caption" style="display: block; text-align: center;">Sansoucci Park in Potsdam, Germany</span></span></p>
 <p>I left my team in the middle of a validation cycle to attend <a href="https://agiletestingdays.com/" data-href="https://agiletestingdays.com/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Agile Testing Days</a> in Potsdam, Germany November, so I had regression testing on the brain. Here’s some of what stuck with me.</p>
-
-<p><section name="0101" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div>
+<p></p>
+<section name="0101" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div>
 <div class="section-content"><div class="section-inner sectionLayout--insetColumn">
 <h5 name="f529" id="f529" class="graf graf--h4 graf--leading">
 <a href="https://twitter.com/jezhumble" data-href="https://twitter.com/jezhumble" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">Jez Humble</a>: Humans should not be regression testing.</h5>
@@ -424,9 +368,7 @@ navbar-dark bg-dark
 <h5 name="e0f8" id="e0f8" class="graf graf--h4 graf-after--p">
 <a href="https://twitter.com/lunivore" data-href="https://twitter.com/lunivore" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">Liz Keogh</a>: Tell people failure is expected.</h5>
 <p name="a6cb" id="a6cb" class="graf graf--p graf-after--h4 graf--trailing">Everyone else goes into validation testing expecting success. I go in expecting failure. What if I told people we would fail? What if we planned for it? What if our deadlines accounted for failure?</p>
-</div></div></section></p>
-<p><em>Originally published on <a href="https://medium.com/@ezagroba/regression-testing-wisdom-from-agile-testing-days-2017-a5eb7d9aeef0">Medium</a>.</em></p>
-</div>
+</div></div></section><p><em>Originally published on <a href="https://medium.com/@ezagroba/regression-testing-wisdom-from-agile-testing-days-2017-a5eb7d9aeef0">Medium</a>.</em></p>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2017/2017-10-05_choose-one-thing-copenhagen-context-2017/" class="u-url">Choose One Thing: Copenhagen Context 2017</a></h1>
         <div class="metadata">
@@ -439,8 +381,7 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p name="4fad" id="4fad" class="graf graf--p graf-after--h3">All of the talks I attended at Copenhagen Context included this message: change one thing. Try something, see what happens, and go from there. It’s good advice, but it can be hard when it feels like everything needs changing at once.</p>
+    <p name="4fad" id="4fad" class="graf graf--p graf-after--h3">All of the talks I attended at Copenhagen Context included this message: change one thing. Try something, see what happens, and go from there. It’s good advice, but it can be hard when it feels like everything needs changing at once.</p>
 
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2017/copenhagen.jpeg" style="display:block; margin-left: auto; margin-right: auto;" title="Copenhagen, in context"><span class="img_caption" style="display: block; text-align: center;">Copenhagen, in context</span></span></p>
 <p name="c31b" id="c31b" class="graf graf--p graf-after--figure">In a lightning talk, <a href="https://twitter.com/huibschoots" data-href="https://twitter.com/huibschoots" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Huib Schoots</a> identified one thing every tester can change: practice test reporting.</p>
@@ -448,30 +389,21 @@ navbar-dark bg-dark
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">Test reports suck. But if we don't learn to write them, we have to do it verbally instead. Practice reporting every day/sprint. <a href="https://twitter.com/huibschoots?ref_src=twsrc%5Etfw">@huibschoots</a></p>— Elizabeth Zagroba (@ezagroba) <a href="https://twitter.com/ezagroba/status/910896386857668608?ref_src=twsrc%5Etfw">September 21, 2017</a>
 </blockquote>
-
-<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-<p name="5ccb" id="5ccb" class="graf graf--p graf-after--figure"><a href="https://twitter.com/keithklain" data-href="https://twitter.com/keithklain" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Keith Klain</a> told us how to kick off a change at an organization: choose one thing, and stop doing it. Stop fear-based management; consider how people are motivated and compensated. Stop focusing on your process; consider the business value of what you’re building. Stop assuming every problem is a technical problem; look inward when the information you provide isn’t valued. Keith picked on test managers who didn’t do much hands-on testing in particular, which was interesting to hear in a room full of test managers I work for. I heard Keith give this talk a few months ago, but there was enough to take away that I still have two pages of notes (different from the last time) full of new ideas to consider.</p>
-
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><p name="5ccb" id="5ccb" class="graf graf--p graf-after--figure"><a href="https://twitter.com/keithklain" data-href="https://twitter.com/keithklain" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Keith Klain</a> told us how to kick off a change at an organization: choose one thing, and stop doing it. Stop fear-based management; consider how people are motivated and compensated. Stop focusing on your process; consider the business value of what you’re building. Stop assuming every problem is a technical problem; look inward when the information you provide isn’t valued. Keith picked on test managers who didn’t do much hands-on testing in particular, which was interesting to hear in a room full of test managers I work for. I heard Keith give this talk a few months ago, but there was enough to take away that I still have two pages of notes (different from the last time) full of new ideas to consider.</p>
 <p name="b19b" id="b19b" class="graf graf--p graf-after--p"><a href="https://twitter.com/aarjay" data-href="https://twitter.com/aarjay" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Jyothi Rangaiah</a> spoke about gathering requirements. Rather than wait for other roles to write a story, Jyothi suggest one thing testers can change: start suggesting requirements. Go to the development architecture meeting. Setup a three amigos meeting. Considering all the things testers can do that aren’t listed in their job description, and you’ll start looking to hire passionate people who can fulfill more that just the requirements.</p>
 
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2017/prepared.jpeg" style="display:block; margin-left: auto; margin-right: auto;" title="This is what 'prepared' looks like."><span class="img_caption" style="display: block; text-align: center;">This is what 'prepared' looks like.</span></span></p>
 <p name="9f7e" id="9f7e" class="graf graf--p graf-after--figure">I spoke about being an introvert. This seemed to be the biggest takeaway from the talk, which luckily is something you can change:</p>
-
 <figure name="c177" id="c177" class="graf graf--figure graf--iframe graf-after--p"></figure><p name="0ebd" id="0ebd" class="graf graf--p graf-after--figure">When <a href="https://twitter.com/northern_tester" data-href="https://twitter.com/northern_tester" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Ash Winter</a>’s devops team wanted to upgrade all of their products at once, Ash suggested they choose one product and upgrade that first. Rather than shouldering the burden of testing all the products, a small safe-to-fail experiment would give the team enough information to decide if they should proceed. Ash’s talk was about infrastructure testing, and he noted that testers tend to identify infrastructure problems at the wrong level: in the application. If he had to choose one thing to look at to diagnose issues better, it would be production logs.</p>
-
 <p name="559a" id="559a" class="graf graf--p graf-after--p"><a href="https://twitter.com/HelenaJ_M" data-href="https://twitter.com/HelenaJ_M" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Helena Jeret-Mäe</a> spoke about observing your process. She suggested changing one thing and taking notes. She described <a href="http://www.nkarten.com/moimodel.pdf" data-href="http://www.nkarten.com/moimodel.pdf" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Jerry Weinberg’s MOI(J) model</a> for teamwork, where the J is for jiggling, or changing one thing. To improve your process, Helena recommended slowing down and stepping away from your default. By challenging your interpretations and considering other explanations, you can more effectively deal with difficult situations.</p>
-
 <p name="43a3" id="43a3" class="graf graf--p graf-after--p"><a href="https://twitter.com/nkelln" data-href="https://twitter.com/nkelln" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Nancy Kelln</a> told a great story about “Nancy-driven development,” or when she tried to change a testing process all at once. When people gave her advice and templates to direct her, she realized she had no credibility and she needed to change one thing instead of changing all the things.</p>
-
 <p name="3f28" id="3f28" class="graf graf--p graf-after--p">I’m so grateful for the time I got to spend learning from the speakers and attendees at Copenhagen Context. It was a pleasure to spend time with my tester friends from around the world. It’s a testament to the hard work of the organizers that there were no duds of presentations, and I missed many worthwhile talks.</p>
-
 <p name="01a4" id="01a4" class="graf graf--p graf-after--p">Back at the office this week, I resolved to change one thing: I want to get better at sharing knowledge with my colleagues. What’s the one thing you’re going to change?</p>
 
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2017/together.jpeg" style="display:block; margin-left: auto; margin-right: auto;" title="Statue in Nørrebro, Copenhagen"><span class="img_caption" style="display: block; text-align: center;">Statue in Nørrebro, Copenhagen</span></span></p>
 <p>
 </p>
 <p><em>Originally published on <a href="https://medium.com/@ezagroba/choose-one-thing-copenhagen-context-2017-dd7334b54da8">Medium</a>.</em></p>
-</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2017/2017-08-06_doubt-builds-trust/" class="u-url">Doubt builds trust.</a></h1>
         <div class="metadata">
@@ -484,56 +416,40 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p name="5d5c" id="5d5c" class="graf graf--p graf-after--h3">I don’t trust people who always say yes. “Yes, I can finish that today.” “Yes, I tested it and it works and I didn’t find any bugs.” “Yes, I captured what you said in these notes.” “Yes, I assert I have accomplished all the things I listed on my resume.”</p>
+    <p name="5d5c" id="5d5c" class="graf graf--p graf-after--h3">I don’t trust people who always say yes. “Yes, I can finish that today.” “Yes, I tested it and it works and I didn’t find any bugs.” “Yes, I captured what you said in these notes.” “Yes, I assert I have accomplished all the things I listed on my resume.”</p>
 
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">If you can't say "no," your "yes" doesn't have any meaning. <a href="https://twitter.com/FionaCCharles?ref_src=twsrc%5Etfw">@FionaCCharles</a> <a href="https://twitter.com/ministryoftest?ref_src=twsrc%5Etfw">@ministryoftest</a></p>— Elizabeth Zagroba (@ezagroba) <a href="https://twitter.com/ezagroba/status/850069352800014337?ref_src=twsrc%5Etfw">April 6, 2017</a>
 </blockquote>
-
-<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-<p name="8130" id="8130" class="graf graf--p graf-after--figure">If a person consistently lived up to their word, I would be inclined to trust them. But as soon as they weren’t able to finish a task on time, or bugs were found after they tested it, or notes were lacking crucial details, my trust would wane.</p>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><p name="8130" id="8130" class="graf graf--p graf-after--figure">If a person consistently lived up to their word, I would be inclined to trust them. But as soon as they weren’t able to finish a task on time, or bugs were found after they tested it, or notes were lacking crucial details, my trust would wane.</p>
 
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">"Consistently doing what you say builds trust over time." @ctohanian <a href="https://twitter.com/hashtag/TestBash?src=hash&amp;ref_src=twsrc%5Etfw">#TestBash</a></p>— Elizabeth Zagroba (@ezagroba) <a href="https://twitter.com/ezagroba/status/797051026159337472?ref_src=twsrc%5Etfw">November 11, 2016</a>
 </blockquote>
-
-<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-<p name="4a13" id="4a13" class="graf graf--p graf-after--figure">I trust the person who expresses doubt. “I’m going to look into this complexity today, and I believe I’m on track to finish in this sprint if I don’t have to rely on another team.” “I’ve tested it on this environment with this kind of data, but it’s possible that a different data set will uncover something else.” “Here’s what I wrote down, is there anything you said that I missed?” Those are people I can trust.</p>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><p name="4a13" id="4a13" class="graf graf--p graf-after--figure">I trust the person who expresses doubt. “I’m going to look into this complexity today, and I believe I’m on track to finish in this sprint if I don’t have to rely on another team.” “I’ve tested it on this environment with this kind of data, but it’s possible that a different data set will uncover something else.” “Here’s what I wrote down, is there anything you said that I missed?” Those are people I can trust.</p>
 
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">THING IT TOOK ME 20+ YEARS TO REALIZE: Trust the person who says "I don't know" more than the person who speaks w/authority on EVERY subject</p>— Aaron Fullerton (@AaronFullerton) <a href="https://twitter.com/AaronFullerton/status/851898771319382016?ref_src=twsrc%5Etfw">April 11, 2017</a>
 </blockquote>
-
-<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-<p name="4f0b" id="4f0b" class="graf graf--p graf-after--figure">Doubt builds trust.</p>
-
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><p name="4f0b" id="4f0b" class="graf graf--p graf-after--figure">Doubt builds trust.</p>
 <p name="5117" id="5117" class="graf graf--p graf-after--p">This is not revolutionary, even within software testing. <a href="http://www.developsense.com/presentations/2012-11-EuroSTAR-CriticalThinkingForTesters.pdf" data-href="http://www.developsense.com/presentations/2012-11-EuroSTAR-CriticalThinkingForTesters.pdf" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Michael Bolton taught me</a> that safety language helps accurately communicate risks. It shifts the burden of “Is it done?” or “Does it work?” to the person asking the question. <a href="https://twitter.com/search?l=&amp;q=uncertain%2C%20OR%20uncertainty%20%23CAST2016%20from%3Ag33klady%20%40fionaccharles%20since%3A2016-08-09%20until%3A2016-08-11&amp;src=typd&amp;lang=en" data-href="https://twitter.com/search?l=&amp;q=uncertain%2C%20OR%20uncertainty%20%23CAST2016%20from%3Ag33klady%20%40fionaccharles%20since%3A2016-08-09%20until%3A2016-08-11&amp;src=typd&amp;lang=en" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Fiona Charles has explored how to grow our tolerance for uncertainty</a>. She suggests using uncertainty as a place to begin a conversation. Paul Holland taught me to <a href="https://cast2013.sched.com/event/WyRKZl" data-href="https://cast2013.sched.com/event/WyRKZl" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">tell a story not just about the status of the product, but about how I tested and how deep the testing was</a>. I come back to these ideas when I’m not sure the questions my team is asking about my testing are the right ones.</p>
 
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">I would rather have questions that can't be answered than answers that can't be questioned! <a href="https://t.co/ilN1mEa4v6">pic.twitter.com/ilN1mEa4v6</a></p>— Richard Feynman (@ProfFeynman) <a href="https://twitter.com/ProfFeynman/status/878258728918671360?ref_src=twsrc%5Etfw">June 23, 2017</a>
 </blockquote>
-
-<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-<p name="9dc9" id="9dc9" class="graf graf--p graf-after--figure">Lately, I’ve been interviewing candidates to join various teams around Medidata. I get resumes full of buzzwords. Each skill is listed with equal confidence and importance. But not all candidates I meet live up to how they appear on paper. Some can’t provide a specific example, or aren’t sure how to explore a product when we’re pair testing. (Frequent listeners of the <a href="http://www.maximumfun.org/shows/judge-john-hodgman" data-href="http://www.maximumfun.org/shows/judge-john-hodgman" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Judge John Hodgman podcast</a> will know that <a href="https://twitter.com/romanmars/status/472727849200517120?lang=en" data-href="https://twitter.com/romanmars/status/472727849200517120?lang=en" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">specificity is the soul of narrative</a>.)</p>
-
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><p name="9dc9" id="9dc9" class="graf graf--p graf-after--figure">Lately, I’ve been interviewing candidates to join various teams around Medidata. I get resumes full of buzzwords. Each skill is listed with equal confidence and importance. But not all candidates I meet live up to how they appear on paper. Some can’t provide a specific example, or aren’t sure how to explore a product when we’re pair testing. (Frequent listeners of the <a href="http://www.maximumfun.org/shows/judge-john-hodgman" data-href="http://www.maximumfun.org/shows/judge-john-hodgman" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Judge John Hodgman podcast</a> will know that <a href="https://twitter.com/romanmars/status/472727849200517120?lang=en" data-href="https://twitter.com/romanmars/status/472727849200517120?lang=en" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">specificity is the soul of narrative</a>.)</p>
 <p name="fa3d" id="fa3d" class="graf graf--p graf-after--p">I’ve watched candidates confidently proclaim, “No, nothing will happen when I click there” about a website they haven’t touched before. This erodes my trust in their curiosity and their ability to accurately report a bug.</p>
-
 <p name="3b91" id="3b91" class="graf graf--p graf-after--p">I can’t recommend hiring someone who when I say “Huh, I’d expect something to happen when you click there; let’s try it,” isn’t curious enough about what would happen to click there. I don’t expect someone new to a website to know how it works. I only expect them to distinguish between what they’ve explored and what they haven’t. I want them to be able to articulate the circumstances they’ve just experienced, realize that their memory or perception might be fallible, and be clear about what they haven’t yet been able to establish.</p>
 
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">When you know a thing, to hold that you know it. When you do not know a thing, to allow that you do not know it. This is knowledge<br>Confucius</p>— Stéphane Colson (@s_colson) <a href="https://twitter.com/s_colson/status/856115501801644033?ref_src=twsrc%5Etfw">April 23, 2017</a>
 </blockquote>
-
-<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-<p name="8c98" id="8c98" class="graf graf--p graf-after--figure">It is terrifying to be asked a question in an interview and respond “I’m not sure,” “I have to think about that some more,” or “I haven’t encountered that situation before.” I’ve said all of these things in interviews. It’s possible that I’ve lost out on jobs to other candidates who exaggerated their abilities. But the jobs I’ve been offered have been from places that value uncertainty and understand the current state of my skills. Colleagues know they can come to me for real answers because I will tell them when I don’t know.</p>
-
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><p name="8c98" id="8c98" class="graf graf--p graf-after--figure">It is terrifying to be asked a question in an interview and respond “I’m not sure,” “I have to think about that some more,” or “I haven’t encountered that situation before.” I’ve said all of these things in interviews. It’s possible that I’ve lost out on jobs to other candidates who exaggerated their abilities. But the jobs I’ve been offered have been from places that value uncertainty and understand the current state of my skills. Colleagues know they can come to me for real answers because I will tell them when I don’t know.</p>
 <p name="4855" id="4855" class="graf graf--p graf-after--p">Who would you trust more, the person with <a href="https://elizabethzagroba.com/assets/resumes/EZresume.pdf" data-href="https://elizabethzagroba.com/assets/resumes/EZresume.pdf" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">this resume</a>? Or <a href="https://elizabethzagroba.com/assets/resumes/trustworthy-resume.pdf" data-href="https://elizabethzagroba.com/assets/resumes/trustworthy-resume.pdf" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">this one</a>?</p>
 
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2017/dog.jpg" style="display:block; margin-left: auto; margin-right: auto;" title="redisant/flickr"><span class="img_caption" style="display: block; text-align: center;">redisant/flickr</span></span>
 </p>
 <p><em>Originally published on <a href="https://medium.com/@ezagroba/doubt-builds-trust-9cee937dc5d1">Medium</a>.</em></p>
-</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2017/2017-05-22_romanian-testing-conference-2017/" class="u-url">Romanian Testing Conference 2017</a></h1>
         <div class="metadata">
@@ -546,54 +462,35 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p name="f772" id="f772" class="graf graf--p graf-after--h3">I’d heard good things about the Romanian Testing Conference from previous years, so I was excited and honored to speak at this year’s event. I was happy to catch up with people I knew, put a face to people I’d only seen on the internet, and meet the testers who worked on software I’ve both <a href="http://www.ns.nl/" data-href="http://www.ns.nl/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">valued</a> and <a href="http://www.adobe.com/marketing-cloud/experience-manager.html" data-href="http://www.adobe.com/marketing-cloud/experience-manager.html" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">loathed</a>.</p>
+    <p name="f772" id="f772" class="graf graf--p graf-after--h3">I’d heard good things about the Romanian Testing Conference from previous years, so I was excited and honored to speak at this year’s event. I was happy to catch up with people I knew, put a face to people I’d only seen on the internet, and meet the testers who worked on software I’ve both <a href="http://www.ns.nl/" data-href="http://www.ns.nl/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">valued</a> and <a href="http://www.adobe.com/marketing-cloud/experience-manager.html" data-href="http://www.adobe.com/marketing-cloud/experience-manager.html" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">loathed</a>.</p>
 
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2017/cluj.jpeg" style="display:block; margin-left: auto; margin-right: auto;" title="View from my hotel room in Cluj."><span class="img_caption" style="display: block; text-align: center;">View from my hotel room in Cluj.</span></span></p>
 <p name="892b" id="892b" class="graf graf--p graf-after--figure">Goranka Bjedov spoke about scaling up the hardware in Facebook’s data centers. Her childhood in a power-rationed Yugoslavia makes her an ideal candidate to consider the balance between power and performance and reign in the Silicon Valley dream of just adding another server. (In California and around the world, resources are finite!) On the infrastructure side, Goranka knows she has to plan for features to be massively popular, even when they don’t seem like they’ll take off. Photo tagging and slideshow retrospective videos surpassed her expectations.</p>
-
 <p name="56ce" id="56ce" class="graf graf--p graf-after--p">The things she was able to tell about were as interesting as the things she wasn’t. She could tell us the measurements Facebook took on IBM machines a few years ago, but not more recently. IBM was using the data to price the machines! She could tell us how many machines could fit on a rack before the spinning shook it too hard, but she couldn’t tell us how many racks there were in each data center. The data centers use evaporative cooling, literally pools of water on top of the racks, rather than air conditioning to save money. I left thinking “that was all interesting, but when am I going to have input on a data center?” It wasn’t until I got back to the office that I remembered we also host our own data centers. It might be sooner than I thought.</p>
-
 <p name="775d" id="775d" class="graf graf--p graf-after--p"><a href="https://twitter.com/adampknight" data-href="https://twitter.com/adampknight" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Adam Knight</a> directed his testing at a new company after giving the business side a risk questionnaire, inspired by one a financial advisor gave him. Adam considered examples where humans didn’t accurately evaluate risk. This one stood out to me: Grouping several problems together into one problem underestimates risk.</p>
-
 <blockquote name="ed19" id="ed19" class="graf graf--blockquote graf-after--p">Integrity is the most important quality we can demonstrate as testers.</blockquote>
-
 <p name="5890" id="5890" class="graf graf--p graf-after--blockquote">While it was hard to write unbiased questions, Adam found some interesting results from the questionnaire. Everyone agreed they needed specialist testers, but they didn’t have any on staff at the time! <a href="https://www.riveragency.com/" data-href="https://www.riveragency.com/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">They’re hiring</a>. <a href="https://www.mdsol.com/en/careers" data-href="https://www.mdsol.com/en/careers" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">So is Medidata</a>. We build software for clinical trials at Medidata. I think we have a very low tolerance for bugs in production, but more flexibility around scope and deadlines. Adam got me curious about whether our business leaders would agree.</p>
 
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2017/relaxed.jpeg" style="display:block; margin-left: auto; margin-right: auto;" title="Someone described me as 'relaxed' here."><span class="img_caption" style="display: block; text-align: center;">Someone described me as 'relaxed' here.</span></span></p>
 <p name="8fd6" id="8fd6" class="graf graf--p graf-after--figure">I spoke next! Sanda and Raluca kept me calm before I went on. <a href="https://www.stefanfekete.com/" data-href="https://www.stefanfekete.com/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Stefan</a> managed to capture photographic evidence of <a href="https://medium.com/@ezagroba" data-href="https://medium.com/@ezagroba" class="markup--anchor markup--p-anchor" target="_blank">my face</a> looking normal. I’m grateful for everyone who came and sat scattered among the rows by themselves, or was eager to engage with me afterwards. <a href="https://dojo.ministryoftesting.com/lessons/succeeding-as-an-introvert-elizabeth-zagroba" data-href="https://dojo.ministryoftesting.com/lessons/succeeding-as-an-introvert-elizabeth-zagroba" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Here’s a previous but similar performance if you’re curious</a>. I appreciated all the follow-up questions in front of the group and individually afterwards. In future performances, I need to do a better job of noting that no one’s an introvert all the time, and the extrovert/introvert distinction isn’t going to be useful for everyone.</p>
-
 <p name="89fa" id="89fa" class="graf graf--p graf-after--p">I tried to hide for a few minutes because facing the hundreds of people in the lunchroom was too overwhelming after just coming off stage. Unfortunately the interview crew found me! Note for next year: hide in my room and not in the lobby. (Also: find out why people were taking so many desserts.) I missed the beginning of <a href="https://twitter.com/KeithKlain" data-href="https://twitter.com/KeithKlain" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Keith Klain</a>’s talk because I eat a lot. (Get over it.) Apparently, it began with a joke about him being a money launderer that I both originated and plan to perpetuate. The hundreds of Romanians did not appear to be amused. According to sources familiar with the matter, they rarely do.</p>
-
 <p name="86a1" id="86a1" class="graf graf--p graf-after--p">Keith noted that testers who can’t connect a bug to the business impact in production are doing it wrong. Publicly traded American companies have series 10 forms outlining their business risks. Both Adam and Keith wanted testers to ask the business what quality meant to them. You can become more efficient by doing less testing if you are transparent with what you’re testing and avoid repeating tests.</p>
-
 <blockquote name="e3fa" id="e3fa" class="graf graf--blockquote graf-after--p">Testing that adds a lot of value is hard. Good testing raises more questions than it answers.</blockquote>
-
 <p name="c398" id="c398" class="graf graf--p graf-after--blockquote"><a href="https://www.linkedin.com/in/carmen-sighiartau-a360236a/" data-href="https://www.linkedin.com/in/carmen-sighiartau-a360236a/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Carmen Sighiartau</a> spoke about testing from a developer’s perspective. Until she worked with a tester that caught things she didn’t, she saw testing as a crappy job anyone could do. Like Keith, she saw a lot of redundant testing that didn’t provide value. Now, she wants to work with testers because she sees the unique perspective they can bring to the table. Her growth as a developer reminded me to care about my craft and think about my work without running on auto-pilot.</p>
-
 <blockquote name="956b" id="956b" class="graf graf--blockquote graf-after--p">Nothing in life is mandatory.</blockquote>
-
 <p name="0e85" id="0e85" class="graf graf--p graf-after--blockquote">Carmen encouraged us to interview candidates for how they work on a team. It’s easier to educate technical skills than social skills. <a href="http://www.huibschoots.nl/wordpress/?p=1666" data-href="http://www.huibschoots.nl/wordpress/?p=1666" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Huib Schoots expanded on how to recognize professional testers in his blog</a>. When I’m interviewing testers to join one of the teams I’m on, I try to ask one question with a straightforward answer I can verify (“What did you talk about with the previous interviewers?”) so I can make sure they describe a situation clearly. I also ask about teamwork or empathy (“Tell me about a time you had to deliver bad news.”)</p>
-
 <p name="a20b" id="a20b" class="graf graf--p graf-after--p"><a href="https://twitter.com/NicolaO55" data-href="https://twitter.com/NicolaO55" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Nicola Owen</a>’s talk posed the question:</p>
-
 <blockquote name="2040" id="2040" class="graf graf--blockquote graf-after--p">If you were leaving your job soon, would you test differently?</blockquote>
-
 <p name="30ce" id="30ce" class="graf graf--p graf-after--blockquote">If you’re staying in your job, it can be acceptable for a bug report to need more clarification, or for a colleague to ask you where a document is. Once you’re gone, your abandoned colleagues can’t rely on those valuable conversations. Write things down and put them in an obvious place. Like Carmen, Nicola spoke of developers who’d only had negative experiences with testers. You can show your value by passing on your knowledge before you leave.</p>
-
 <p name="7c09" id="7c09" class="graf graf--p graf-after--p"><a href="https://twitter.com/hargolas" data-href="https://twitter.com/hargolas" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Harry Girlea</a> spoke last to the entire crowd and really put us all to shame. I can’t imagine telling a bunch of adults about my favorite hobby when I was 12 years old. He handled the Q&amp;A like a pro. When someone asked him how he balanced gaming with school, he said he would probably play too much, but his mom keeps him in check.</p>
-
 <p name="a298" id="a298" class="graf graf--p graf-after--p">The organizers and volunteers at the conference made the logistics a breeze, which left lots of time for conferring. Thanks in particular to <a href="https://twitter.com/Rob_Lambert" data-href="https://twitter.com/Rob_Lambert" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Rob Lambert</a>, <a href="https://twitter.com/ard_kramer" data-href="https://twitter.com/ard_kramer" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Ard Kramer</a>, and <a href="https://twitter.com/EnquireTST" data-href="https://twitter.com/EnquireTST" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Beren Van Daele</a> for lending me their ears. I appreciate all the ideas and I hope I have the opportunity to join this wonderful group again in the future!</p>
 
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">When in Cluj ... take pictures <a href="https://twitter.com/NicolaO55?ref_src=twsrc%5Etfw">@NicolaO55</a> <a href="https://twitter.com/ezagroba?ref_src=twsrc%5Etfw">@ezagroba</a> <a href="https://twitter.com/MaikNog?ref_src=twsrc%5Etfw">@MaikNog</a> @EnquireTST <a href="https://twitter.com/hashtag/rtc2017?src=hash&amp;ref_src=twsrc%5Etfw">#rtc2017</a> <a href="https://t.co/GgVp8HcmvS">pic.twitter.com/GgVp8HcmvS</a></p>— Marcel Gehlen (@Marcel_Gehlen) <a href="https://twitter.com/Marcel_Gehlen/status/863094250736685057?ref_src=twsrc%5Etfw">May 12, 2017</a>
 </blockquote>
-
-<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-<p>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><p>
 </p>
 <p><em>Originally published on <a href="https://medium.com/@ezagroba/romanian-testing-conference-2017-ec768d64167e">Medium</a>.</em></p>
-</div>
     </div>
     </article>
 </div>
@@ -606,9 +503,9 @@ navbar-dark bg-dark
 <a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
 <a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
 <a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-<a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
+<a href="https://app.thestorygraph.com/profile/e_z" target="_blank"><i class="fa fa-book-open"></i></a>
 <a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon" aria-hidden="true"></i></a>
-© 2021 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+© 2022 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
 Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
 <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0.</a>
 
@@ -622,9 +519,7 @@ Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola
         <script src="assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

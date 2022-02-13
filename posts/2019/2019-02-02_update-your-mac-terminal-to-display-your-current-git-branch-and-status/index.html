@@ -8,7 +8,7 @@
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
 <link rel="canonical" href="https://elizabethzagroba.com/posts/2019/2019-02-02_update-your-mac-terminal-to-display-your-current-git-branch-and-status/">
 <link rel="icon" href="../../../images/avatar.png" sizes="128x128">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="../../assets/fontawesome-5.13.0/css/all.css" rel="stylesheet">
@@ -36,10 +36,11 @@ I spent the better part of a crafting day at the office updating my .bash_profi
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="https://elizabethzagroba.com/">
+        <a class="navbar-brand" href="../../../">
 
             <span id="blog-title">Elizabeth Zagroba: Software Tester</span>
         </a>
@@ -102,39 +103,34 @@ navbar-dark bg-dark
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p><strong>TLDR; You can copy <a href="https://github.com/ezagroba/bash-profile-branch-and-color/blob/master/export-PS1.gist">all the code from my github</a>.</strong></p>
+    <p><strong>TLDR; You can copy <a href="https://github.com/ezagroba/bash-profile-branch-and-color/blob/master/export-PS1.gist">all the code from my github</a>.</strong></p>
 <p name="0fd7" id="0fd7" class="graf graf--p graf-after--h3">I spent the better part of a crafting day at the office updating my <code class="markup--code markup--p-code">.bash_profile</code> on my Mac. If I’m in a git repository, with every command prompt, I see the branch name and an asterisk if there are un-committed changes. The original prompt for the machine, the repository name, and the branch name each appear in different colors. Here’s what it looks like:</p>
 
 <p><img alt="" src="../../../images/posts/2019/command-prompt.png"></p>
 <p name="47d3" id="47d3" class="graf graf--p graf-after--figure">It may look like this one line in my <code class="markup--code markup--p-code">.bash_profile</code> file is where the magic happens, because this is where the colors are set:</p>
 
-<pre class="code literal-block"><span></span><code><span class="nb">export</span> <span class="nv">PS1</span><span class="o">=</span><span class="s2">"\[\033[36m\]\u\[\033[32m\]\w\[\033[33m\]\$(git_branch)\$(parse_git_dirty)\[\033[00m\]</span>$<span class="s2">"</span>
-</code></pre>
-
-
+<pre class="code literal-block"><span class="nb">export</span> <span class="nv">PS1</span><span class="o">=</span><span class="s2">"\[\033[36m\]\u\[\033[32m\]\w\[\033[33m\]\$(git_branch)\$(parse_git_dirty)\[\033[00m\]</span>$<span class="s2">"</span>
+</pre>
 <p><img alt="" src="../../../images/posts/2019/colors.png"></p>
-<p name="c9ba" id="c9ba" class="graf graf--p graf-after--figure">Unfortunately the colors, branch, and status still need to be variously activated and calculated.
+<p name="c9ba" id="c9ba" class="graf graf--p graf-after--figure">Unfortunately the colors, branch, and status still need to be variously activated and calculated. 
 
 </p>
 <p>This function calculates if the branch has new changes:</p>
 
 
-<pre class="code literal-block"><span></span><code><span class="kd">function</span> <span class="nx">parse_git_dirty</span> <span class="p">{</span>
+<pre class="code literal-block"><span class="kd">function</span> <span class="nx">parse_git_dirty</span> <span class="p">{</span>
   <span class="p">[[</span> <span class="o">-</span><span class="nx">n</span> <span class="s2">"$(git status -s2&gt; /dev/null)"</span> <span class="p">]]</span> <span class="o">&amp;&amp;</span> <span class="nx">echo</span> <span class="s2">"*"</span>
 <span class="p">}</span>
-</code></pre>
-
+</pre>
 
 
 <p name="b7b9" id="b7b9" class="graf graf--p graf-after--figure">The last thing is fetching the branch name:</p>
 
 
-<pre class="code literal-block"><span></span><code>git_branch<span class="o">()</span> <span class="o">{</span>
+<pre class="code literal-block">git_branch<span class="o">()</span> <span class="o">{</span>
   git branch <span class="m">2</span>&gt; /dev/null <span class="p">|</span> sed -e <span class="s1">'/^[^*]/d'</span> -d <span class="s1">'s/* \(.*\)/ (\1)/'</span>
 <span class="o">}</span>
-</code></pre>
-
+</pre>
 
 
 <p name="5ccd" id="5ccd" class="graf graf--p graf-after--figure">It took a lot of internet searching and help from colleagues to set it up. I had the git status and the branch name going separately, but combining them failed. Typing past the width of the window in the command prompt would send text to overwrite the current line instead of wrapping onto a second. <a href="https://askubuntu.com/questions/24358/how-do-i-get-long-command-lines-to-wrap-to-the-next-line" data-href="https://askubuntu.com/questions/24358/how-do-i-get-long-command-lines-to-wrap-to-the-next-line" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">This solved that for me</a>. <a href="http://jafrog.com/2013/11/23/colors-in-terminal.html" data-href="http://jafrog.com/2013/11/23/colors-in-terminal.html" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">There are also other color options</a>. The slashes <code class="markup--code markup--p-code">\</code> help end commands, but it was a lot of trial and error to get them all in the right spots. I was editing my <code class="markup--code markup--p-code">.bash_profile</code> intially in Sublime; any plain-text editor would have worked. I moved to nano in the Terminal when I wanted to see the changes more quickly. I did still have to close all open Terminal sessions before seeing the latest changes.</p>
@@ -149,7 +145,7 @@ navbar-dark bg-dark
 <div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="6696" id="6696" class="graf graf--p graf--leading graf--trailing"><em class="markup--em markup--p-em">Thanks to Maik Nog for suggesting I share this in a more shareable format. It’s available on </em><a href="https://github.com/ezagroba/bash-profile-branch-and-color/blob/master/export-PS1.gist" data-href="https://github.com/ezagroba/bash-profile-branch-and-color/blob/master/export-PS1.gist" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">github</em></a><em class="markup--em markup--p-em">.</em></p></div></div></section>
 
 
-*Originally published on [Medium](https://medium.com/@ezagroba/update-your-mac-terminal-to-display-your-current-git-branch-and-status-471c017436a2).*</div>
+*Originally published on [Medium](https://medium.com/@ezagroba/update-your-mac-terminal-to-display-your-current-git-branch-and-status-471c017436a2).*
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../../categories/git/" rel="tag">git</a></li>
@@ -168,9 +164,9 @@ navbar-dark bg-dark
 <a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
 <a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
 <a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-<a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
+<a href="https://app.thestorygraph.com/profile/e_z" target="_blank"><i class="fa fa-book-open"></i></a>
 <a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon" aria-hidden="true"></i></a>
-© 2021 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+© 2022 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
 Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
 <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0.</a>
 
@@ -184,9 +180,7 @@ Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola
         <script src="../../../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

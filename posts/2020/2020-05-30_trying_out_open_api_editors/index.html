@@ -8,7 +8,7 @@
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
 <link rel="canonical" href="https://elizabethzagroba.com/posts/2020/2020-05-30_trying_out_open_api_editors/">
 <link rel="icon" href="../../../images/avatar.png" sizes="128x128">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="../../assets/fontawesome-5.13.0/css/all.css" rel="stylesheet">
@@ -38,10 +38,11 @@ This great talk from ">
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="https://elizabethzagroba.com/">
+        <a class="navbar-brand" href="../../../">
 
             <span id="blog-title">Elizabeth Zagroba: Software Tester</span>
         </a>
@@ -104,8 +105,7 @@ navbar-dark bg-dark
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>I was editing an Open API with multiple layers of inheritance recently. I <a href="https://elizabethzagroba.com/posts/2020/2020-04-27_errors_you_might_encounter_while_editing_an_open_api_specification/">kept  uncovering errors</a> long after I created them because of the way they display in <a href="https://editor.swagger.io">editor.swagger.io</a>. </p>
+    <p>I was editing an Open API with multiple layers of inheritance recently. I <a href="https://elizabethzagroba.com/posts/2020/2020-04-27_errors_you_might_encounter_while_editing_an_open_api_specification/">kept  uncovering errors</a> long after I created them because of the way they display in <a href="https://editor.swagger.io">editor.swagger.io</a>. </p>
 <p><a href="https://www.youtube.com/watch?v=s9u3mXQZbXI">This great talk from Lorna Jane Mitchell about Open APIs</a> made me realize how many other tools I could use to edit these specs. There's a whole list at <a href="https://openapi.tools/">openapi.tools</a>. During my crafting days, I resolved to try some new editors. I decided to see what it was like to edit the existing complicated spec, and write a spec we were missing for a very simple API (two GET calls).</p>
 <h3>TL;DR</h3>
 <p>I'm going to use the <a href="https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi">Visual Studio Code Open API plugin</a> to write and navigate through our specs. We're rendering our specs with editor.swagger.io, so I'm going to keep running it through there to confirm they appear as expected for our stakeholders.</p>
@@ -130,12 +130,11 @@ navbar-dark bg-dark
 <p>Overall: If I had a license, I'd use SwaggerHub to look at existing APIs, but not to write new ones. I didn't look into using it to run a mock server, but I bet that'd be useful.</p>
 <h4><a href="https://github.com/OAIE/oaie-sketch">OAIE Sketch</a></h4>
 <p>Have you ever used <a href="https://sequencediagram.org/">sequencediagram.org</a> to create a UML diagram and thought "What if this looked more 90's?" Well, you're in luck! OAIE Sketch will make you nostalgic for Windows 95. After cloning the github repo and open the .html file locally (whatever works I guess?), you'll see something like this. </p>
-<p><span class="img_container" style="display: inline-block;"><img alt="" src="../../../images/posts/2020/isnt-she-lovely.png" style="display:block; margin-left: auto; margin-right: auto;" title="😍😍😍"><span class="img_caption" style="display: block; text-align: center;">😍😍😍</span></span></p>
+<p><img alt="" src="../../../images/posts/2020/isnt-she-lovely.png"></p>
 <p>I liked the way it was built for you to either update the YAML or the visualization, then decide when to push changes to the other side. But I couldn't figure out how to paste in a spec I had somewhere else and get the visualization to update. </p>
 <p>Overall: Might be a good way to think about shared outputs if it updated?</p>
 <h4><a href="https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi">Visual Studio Code Open API plugin</a></h4>
 <p>This put me back where I started: the plugin for Visual Studio Code. It's got syntax highlighting. (It made me realize that my export from SwaggerHub added <code>style</code> and <code>explode</code> fields to my request parameters! <a href="https://swagger.io/docs/specification/serialization/">I guess I'll save figuring out if I should keep those for another day.</a>) It's got a schema, so I can navigate around the spec based on how the things are connected without having to remember line numbers. It's got error messaging that is clear enough without being invasive: red squigglies appear on affected lines and red trangles appear next to the line number on the left. They're small enough to ignore if you're in the middle of writing, but easy enough to find and notice without going on for too long. I'm sticking with this.</p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../../categories/api-specs/" rel="tag">api-specs</a></li>
@@ -155,9 +154,9 @@ navbar-dark bg-dark
 <a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
 <a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
 <a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-<a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
+<a href="https://app.thestorygraph.com/profile/e_z" target="_blank"><i class="fa fa-book-open"></i></a>
 <a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon" aria-hidden="true"></i></a>
-© 2021 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+© 2022 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
 Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
 <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0.</a>
 
@@ -171,9 +170,7 @@ Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola
         <script src="../../../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

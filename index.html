@@ -9,12 +9,12 @@
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="rss.xml">
 <link rel="canonical" href="https://elizabethzagroba.com/">
 <link rel="icon" href="images/avatar.png" sizes="128x128">
-<link rel="next" href="index-5.html" type="text/html">
+<link rel="next" href="index-6.html" type="text/html">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link href="fontawesome-5.13.0/css/all.css" rel="stylesheet">
-<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2021/test_bash_manchester_2019/" type="text/html">
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2022/02_12_not_every_detail_matters/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -22,10 +22,11 @@
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="https://elizabethzagroba.com/">
+        <a class="navbar-brand" href=".">
 
             <span id="blog-title">Elizabeth Zagroba: Software Tester</span>
         </a>
@@ -78,7 +79,238 @@ navbar-dark bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/test_bash_manchester_2019/" class="u-url">TestBash Manchester 2019, The Last One</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2022/02_12_not_every_detail_matters/" class="u-url">Not Every Detail Matters</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2022/02_12_not_every_detail_matters/" rel="bookmark">
+            <time class="published dt-published" datetime="2022-02-12T00:00:00+01:00" itemprop="datePublished" title="12 February 2022">12 February 2022</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>I was looking at a user story for one of the teams I support. The story was about improving a very particular page. Our users do see it. But only for 5-10 minutes per week, if they've started their work early. We deploy this product weekly just before working hours. Deploying currently involves taking the whole product down. Customers can sign up for noticifications so they're reminded about this downtime window. </p>
+<p>The story was to improve the look of a page. People might see it and be confused if the stars aligned and:</p>
+<ul>
+<li>They started work early.</li>
+<li>They hadn't signed up for the notification.</li>
+<li>They hadn't seen the web app with just a logo on it before.</li>
+<li>They didn't try it again in a few minutes. </li>
+</ul>
+<p>So I asked the ticket writer, "This doesn't impact customers much (5-10 minutes per week). Is fixing this worth the effort?"</p>
+<p>They wrote back "I believe in 'Every detail matters.' This particular detail should take very little effort to realize, so my answer on this question is Yes."</p>
+<p>It's possible they're right to pick this ticket up. It was a small enough effort that we might as well do it. If they're wrong, they're the one feeling the pain of explaining the ticket to the team, verifying the fix, deciding what to put in the release notes, etc. It's a safe-to-fail experiment for me as a quality coach. </p>
+<p>But I didn't have the same mindset. I don't believe that we should fix everything we find in our app that violates my expectations. I don't think it's possible to identify one correct set of expectations and priorities that our users will share. I don't think the things that we've already fixed will stay fixed. I don't think it's possible to cover every issue with an automated test. </p>
+<p>I think we need to let go. We need to decide what's important, and focus on that. The details of the downtime page -- the new design, and the time the team spent updating it, and the effort I'd spend having the conversation about it -- none of them mattered too much to me. We need to notice details, and also know when to turn our brains off to being bothered by them. We need to think about the risks of our tests could uncover; our goal isn't 100% test coverage. In short:</p>
+<blockquote>
+<p>Not every detail matters.</p>
+</blockquote>
+<p>We are limited by our attention, energy, health, meetings on our schedule, time left on this earth. Software is complex enough that it's very unlikely we'll be able to solve every issue we find. The more time we spend solving the unimportant ones, the less time we have left to look for the important ones. Or decide what is important. Or understand our users better to be able to more effectively evaluate the relative importance of such issues. </p>
+<p>Jerry Weinberg cheekily noted the impossibility of this endeavor in his book accurately titled <a href="https://app.thestorygraph.com/books/8ba29269-1843-4ac1-be0c-226752b17937"><em>Perfect Software and Other Illusions About Testing</em></a>. The Black Box Software Testing Course on Test Design emphasized the need for testers to balance risk vs. coverage. Its focus on <a href="https://www.developsense.com/blog/2010/05/why-we-do-scenario-testing/">scenario testing</a> insisted we tie our testing to a user's journey through the software that was:</p>
+<ul>
+<li>coherent</li>
+<li>credible</li>
+<li>motivating</li>
+<li>complex</li>
+<li>easy to evaluate</li>
+</ul>
+<p>I know this is the right approach. It will leave time to build new features and learn new skills. It's what will make it possible for us to feel fulfilled and motivated in our work. </p>
+<p>Now I just need to figure out how to scale this mindset. </p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2022/01_29_eurostar_testing_voices/" class="u-url">EuroSTAR Testing Voices 2021</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2022/01_29_eurostar_testing_voices/" rel="bookmark">
+            <time class="published dt-published" datetime="2022-01-29T00:00:00+01:00" itemprop="datePublished" title="29 January 2022">29 January 2022</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>In June of 2021, EuroSTAR ran a <a href="https://huddle.eurostarsoftwaretesting.com/testing-voices-2021/">free online event</a>. Having either Maaret Pyhäjärvi and Keith Klain on the program would have been enough to add this to my calendar; having both got me there.</p>
+<hr>
+<h3>Maaret Pyhäjärvi: Testing Becoming Harder to be Valuable</h3>
+<p>As usual, Maaret sees a bright and exciting future for her role that I have trouble reconciling with my reality. In Maaret's vision, crowdsourced testers find the obvious bugs. She's left to skim the cream off the milk,  performing the interesting, thoughtful work of understanding a complex system. She and her fellow testers are not repositories for or regurgitators of information. They share testing ideas before they become results or automated tests, with the goal of making others more productive. They tell compelling stories of the unseen: bugs that never happened, testing they never performed.</p>
+<p>Dream big Maaret.</p>
+<h3>Panel: Different Teams, Different Testers</h3>
+<p>Veerle Verhagen hosted this panel. If you're feeling a bit exhausted, I can recommend a small dose of Veerle directly to your brain. These were my top three takeaways:</p>
+<ul>
+<li>The best way to skill up automation is to do it on the job.</li>
+<li>You can give assignments back. </li>
+<li>Raise problems even if they're outside the current scope. </li>
+</ul>
+<h3>Keith Klain: Test as Transformation</h3>
+<p>Keith speaks from a position of connecting testing to the business strategy, which is exactly what he recommends we all do. Talk the talk of driving innovation and managing risk to get people's attention and connect what you're doing to the money. Writing a pile of cheap flaky checks (or even consistently passing ones!) may give you a false sense of security that hides the bigger risks. Strive to gather more information to soundly evaluate the risks in your products, enough to understand what would have happened if you hadn't caught it and how to prevent something similar in the future. </p>
+<hr>
+<p>Thanks to the EuroSTAR team for pulling this together and (not charging for it). </p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2022/01_16_this_diagram_asked_more_questions_than_it_answered/" class="u-url">This Diagram Asked More Questions Than It Answered</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2022/01_16_this_diagram_asked_more_questions_than_it_answered/" rel="bookmark">
+            <time class="published dt-published" datetime="2022-01-16T00:00:00+01:00" itemprop="datePublished" title="16 January 2022">16 January 2022</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>I made a diagram that asked more questions than it answered.</p>
+<p>As Quality Lead for the seven engineering teams in my unit, I'm tasked with getting developers to think more holistically. I'm not an expert in any of the individual parts of the product teams are. I aim to have a bird's eye view on the whole, particularly when it comes to the testing we're doing. Each team is thinking about thorough coverage of their part; I'm looking at the through-line across the products.</p>
+<p>So after only a few weeks on the job, when a particular behavior got the software development managers asking me "Did anyone test this end-to-end?" all I could say for sure was "I haven't!" It did get me thinking and asking them though:</p>
+<ul>
+<li>What do you mean when you say end-to-end?</li>
+<li>Did you mean an automated test, or someone trying it at least once manually? </li>
+<li>Is the one path I have in mind the same one you're picturing?</li>
+<li>Is it important to have some type of coverage over every possible path, or can we decide to focus on the risky ones?</li>
+</ul>
+<p>I started by drawing what I had in mind. It looked like this. The colored boxes show which team owns the code. The outlined boxes show actions a user could take. </p>
+<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2022/step1.png" style="display:block; margin-left: auto; margin-right: auto;" title="A humble beginning"><span class="img_caption" style="display: block; text-align: center;">A humble beginning</span></span></p>
+<p>I went to it show people all around the department (developers, testers, product, UX, analytics, managers) so they could tell me where I was wrong or needed more detail. (<a href="https://elizabethzagroba.com/posts/2017/2017-08-06_doubt-builds-trust/">More on how that builds credibility in this post</a>). </p>
+<p>Each person I showed it to added more boxes, or split existing boxes into more specific actions. Some even added more teams. I approached the teams humbly, acknowledging that though I was being asked about end-to-end testing, I didn't have a good view on what that meant right now. I acknowledged that they were the experts in the their own domains. I'd reviewed roadmaps and documentation to do what I could before I spoke to them so they only had to offer corrections instead of whole explanations. And I thanked them for correcting my ignorance and blind spots as we updated the diagram together. </p>
+<p>To our analytics expert, I said "I get asked a lot about the end-to-end flow, but I'm not sure what that means exactly. Do you have the same problem?" A wave of common struggle and understanding washed over them. </p>
+<p>By the time 15 people had given their perspective, the diagram had exploded into this monstrosity. </p>
+<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2022/step2.png" style="display:block; margin-left: auto; margin-right: auto;" title="A completely overwhelming mess"><span class="img_caption" style="display: block; text-align: center;">A completely overwhelming mess</span></span></p>
+<p>This diagram was hard to read. It wasn't clear (to anyone but me) where the entry and exit points where. The key was hard to reference and had too much explanation. At a glance, the main takeaway was "This is complicated." This did live up to one of my goals: get people to see that "test everything end-to-end" is not a straightforward, single path. We wouldn't test every path or promise full coverage from the start (or ever, but that's <a href="https://elizabethzagroba.com/posts/2020/2020-05-24_if_a_test_falls_in_a_forest/">another conversation</a>). But we could say: "There's a lot to cover here. Let's choose the most important path to start."</p>
+<p>In showing the diagram to our sales and UX experts, and again acknowledging that this kind of diagramming was more their expertise than mine, I got nudged in the direction of business process modelling notation. I kept my teams and user actions in a way that notation didn't imagine, but putting everything in rows and columns gave my diagram an air of professionalism it didn't have before. </p>
+<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2022/step3.png" style="display:block; margin-left: auto; margin-right: auto;" title="Something bordering on approachable"><span class="img_caption" style="display: block; text-align: center;">Something bordering on approachable</span></span></p>
+<p>A different UX expert said they'd been too overwhelemed to try to process my overwhelming mess of a diagram, but they'd been able to read and learn from this attempt. </p>
+<p>Our software development managers and product experts were the ones asking about the state of end-to-end testing initially. Showing them the diagram got them thinking on the exactly the paths I wanted to trigger: </p>
+<ul>
+<li>Can we have one of these for a different product we're building?</li>
+<li>What would this diagram look like if we only followed one user persona's journey?</li>
+<li>What else might be included in end-to-end if we think outside the scope of the seven engineering teams in our unit?</li>
+<li>How do people buy the product? How are they onboarded?</li>
+<li>How do people learning how to use the product discover these steps you've outlined? How do they know which direction they want to go?</li>
+<li>How do people make decisions at these decision points? How can we gain more insight into how they're doing that?</li>
+</ul>
+<p>I think I probably could have helped perform some end-to-end testing with a collection of testers from the three teams I initially identifed in my first diagram, gone back to the managers and proclaimed "yes, we're end-to-end testing." But my job isn't to provide simple answers. It's to get people thinking about the whole, and asking the important questions for themselves. The journey of this diagram did exactly that. </p>
+<hr>
+<p>Do you find yourself answering questions that you see as misguided? How can you guide people to ask better questions? </p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/try_asking_different_questions/" class="u-url">Try Asking Different Questions</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2021/try_asking_different_questions/" rel="bookmark">
+            <time class="published dt-published" datetime="2021-12-31T00:00:00+01:00" itemprop="datePublished" title="31 December 2021">31 December 2021</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>I'll never know everything, but I love asking questions to get to know more. Obviously, the same question applied in different contexts will yield different results. A couple questions that worked exactly as I'd wanted with engineering teams really fell flat with UX and product. And a couple <a href="https://elizabethzagroba.com/posts/2021/delivering_information_vs_delivering_meta_information/">meta-level</a> questions allowed openings I wouldn't have imagined. </p>
+<h3>When I asked the wrong question</h3>
+<h4>Joining standups</h4>
+<p>Part of the charter for my role is to help improve processes and communication around the department. I'd attended each of the engineering team daily standup meetings, and I wanted to do the same for our designers. My intention was something everyone would agree to, but how I asked made it difficult for the designer to see that:</p>
+<ul>
+<li>"Do designers all meet once a day? I've joined all the other standups; may I join yours?""</li>
+</ul>
+<p>This might have given an impression that I was trying to inflict help or take over, rather than listen and see if my expertise was needed. Even following up with more details about wanting not to duplicate their work didn't seem to clarify my intention. </p>
+<p>Ultimately, speaking to another colleague and starting with my intention helped me understand what space I could be included in. There was a weekly meeting the engineering and product managers attended, where deeper design sessions were planned for that week. I would have never known to ask:</p>
+<ul>
+<li>"Can I attend your weekly meeting with the managers?" </li>
+</ul>
+<p>because I didn't know there was a weekly meeting. Sharing my intention might have gotten me there sooner.</p>
+<h4>End-to-end flow</h4>
+<p>I'd made a big, complicated diagram of how our users moved through our connected products. I'd imagined it could trigger discussions about all sorts of things, but the two things I wanted it to give the most perspective on were:</p>
+<ul>
+<li>"Are we testing the end-to-end flow?"</li>
+<li>"Are we capturing metrics on the end-to-end flow?"</li>
+</ul>
+<p>Describing the specific actions a user could take and how the products were interconnected showed that, for the development teams, it was hard to know what the ends were. I showed the diagram to most of the development teams and asked the question:</p>
+<ul>
+<li>"What could users do that I haven't captured?"</li>
+</ul>
+<p>They each thought of things inside the little bubble of their work. But asking the same question to a product owner yielded completely different results: more questions, such as:</p>
+<ul>
+<li>"Who are our users? Where do I see them here?"</li>
+<li>"Can we separate out one flow for one use case for one user?"</li>
+<li>"How are people onboarded? Where do our users start?"</li>
+</ul>
+<p>Those last two were completely left of my diagram, since they were outside the scope of what our development teams would build or test for a particular user story. But indeed, the product owners were right that onboarding was part of the end-to-end flow, and thus should be included in how we're looking at the user's journey. </p>
+<p>After a few more discussions, I identified an even better question for the product owners: </p>
+<ul>
+<li>"How are you thinking about the whole journey a user takes?" </li>
+</ul>
+<h3>When I asked the right question</h3>
+<h4>Is this the right agenda?</h4>
+<p>I started a meeting with a group of about 12 people with the question:</p>
+<ul>
+<li>"Is this the right agenda?" </li>
+</ul>
+<p>I wanted to make sure the needs that I could see from my position matched what was most important to them. There were five items on the agenda. When we got to the third one, someone determined that there was another way we could approach it, and we changed the agenda right there. Offering the opportunity at the beginning allowed for the team members to take ownership of their time. </p>
+<h4>What fell through the cracks?</h4>
+<p>Retrospectives I've attended and facilitated have often had a "What went wrong?" kind of section. I asked a different question in a session about test strategy, hoping to uncover something slightly different: </p>
+<ul>
+<li>"What fell through the cracks?" </li>
+</ul>
+<p>Leaving enough silence let people ponder their work in the recent weeks. People named a few product bugs logged to start. After even more silence, some process bugs came to light as well. It was interesting to see how a slight change in the phrasing of the question uncovered things the retrospectives hadn't. </p>
+<hr>
+<p>What questions do you tend to ask to the same people in the same way? What might you discover if you change the way you're asking the question? Can you leave more room for thought and contemplation in your conversations?</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/agile_testing_days_2021/" class="u-url">Agile Testing Days 2021</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2021/agile_testing_days_2021/" rel="bookmark">
+            <time class="published dt-published" datetime="2021-12-28T11:08:16+01:00" itemprop="datePublished" title="28 December 2021">28 December 2021</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Amazingly, a week physically away from work and present with other human software tester beings was refreshing. And I didn't contract COVID — shoutout to vaccines! Note to self: bring honey, because your voice will be tired from talking through an N95 mask in a loud room. </p>
+<p>Thank you so much <a href="https://agiletestingdays.com/">Agile Testing Days</a> for the honor and privilege of serving on your program committee this year, and the straight-up spoiling that comes with attending a conference and not speaking. I've said for years that I enjoy the learning more than the being-in-the-spotlight. This year's edition allowed me to do just that. </p>
+<h4>1. Dagmar Monett - Coming to terms with intelligence in machines</h4>
+<p>Nobody can agree on what intelligence is; it's context-dependent and culture-bound. Human-level AI is not inevitable!</p>
+<h4>2. Klaartje van Zwoll - How therapy made me a better teamplayer</h4>
+<p>All needs are valid! By making your needs specific, it's easier for others to meet them. Journaling can help close the gap between when you experience a thing and when you analyze it. </p>
+<p>Boundaries are high-quality information that people need to love you best. If someone crosses a boundary: specify the behavior, tell them the story of how it made you feel, and describe both the behavior you'd prefer and how that would improve things. </p>
+<p>After you say no, sit in the discomfort of the silence instead of offering excuses. Klaartje also did a great explanation of ask culture vs. guess culture which I've filed as American/Dutch vs. British/Belgian in my head. </p>
+<h4>3. Alex Schladebeck - Unit Testing and TDD from the tester perspective</h4>
+<p>Lots of decisions get made when we're writing code that we never talk about. Writing unit tests for legacy code is hard! Being curious (instead of incredulous) gets you (and your pair) to learn more and have better conversations. </p>
+<h4>4. Maryam Umar - The Power of Coaching for Leading Test Teams</h4>
+<p>Questions Maryam asked the audience that are worth a bit of reflection: </p>
+<ul>
+<li>What are my career goals?</li>
+<li>What do I want to change personally? </li>
+<li>What do I value? What do I enjoy?</li>
+<li>What outcomes are within my control?</li>
+</ul>
+<h4>5. Gitte Klitgaard - The choice is yours</h4>
+<p>Choices still happen even if they're not active choices. Options expire. When you make a commitment at the last responsible moment, remember the <em>responsible</em> part. There's space between the stimulus and the response where you can choose how you react. Be the captain of your own ship! We have so much more influence than we think. We can't have everything at once.</p>
+<h4>6. Raj Subrameyer - It is time for Toxic Leaders to come out of their closet</h4>
+<p>Masculinity is toxic. Moving on. </p>
+<h4>7. Jutta Eckstein - Agile Comes with a Responsibility for Sustainability.</h4>
+<p>Software consumes energy: take responsibility. Change your definition of done. Shift the question we ask in and around the product. Testers are the right people to start doing that!</p>
+<h4>8. Zeb Ford-Reitz - What's a Quality Dojo?</h4>
+<p>Zeb's quality dojo: low-risk, low-commitment, high-safety, and long-running. The learning is the product. (The product is the friends you make along the way?) If something is unclear, you need to ask. If you're hoping for a particular outcome, it's not so much an experiment as a bet. </p>
+<h4>9. João Proença - Limitless within our boundaries</h4>
+<p>Having a lot of choices is not necessarily better than only having a few choices. Making decisions all the time will lead to decision fatigue. Embrace the constraints that life gives you. Charters and time-boxes are constraints for exploratory testing. Set up the right constraints to be successful: </p>
+<ul>
+<li>What is the goal?</li>
+<li>What are the risks you're mitigating?</li>
+</ul>
+<h4>10. Lena Wilberg - Delivering fast &amp; slow</h4>
+<p>Be aware of what is the worst that can happen. Know <a href="https://nordictestingdays.eu/files/files/fiona_charles-10_commandments_for_ethical_testers_keynote_ntd2017.pdf">Fiona Charles's 10 Commandments for Ethical Software Testers</a>. Know your personal and career risk tolerance. </p>
+<h4>11. Bruce Hughes - How to be an Ally to Non-binary Folk in Tech</h4>
+<p>Never again should you have to explain or justify your existence. Listening is a beautiful skill. Labels are for communicating with other people. You don't owe anyone your time!</p>
+<h4>12. Lisi Hocke - Growing an Experiment-driven Quality Culture</h4>
+<p>Include a hypotehsis in your experiments. Identify exit criteria, whether or not you succeed. Are the teams ready, eager, and committed? What is the goal? Tackle the unknown, automate the known. Build on people's curiosity. Metrics work locally, temporarily, in context, at the grassroots level. What information do we need for each context? Raise awareness about options. </p>
+<h4>13. Dr. Karen Holland - Food for Thought</h4>
+<p>Mental healthy people can cope with the normal stresses of life. Healthy diets allow us to cope better. Deficiences cannot be fixed by food alone. </p>
+<h4>14. Vera Baum - The Tester's Learning Toolkit</h4>
+<p>Experts produce extraordinary results over a long period of time, but only come about after deliberate practice for four hours a day for ten years. Experts should analyze intuitive reactions. Becoming an expert is not everyone's goal! Only generic knowledge is transferrable. Training wheels are holding you back — you can learn from your failures. Reflection is key. </p>
+<h4>15. Vernon Richards - What does the 'Coach' in 'Quality Coach' mean?</h4>
+<p>Reward structures can promote anti-patterns. Be comfortable with silence. Stay in the present. Notice how they're saying something, and how they're feeling about what they're saying. Decide when to <a href="https://elizabethzagroba.com/posts/2021/give_them_the_fish_then_teach_them_to_fish/">give them the answer</a>. </p>
+<hr>
+<p>I have the urge to name-drop all my friends here, but also, who cares? This isn't a popularity contest. Just look at <a href="https://twitter.com/search?q=%23agiletd">Twitter</a> to see who was there.  I'm grateful to everyone who I was able to give an suspicious eyebrow across the table to, everyone who shared commentary during sessions, everyone whose conversations caused me to skip a session, everyone who patiently waited for me to poorly construct and pronounce Dutch sentences at them, everyone who thought it was fine for me to have a mask on, and most especially, whoever left a piano unlocked. Thank you, and please leave the grand piano unlocked next year. </p>
+<p>I also have the urge to apologize for all the exclamation points in these notes, but I regret to inform you that (1) they do reflect my actual enthusiasm over hearing these message delivered directly from someone's mouth into my ears, and (2) I look forward to the day when our writing can reflect how we'd like to communicate instead of how the patriarchy expects us to. </p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/test_bash_manchester_2019/" class="u-url">TestBash Manchester 2019, The Last One</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Elizabeth Zagroba
@@ -89,8 +321,7 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p>I didn't know in September of 2019 that TestBash Manchester was the last TestBash I'd be attending for a while. I've revisited my notes from the workshop Joep Schuurkes and I ran about test reporting several times since then: for a video series, an <a href="https://www.ministryoftesting.com/dojo/series/testing-ask-me-anything">Ask Me Anything</a>, a <a href="https://club.ministryoftesting.com/t/ask-me-anything-test-reporting/46827">forum thread</a>, a <a href="https://www.ministryoftesting.com/events/essentials-an-introduction-to-reporting-your-testing">99-minute workshop</a>, and a <a href="https://elizabethzagroba.com/posts/2021/map_out_your_stakeholders/">blog post</a>. I'm just revisiting my notes now from the talks I was able to attend in the couple days after our workshop.</p>
+    <p>I didn't know in September of 2019 that TestBash Manchester was the last TestBash I'd be attending for a while. I've revisited my notes from the workshop Joep Schuurkes and I ran about test reporting several times since then: for a video series, an <a href="https://www.ministryoftesting.com/dojo/series/testing-ask-me-anything">Ask Me Anything</a>, a <a href="https://club.ministryoftesting.com/t/ask-me-anything-test-reporting/46827">forum thread</a>, a <a href="https://www.ministryoftesting.com/events/essentials-an-introduction-to-reporting-your-testing">99-minute workshop</a>, and a <a href="https://elizabethzagroba.com/posts/2021/map_out_your_stakeholders/">blog post</a>. I'm just revisiting my notes now from the talks I was able to attend in the couple days after our workshop.</p>
 <hr>
 <p>My notes from Pierre Vincent's talk on observability read like a wishlist of features I'd already been asking for in the app I was testing: unit testing, centralized logging, trace ids for integration debugging, etc. The app was also in a private beta at the time, so data collected from production would be filled with more anomalies than patterns. I'm still discovering how much more influence I have in my new role as Quality Lead to present the impact and influence the improvement of testability features.</p>
 <p>Dan Smart and Yong He spoke about failure. The quote "Hey failors, how's the failing?" captures the essence of their talk: expect failure, and celebrate it, together. I get psyched anytime distinguishes between a fixed and a growth mindset as they did, which I still find best described in <a href="https://www.themarginalian.org/2014/01/29/carol-dweck-mindset/">this Marginalian (formerly Brain Pickings) piece</a>. </p>
@@ -106,7 +337,6 @@ navbar-dark bg-dark
 <p>Emily Bache's talk shared the ideas from the State of DevOps reports and ultimately the Accelerate book. As a team lead and co-host for a testing ensemble, I was able to help empower people across teams and help build a culture of psychological safety. In my new role as Quality Lead, I'm just starting to collect the DORA metrics to help me decide where I should focus my efforts within the department. </p>
 <hr>
 <p>What a memorable group of people, location, and journey it was to TestBash Manchester 2019. I hope the <a href="https://www.ministryoftesting.com/news/testbash-brighton-2022-cancellation-and-testbash-uk">upcoming TestBash UK</a> is in the cards for me this coming year, and not only because I still dream about <a href="https://www.mowglistreetfood.com/">this Indian food</a> I had on the way in and out of Manchester.</p>
-</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/map_out_your_stakeholders/" class="u-url">Map Out Your Stakeholders</a></h1>
         <div class="metadata">
@@ -119,8 +349,7 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p>Test reporting is part of a feedback loop. It's the beginning of a conversation, not the end. Knowing who you're having that conversation with allows you to provide those individuals better information for their context. </p>
+    <p>Test reporting is part of a feedback loop. It's the beginning of a conversation, not the end. Knowing who you're having that conversation with allows you to provide those individuals better information for their context. </p>
 <p>If you find a big nasty bug, you might report it differently if your audience is a developer on your team who you work with everyday, a developer on another team who you haven't met, or the Head of Product looking to give an important demo. Reporting on the breath, depth, focus, and impediments to your testing can help your audience guide your upcoming testing. </p>
 <p>Joep Schuurkes and I had an activity as part of workshop on test reporting at TestBash Manchester 2019. I believe he articulated the key idea: if your test reporting depends on your audience, you have to know who your audience is. We had participants map out (with paper and markers) who the stakeholders were for their testing. Some people drew org charts, other drew mind maps.</p>
 <p>In the test reporting workshop I held yesterday, we used a Miro board to map out our stakeholders. As examples, I made an overview of how I was thinking about my recent team. </p>
@@ -138,7 +367,6 @@ navbar-dark bg-dark
 </li>
 </ul>
 </div>
-    </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/unblocking_your_test_strategy/" class="u-url">Unblocking Your Test Strategy</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
@@ -150,8 +378,7 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p>In my new role as Quality Lead for my department, I get to figure out how to infuse everybody's work with "quality", and also figure out what that means exactly. </p>
+    <p>In my new role as Quality Lead for my department, I get to figure out how to infuse everybody's work with "quality", and also figure out what that means exactly. </p>
 <p>One of my colleagues made it easy for me on my second day by coming with a relatively concrete problem: they wanted an acceptance environment for their team. Their team (henceforth: Eager Team) integrated with chronically overloaded and busy team (henceforth: Busy Team), so they wanted an environment where they could test their stuff together before it went into production. They wanted me to help set that up. </p>
 <p>I started my conversation with Eager Team Lead by taking one step back: why did they want this environment? They'd proposed a solution, but I wanted to spend at least a few minutes digging into the problem space with them to hear more about why they wanted this.</p>
 <hr>
@@ -167,8 +394,7 @@ navbar-dark bg-dark
 <hr>
 <p>So how'd it go? I confirmed Busy Team's busyness, and got more details on how and when to add this request to their list. I'm following up with Eager Team next week to see where they are in identifying valuable scenarios, or if I should jump in there too. </p>
 <p>But wow, what a feeling to be able to lift the weight of "I need a thing I don't know how to build and don't think I can ever get" off someone's shoulders and replace it with "I know what to do next and it's achievable." </p>
-<p>Stay tuned for more quality leading to come. 😎</p>
-</div>
+<p>Stay tuned for more quality leading to come.</p>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/cutting_people_off/" class="u-url">Cutting People Off</a></h1>
         <div class="metadata">
@@ -181,8 +407,7 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p>Impatience is a virtue. </p>
+    <p>Impatience is a virtue. </p>
 <p>If impatience is solely your own, sorry, but you're the asshole. But if impatience is shared, saving your colleagues from a tiresome conversation will make their day. </p>
 <h4>Notice that a topic should come to a close</h4>
 <p>When you listen actively, you'll notice when something has already been said. It is much easier (particularly when remote) to give up, zone out, and think about something else. Don't be that person.</p>
@@ -222,7 +447,6 @@ navbar-dark bg-dark
 <hr>
 <p>A colleague once declared me the "queen of cutting people off" because I did so very politely. I have a compliment stickie note from "ruling refinement with an iron fist." We should all be so lucky to have our work appreciated this way.</p>
 <p>For more on meta-information, see <a href="https://elizabethzagroba.com/posts/2021/delivering_information_vs_delivering_meta_information/">this post</a>. For more on setting agendas and preparing for meetings to make them effective, see <a href="https://j19sch.github.io/slides/atd2020-making-meetings-work.html">this deck</a>.</p>
-</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/that_i_did_it_feeling/" class="u-url">That "I Did It!" Feeling</a></h1>
         <div class="metadata">
@@ -235,8 +459,7 @@ navbar-dark bg-dark
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <div>
-<p>I moved into a different role at work this week. I handed off my former team to the new team lead with a final 1-on-1 (and coincidentally performance review) for each team member. Each of them has a different variety of skills, motivators driving them, and awareness of either. This blog post focuses on just one team member. </p>
+    <p>I moved into a different role at work this week. I handed off my former team to the new team lead with a final 1-on-1 (and coincidentally performance review) for each team member. Each of them has a different variety of skills, motivators driving them, and awareness of either. This blog post focuses on just one team member. </p>
 <h3>"I did it!"</h3>
 <p>One team member is really driven by that "I did it!" feeling. They're early in their career. Both the product and the company are new to them. They spend a lot of their time pairing, asking for help, or floudering while wondering if they should be pairing or asking for help. Every 1-on-1, they'd report feeling that they hadn't learned or accomplished anything. They weren't getting that "I did it!" feeling.</p>
 <p>But they were doing a great job. They were making progress in all the different technologies our team uses (Mendix, Docker, OpenAPI, pytest, gitlab pipelines, etc.), learning as they went. They were able to accept feedback to course-correct when necessary. They knew they were learning a lot, but this alone wasn't motivating enough for them.</p>
@@ -254,7 +477,7 @@ navbar-dark bg-dark
 <h3>Done</h3>
 <p>I gave them homework to fill in the Done column. They took time to list things they had learned and accomplished in the previous months. Scrolling through the Done list got them pretty close to that "I did it!" feeling. Taking a moment to reflect during our 1-on-1's helped give them that feeling. But they weren't getting that feeling right away. They needed to celebrate their accomplishments as they were happening, to keep up the motivation and momentum. </p>
 <p>I did what was possibly my best management move for this person: I threw confetti.</p>
-<p>Trello has a feature where if you add the confetti ball emoji 🎊 to the title of a column, moving an item to that column throws a little confetti around the item. It's very cute, and it finally gave my team member that "I did it!" feeling. </p>
+<p>Trello has a feature where if you add the confetti ball emoji to the title of a column, moving an item to that column throws a little confetti around the item. It's very cute, and it finally gave my team member that "I did it!" feeling. </p>
 <h3>Setting expectations around the feeling</h3>
 <p>In the handoff to the new team lead, I explained this need my team member had, the ways I'd tried to meet it, and the confetti ball that finally worked. I pointed out that the need for the "I did it!" feeling can be found in other ways. The important thing for the team lead is not a particular action, but checking in with the team member about the feeling. I wanted to leave them space to take a different approach, so I used the "Mary had a little lamb" heuristic to explain what a different approach should include. </p>
 <h4>
@@ -275,214 +498,19 @@ navbar-dark bg-dark
 <li>When you do handoffs, do you describe the actions you took or the needs they were serving? </li>
 </ul>
 </div>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/give_them_the_fish_then_teach_them_to_fish/" class="u-url">Give Them the Fish, Then Teach Them to Fish</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Elizabeth Zagroba
-            </span></p>
-            <p class="dateline">
-            <a href="posts/2021/give_them_the_fish_then_teach_them_to_fish/" rel="bookmark">
-            <time class="published dt-published" datetime="2021-08-08T00:00:00+02:00" itemprop="datePublished" title="08 August 2021">08 August 2021</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p>A colleague came to me with a request the other day. I didn't handle it quite how I wanted to. The request went something like this:</p>
-<p>"I remember you were on the team for Big Scary product a couple years ago. Do you know if I can delete this List of Stuff from Big Scary product, and if I can automate that?"</p>
-<p>I did not know. It was two years ago. Big Scary product had gotten Bigger and Scarier in the meantime. </p>
-<p>But I knew where my team linked to our API specs from our customer-facing documentation. I applied the same principle to discover where Big Scary product API specs were. I looked at those specs and found the List of Stuff in a response body for an API call, but noticed that my colleague wouldn't have the ID the request required. So I looked at the API specs from a Bigger Scarier product. Combining a call from there would get the ID Big Scary product needed.</p>
-<p>I was short on time, so I answered the question directly. I said it was possible, and possible to automate, and provided the links to the specs for both products. My colleague thanked me, and left the conversation able to solve their problem quickly. </p>
-<p>I gave them the fish. What they learned from that interaction was: Elizabeth knows where to find stuff. I can come to her when I don't know how to find stuff and she will find it for me. That was the wrong lesson. </p>
-<h3>Give Them the Fish, Then Teach Them to Fish</h3>
-<p>A better lesson would have been: I know where to look for things. Elizabeth will give me the tools to know where to look, and empower me to do so. Now that I've got the access and seen it done once before, I can take a few more steps before I reach out Elizabeth the next time.</p>
-<p>Here's what I could have done to get to get this colleague there:</p>
-<ol>
-<li>Explain where all the API specs live: I could have explained my thought process for finding the API specs, showed how I navigate using the headers and <code>Ctrl + F</code> on the page, and compare the requests and responses to what's needed.</li>
-<li>Update them about who's on the team for Big Scary product now: I could have listed a few team members names who I knew were working on Big Scary product, or pointed my colleague to the Slack channel for the whole team.</li>
-<li>Introduce colleague to a member of the team for Big Scary product: Since this colleague was a tester, I could have started a direct message with them and the tester on the team for Big Scary product, copying the question from the DM I first received. </li>
-</ol>
-<h3>What If I Only Teach Them to Fish?</h3>
-<p>What would have happened if I'd skipped what I'd done, and withheld the links to the API specs? </p>
-<p>I wouldn't have been able to guarantee that my colleague was in the learning zone. From what I knew about their situation, they were accumulating a lot of data that they wanted to delete. I didn't know what other pressures were coming from the team, but the need to automate it suggested it was a bigger problem than just a few extra entries in a database. </p>
-<p>Giving my colleague the fish, and <em>then</em> teaching them to fish, relieves any of that pressure to deliver, and helps open them up to learning and growing. </p>
-<h3>Tell Them What You're Doing</h3>
-<p>Some colleagues are distracted, or dense, or not able to take away <a href="https://elizabethzagroba.com/posts/2021/delivering_information_vs_delivering_meta_information/">meta-information</a> from a conversation along with the information. They may stop listening after they have the answer. </p>
-<p>Combat this by sharing your motives. Remind them that you too are busy. Explain that your goal is to empower them. Encourage them to reach out to the team working on Big Scary product, so that those team members can also get good at knowing where to look and answering colleagues' questions. Tell them you're happy to help them again, but you'll expect more details of what they tried first. Then hold them to that. </p>
-<p>The best lesson is: I want to take a few more steps next time I have a problem, because I know I can, and Elizabeth expects more from me. </p>
-</div>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/socrates_uk_june_2021/" class="u-url">SoCraTes UK June 2021 </a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Elizabeth Zagroba
-            </span></p>
-            <p class="dateline">
-            <a href="posts/2021/socrates_uk_june_2021/" rel="bookmark">
-            <time class="published dt-published" datetime="2021-07-17T00:00:00+02:00" itemprop="datePublished" title="17 July 2021">17 July 2021</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p>I had a long drought between when I was last able to just attend a conference (rather than running a session or organizing) and SoCraTes UK in June. A year I think? And what a welcome rain it was. </p>
-<hr>
-<p>Heloá hosted a session on meditation. I recognized many of the symptoms she described as her motivators for picking up the habit from <a href="https://elizabethzagroba.com/assets/slides/introvert.pdf">a talk I did about introversion years ago</a>. And the mindset she described (trying over succeeding, recognizing reactions without trying to impose a particular one) echoed back to a conversation on stoicism that <a href="https://twitter.com/SimplySanne">Sanne Visser</a> hosted at the first TestCraftCamp. I was completely convinced by the benefits she described ("People say I sound calmer. I'm breathing more deeply.") but I haven't built a habit around it yet. C'est la vie. </p>
-<p>I went to two different sessions <a href="https://twitter.com/maaretp">Maaret Pyhäjärvi</a> hosted. (Does this make me a groupie?) The first, an ensemble testing session, reminded me that the most valuable exploratory testing bugs come when you understand enough about the business and the architecture to know what matters to some person who matters. The second session was about scaling workshops (and really, herself). I joined late after the lightning talks ended, but still helped plant the seed of what I and SoCraTes can do to bring more people into learning about good software. </p>
-<p>I selfishly hosted a "help me out here" session in the afternoon. As I predicted, the testers extraordinaire Maaret and <a href="https://twitter.com/lisihocke">Lisi Hocke</a> were exactly the people I needed to give me perspective on my current and evolving role at work, though the other attendees contributed as well. I came away with more questions than answers, which I'm still mulling over and digging into weeks later. I look forward to sharing more about the shape of things as they come to fruition.</p>
-<p>Alexander (What is your last name?? Sorry!) held a session on habits you've developed or changed during the pandemic. How lovely it was to be in a small conversation trading notes about remote music lesssons and holding remote workshops. It was exactly the kind of hallway conversation I'd be looking to fall into at a flesh-and-blood conference.</p>
-<p>I didn't write down who gave the lightning talk about saying no, but thank you. I rarely (never?) regret saying no, but I needed that extra push and specific language to have those "If you want me to pick this up, which of these things should I be putting down then?" conversations I've had lately. I have "Saying no commands respect" in my notes, and I guess I need a throw pillow of that too. </p>
-<hr>
-<p>SoCraTes reinforces for me how a welcoming, inclusive open space is done. It's through <a href="https://twitter.com/AmelieCornelis/status/1393945719413825542">explaining what an open space is for people who haven't attended</a>. It's who's on the organizing committee. It's reminding people to take time off from the sessions. It's about ending up in the "Rose Garden" at the same time as <a href="https://twitter.com/EvaNanyonga">Eva Nanyonga</a>, who's working to improve the dispatching of home helathcare workers in Uganda, and finding out you sparked her curiosity and delight in the exploratory testing session earlier in the day. It's about providing a subsidized ticket option to make the event accessible to more people. It's in offering advice to the hosts at the start, such as:</p>
-<ul>
-<li>ask for help facilitating</li>
-<li>kick off the discussion</li>
-<li>include everyone in the conversation</li>
-</ul>
-<p>Thank you for holding this space. It's got me excited to host the open space that TestCraftCamp has evolved into, Friends of Good Software (<a href="https://frogsconf.nl/">FroGS Conf</a>) in September. </p>
-</div>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/complete_the_main_quest_first/" class="u-url">Complete the Main Quest First</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Elizabeth Zagroba
-            </span></p>
-            <p class="dateline">
-            <a href="posts/2021/complete_the_main_quest_first/" rel="bookmark">
-            <time class="published dt-published" datetime="2021-07-04T00:00:00+02:00" itemprop="datePublished" title="04 July 2021">04 July 2021</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p>Recently, I made an outline for a tester (who was still onboarding) for what kinds of things to test on a new API endpoint we added. They explored, wrote a bunch of automated tests to capture their work, and came back with a list of interesting and good catches in the error responses. My first question in our debrief was: did you try a successful response? They hadn't. I sent them back to tackle that too. </p>
-<p>Because a successful response is the first thing our product owner is going to ask about. That's what we'd want to show off at the review meeting internally to demonstrate the new API endpoint. That's the first the customer is going to try. They're going to copy the request from our OpenAPI specification, paste it in Postman (or the tool of their choice, but our customers so far have been using Postman), and see if their credentials will get them the response that matches the specification. These stakeholders share a common concern, and that's the risk we should be migitating with testing. First. </p>
-<h3>Complete the main quest first.</h3>
-<p>Complete the main quest first. Come back to the side quests. </p>
-<p>A customer had asked for this API endpoint to be added. If we'd tested the happy path first, we would have had the option of releasing the API for the customer to use. The risk of discovering a successful request wouldn't yield a successful response was relatively low in this case, since our developers tend to try one happy path themselves.</p>
-<p>But what if the main quest had required a lot of setup, explanations to build knowledge and context for the onboarding tester, or yielded an issue? I'd done a risk-based analysis of what all to complete as part of our definition of done for this story. But I hadn't shared my approach to completing the main quest first, so the tester did what testers do, and went on a hunt to find weird stuff. </p>
-<p><img alt="" src="images/posts/2021/iceland.jpg"></p>
-<h3>Note down and follow-up on werid stuff; do not get distracted by it</h3>
-<p>Software will break in all sorts of ways. The more time and curiosity you have to dig into it, the more you'll discover. But are those the most important things? </p>
-<p>In this API, the tester discovered that if you paste 10,000 characters into a field that's meant for a UUID, you get a 400 response. But did they try a regular old UUID first? What if they get a 400 response no matter what they put in that field, because the field name in the specification doesn't match what's in the code? Is trying 10,000 characters the first and biggest risk they have to face when presenting this API to a customer?</p>
-<p>I'm not saying don't try 10,000 characters. <a href="https://twitter.com/ezagroba/status/1234822805709053953">I love that shit</a>. But decide if it's a risk you care about first. <a href="https://elizabethzagroba.com/posts/2020/2020-05-24_if_a_test_falls_in_a_forest/">If you don't care about the outcome, don't test it</a>. Don't make busy-work for yourself just to fill the time. </p>
-<h3>Make side quests a concious choice</h3>
-<p>Before you start throwing 10,000 characters at your API, talk to your team. Your developer can probably tell you if they never built something to deal with that situation. Your product owner can tell you they'd rather have it to the customer sooner. Your data analyst can tell you if there's already longer stuff than that in the database, or if you should be trying Japanese instead. </p>
-<p>Make side quests a deliberate choice. Share them to increase their value or figure out who on the team is best-suited to execute them. </p>
-<h3>Recognize when the quest is a journey, not a destination</h3>
-<p>Throwing 10,000 characters at an API may be a way to start a discussion about the speed at which responses are returned. It might be a way of showing <a href="http://coffeeipsum.com/">your favorite random text generator</a> to your fellow tester. It might be an exercise at an ensemble testing session, where everyone can practice pausing before executing an idea to describe the expected behavior first. </p>
-<p>Quests can be valuable in ways that are not directly related to the finishing the quest. </p>
-<p><em>Note: I got asked recently if I use the word charter much with non-testers. I don't. Try reading this again but replacing every mention of "quest" with "charter".</em></p>
-</div>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/praise_the_messenger/" class="u-url">Praise the Messenger</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Elizabeth Zagroba
-            </span></p>
-            <p class="dateline">
-            <a href="posts/2021/praise_the_messenger/" rel="bookmark">
-            <time class="published dt-published" datetime="2021-06-27T00:00:00+02:00" itemprop="datePublished" title="27 June 2021">27 June 2021</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p>I hear no a lot. No, that's not in scope for this story. No, it's not worth fixing that now. No, that's not risky enough for you to spend time testing. Hearing no on a good day sparks my creativity and pushes me into more valuable directions. On a bad day, it makes me wonder why I should keep going. </p>
-<p>Saying no in a good way takes practice. I've honed this skill with wisdom from some of the best. Elisabeth Hendrickson tweeted <a href="https://twitter.com/testobsessed/status/1361844997276930049">a list of some of the different ways she has of saying no</a>. It reminded me that the <a href="https://twitter.com/ezagroba/status/1376971216653856770">sassy replies</a> I send to recruiters and speaking engagements in which I have no interest or connection. If you're looking for a style that builds bridges rather than burns them down, I'd recommend Elisabeth's Hendrickson's examples, not mine. </p>
-<p>At Let's Test in Sweden in 2016, Fiona Charles gave a workshop on Learning to Say No. We practiced different ways to say no, complete with supporting arguments and steadfast determination tailored to the real-life situations participants brought to the workshop. (In a demonstration of having embraced the message of the workshop, we disbanded halfway through the allotted time. I spent the rest of the afternoon on a memorable bike ride along the Swedish coast.) The strongest revelation from the group was: we have more power than we think we do. There may be consequences to saying no, refusing a particular task, or turning down an opportunity, but it's often within our power to do so. Saying no effectively makes room you to decide how to spend your time.</p>
-<p>At Agile Testing Days in 2018, Liz Keogh gave a keynote on <a href="https://www.youtube.com/watch?v=KvKFlMfEqxM">how to tell people they failed (and make them feel great)</a> that culminated in a surprising conclusion: don't. Don't tell people they failed. Use positive reinforcement to encourage the behaviors you want to see, and the others will fall away. </p>
-<p>We had a tester leave the company recently. They'd set goals with their manager that directly opposed the test strategy I helped them shape. Bugs they reported were shot down, postponed until future stories, or grouped together as issues to be fixed eventually someday. They were facing a lot of "no," and as far as I could see from a different team, not a lot of yes. How long would you last in this situation?</p>
-<p>I also have a tester reporting to me at the moment. They've been catching tricky things, find bugs, and preventing problems. I want them to keep doing what they're doing. I get that a developer's first reaction when they hear about a bug might not be "Oh wow, thank you so much for this pile of questions and work!" I have to give them that positive reinforcement so they keep reporting and digging into issues, so I call it out in their 1-on-1. They thank me, and says it keeps them going. </p>
-<p>Don't shoot the messenger. Praise the messenger. </p>
-<blockquote class="twitter-tweet">
-<p lang="en" dir="ltr">Tired: Don't shoot the messenger.<br><br>Wired: Encourage and support the messenger, so they are motivated to keep bringing you messages.</p>— Elizabeth Zagroba (@ezagroba) <a href="https://twitter.com/ezagroba/status/1403356865694683137?ref_src=twsrc%5Etfw">June 11, 2021</a>
-</blockquote>
-
-<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-<p>Who are you saying no to frequently? Is your no driving them away, or encouraging them? Do you need to say no? </p>
-<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2021/sign.jpg" style="display:block; margin-left: auto; margin-right: auto;" title="If you were waiting for a sign - this is it."><span class="img_caption" style="display: block; text-align: center;">If you were waiting for a sign - this is it.</span></span></p>
-</div>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/delivering_information_vs_delivering_meta_information/" class="u-url">Delivering Information vs. Delivering Meta-Information</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Elizabeth Zagroba
-            </span></p>
-            <p class="dateline">
-            <a href="posts/2021/delivering_information_vs_delivering_meta_information/" rel="bookmark">
-            <time class="published dt-published" datetime="2021-06-20T00:00:00+02:00" itemprop="datePublished" title="20 June 2021">20 June 2021</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p>One of the first testing skills I built was <a href="https://elizabethzagroba.com/posts/2014/2014-02-24_writing-clear-and-effective-bug-reports/">bug reporting</a>. I practiced narrowing down the steps to reproduce. I told my developers what was happening now and what should happen instead. I learned to include where the issue was occurring, so my developers would stop closing my bugs with the <code>Works for me</code> resolution in Trac. </p>
-<p>In 2013, <a href="https://twitter.com/PaulHolland_TWN">Paul Holland</a> taught me to tell the story of my testing. That is, meta-information about my testing. Sure, I still reported the outcomes: these things didn't work, these things did. But I also reported:</p>
-<ol>
-<li>how I tested the product</li>
-<li>how good that testing was</li>
-</ol>
-<p>How long did it take me to test? What was difficult about my testing, made it difficult to get started, or slowed it down? What wasn't I able to test? The reason we tell those stories is to help uncover product risks, process risks, and get help from those around us to solve the issues. </p>
-<p>This is meta-information about my testing. It's what I'm seeing as I'm doing it, one level removed from the actual testing itself. (Look up <code>testopies</code> [testing + autopsy] for more on gathering meta-level information about your testing.) </p>
-<p>Building the skills around meta-information are important for doing any job well. These skills include:</p>
-<ol>
-<li>identifying when you're communicating at the information level, or the meta-level</li>
-<li>switching between and keep track of whether you're communicating at the information level or meta-level</li>
-<li>naming the different levels, and bringing the people you're communicating with on this level-switching journey</li>
-</ol>
-<p>These recent examples stick in my mind.</p>
-<hr>
-<h4>Addresing the question vs. addressing the miscommunication</h4>
-<p>I was interviewing a candidate for a Software Development Manager position. For about a half hour, every question proceeded more or less like this:</p>
-<ol>
-<li>I'd ask a question.</li>
-<li>The candidate would speak for a minute or a few, without answering the question.</li>
-<li>I'd rephrase the question, be more specific, or add more details to help the candidate understand the question<sup id="fnref:1"><a class="footnote-ref" href="posts/2021/delivering_information_vs_delivering_meta_information/#fn:1">1</a></sup>.</li>
-<li>The candidate would speak again, again not answering the question.</li>
-<li>I'd try once or twice more, before moving on to the next question. </li>
-</ol>
-<p>I realized early on that this was happening. I consider it an essential skill to be able to answer a question directly, or identify when you're having trouble doing that, as a Software Development Manager. I decided I'd reject the candidate, but realized I'd still have to get through the rest of this hour with them.</p>
-<p>My colleague, my co-interviewer, took a different approach. He called out the miscommication problem to the candidate! He said "Elizabeth is asking you questions, and you're not answering them. Did you notice that? Why is that?" It was direct in a way that made me uncomfortable, and that I would have trouble doing with someone I just met. But he moved the conversation to where it needed to be: the meta-level. The candidate struggled to answer this question as well.</p>
-<p>I jumped in to ease the awkwardness. I offered up my theory: the candidate's responses weren't answers, they were the candidate agreeing with the premise of the question. My colleague completely agreed, thanked me for contribution, but politely redirected the burden of this problem onto the candidate. The candidate continued to struggle without acknowledging the issue or the awkwardness for the rest of the interview. It was a clear decision for both me and my colleague: we would not be hiring this person.</p>
-<h4>Difficulty scheduling a meeting vs. telling them that</h4>
-<p>I was asking for more details on the planning of a project in standup. My developer described how hard it was to find time with a particular developer on another team. They said the project was going to take weeks to scope instead of the days they thought it could take, if only they could find time with this person. The project seemed important, already had a deadline (or really, sadline<sup id="fnref:2"><a class="footnote-ref" href="posts/2021/delivering_information_vs_delivering_meta_information/#fn:2">2</a></sup>), and waiting until the next free spot on this person's calendar wasn't working. </p>
-<p>I asked my developer "Have you given his this feedback directly?" I suspected that only the information had been communicated: the following meeting would have to wait a week. My hunch was correct. I suggested my developer try giving this person the meta-information: about how hard they were to schedule, how this was cutting into the time we had to work on the project once it was scoped, and how that threatened the deadline. Imagine how differently this person could react and rearrange what they were doing, or share their relative priorities so we could adjust our expectations, when given this meta-information. This was last week, so I don't know yet how this story ends!</p>
-<h4>Adding testing details to the story vs. why I'm asking for them</h4>
-<p>There was a user story about being able to send metrics from our application to another application. I was picking up the testing on the story. My developer said they'd confirmed in the other application that our metrics were sent. They'd only sent a success, so I was planning on using the same setup as they did to look in the other application, but see what a failure looked like instead. </p>
-<p>But that's not what I told my developer. What I said to them was: "Add enough details to the ticket so I can test it." It turned out, we had different ideas about what <code>enough</code> meant. First they added a URL. I followed the URL and it went to a blank page with a header. I said the same thing again, "Add enough details to the ticket so I can test it." They wrote down the first button they had to click on. I asked a third time. They added one more detail, which still didn't tell me enough. But I got tired of asking. I tried all the options in the application, Googled to figure out what SQL query I needed, executed it, triggered a variety of different failures, and confirmed that they were received. </p>
-<p>Later, I explained to my developer the difference between my expectations and what they wrote. They explained how their expectations were also violated: they had to reach out to the team from the other product, figure out what to do, poke around in the product, and that the details they left me were all they received to be able to eventually figure it out. To them, just the URL going to a blank screen was <code>enough</code><sup id="fnref:3"><a class="footnote-ref" href="posts/2021/delivering_information_vs_delivering_meta_information/#fn:3">3</a></sup>. </p>
-<p>I realized then that I had left out a crucial piece of meta-information: the reason I was asking for the details. I wanted to skip that poking around time. I had ten other tasks this day, and expected this to only take 20 minutes instead of the few hours it ended up taking. I was hoping to benefit from the poking around work my developer had already done. I was expecting a lot of context, and my developer was expecting to only need to share a little bit of context.</p>
-<p>Once I shared this with them, they understood where the gap was between my expectations and theirs. </p>
-<hr>
-<p>The suggestion about scheduling difficulties, that was an easy conversation to have. The other two were quite difficult for me. They took patient, active listening. I had to keep asking myself if I'd been clear enough with my expectations. They definitely made me sweat. </p>
-<p>Moving between information communication and meta-level communication is a skill. It takes time, failure, reflection, and practice to do it. Doing it well is a leadership skill. <a href="https://app.thestorygraph.com/books/b15fe452-5b8e-49f5-9e0b-90da490b944c"><em>Crucial Conversations</em></a> helped me identify when it's worth working on the relationship with a person and investing in these conversations. You don't have to be managing people (as I am currently) to be building or using this skill. </p>
-<p>What meta-level conversations are you avoiding? Are there people where you find you're only able to communicate on an information level? Have you tried communicating with them on a meta-level? What would happen if you told them that's what you were trying?</p>
-<div class="footnote">
-<hr>
-<ol>
-<li id="fn:1">
-<p>In high-context cultures like the United States and the Netherlands, the deliverer assumes the burden of the miscommunication, not the receiver. There's more about this in <a href="https://app.thestorygraph.com/books/f0d396c1-fcd9-4beb-9538-4d11e04e3e1c"><em>The Culture Map</em></a>. <a class="footnote-backref" href="posts/2021/delivering_information_vs_delivering_meta_information/#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
-</li>
-<li id="fn:2">
-<p>A deadline is when somebody dies. Most things we call deadlines at work are just sadlines, in that people are alive but just sad when they're missed. Read more about it in <a href="https://lizkeogh.com/2017/08/31/reflecting-reality/">Liz Keogh's blog post</a>. <a class="footnote-backref" href="posts/2021/delivering_information_vs_delivering_meta_information/#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
-</li>
-<li id="fn:3">
-<p>My colleague is coming from a low-context culture. I'm coming from a high-context culture. You can read more examples of this in <a href="https://app.thestorygraph.com/books/f0d396c1-fcd9-4beb-9538-4d11e04e3e1c"><em>The Culture Map</em></a>, but it's the kind of non-fiction book that could have been a blog post, so just read the rest of this blog post instead? <a class="footnote-backref" href="posts/2021/delivering_information_vs_delivering_meta_information/#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
-</li>
-</ol>
-</div>
-</div>
-    </div>
     </article>
 </div>
 
         <ul class="pager postindexpager clearfix">
-<li class="next"><a href="index-5.html" rel="next">Older posts</a></li>
+<li class="next"><a href="index-6.html" rel="next">Older posts</a></li>
         </ul>
 <!--End of body content--><footer id="footer"><a href="https://twitter.com/ezagroba" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
 <a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
 <a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
 <a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-<a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
+<a href="https://app.thestorygraph.com/profile/e_z" target="_blank"><i class="fa fa-book-open"></i></a>
 <a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon" aria-hidden="true"></i></a>
-© 2021 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+© 2022 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
 Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
 <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0.</a>
 
@@ -496,9 +524,7 @@ Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola
         <script src="assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

@@ -8,7 +8,7 @@
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
 <link rel="canonical" href="https://elizabethzagroba.com/posts/2020/2020-09-21_finding_relevant_search_results/">
 <link rel="icon" href="../../../images/avatar.png" sizes="128x128">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="../../assets/fontawesome-5.13.0/css/all.css" rel="stylesheet">
@@ -36,10 +36,11 @@
 <!-- Menubar -->
 
 <nav class="navbar navbar-expand-md static-top mb-4
-navbar-dark bg-dark
+navbar-dark
+bg-dark
 "><div class="container">
 <!-- This keeps the margins nice -->
-        <a class="navbar-brand" href="https://elizabethzagroba.com/">
+        <a class="navbar-brand" href="../../../">
 
             <span id="blog-title">Elizabeth Zagroba: Software Tester</span>
         </a>
@@ -102,10 +103,9 @@ navbar-dark bg-dark
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>In his crafting time, one of our developers decided to fine-tune our search results. He added relevancy scoring to give weights to different text fields. It was my job to determine if the right results were turning up at the top of the list of search results. So I had to ponder: what made a search result relevant? </p>
+    <p>In his crafting time, one of our developers decided to fine-tune our search results. He added relevancy scoring to give weights to different text fields. It was my job to determine if the right results were turning up at the top of the list of search results. So I had to ponder: what made a search result relevant? </p>
 <p>First, I realized that feedback from our users is the best way to answer this question. Anything I could do to get this feature out into production, where we'd get real data about what people searched for, would be more valuable that brainstorming test cases for this feature. I set myself a timebox of two and a half hours, the rest of the afternoon on a day in a week filled with competing priorities. We'd agreed as a team ahead of time that I could determine the testing approach, and our product owner would decide what was or wasn't worth fixing before this feature went out. </p>
-<p>I saved the first 45 minutes of my timebox to research what people had to say about search relevancy. Surely I was not the first person contemplating this problem. Over on the Ministry of Testing Club forum, I found what seemed to be a promising title of a post. <a href="https://club.ministryoftesting.com/t/how-would-you-test-a-search-api/28027">It turned out a past Elizabeth from a year ago wrote it, and nobody had answered it satisfactorily in the intervening time</a>. 🤦‍♀️</p>
+<p>I saved the first 45 minutes of my timebox to research what people had to say about search relevancy. Surely I was not the first person contemplating this problem. Over on the Ministry of Testing Club forum, I found what seemed to be a promising title of a post. <a href="https://club.ministryoftesting.com/t/how-would-you-test-a-search-api/28027">It turned out a past Elizabeth from a year ago wrote it, and nobody had answered it satisfactorily in the intervening time</a>.</p>
 <p>After Duck-Duck-Go-ing some actual answers, I found a couple of resources from websites I've trusted and found fruitful in the past: <a href="https://alistapart.com/article/testing-search-for-relevancy-and-precision/">A List Apart</a> and <a href="https://www.philosophe.com/archived_content/search_topics/search_tests.html">philosophe.com</a>. A List Apart suggested honing in on a specific intent, searching for the queries users seek most frequently, and seeing how far those items fall from the top in the search results. The philosophe guidance about testing search gave me something deeper to consider: users shouldn't have to ponder the reasoning behind the search results. That was enough for me to develop some test cases. </p>
 <p>As I searched and adjusted the weights of various fields, plenty of normal things happened: setting the relevancy values to zero meant the result wasn't listed, multiple instances of the same word counted more than a single instance, and giving fields stronger weights caused their results to move up in the rankings. But as a bug magnet, I uncovered things that were both interesting to discover and outside the original scope of the story. </p>
 <p><span class="img_container" style="display: inline-block;"><img alt="" src="../../../images/posts/2020/log-of-zero.png" style="display:block; margin-left: auto; margin-right: auto;" title="Log of zero is negative infinity"><span class="img_caption" style="display: block; text-align: center;">Log of zero is negative infinity</span></span></p>
@@ -130,7 +130,6 @@ navbar-dark bg-dark
 <li>When the risk is low, let it go. </li>
 </ol>
 </div>
-    </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../../categories/exploratory-testing/" rel="tag">exploratory-testing</a></li>
             <li><a class="tag p-category" href="../../../categories/risk-based-testing/" rel="tag">risk-based-testing</a></li>
@@ -148,9 +147,9 @@ navbar-dark bg-dark
 <a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
 <a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
 <a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-<a href="https://www.goodreads.com/user/show/5444309-elizabeth" target="_blank"><i class="fab fa-goodreads"></i></a>
+<a href="https://app.thestorygraph.com/profile/e_z" target="_blank"><i class="fa fa-book-open"></i></a>
 <a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon" aria-hidden="true"></i></a>
-© 2021 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+© 2022 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
 Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
 <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0.</a>
 
@@ -164,9 +163,7 @@ Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola
         <script src="../../../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>
