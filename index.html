@@ -3,9 +3,9 @@
 " lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Elizabeth Zagroba: Software Tester">
+<meta name="description" content="Elizabeth Zagroba: Organizational Anarchist">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Elizabeth Zagroba: Software Tester</title>
+<title>Elizabeth Zagroba: Organizational Anarchist</title>
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
@@ -14,7 +14,7 @@
 <link rel="icon" href="images/avatar.png" sizes="128x128">
 <link rel="next" href="index-6.html" type="text/html">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link href="fontawesome-5.13.0/css/all.css" rel="stylesheet">
-<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2022/02_12_not_every_detail_matters/" type="text/html">
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><link rel="prefetch" href="posts/2022/02_27_strengthen_your_code_review_skills/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -28,7 +28,7 @@ bg-dark
 <!-- This keeps the margins nice -->
         <a class="navbar-brand" href=".">
 
-            <span id="blog-title">Elizabeth Zagroba: Software Tester</span>
+            <span id="blog-title">Elizabeth Zagroba: Organizational Anarchist</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -79,7 +79,103 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2022/02_12_not_every_detail_matters/" class="u-url">Not Every Detail Matters</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2022/02_27_strengthen_your_code_review_skills/" class="u-url">Strengthen Your Code Review Skills</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="posts/2022/02_27_strengthen_your_code_review_skills/" rel="bookmark">
+            <time class="published dt-published" datetime="2022-02-27T00:00:00+01:00" itemprop="datePublished" title="27 February 2022">27 February 2022</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>I spent my first two years at my current company getting my code reviewed and the following almost two years reviewing 3-10 merge requests per week. Our tech stack was in Python, with pytest as our test running, the requests library for API tests, and Selenium for browser tests, all hosted in our company's paid gitlab instance. All that experience shaped how (and whether I) offer feedback on the merge requests I reviewed for members of my own team and neighboring teams working in the same tech stack.</p>
+<h3>Define the relationship.</h3>
+<p>There are power dynamics at play in any relationship at work. For members of my team, they had to have a really good argument to refute one of my "suggestions" because I was their test specialist <em>and</em> their team lead evaluating their ability to respond to feedback and change their behavior by performance review time. No pressure!</p>
+<p>For members of other teams, they had more power to push back. It could empower them with the knowledge I shared, but they were free to reject it. </p>
+<h3>Focus on what matters.</h3>
+<p>When I review a merge request, I start with the question "what is this code supposed to do?" If it's a merge request for my team, the JIRA ticket number in the title or the branch name would clue me in. For code from other teams, champions would use the description field to explain what the product change was and how the test code supported that. Most merge requests left me guessing a bit. I'd have to read the code contained in the tests to figure out what the test, and ultimately the product, was supposed to do.</p>
+<p>Reading the code also got me thinking about the things I was best equipped to help the code submitter with: maintainability and "what if?" scenarios. As a tester, I could look at a list of tests that create, read, and delete a thing and ask "is update also part of the picture here?" As a code reviewer with a longer tenure at the company, I had a more informed view of whether copy and pasting would work or if a new function was needed.</p>
+<p>We had two linters set up to run on every commit: flake8 covered style enforcement (indentation, blank lines, etc.) and vulture identified unused code. For issues of style that a machine couldn't decide, we had written guidelines to point to. I pointed to these three the most often:</p>
+<ol>
+<li>comments explain why the code is the way it is, not what it does (so code is clearer to read and update)</li>
+<li>setup and teardown should take place outside the test (so pytest reporting tells you there's an <code>error</code> instead of a <code>failure</code> when something's off)</li>
+<li>API tests assert the status code before any details about the response body (because the body's not going to have the right stuff in it anyway if the status code is wrong)</li>
+</ol>
+<p>I would give feedback about these topics, trying to ask questions to disambiguate my observations from interpretations. I knew that the person who'd written the code had spent more time and thought steeped in the problem than I had. Questions allowed me to assume competence while gathering evidence to the contrary. </p>
+<p>As I read other people's code, I saw lots of weird stuff: stuff I would name differently, stuff I would put in a different order, stuff that took up more or fewer lines than I would have to write the same thing. My experience living in a non-native English speaking culture served me well here: I let it go. Was the test name meaningful to them and their team? Did putting it across a couple more lines help them understand it better? Was it actually a problem with what the code did or just a personal opinion? Did they want to set the constant right before they used it instead of at the top? Go for it! It works, I can understand what they meant, and that should be the threshold. My review was not an opportunity for me to show off my Python skills. I was there to help the code submitter with their tests. I reserved the right to remain silent on unimportant matters. </p>
+<h3>Communicate well.</h3>
+<h4>Praise the good!</h4>
+<p>Notice when people have done something well and praise them for it! Positive reinforcement is the best way to turn up the good on what's already happening in your code base.</p>
+<h4>Right level of abstraction</h4>
+<p>I reviewed merge requests that were 30% done that I mistook for 100% done; conversely I saw at 110% done that I would have killed at 30%. A little [WIP] label in the name of the merge request or bullet list of which tests were still missing helped me offer the code submitter the right kind of feedback at the right time. </p>
+<p>Sometimes, the code isn't the problem, the product is. I've seen a 500 http status code returned for something the user screwed up, which should be in the 400-range. A code comment "Should this be a 400 response?" opened up a more interesting conversation about where the product was in its lifecycle and the code submitter could lobby their team to change the product's behavior.</p>
+<p>If having the conversation about the code isn't the right approach, I tried having <a href="https://elizabethzagroba.com/posts/2021/delivering_information_vs_delivering_meta_information/">the meta-conversation</a> instead. "I'm not convinced this API spec is done. Where are you in that process?"</p>
+<p><span class="img_container" style="display: inline-block;"><img alt="" src="images/posts/2022/wtf.png" style="display:block; margin-left: auto; margin-right: auto;" title="Code quality measurement: WTFs/minute"><span class="img_caption" style="display: block; text-align: center;">Code quality measurement: WTFs/minute</span></span></p>
+<h4>Right format</h4>
+<p>Tone is hard in writing. I do prefer writing, because it gives me the opportunity to have several drafts, separating my WTFs-per-minute from what the code submitter receives. I just don't always hit send. Before leaving a comment on a particular line in gitlab, I ask myself: is this the right format? Have I removed any judgy adverbs like "just", "obviously", or "actually"? Would a video call, a Slack message, or a comment on the whole merge request be more likely to be embraced?</p>
+<h4>The receiving</h4>
+<p>One of the many tough things about feedback is that the receiver determines the priority of the feedback. (For all the other tough things about feedback, read <a href="https://app.thestorygraph.com/books/15270135-7360-4e66-b079-4cbd618dfb76"><em>What Did You Say? The Art of Giving and Receiving Feedback</em></a>.) The code submitter often completely miss what I meant the first time. Even if I thought I'd delivered my feedback as well as I could have, it wasn't always accepted. Everyone extracts different information from the same situation. The feedback that provides the most information can be the hardest to accept.</p>
+<h3>It doesn't have to be like this.</h3>
+<h4>Asynchronous</h4>
+<p>You may have read my first paragraph and asked yourself "why is she doing so many async code reviews?" and you'd be right! The company was scaling at a speed that I was forced to optimize for "number of minutes per day without video calls" over shared understanding.</p>
+<h4>Synchronous</h4>
+<p>Did you know that working in a pair or an ensemble can do all this feedback and knowledge-sharing stuff in a better way? See more about how an ensemble made learning happen in <a href="https://ezagroba.github.io/mob-testing/">this slide deck</a>. </p>
+<p>When I was able to, having a conversation helped me make sure that I was giving the right feedback at the right time to the right person. Pairing with the code submitter got not only the mistakes fixed, but also the thought processes behind those mistakes.</p>
+<p><img alt="" src="images/posts/2022/two_birds.jpg"></p>
+<h3>Don't take my word for it.</h3>
+<p>I have the benefit of learning from smart people who are also thinking through what code reviews are and what they can be. I have yet to be free at a time when <a href="https://github.com/neontribe/code-reading-club/">the code reading club</a> Felinne Hermans started has met, but I look forward to joining sometime in the future. Here is a collection resources that I've already found useful:</p>
+<h4>Videos</h4>
+<ul>
+<li>Sarah Mei on <a href="https://www.youtube.com/watch?v=YL-6RCTywbc">The Power of Agile</a>
+</li>
+<li>Nina Zakharenko on <a href="https://www.youtube.com/watch?v=6L3ZVLtSeo8">Code Review Skills for Pythonistas</a>
+</li>
+<li>Sasha Laundy on <a href="https://www.youtube.com/watch?v=hY14Er6JX2s">Giving and Getting Technical Help</a>
+</li>
+</ul>
+<h4>Books</h4>
+<ul>
+<li><a href="https://app.thestorygraph.com/books/15270135-7360-4e66-b079-4cbd618dfb76"><em>What Did You Say? The Art of Giving and Receiving Feedback</em></a></li>
+<li><a href="https://app.thestorygraph.com/books/b15fe452-5b8e-49f5-9e0b-90da490b944c"><em>Crucial Conversations: Tool for Talking When Stakes Are High</em></a></li>
+</ul>
+<h4>Blog posts</h4>
+<ul>
+<li>Michaela Greiler on <a href="https://www.michaelagreiler.com/respectful-constructive-code-review-feedback/">giving respectful code reviews</a>
+</li>
+<li>Michaela Greiler on <a href="https://www.michaelagreiler.com/accept-code-review-feedback/">how to handle criticism during code reviews</a>
+</li>
+<li>Jessica Joy Kerr on <a href="https://jessitron.com/2021/03/27/those-pesky-pull-request-reviews/">those pesky code reviews</a>
+</li>
+<li>Angie Jones with <a href="https://angiejones.tech/ten-commandments-code-reviews/">the 10 commandments of navigating code reviews</a>
+</li>
+<li>Lucas Rocha on <a href="https://lucasr.org/2011/01/29/micro-commits/">microcommits</a>
+</li>
+</ul>
+<h4>Quotes found on Twitter</h4>
+<ul>
+<li>April Wensel on <a href="https://twitter.com/maaretp/status/1024995595973525510">compassionate code review</a>
+</li>
+<li>Patricia Aas on the <a href="https://twitter.com/pati_gallardo/status/1373343835330383878">zero-trust process</a>
+</li>
+<li>Michaela Greiler on how <a href="https://twitter.com/mgreiler/status/1482247806798733317">everybody needs an editor</a>
+</li>
+<li>Michaela Greiler <a href="https://twitter.com/mgreiler/status/1481902327640608770">thread on the biggest annoyances during code reviews</a>
+</li>
+<li>Amy Edmondson on <a href="https://twitter.com/AmyCEdmondson/status/1476198824012136460">psychological safety</a>
+</li>
+<li>Jerry Weinberg on <a href="https://twitter.com/mstine/status/1481660769456513029">egoless programming</a>
+</li>
+<li>Allen Holub on <a href="https://twitter.com/allenholub/status/1491168642586710016">async code reviews</a>
+</li>
+<li>Allen Holub on <a href="https://twitter.com/allenholub/status/1482564778149175298">inspecting quality in</a>
+</li>
+</ul>
+<hr>
+<p>Photo by <a href="https://unsplash.com/@robinmathlener?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Robin Mathlener</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2022/02_12_not_every_detail_matters/" class="u-url">Not Every Detail Matters</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Elizabeth Zagroba
@@ -448,56 +544,6 @@ bg-dark
 <p>A colleague once declared me the "queen of cutting people off" because I did so very politely. I have a compliment stickie note from "ruling refinement with an iron fist." We should all be so lucky to have our work appreciated this way.</p>
 <p>For more on meta-information, see <a href="https://elizabethzagroba.com/posts/2021/delivering_information_vs_delivering_meta_information/">this post</a>. For more on setting agendas and preparing for meetings to make them effective, see <a href="https://j19sch.github.io/slides/atd2020-making-meetings-work.html">this deck</a>.</p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2021/that_i_did_it_feeling/" class="u-url">That "I Did It!" Feeling</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Elizabeth Zagroba
-            </span></p>
-            <p class="dateline">
-            <a href="posts/2021/that_i_did_it_feeling/" rel="bookmark">
-            <time class="published dt-published" datetime="2021-10-09T00:00:00+02:00" itemprop="datePublished" title="09 October 2021">09 October 2021</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>I moved into a different role at work this week. I handed off my former team to the new team lead with a final 1-on-1 (and coincidentally performance review) for each team member. Each of them has a different variety of skills, motivators driving them, and awareness of either. This blog post focuses on just one team member. </p>
-<h3>"I did it!"</h3>
-<p>One team member is really driven by that "I did it!" feeling. They're early in their career. Both the product and the company are new to them. They spend a lot of their time pairing, asking for help, or floudering while wondering if they should be pairing or asking for help. Every 1-on-1, they'd report feeling that they hadn't learned or accomplished anything. They weren't getting that "I did it!" feeling.</p>
-<p>But they were doing a great job. They were making progress in all the different technologies our team uses (Mendix, Docker, OpenAPI, pytest, gitlab pipelines, etc.), learning as they went. They were able to accept feedback to course-correct when necessary. They knew they were learning a lot, but this alone wasn't motivating enough for them.</p>
-<h3>Forces within our control</h3>
-<p>As a team lead, part of my job was to create focus for my team. There was a cloud of possibilities and priorities the people around and above us struggled to make clear. I wanted to create an environment where my team members could still get that "I did it!" feeling anyway. This Liz and Mollie comic captures it nicely. </p>
-<p><span class="img_container" style="display: inline-block;"><img alt="A great manager holds umbrella to protect team from ridiculous requests, unclear priorities, massive uncertainty, unneccessary meetings, last-minute chaos; and foster clear expectations, defined roles, work-life balance, stable achieveable goals" src="images/posts/2021/liz-and-mollie-umbrella.jpg" style="display:block; margin-left: auto; margin-right: auto;" title="@lizandmollie"><span class="img_caption" style="display: block; text-align: center;">@lizandmollie</span></span></p>
-<p>Amid this uncertainty, my team member requested  clear steps for what they should be doing next and how to get promoted. I started by sending them the job description they hadn't seen for his own job. This helped set clear expectations and define their role. I spent time in our 1-on-1's finding out more about what was on their mind or dragging their attention away from work. </p>
-<p>I took the time to reinforce the importance of a work-life balance. We started every refinement meeting with a review of upcoming time off, complete with peer pressure from me to take more of it. This allowed us to only refine the amount of work we could accomplish in the upcoming period, and set expectations for what wouldn't be done. This helped scope and clarify each team member's job. </p>
-<p>I tried to give all my team members the "I did it!" feeling by talking about what we accomplished at the smallest scale in standup, a slightly larger scale in retro, and on the largest scale in the meeting with the whole unit. But that wasn't helping this particular team member. </p>
-<p>The thing that finally gave them that "I did it!" feeling was: a Trello board for their own personal career development, with To Do, Doing, and Done columns. </p>
-<h4>To Do</h4>
-<p>We identified a clear, actionable step to take for a few technologies, job description bullet points, and conversations we'd already been having in our 1-on-1's. Some items would be accomplished during the course of our regular work on user stories. I set a clear expectation about the other items: they were for work time - downtime while waiting for a response, crafting days, etc. They were not for personal time.</p>
-<h4>Doing</h4>
-<p>I explained that it's better to limit the number of items in this column at a time. Deciding what to leave aside allows you to focus on what's in front of you. My team member want to be an expert in all our of different technologies at once. I reset this expectation: get a little better, one at a time.</p>
-<h3>Done</h3>
-<p>I gave them homework to fill in the Done column. They took time to list things they had learned and accomplished in the previous months. Scrolling through the Done list got them pretty close to that "I did it!" feeling. Taking a moment to reflect during our 1-on-1's helped give them that feeling. But they weren't getting that feeling right away. They needed to celebrate their accomplishments as they were happening, to keep up the motivation and momentum. </p>
-<p>I did what was possibly my best management move for this person: I threw confetti.</p>
-<p>Trello has a feature where if you add the confetti ball emoji to the title of a column, moving an item to that column throws a little confetti around the item. It's very cute, and it finally gave my team member that "I did it!" feeling. </p>
-<h3>Setting expectations around the feeling</h3>
-<p>In the handoff to the new team lead, I explained this need my team member had, the ways I'd tried to meet it, and the confetti ball that finally worked. I pointed out that the need for the "I did it!" feeling can be found in other ways. The important thing for the team lead is not a particular action, but checking in with the team member about the feeling. I wanted to leave them space to take a different approach, so I used the "Mary had a little lamb" heuristic to explain what a different approach should include. </p>
-<h4>
-<em>I</em> did it!</h4>
-<p>The team member wanted to point to something they did. Without pairing, without asking a bunch of questions, they wanted to point to something and know that they were able to accomplish it themselves. </p>
-<h4>I <em>did</em> it!</h4>
-<p>The thing had to be done. While some skills and knowledge transfer could be months or years in the making, they needed something to come to a close. </p>
-<h4>I did <em>it</em>!</h4>
-<p>The new team lead and the team member get to decide together what's on the list, what it is. Growth and comfort in skills may not be immediately visible to the invidual in the day-to-day grind. Setting aside time for individual reflection or recognition at the 1-on-1 would help. </p>
-<h4>I did it <em>!</em>
-</h4>
-<p>This is the confetti ball piece of the puzzle. The celebration. It may feel silly, or gimicky, but it finally got this person that satisfaction they were looking for out of their job. </p>
-<hr>
-<h3>Reflection</h3>
-<ul>
-<li>When managing, do you dig into what a person needs to have clear expectations, defined roles, work-life balance, and stable achieveable goals?</li>
-<li>When a team member asks you for an outcome, do you think about why they're asking you for that? </li>
-<li>When you do handoffs, do you describe the actions you took or the needs they were serving? </li>
-</ul>
-</div>
     </article>
 </div>
 

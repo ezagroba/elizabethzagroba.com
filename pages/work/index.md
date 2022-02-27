@@ -16,9 +16,9 @@ Quality Lead
 
 ### Bio
 
-Elizabeth is Quality Lead at [Mendix](https://www.mendix.com/) in Rotterdam. She reviews and contributes code to a Python test automation repository for 15+ teams building Mendix apps across three units. She builds exploratory testing skills by asking pointed questions throughout the unit, facilitating workshops, and coordinating an ensemble (mob) testing practice. She injects what she learns from conferences, books, and meetups into her daily work, and spreads her knowledge through the company-wide Agile guild she facilitates. She's presented at conferences throughout North America and Europe, and co-organizes the Friends of Good Software conference ([FroGS conf](http://frogsconf.nl/)). 
+Elizabeth is Quality Lead at [Mendix](https://www.mendix.com/) in The Netherlands. She discovers and fills in the gaps in exploratory testing by coordinating an ensemble (mob) testing practice, actively listening, and setting out to prove that when “it should just work” it actually does. She's the go-to person for thinking critically about what’s being built, creating a common understanding, supporting colleagues outside the prescribed management structure, and writing API tests and English effectively. 
 
-She coaches people to success when possible, but isn't afraid to direct when necessary. She's the go-to person for things like supporting new presenters, reviewing documentation, navigating tricky organizational questions, and thinking critically about what we're building. Her goal is to guide enough testers, leads, etc. to make herself redundant so she can take on new and bigger challenges. 
+She injects what she learns from books, conferences, and meetups into her daily work, spreading her knowledge through the workshops and Agile guild she facilitates. Her goal is to build enough skills in individuals and teams to make herself redundant. She’s currently serving as a co-organizer for the Friends of Good Software Conference ([FroGS Conf](https://frogsconf.nl/])) and program committee member for [Agile Testing Days](https://frogsconf.nl/). 
 
 You can find Elizabeth's big thoughts on this blog and little thoughts on [Twitter](https://twitter.com/ezagroba). 
 

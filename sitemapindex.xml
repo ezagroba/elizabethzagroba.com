@@ -7,206 +7,214 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/agile-testing-days.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/api-specs.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/apis.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/authentication.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/authorization.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/automation.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/bug-reporting.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/career.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/charters.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/coaching.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://elizabethzagroba.com/categories/code-review.xml</loc>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/communication.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/complaints.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/conference.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/critical-thinking.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/debugging.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/dependencies.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/development.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/dewt.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/doubt.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/exploratory-testing.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://elizabethzagroba.com/categories/feedback.xml</loc>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/git.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/handoff.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/humans.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/jira.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/leadership.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/logic.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/mac.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/meetings.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/mind-mapping.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/mindset.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/naming.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/note-taking.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/open-api.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/peer-conference.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/reporting.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/risk-based-testing.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/search.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/security.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/swagger.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/teaching.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/terminal.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/test-data.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/testbash.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/testbinge.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/testers.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/testing.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/trust.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/categories/webinar.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/galleries/rss.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/rss.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://elizabethzagroba.com/sitemap.xml</loc>
-  <lastmod>2022-02-13T18:49:00Z</lastmod>
+  <lastmod>2022-02-27T18:55:00Z</lastmod>
  </sitemap>
 </sitemapindex>

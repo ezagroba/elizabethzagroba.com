@@ -9,14 +9,9 @@
 - ensemble testing (mob testing)
 - exploratory testing
 - testing in devops
-- test reporting
 - API testing
 - communication
 - interviewing
-
-### Upcoming events
-
-- [FroGSConf](https://frogsconf.nl/), March 2022
 
 ### Past presentations
 
@@ -195,6 +190,7 @@
 
 - [Friends of Good Software [FroGS conf]](http://frogsconf.nl/) *organizer*
 	- September 2021
+	- March 2022
 - [TestCraftCamp](https://testcraftcamp.nl/) *organizer*
 	 - September 2019
 	 - September 2020
