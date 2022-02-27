@@ -18,7 +18,7 @@ import markdown
 
 # Data about this site
 BLOG_AUTHOR = "Elizabeth Zagroba"  # (translatable)
-BLOG_TITLE = "Elizabeth Zagroba: Software Tester"  # (translatable)
+BLOG_TITLE = "Elizabeth Zagroba: Organizational Anarchist"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://elizabethzagroba.com/"
@@ -26,7 +26,7 @@ SITE_URL = "https://elizabethzagroba.com/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://elizabethzagroba.com/"
 BLOG_EMAIL = "me@elizabethzagroba.com"
-BLOG_DESCRIPTION = "Elizabeth Zagroba: Software Tester"  # (translatable)
+BLOG_DESCRIPTION = "Elizabeth Zagroba: Organizational Anarchist"  # (translatable)
 
 # Nikola is multilingual!
 #
