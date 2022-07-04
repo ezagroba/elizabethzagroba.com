@@ -1,6 +1,6 @@
 .. title: Tell Your Colleagues About Your Work
 .. date: 02 April 2022
-.. tags: testing, conmmunication
+.. tags: testing, communication
 .. description: The work does not speak for itself. Testing is not like shelving books in a library. Being able to explain my work helps me collaborate.
 
 At the interview for my very first job at my hometown library, the librarian  recounted my work as a volunteer. In addition to reshelving the returned books, I'd put the books that were already on the shelves back in order. She asked if I had anything else to share. "No," I said. I let the librarian speak for me. My work spoke for itself. 
