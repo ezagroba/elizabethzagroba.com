@@ -33,9 +33,9 @@ I don't have any notes from what I said or what discussion occurred afterwards. 
 
 ## Duncan: Quality Centered Delivery
 
-Duncan showed a truly dazzling amount of data extracted and anonomized from his five teams' JIRA stats. In so doing, he was able to prove to the teams (after wading through their nit-picks and expections) that a huge proportion of their time was spent waiting: waiting for questions to get answered, waiting for code to get reviewed, waiting for feedback from the customer. Duncan deliberately dubbed this "wait" time to keep the focus on how the work was flowing rather than on optimizing for engineer busyness.
+Duncan showed a truly dazzling amount of data extracted and anonomized from his five teams' JIRA stats. In so doing, he was able to prove to the teams (after wading through their nit-picks and expections) that a huge proportion of their time was spent idle: questions in need of an answer, code in need of a review, customers with no one to hear their feedback. Duncan deliberately dubbed this "idle" time to keep the focus on how the work was flowing rather than on optimizing for engineer busyness.
 
-To shrink wait time, developers, testers, and the PM started working in an ensemble. Wait times dropped dramatically. The team kept a Slack call open all day for collaboration. One fateful day, the too-busy subject matter expert and too-busy client dropped into the call. Wait time plumeted to zero. The story of this particular success proliferated through the organization thanks to the praise from an influential developer on the team: development was fun again. 
+To shrink idle time, developers, testers, and the PM started working in an ensemble. Idle times dropped dramatically. The team kept a Slack call open all day for collaboration. One fateful day, the too-busy subject matter expert and too-busy client dropped into the call. Wait time plumeted to zero. The story of this particular success proliferated through the organization thanks to the praise from an influential developer on the team: development was fun again. 
 
 Duncan's was the one success story of the peer conference, though he was quick to point out that things could have changed after he left the assignment. 
 
