@@ -1,6 +1,6 @@
 .. title: From Crafting Project to Critical Infrastructure
 .. date: 18 June 2022
-.. tags: Python, apis, automation, code-review, testing
+.. tags: python, apis, automation, code-review, testing
 .. previewimage: /images/posts/2022/megaphone.jpg
 .. description: State explicitly what you hope to achieve and how much effort you're willing to spend getting there.
 
