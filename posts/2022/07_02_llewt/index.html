@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="LLEWT peer conference on how hard it is to really do testing as a whole team">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Llandegfan Exploratory Workshop on Testing | Elizabeth Zagroba: Organizational Anarchist</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../../rss.xml">
+<link rel="canonical" href="https://elizabethzagroba.com/posts/2022/07_02_llewt/">
+<link rel="icon" href="../../../images/avatar.png" sizes="128x128">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="../../assets/fontawesome-5.13.0/css/all.css" rel="stylesheet">
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101248614);</script><script async src="//static.getclicky.com/js"></script><meta name="author" content="Elizabeth Zagroba">
+<link rel="prev" href="../06_12_from_crafting_project_to_critical_infrastructure/" title="From Crafting Project to Critical Infrastructure" type="text/html">
+<link rel="next" href="../07_30_the_power_of_separating_setup_and_teardown_from_your_tests/" title="The Power of Separating Setup and Teardown From Your Tests" type="text/html">
+<meta property="og:site_name" content="Elizabeth Zagroba: Organizational Anarchist">
+<meta property="og:title" content="The Llandegfan Exploratory Workshop on Testing">
+<meta property="og:url" content="https://elizabethzagroba.com/posts/2022/07_02_llewt/">
+<meta property="og:description" content="LLEWT peer conference on how hard it is to really do testing as a whole team">
+<meta property="og:image" content="https://elizabethzagroba.com/images/posts/2022/snowdonia.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-07-02T00:00:00+02:00">
+<meta property="article:tag" content="LLEWT">
+<meta property="article:tag" content="peer-conference">
+<meta property="article:tag" content="testing">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ezagroba">
+<meta name="twitter:creator" content="@ezagroba">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+
+            <span id="blog-title">Elizabeth Zagroba: Organizational Anarchist</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <div class="dropdown-menu">
+                    <a href="../../../archive.html" class="dropdown-item">Archive</a>
+                    <a href="../../../categories/index.html" class="dropdown-item">Tags</a>
+                    <a href="../../../rss.xml" class="dropdown-item">RSS feed</a>
+            </div>
+                </li>
+<li class="nav-item">
+<a href="../../../pages/work" class="nav-link">Work</a>
+                </li>
+<li class="nav-item">
+<a href="../../../pages/speaking" class="nav-link">Speaking</a>
+                </li>
+<li class="nav-item">
+<a href="../../../pages/resources" class="nav-link">Resources</a>
+
+                
+            </li>
+</ul>
+<!-- DuckDuckGo custom search --><form method="get" id="search" action="https://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="https://elizabethzagroba.com/"><input type="hidden" name="k8" value="#444444"><input type="hidden" name="k9" value="#D51920"><input type="hidden" name="kt" value="h"><input type="text" name="q" maxlength="255" placeholder="Search" class="span2" style="margin-top: 4px;"><input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">The Llandegfan Exploratory Workshop on Testing</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Elizabeth Zagroba
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2022-07-02T00:00:00+02:00" itemprop="datePublished" title="02 July 2022">02 July 2022</time></a>
+            </p>
+            
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>An adventurous band of brave souls gathered in the northwest of Wales on the week of a transit strike in the United Kingdom. The topic: whole team testing. The conclusion: even the experts have trouble doing it well. </p>
+<p>The peer conference format was apt for exploring mostly failure. Brief experience reports proved ample fodder for in-depth discussions of the circumstances and reflections on possible alternatives. It's better to reflect on your less-than-successful work with your troubleshooting-inclined  peers than it is with your colleagues. </p>
+<hr>
+<h3>Ash: When "Whole Team Testing" becomes "Testing for the Whole Team"</h3>
+<p>First up was Ash Winter with a story of culture clash between Ash and the teams he help guide in their testing (<em>cough</em> did all the testing for <em>cough</em>). Ash discovered over the course of his six-month contract that getting everyone to nod along to his suggestions of having unit tests, API integration tests, front-end tests, limited end-to-end tests, and exploratory tests was completely different from agreeing on what those were or building the habits on the teams to make them happen. Saying the words "sensible journeys" and "meaningfully testable" wasn't meaningful at all. </p>
+<p>By being a white man who looked the part, it was easy to get invited to the right meetings and seen as the authority. (How wonderful to be able to have a group all share in how outrageous this is compared to the experience other people have!) Ash was seen as an authority for all testing decisions, so teams looked to him rather than thinking for themselves. </p>
+<p>Upon reflection, Ash acknowledged he would have done better to slow down and understand the expectations of the project before jumping in with prescriptions from his consulting playbook. The teams needed to know what habits to build day-to-day instead of receiving what must have sounded like prophesies from the future. </p>
+<h3>Sanne: Problem Preference</h3>
+<p>In listening to a <a href="https://app.thestorygraph.com/books/08f5dd67-b24a-436e-b46f-f5b3566fe44a">book-that-could-have-been-a-blog-post</a>, Sanne came across the question: "How have you chosen the kinds of problem you pick up?" It made her think about her preference for focusing team habits and communication so she could bring underlying issues to the surface. She's got a predisposition to be proactive and will run at a problem a hundred different ways if you let her.</p>
+<p>On her new assignment, Sanne wants to let the team do the work instead of trying to do it all herself. So she's taking a radical step: she doesn't have access to the test environment. Her goal is to leave a legacy behind at the companies she works for, but it's too soon at her current assignment to evaluate how that will pan out.</p>
+<h3>Yours Truly: This Diagram Asked More Questions Than It Answered</h3>
+<p>I told the story of <a href="https://elizabethzagroba.com/posts/2022/01_16_this_diagram_asked_more_questions_than_it_answered/">this blog post</a>, with an addendum: I made a similar diagram for a different product that came in handy on the project I'm currently jumping into. </p>
+<p>It was a great delight to hear my peers admire the middle of my three diagrams, the one deemed unprofessional and literally laughed at by my colleagues. Sometimes the complexity of the model gets reveals more about the complexity of the situation than a clean, organized model does. </p>
+<p>I don't have any notes from what I said or what discussion occurred afterwards. Perhaps another participant's blog post will cover that bit in the coming weeks.</p>
+<h3>Duncan: Quality Centered Delivery</h3>
+<p>Duncan showed a truly dazzling amount of data extracted and anonomized from his five teams' JIRA stats. In so doing, he was able to prove to the teams (after wading through their nit-picks and expections) that a huge proportion of their time was spent idle: questions in need of an answer, code in need of a review, customers with no one to hear their feedback. Duncan deliberately dubbed this "idle" time to keep the focus on how the work was flowing rather than on optimizing for engineer busyness.</p>
+<p>To shrink idle time, developers, testers, and the PM started working in an ensemble. Idle times dropped dramatically. The team kept a Slack call open all day for collaboration. One fateful day, the too-busy subject matter expert and too-busy client dropped into the call. Wait time plumeted to zero. The story of this particular success proliferated through the organization thanks to the praise from an influential developer on the team: development was fun again. </p>
+<p>Duncan's was the one success story of the peer conference, though he was quick to point out that things could have changed after he left the assignment. </p>
+<h3>Vernon: How could I, Vernon, "The Quality Coach" Richards, make communication mistakes?!</h3>
+<p>It was a delight to get into the nitty-gritty details of a story that Vernon conflated and glossed over a bit in <a href="https://agiletestingdays.com/2021/session/what-does-the-coach-in-quality-coach-mean/">his keynote at Agile Testing Days in 2021</a>. And to see the relationship repaired and strengthened in real-time with a colleague who witnessed what went down. (I'm <a href="https://twitter.com/ezagroba/status/1540454855218708486">just here for the gossip</a>, clearly.) </p>
+<p>A colleague asked a tester to create a release plan for the team by themselves. As the tester's manager, Vernon thought this was an outrageous way to "collaborate". Without spending time to understand the colleague's context, beginning from a place of unconditional positive regard (as coaches are meant to), or verifying his approach with his own boss, Vernon went on the war path against this "bully".</p>
+<p>Remarkably, escalation and accusation did not solve the problem at hand: the tester didn't have the skills to build a test plan. Nor did Vernon's outrage address the real problem: there wasn't alignment at the organization about what the biggest fire was. Vernon wishes now that he'd protected his 1-on-1 time with his direct reports, and empowered them to address the situation rather than doing it for them.</p>
+<hr>
+<p>In summary, it is not easy, straightforward, or simple to get a whole team to test. </p>
+<p><span class="img_container" style="display: inline-block;"><img alt="" src="../../../images/posts/2022/snowdonia.jpg" style="display:block; margin-left: auto; margin-right: auto;" title="Our lunch walk with a view of Snowdonia"><span class="img_caption" style="display: block; text-align: center;">Our lunch walk with a view of Snowdonia</span></span></p>
+<p>A note about the surroundings for this gathering: spectacular. It was an 13-hour journey of four trains, one bus, and one bike to get back home, but it was worth it to be transported to views of Snowdonia National Park, a small town where the Welsh language holds a stronger footing than I expected, and a small group willing to make the same trek to geek out. </p>
+<p>Many thanks to <a href="https://twitter.com/choibot">Chris Chant</a>, <a href="https://www.instagram.com/alisonmureillustrates/">Alison Mure</a>, and <a href="https://twitter.com/j19sch">Joep Schuurkes</a> for making this conference possible, well-facilitated, and parent-friendly. Many thanks to my fellow participants: Ash Winter, <a href="https://twitter.com/SimplySanne">Sanne Visser</a>, <a href="https://twitter.com/DuncNisbet">Duncan Nisbet</a>, <a href="https://twitter.com/TesterFromLeic">Vernon Richards</a>, <a href="https://twitter.com/gwendiagram">Gwen Diagram</a>, and <a href="https://twitter.com/mutantsounds">Jason Dixon</a> for being my peers. And <a href="https://twitter.com/beemure">B. Mure</a> for listening well enough to capture <a href="https://twitter.com/choibot/status/1542940993548423168">some of the goofy things I said</a>. </p>
+<p>I look forward to making the trek again in the future. </p>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/llewt/" rel="tag">LLEWT</a></li>
+            <li><a class="tag p-category" href="../../../categories/peer-conference/" rel="tag">peer-conference</a></li>
+            <li><a class="tag p-category" href="../../../categories/testing/" rel="tag">testing</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../06_12_from_crafting_project_to_critical_infrastructure/" rel="prev" title="From Crafting Project to Critical Infrastructure">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../07_30_the_power_of_separating_setup_and_teardown_from_your_tests/" rel="next" title="The Power of Separating Setup and Teardown From Your Tests">Next post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer"><a href="https://twitter.com/ezagroba" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+<a href="https://www.linkedin.com/in/ezagroba/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+<a href="https://github.com/ezagroba" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+<a href="https://getpocket.com/@9b7TbAd9gtTk0p78b5db22ada1pTgyj954byf8p770kRW3IZ220x4n8ad08qVbd1" target="_blank"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+<a href="https://app.thestorygraph.com/profile/e_z" target="_blank"><i class="fa fa-book-open"></i></a>
+<a href="https://mas.to/@ezagroba" target="_blank"><i class="fab fa-mastodon" aria-hidden="true"></i></a>
+© 2022 <a href="mailto:me@elizabethzagroba.com">Elizabeth Zagroba</a>. 
+Powered by <a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. 
+<a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License 2.0.</a>
+
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

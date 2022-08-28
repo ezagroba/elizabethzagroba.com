@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Elizabeth Zagroba: Organizational Anarchist (Posts about pytest)</title><link>https://elizabethzagroba.com/</link><description></description><atom:link href="https://elizabethzagroba.com/categories/pytest.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>© 2022 &lt;a href="mailto:me@elizabethzagroba.com"&gt;Elizabeth Zagroba&lt;/a&gt; Mozilla Public License 2.0</copyright><lastBuildDate>Sun, 28 Aug 2022 14:47:48 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The Power of Separating Setup and Teardown From Your Tests</title><link>https://elizabethzagroba.com/posts/2022/07_30_the_power_of_separating_setup_and_teardown_from_your_tests/</link><dc:creator>Elizabeth Zagroba</dc:creator><description>&lt;p&gt;This week, I was trying to find an explanation for my colleagues about when it's better to separate the setup and teardown of your tests from the test code itself. I was hoping that pytest's own documentation would have a recommendation, since our test code for this particular repository is written in Python with pytest as a test runner. Pytest does explain &lt;a href="https://docs.pytest.org/en/7.1.x/how-to/fixtures.html"&gt;many features of fixtures&lt;/a&gt;, and &lt;a href="https://docs.pytest.org/en/7.1.x/how-to/fixtures.html"&gt;what different test output can look like&lt;/a&gt;, but not the power of combining them. That's what I'd like to explain here. &lt;/p&gt;
+&lt;h3&gt;An example&lt;/h3&gt;
+&lt;p&gt;I can't show you the code I was looking at from work, so here is a relatively trivial and useless example I was able to contrive in an hour. (Sidebar: I once tested an address field that truncated the leading zeroes of post codes, so though this test may be trivial, testing that the post code made it to the database intact can provide value.)&lt;/p&gt;
+&lt;p&gt;There's an API called Zippopotamus that can either:
+1. take a city and state, and return you details about matching places; or
+2. take a post code, and return you details about matching places.&lt;/p&gt;
+&lt;p&gt;I've got two tests below, both trying to accomplish the same thing: see if all the post codes returned for the city of Waterville in the state of Maine also include Waterville in their results. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Setup: get list of post codes for Waterville, Maine&lt;/li&gt;
+&lt;li&gt;Test: for each post code, check that &lt;code&gt;Waterville&lt;/code&gt; is in the list of matching places&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class="code literal-block"&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;requests&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pytest&lt;/span&gt;
+
+&lt;span class="n"&gt;zippopotamus_url&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"https://api.zippopotam.us/us"&lt;/span&gt;
+
+
+&lt;span class="nd"&gt;@pytest&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fixture&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;post_codes&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;response&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;requests&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;zippopotamus_url&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;/me/waterville'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;response&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;status_code&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;200&lt;/span&gt;
+    &lt;span class="n"&gt;places&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;response&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="p"&gt;()[&lt;/span&gt;&lt;span class="s1"&gt;'places'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;post_codes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;place&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'post code'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;place&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;places&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;post_codes&lt;/span&gt;
+
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;TestZippopotamus&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_setup_included_waterville_maine_included_in_each_post_code&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="n"&gt;response&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;requests&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;zippopotamus_url&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;/me/waterville'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;response&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;status_code&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;200&lt;/span&gt;
+        &lt;span class="n"&gt;places&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;response&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="p"&gt;()[&lt;/span&gt;&lt;span class="s1"&gt;'places'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+        &lt;span class="n"&gt;post_codes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;place&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'post code'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;place&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;places&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;post_code&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;post_codes&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="n"&gt;response&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;requests&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;zippopotamus_url&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;/&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;post_code&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;response&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;status_code&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;200&lt;/span&gt;
+            &lt;span class="n"&gt;places&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;response&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="p"&gt;()[&lt;/span&gt;&lt;span class="s1"&gt;'places'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+            &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="nb"&gt;any&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;place&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'place name'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;'Waterville'&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;place&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;places&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_setup_separated_waterville_maine_included_in_each_post_code&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;post_codes&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;post_code&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;post_codes&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="n"&gt;response&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;requests&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;zippopotamus_url&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;/&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;post_code&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;response&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;status_code&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;200&lt;/span&gt;
+            &lt;span class="n"&gt;places&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;response&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="p"&gt;()[&lt;/span&gt;&lt;span class="s1"&gt;'places'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+            &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="nb"&gt;any&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;place&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'place name'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;'Waterville'&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;place&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;places&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;The first test shows the setup included in the test. The second test has the setup separated from the test. It appears in the fixture called &lt;code&gt;post_codes&lt;/code&gt;. &lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span class="o"&gt;(&lt;/span&gt;venv&lt;span class="o"&gt;)&lt;/span&gt; ez@EZ-mini blog-examples % &lt;span class="nv"&gt;pytest&lt;/span&gt;                     
+&lt;span class="o"&gt;==========================&lt;/span&gt; &lt;span class="nb"&gt;test&lt;/span&gt; session &lt;span class="nv"&gt;starts&lt;/span&gt; &lt;span class="o"&gt;===========================&lt;/span&gt;
+platform darwin -- Python &lt;span class="m"&gt;3&lt;/span&gt;.10.1, pytest-7.1.2, pluggy-1.0.0
+rootdir: /Users/ez/blog-examples
+collected &lt;span class="m"&gt;2&lt;/span&gt; items                                                        
+
+test_error_vs_failure_pytest.py ..                                 &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="m"&gt;100&lt;/span&gt;%&lt;span class="o"&gt;]&lt;/span&gt;
+
+&lt;span class="o"&gt;===========================&lt;/span&gt; &lt;span class="m"&gt;2&lt;/span&gt; passed &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;.46s &lt;span class="o"&gt;============================&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;When you run these tests, they both pass. One test is a little longer, which you may find easier to follow than navigating around in the code, or harder to follow because there's code that's more about data collection than what we want to test. I find it yucky (a technical term) to have more than one thing called &lt;code&gt;request&lt;/code&gt; or &lt;code&gt;response&lt;/code&gt; in a single test, but these are all personal preferences. &lt;/p&gt;
+&lt;p&gt;Now imagine instead of &lt;code&gt;waterville&lt;/code&gt; in the API requests, I've gone on auto-pilot and typed &lt;code&gt;whatever&lt;/code&gt; in the setup for the tests. Here's what pytest gives us as the output. &lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span class="o"&gt;(&lt;/span&gt;venv&lt;span class="o"&gt;)&lt;/span&gt; ez@EZ-mini blog-examples % &lt;span class="nv"&gt;pytest&lt;/span&gt;
+&lt;span class="o"&gt;==========================&lt;/span&gt; &lt;span class="nb"&gt;test&lt;/span&gt; session &lt;span class="nv"&gt;starts&lt;/span&gt; &lt;span class="o"&gt;===========================&lt;/span&gt;
+platform darwin -- Python &lt;span class="m"&gt;3&lt;/span&gt;.10.1, pytest-7.1.2, pluggy-1.0.0
+rootdir: /Users/ez/blog-examples
+collected &lt;span class="m"&gt;2&lt;/span&gt; items                                                        
+
+test_error_vs_failure_pytest.py FE                                 &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="m"&gt;100&lt;/span&gt;%&lt;span class="o"&gt;]&lt;/span&gt;
+
+&lt;span class="o"&gt;=================================&lt;/span&gt; &lt;span class="nv"&gt;ERRORS&lt;/span&gt; &lt;span class="o"&gt;=================================&lt;/span&gt;
+_ ERROR at setup of TestZippopotamus.test_setup_separated_waterville_maine_included_in_each_post_code _
+
+    @pytest.fixture&lt;span class="o"&gt;()&lt;/span&gt;
+    def post_codes&lt;span class="o"&gt;()&lt;/span&gt;:
+        &lt;span class="nv"&gt;response&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; requests.get&lt;span class="o"&gt;(&lt;/span&gt;f&lt;span class="s1"&gt;'{zippopotamus_url}/me/whatever'&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt;       assert response.status_code &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="m"&gt;200&lt;/span&gt;
+E       assert &lt;span class="nv"&gt;404&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="m"&gt;200&lt;/span&gt;
+E        +  where &lt;span class="nv"&gt;404&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &amp;lt;Response &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="m"&gt;404&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&amp;gt;.status_code
+
+test_error_vs_failure_pytest.py:10: &lt;span class="nv"&gt;AssertionError&lt;/span&gt;
+&lt;span class="o"&gt;================================&lt;/span&gt; &lt;span class="nv"&gt;FAILURES&lt;/span&gt; &lt;span class="o"&gt;================================&lt;/span&gt;
+_ TestZippopotamus.test_setup_included_waterville_maine_included_in_each_post_code _
+
+&lt;span class="nv"&gt;self&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &amp;lt;test_error_vs_failure_pytest.TestZippopotamus object at 0x101f4c160&amp;gt;
+
+    def test_setup_included_waterville_maine_included_in_each_post_code&lt;span class="o"&gt;(&lt;/span&gt;self&lt;span class="o"&gt;)&lt;/span&gt;:
+        &lt;span class="nv"&gt;response&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; requests.get&lt;span class="o"&gt;(&lt;/span&gt;f&lt;span class="s1"&gt;'{zippopotamus_url}/me/whatever'&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt;       assert response.status_code &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="m"&gt;200&lt;/span&gt;
+E       assert &lt;span class="nv"&gt;404&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="m"&gt;200&lt;/span&gt;
+E        +  where &lt;span class="nv"&gt;404&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &amp;lt;Response &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="m"&gt;404&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&amp;gt;.status_code
+
+test_error_vs_failure_pytest.py:20: &lt;span class="nv"&gt;AssertionError&lt;/span&gt;
+&lt;span class="o"&gt;========================&lt;/span&gt; short &lt;span class="nb"&gt;test&lt;/span&gt; summary &lt;span class="nv"&gt;info&lt;/span&gt; &lt;span class="o"&gt;=========================&lt;/span&gt;
+FAILED test_error_vs_failure_pytest.py::TestZippopotamus::test_setup_included_waterville_maine_included_in_each_post_code
+ERROR test_error_vs_failure_pytest.py::TestZippopotamus::test_setup_separated_waterville_maine_included_in_each_post_code
+&lt;span class="o"&gt;=======================&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt; failed, &lt;span class="m"&gt;1&lt;/span&gt; error &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;.71s &lt;span class="o"&gt;=======================&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;Neither test passes. They both get mad at the same spot, where they're checking that they got the post codes for "Whatever, Maine" and found that, oh wait no, they haven't been able to do that. &lt;/p&gt;
+&lt;p&gt;But one test fails and one test errors: The test with the setup included fails. The test with the setup in the fixture errors. This difference is why I prefer to separate my setup (and teardown, which behaves the same way) from my test code. &lt;/p&gt;
+&lt;h3&gt;The power of separating setup and teardown from your tests&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;More of the test code is about what's being tested, instead of being about how you get to the right place.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pytest will give you an error when code fails in the setup or teardown, and a failure when the code inside the test fails.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you're reusing setup or teardown, you'll only have to fix an issue in the code in one spot.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you're running a bunch of tests with shared setup or teardown in a pipeline, it'll be easier to diagnose when something outside what you're trying to test has gone awry. &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Reasons to keep the setup and teardown with your tests&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You are early enough in the development process that the setup and teardown don't need to be used anywhere else yet. You can extract them when they do, but for now, it's a little faster to read with everything in one place.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you don't have your IDE setup correctly, PyCharm may not let you Ctrl + click through the code to follow the fixture code. (&lt;a href="https://www.jetbrains.com/help/pycharm/testing-frameworks.html#a036958d"&gt;Here's how to setup PyCharm to recognize pytest fixtures.&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you don't trust someone reading or debugging the test (other colleagues, future you, or possibly even other colleagues after you've moved to a different team) to be able to follow the code through to the fixtures. Or no one else is looking at the code!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;What have I missed?&lt;/h3&gt;
+&lt;p&gt;What other reasons are there? What do you tend to do for your team when your code is shared? What do you tend to do for yourself when you only have your future self to help out? How would you have written this Python code differently? Which articles do you point to when you're explaining a separation of concerns? &lt;/p&gt;</description><category>pytest</category><category>python</category><category>testing</category><guid>https://elizabethzagroba.com/posts/2022/07_30_the_power_of_separating_setup_and_teardown_from_your_tests/</guid><pubDate>Fri, 29 Jul 2022 22:00:00 GMT</pubDate></item></channel></rss>

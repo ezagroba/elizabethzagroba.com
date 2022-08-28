@@ -67,7 +67,7 @@ When I was able to, having a conversation helped me make sure that I was giving 
 
 ## Don't take my word for it.
 
-I have the benefit of learning from smart people who are also thinking through what code reviews are and what they can be. I have yet to be free at a time when [the code reading club](https://github.com/neontribe/code-reading-club/) Felinne Hermans started has met, but I look forward to joining sometime in the future. Here is a collection resources that I've already found useful:
+I have the benefit of learning from smart people who are also thinking through what code reviews are and what they can be. I have yet to be free at a time when [the code reading club](https://github.com/neontribe/code-reading-club/) Felienne Hermans started has met, but I look forward to joining sometime in the future. Here is a collection resources that I've already found useful:
 
 ### Videos 
 - Sarah Mei on [The Power of Agile](https://www.youtube.com/watch?v=YL-6RCTywbc)
