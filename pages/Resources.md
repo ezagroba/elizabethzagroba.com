@@ -38,7 +38,10 @@ I've learned things from these places.
 	<li><a href="http://blackboxpuzzles.workroomprds.com/" target="_blank">James Lyndsay's Black Box Puzzles</a></li>
 	<li><a href="https://jsonplaceholder.typicode.com/" target="_blank">JSON Placeholder</a></li>
 	<li><a href="https://randomuser.me/" target="_blank">Random User Generator</a></li>
+	<li><a href="https://demo.playwright.dev/todomvc/#/" target="_blank">React - TodoMVC</a></li>
 	<li><a href="https://restful-booker.herokuapp.com/" target="_blank">Restful Booker</a></li>
+	<li><a href="https://testpages.herokuapp.com/styled/index.html" target="_blank">Selenium Test Pages</a></li>
+	<li><a href="http://selenium.thinkcode.se/" target="_blank">Selenium Think Code</a></li>
 	<li><a href="https://testersplayground.herokuapp.com/devtools.php" target="_blank">Testers Playground</a></li>
 	<li><a href="https://www.decisionproblem.com/paperclips/" target="_blank">Universal Paperclips</a></li>
 	<li><a href="https://the-internet.herokuapp.com/" target="_blank">Welcome to the-internet</a></li>

@@ -5,6 +5,7 @@
 
 ### Topics I've prepared presentations about
 
+- Python scripting
 - test reporting
 - ensemble testing (mob testing)
 - exploratory testing
@@ -12,6 +13,11 @@
 - API testing
 - communication
 - interviewing
+
+### Future presentations
+
+- [Friends of Good Software Conference](https://frogsconf.nl/) (September 2022)
+- [Agile Testing Days](https://agiletestingdays.com/speaker/elizabeth-zagroba/) (November 2022)
 
 ### Past presentations
 
