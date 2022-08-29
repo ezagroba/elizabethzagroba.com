@@ -1,31 +1,48 @@
-### Software communities I'm a part of
+## Software Communities 
 
-- I co-organize Friends of Good Software conference ([FroGSConf](https://frogsconf.nl/))
-- I am a member of the Dutch Exploratory Workshop on Testing ([DEWT](https://dewt.wordpress.com/))
+- I co-organize Friends of Good Software conference ([FroGSConf](https://frogsconf.nl/)).
+- I have spoken at and was on the program committee for [Agile Testing Days](https://agiletestingdays.com/). 
+- I've done a bunch of stuff for the [Ministry of Testing](https://www.ministryoftesting.com/): spoken at TestBashes, written articles, did an Ask Me Anything, hosted a 99-minute workshop. 
+- I became a member of the Dutch Exploratory Workshop on Testing ([DEWT](https://dewt.wordpress.com/)) in 2021. 
+- I'm an active participant in the Women in Testing Slack community.
 
-### Topics I've prepared presentations about
+## Presentations
 
-- Python scripting
+### Invite me to present about
+
+- exploratory testing
+- API testing
 - test reporting
 - ensemble testing (mob testing)
-- exploratory testing
-- testing in devops
-- API testing
-- communication
-- interviewing
+- Python scripting
 
-### Future presentations
+
+### Upcoming events
 
 - [Friends of Good Software Conference](https://frogsconf.nl/) (September 2022)
-- [Agile Testing Days](https://agiletestingdays.com/speaker/elizabeth-zagroba/) (November 2022)
+- [Agile Testing Days](https://agiletestingdays.com/2022/session/my-crafting-project-became-critical-infrastructure/) (November 2022)
 
-### Past presentations
+### Recent presentations
+#### Topics: API testing, exploratory testing, code review, test reporting, & ensemble testing
+
+
+<a href="#" class="accordion" data-toggle="collapse" data-target="#strengthen-your-code-review-skills"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i> <i class="fa fa-file-powerpoint"></i></a> Strengthen Your Code Review Skills
+<ul id="strengthen-your-code-review-skills" class="collapse">
+	<li><a href="https://vimeo.com/691777585" target="_blank">BoosterConf recording</a></li>
+	<li><a href="../../assets/slides/code-review.pdf">Slides</a></li>
+	<li>Presented at:</li>
+		<ul>
+			<li><a href="https://joyofcoding.org/2022/speakers/lightning-talks.html" target="_blank">Joy of Coding (June 2022)</a></li>
+			<li><a href="https://2022.boosterconf.no/talk/70-strengthen-your-code-review-skills/" target="_blank">BoosterConf (March 2022)</a></li>
+		</ul>
+</ul>
+
 
 <a href="#" class="accordion" data-toggle="collapse" data-target="#reporting-your-testing-99-minute-workshop"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i></a> 99 Minute Workshop - An Introduction to Reporting Your Testing
 <ul id="reporting-your-testing-99-minute-workshop" class="collapse">
 	<li>Presented at:</li>
 		<ul>
-			<li><a href="https://www.ministryoftesting.com/dojo/series/99-minute-workshops-essentials/lessons/an-introduction-to-reporting-your-testing" target="_blank">Ministry of Testing Dojo video recording [paywall]</a></li>
+			<li><a href="https://www.ministryoftesting.com/dojo/series/99-minute-workshops-essentials/lessons/an-introduction-to-reporting-your-testing" target="_blank">Ministry of Testing Dojo video recording [paywall] (October 2021)</a></li>
 		</ul>
 </ul>
 
@@ -39,7 +56,7 @@
 
 <a href="#" class="accordion" data-toggle="collapse" data-target="#test-reporting-ama"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i></a> Ask Me Anything - Test Reporting
 <ul id="test-reporting-ama" class="collapse">
-	<li><a href="https://www.ministryoftesting.com/dojo/lessons/testing-ask-me-anything-test-reporting-elizabeth-zagroba" target="_blank">Ministry of Testing Dojo video recording [paywall]</a></li>
+	<li><a href="https://www.ministryoftesting.com/dojo/lessons/testing-ask-me-anything-test-reporting-elizabeth-zagroba" target="_blank">Ministry of Testing Dojo video recording [paywall] (January 2021)</a></li>
 </ul>
 
 <a href="#" class="accordion" data-toggle="collapse" data-target="#mob-programming-agile-new-england"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i></a> Panel Discussion - Mob Programming
@@ -68,8 +85,8 @@
 <li><a href="https://www.goodreads.com/book/show/15980494-explore-it">Further reading</a></li>
 <li>Presented at:</li>
 	<ul>
-		<li><a href="http://lets-test.com/?page_id=5726" target="_blank">Let's Test (South Africa) November 2019</a></li>
-		<li><a href="https://club.ministryoftesting.com/t/wander-with-a-purpose-writing-charters-for-your-exploratory-test-sessions/49746" target="_blank">Exploratory Testing Week (Ministry of Testing) April 2021</a></li>
+		<li><a href="https://club.ministryoftesting.com/t/wander-with-a-purpose-writing-charters-for-your-exploratory-test-sessions/49746" target="_blank">Exploratory Testing Week [Ministry of Testing] (April 2021)</a></li>
+		<li><a href="http://lets-test.com/?page_id=5726" target="_blank">Let's Test [South Africa] (November 2019)</a></li>
 	</ul>
 </ul>
 
@@ -103,8 +120,10 @@
 		</ul>
 </ul>
 
+### Archived presentations 
+#### Topics: pairing, interviewing, & communication
 
-<a href="#" class="accordion" data-toggle="collapse" data-target="#doubt-trust"><i class="fa fa-star"></i> <i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i>  <i class="fab fa-youtube"></i> <i class="fa fa-file-powerpoint"></i> <i class="fa fa-podcast"></i> <i class="fa fa-book-open"></i></a> Talk - Doubt Builds Trust
+<a href="#" class="accordion" data-toggle="collapse" data-target="#doubt-trust"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i>  <i class="fab fa-youtube"></i> <i class="fa fa-file-powerpoint"></i> <i class="fa fa-podcast"></i> <i class="fa fa-book-open"></i></a> Keynote - Doubt Builds Trust
 <ul id="doubt-trust" class="collapse">
 <li><a href="https://dojo.ministryoftesting.com/dojo/lessons/doubt-builds-trust-elizabeth-zagroba" target="_blank">Ministry of Testing Dojo video recording [paywall]</a></li>
 <li><a href="https://invidio.us/watch?v=SM57HMJpkZc" target="_blank">Nordic Testing Days video recording</a></li>
@@ -153,7 +172,7 @@
 		</ul>
 </ul>
 
-<a href="#" class="accordion" data-toggle="collapse" data-target="#introvert"><i class="fa fa-star"></i> <i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i> <i class="fa fa-photo-video"></i> <i class="fa fa-podcast"></i> <i class="fa fa-file-powerpoint"></i> <i class="fas fa-book-open"></i></a> Talk - Succeeding as an Introvert
+<a href="#" class="accordion" data-toggle="collapse" data-target="#introvert"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i> <i class="fa fa-photo-video"></i> <i class="fa fa-podcast"></i> <i class="fa fa-file-powerpoint"></i> <i class="fas fa-book-open"></i></a> Talk - Succeeding as an Introvert
 <ul id="introvert" class="collapse">
 <li><a href="https://dojo.ministryoftesting.com/lessons/succeeding-as-an-introvert-elizabeth-zagroba">Ministry of Testing Dojo video recording [paywall]</a></li>
 <li><a href="https://invidio.us/watch?v=3SdoCJQsXB4">Dutch PHP Conference audio + slides recording</a></li>
@@ -195,17 +214,17 @@
 ### Past peer conferences
 
 - [Friends of Good Software [FroGS conf]](http://frogsconf.nl/) *organizer*
-	- September 2021
 	- March 2022
+	- September 2021
 - [TestCraftCamp](https://testcraftcamp.nl/) *organizer*
-	 - September 2019
-	 - September 2020
 	 - March 2021
+	 - September 2020
+	 - September 2019
 - [Exploratory Testing Peer Conference](https://exploratorytesting.org/)
 	- February 2019
 - [Dutch Exploratory Workshop on Testing [DEWT]](https://dewt.wordpress.com/)
+	- January/February 2020
 	- October 2018
- 	- January/February 2020
 - [Belgian Research & Exploratory Workshop on Testing [BREWT]](https://brewtconf.wordpress.com/)
-	- December 2018
 	- October 2019
+	- December 2018
