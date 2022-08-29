@@ -89,7 +89,3 @@ What is next for us? We know we want to:
 Have we reflected on what's valuable and not valuable to test on an API? Will we share more about this beyond this blog post? A conference talk or workshop? A Twitch stream?? Only time will tell. For now, enjoy the github repo. :)
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Perhaps instead of proposing to show up in conferences to do our learning sessions, we should start a twitch stream on our learning sessions <a href="https://twitter.com/alex_schl?ref_src=twsrc%5Etfw">@alex_schl</a> <a href="https://twitter.com/ezagroba?ref_src=twsrc%5Etfw">@ezagroba</a> :D</p>&mdash; Maaret Pyhäjärvi (@maaretp) <a href="https://twitter.com/maaretp/status/1542471658220527617?ref_src=twsrc%5Etfw">June 30, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
----
-
-Editor's Note: The emojis have been edited out of these tweets because I still haven't bothered to track down why upgrading the version of my static site generator caused emojis to cause entire pages not to render. :bug: :magnet: 
