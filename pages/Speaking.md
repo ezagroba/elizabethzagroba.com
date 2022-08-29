@@ -1,7 +1,9 @@
+.. description: Talks, workshops, panels, and AMAs I've done, plus software communities and peer conferences I'm a part of. 
+
 ## Software Communities 
 
 - I co-organize Friends of Good Software conference ([FroGSConf](https://frogsconf.nl/)).
-- I have spoken at and was on the program committee for [Agile Testing Days](https://agiletestingdays.com/). 
+- I've spoken at and been on the program committee for [Agile Testing Days](https://agiletestingdays.com/). 
 - I've done a bunch of stuff for the [Ministry of Testing](https://www.ministryoftesting.com/): spoken at TestBashes, written articles, did an Ask Me Anything, hosted a 99-minute workshop. 
 - I became a member of the Dutch Exploratory Workshop on Testing ([DEWT](https://dewt.wordpress.com/)) in 2021. 
 - I'm an active participant in the Women in Testing Slack community.
@@ -26,7 +28,7 @@
 #### Topics: API testing, exploratory testing, code review, test reporting, & ensemble testing
 
 
-<a href="#" class="accordion" data-toggle="collapse" data-target="#strengthen-your-code-review-skills"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i> <i class="fa fa-file-powerpoint"></i></a> Strengthen Your Code Review Skills
+<a href="#" class="accordion" data-toggle="collapse" data-target="#strengthen-your-code-review-skills"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i> <i class="fa fa-file-powerpoint"></i></a> Talk - Strengthen Your Code Review Skills
 <ul id="strengthen-your-code-review-skills" class="collapse">
 	<li><a href="https://vimeo.com/691777585" target="_blank">BoosterConf recording</a></li>
 	<li><a href="../../assets/slides/code-review.pdf">Slides</a></li>
@@ -38,7 +40,7 @@
 </ul>
 
 
-<a href="#" class="accordion" data-toggle="collapse" data-target="#reporting-your-testing-99-minute-workshop"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i></a> 99 Minute Workshop - An Introduction to Reporting Your Testing
+<a href="#" class="accordion" data-toggle="collapse" data-target="#reporting-your-testing-99-minute-workshop"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i></a> 99-Minute Workshop - An Introduction to Reporting Your Testing
 <ul id="reporting-your-testing-99-minute-workshop" class="collapse">
 	<li>Presented at:</li>
 		<ul>

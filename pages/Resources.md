@@ -1,3 +1,5 @@
+.. description: Books, courses, and blogs I recommend to learn more about software, plus a collection of websites to test.  
+
 I've learned things from these places.
 
 <h3><a href="#" data-toggle="collapse" data-target="#books"><i class="fa fa-book-open"></i></a> Books</h3>

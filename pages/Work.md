@@ -1,6 +1,4 @@
-### Title
-
-Quality Lead
+.. description: A list of published articles, my bio, my regular resume, and my trustworthy resume. 
 
 ### CV
 [regular style](../../assets/resumes/EZresume.pdf) or [trustworthy](../../assets/resumes/trustworthy-resume.pdf)
