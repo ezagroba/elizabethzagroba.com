@@ -1,11 +1,11 @@
 .. title: From API Challenges to a Playwright Cookbook
 .. date: 28 August 2022
-.. description: Creating a Playwright UI reference with Maaret and Alex.
+.. description: Writing Python in an ensemble with Maaret Pyhäjärvi and Alex Schladebeck.
 .. tags: automation, playwright, testing, python
 .. previewimage: /images/posts/2022/playwright.png
 
 
-Soon after [Maaret Pyhäjärvi](https://twitter.com/maaretp) and [Alex Schladebeck](https://twitter.com/alex_schl) began their endeavor to practice testing APIs using the [API Challeges](https://www.eviltester.com/page/tools/apichallenges/) from [Alan Richardson (aka The Evil Tester)](https://twitter.com/eviltester), they looped me into their periodic practice sessions. Why? To make Past Elizabeth jealous, presumably. 
+Soon after [Maaret Pyhäjärvi](https://twitter.com/maaretp) and [Alex Schladebeck](https://twitter.com/alex_schl) began their endeavor to practice testing APIs using the [API Challenges](https://www.eviltester.com/page/tools/apichallenges/) from [Alan Richardson (aka The Evil Tester)](https://twitter.com/eviltester), they looped me into their periodic practice sessions. Why? To make Past Elizabeth jealous, presumably. 
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Continuing on the api challenges from <a href="https://twitter.com/eviltester?ref_src=twsrc%5Etfw">@eviltester</a> with <a href="https://twitter.com/alex_schl?ref_src=twsrc%5Etfw">@alex_schl</a> and <a href="https://twitter.com/ezagroba?ref_src=twsrc%5Etfw">@ezagroba</a> after weeks of being otherwise engaged, always happy to have see where we left off with a test. Simple thing for our future selves in group learning activity. <a href="https://t.co/D99nC2PDVX">pic.twitter.com/D99nC2PDVX</a></p>&mdash; Maaret Pyhäjärvi (@maaretp) <a href="https://twitter.com/maaretp/status/1468883485205147652?ref_src=twsrc%5Etfw">December 9, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
