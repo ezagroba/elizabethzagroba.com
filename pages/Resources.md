@@ -37,6 +37,7 @@ I've learned things from these places.
 <h3><a href="#" data-toggle="collapse" data-target="#software"><i class="fa fa-bug"></i></a> Software to test</h3>
 <ul id="software" class="collapse">
 	<li><a href="https://eviltester.github.io/TestingApp/apps/index.html" target="_blank">Evil Tester Applications</a></li>
+	<li><a href="https://httpbin.org/" target="_blank">httpbin</a></li>
 	<li><a href="http://blackboxpuzzles.workroomprds.com/" target="_blank">James Lyndsay's Black Box Puzzles</a></li>
 	<li><a href="https://jsonplaceholder.typicode.com/" target="_blank">JSON Placeholder</a></li>
 	<li><a href="https://randomuser.me/" target="_blank">Random User Generator</a></li>
