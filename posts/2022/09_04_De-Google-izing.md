@@ -1,6 +1,6 @@
 .. title: De-Google-izing
 .. date: 4 September 2022
-.. tags: escape
+.. tags: escape, life-hacks
 .. previewimage: /images/posts/2022/brieven.jpeg
 .. description: Switching off Google products, which alternatives I chose, and why I'm still stuck on a few. 
 
