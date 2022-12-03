@@ -20,13 +20,21 @@
 
 ### Upcoming events
 
-- [Agile Testing Days](https://agiletestingdays.com/2022/session/my-crafting-project-became-critical-infrastructure/) (November 2022)
-- [Friends of Good Software Conference](https://frogsconf.nl/) [FroGS Conf] (December 2022)
 - [Dutch Exploratory Workshop on Testing](https://dewt.wordpress.com/) [DEWT] (February 2023)
 
 ### Recent presentations
-#### Topics: API testing, exploratory testing, code review, test reporting, & ensemble testing
+#### Topics: API testing, exploratory testing, code review, test reporting, ensemble testing, and Python scripting
 
+<a href="#" class="accordion" data-toggle="collapse" data-target="#api-security-panel"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i></a> Panel Discussion - API Quality and Security
+<ul id="api-security-panel" class="collapse">
+	<li>Presented at: <a href="https://live.infoq.com/?utm_source=linkedin&utm_medium=social&utm_campaign=il1222" target="_blank">InfoQ Live (December 2022)</a></li>
+</ul>
+
+<a href="#" class="accordion" data-toggle="collapse" data-target="#crafting-project-infrastructure"><i class="fa fa-bullhorn"></i> <i class="fa fa-file-powerpoint"></i></a> Talk - My Crafting Project Became Critical Infrastructure
+<ul id="crafting-project-infrastructure" class="collapse">
+	<li><a href="../../assets/slides/cloud-deployment-script.pdf">Slides</a></li>
+	<li>Presented at: <a href="https://agiletestingdays.com/2022/session/my-crafting-project-became-critical-infrastructure/" target="_blank">Agile Testing Days (November 2022)</a></li>
+</ul>
 
 <a href="#" class="accordion" data-toggle="collapse" data-target="#strengthen-your-code-review-skills"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i> <i class="fa fa-file-powerpoint"></i></a> Talk - Strengthen Your Code Review Skills
 <ul id="strengthen-your-code-review-skills" class="collapse">
@@ -202,6 +210,7 @@
 ### Past peer conferences
 
 - [Friends of Good Software [FroGS Conf]](http://frogsconf.nl/) *organizer*
+	- December 2022
 	- September 2022
 	- June 2022
 	- March 2022
