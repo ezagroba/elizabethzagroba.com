@@ -12,13 +12,13 @@ Agile Testing Days is A LOT, so these are my notes and takeaways from only some 
 
 Anne-Marie graciously let me participate in (and host a small bit of) her tutorial about quality coaching. It was great to spend a whole day talking about and with people taking the same approach to their influencing without managing role. It confirmed that I've approached my role in a sensible way: have a mandate from management, wait until teams ask for help instead of inflicting help, give people an indication of when you'll come back for more support or follow-up, treat teams at different maturity stages differently. 
 
-I need to revisit all the diagrams and lists Anne-Marie shared of what quality coaching can be. I want to look through each one and see if it's something I want to do more (or less) of as part of my role. "Investing in onbaording is the ultimate shift-left" is now my go-to explanation for why I'm spending so much time explaining stuff to the new joiners. 
+I need to revisit all the diagrams and lists Anne-Marie shared of what quality coaching can be. I want to look through each one and see if it's something I want to do more (or less) of as part of my role. "Investing in onboarding is the ultimate shift-left" is now my go-to explanation for why I'm spending so much time explaining stuff to the new joiners. 
 
 ## Gwen Diagram - Happiness is Quality
 
 The little things (getting a PagerDuty call off-hours, flaky tests in the pipeline, a monstrous legacy code base) can pile up to drive your most talented engineers away and destroy engineer happiness. 
 
-As acting CTO, Gwen measures *everything* at her organization. She tracks number of alerts. She hosts "flake parties" to finally fix or delete flaky tests. She uses (relatively infrequent every-two-months because nobody likes them) retros to collect all kinds of feedback. And crucially: to collect responses to the same set of questions over time. She knows that making every measure reflect 100% satisfaction is somewhere between not cost-effective and impossible, but she knows to keep "I am comfrotable asking for help" at 100%. 
+As acting CTO, Gwen measures *everything* at her organization. She tracks number of alerts. She hosts "flake parties" to finally fix or delete flaky tests. She uses (relatively infrequent every-two-months because nobody likes them) retros to collect all kinds of feedback. And crucially: to collect responses to the same set of questions over time. She knows that making every measure reflect 100% satisfaction is somewhere between not cost-effective and impossible, but she knows to keep "I am comfortable asking for help" at 100%. 
 
 ## Fiona Charles - What could *possibly* go wrong?
 
@@ -30,7 +30,7 @@ Fiona covered a bevy of consequences of negligence, unethical practices, and mis
 
 I'm glad I finally got to see Toyer speak after only hearing good things from my Agile Testing Days friends (arguably real friends now?) and the internet for years. Toyer revealed his depth of experience working in test automation through his lists of challenges he sees everywhere, and refinement guide to getting back on track. 
 
-Everybody's got long-running tests, isolation issues, maintenance issues, lack of transparency, delays before testing, and a desire to tackle non-functional tests all at once. His refinement guide points to breaking steps down into smaller pieces: break a monolith into microservices, create a small and determistic test environment, write tests at the lowest level and closer to the code. Along with helping people build their automation skills, you've also got to shift their mindset to thinking about the ideal future state.
+Everybody's got long-running tests, isolation issues, maintenance issues, lack of transparency, delays before testing, and a desire to tackle non-functional tests all at once. His refinement guide points to breaking steps down into smaller pieces: break a monolith into microservices, create a small and deterministic test environment, write tests at the lowest level and closer to the code. Along with helping people build their automation skills, you've also got to shift their mindset to thinking about the ideal future state.
 
 ## Sam Nitsche - Trouble in the Old Republic
 
