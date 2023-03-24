@@ -2,7 +2,6 @@
 .. date: 26 February 2023
 .. description: What could I reflect on at a glance?
 .. tags: career
-.. previewimage: /images/posts/2023/ghent.jpeg
 
 We've got annual performance reviews where I work. That shouldn't be the only time I receive feedback about how I'm doing. But the company budgets are set once a year, and thus the consequential "am I getting a raise or a promotion?" conversation typically happens once a year. 
 
