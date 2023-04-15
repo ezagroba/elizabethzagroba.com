@@ -14,7 +14,7 @@ For our software tools, we've been using Welo, Miro, and Slack for all our event
 
 ## Welo
 
-We've been using Welo as our video-conferencing tool. One of the previous organizers discovered the tool, kindly asked the founders if we could try it out, and we've been using the same goofy set of rooms by the river ever since. It lacks some of the finer audio fitering features of Zoom, but makes up for it in the visual representation of the space. You can see who's in which breakout room, so you can find people you want to talk to.
+We've been using Welo as our video-conferencing tool. One of the previous organizers discovered the tool, kindly asked the founders if we could try it out, and we've been using the same goofy set of rooms by the river ever since. It lacks some of the finer audio filtering features of Zoom, but makes up for it in the visual representation of the space. You can see who's in which breakout room, so you can find people you want to talk to.
 
 ![](/images/posts/2023/welo.png "Welo video conferencing software")
 
@@ -42,7 +42,7 @@ We've got frames for announcements and kudos, to help participants and organizer
 
 ## Slack
 
-Our Slack is very quiet. We mostly use it amongst the organizers to coordinate our activities in between events. The chat feature in Welo is perhaps not optimal, so Slack can serve as a slighty less ephemeral/confusing place to type things to each other during the event. 
+Our Slack is very quiet. We mostly use it amongst the organizers to coordinate our activities in between events. The chat feature in Welo is perhaps not optimal, so Slack can serve as a slightly less ephemeral/confusing place to type things to each other during the event. 
 
 ## MailerLite
 
