@@ -17,10 +17,11 @@
 - ensemble testing (mob testing)
 - Python scripting
 
-
 ### Upcoming events
 
-- [Dutch Exploratory Workshop on Testing](https://dewt.wordpress.com/) [DEWT] (February 2023)
+- [OOP Konferenz](https://www.oop-konferenz.de/oop-2023-muenchen/startpage) (July 2023)
+- [Testμ](https://www.lambdatest.com/testmuconf-2023/) (August 2023)
+- [Agile Testing Days](https://agiletestingdays.com/) (November 2023)
 
 ### Recent presentations
 #### Topics: API testing, exploratory testing, code review, test reporting, ensemble testing, and Python scripting
@@ -210,6 +211,8 @@
 ### Past peer conferences
 
 - [Friends of Good Software [FroGS Conf]](http://frogsconf.nl/) *organizer*
+	- June 2023
+	- March 2023
 	- December 2022
 	- September 2022
 	- June 2022
@@ -219,11 +222,15 @@
 	 - March 2021
 	 - September 2020
 	 - September 2019
-- [Exploratory Testing Peer Conference](https://exploratorytesting.org/)
-	- February 2019
+- Llandegfan Exploratory Workshop on Testing [LLEWT]
+	- June 2023
+	- June 2022
 - [Dutch Exploratory Workshop on Testing [DEWT]](https://dewt.wordpress.com/)
+	- February 2023
 	- January/February 2020
 	- October 2018
+- [Exploratory Testing Peer Conference](https://exploratorytesting.org/)
+	- February 2019
 - [Belgian Research & Exploratory Workshop on Testing [BREWT]](https://brewtconf.wordpress.com/)
 	- October 2019
 	- December 2018
