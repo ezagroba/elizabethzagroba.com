@@ -218,7 +218,7 @@
 	- June 2022
 	- March 2022
 	- September 2021
-- TestCraftCamp (predecessor to FroGS Conf) *organizer*
+- TestCraftCamp (predecessor to [FroGS Conf](http://frogsconf.nl/)) *organizer*
 	 - March 2021
 	 - September 2020
 	 - September 2019
