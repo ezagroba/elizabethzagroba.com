@@ -5,7 +5,6 @@
 - I co-organize Friends of Good Software conference ([FroGSConf](https://frogsconf.nl/)).
 - I've spoken at and served on the program committee for [Agile Testing Days](https://agiletestingdays.com/). 
 - I've done a bunch of stuff for the [Ministry of Testing](https://www.ministryoftesting.com/): spoken at TestBashes, written articles, had people Ask Me Anything live and on the club, facilitated a 99-minute workshop. 
-- I'm an active participant in the Women in Testing Slack community.
 
 ## Presentations
 
@@ -19,22 +18,25 @@
 
 ### Upcoming events
 
-- [OOP Konferenz](https://www.oop-konferenz.de/oop-2023-muenchen/startpage) (July 2023)
 - [Testμ](https://www.lambdatest.com/testmuconf-2023/) (August 2023)
 - [Agile Testing Days](https://agiletestingdays.com/) (November 2023)
 
 ### Recent presentations
 #### Topics: API testing, exploratory testing, code review, test reporting, ensemble testing, and Python scripting
 
-<a href="#" class="accordion" data-toggle="collapse" data-target="#api-security-panel"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i></a> Panel Discussion - API Quality and Security
-<ul id="api-security-panel" class="collapse">
-	<li>Presented at: <a href="https://live.infoq.com/?utm_source=linkedin&utm_medium=social&utm_campaign=il1222" target="_blank">InfoQ Live (December 2022)</a></li>
-</ul>
-
 <a href="#" class="accordion" data-toggle="collapse" data-target="#crafting-project-infrastructure"><i class="fa fa-bullhorn"></i> <i class="fa fa-file-powerpoint"></i></a> Talk - My Crafting Project Became Critical Infrastructure
 <ul id="crafting-project-infrastructure" class="collapse">
 	<li><a href="../../assets/slides/cloud-deployment-script.pdf">Slides</a></li>
-	<li>Presented at: <a href="https://agiletestingdays.com/2022/session/my-crafting-project-became-critical-infrastructure/" target="_blank">Agile Testing Days (November 2022)</a></li>
+	<li>Presented at:
+		<li><a href="https://www.oop-konferenz.de/oop-2023-muenchen/startpage/program/conference-program" target="_blank">OOP Konferenz (July 2023)</a></li>
+		<li><a href="https://2023.boosterconf.no/program/thursday/3_short_talks_and_workshops_cont/kongesal_2_3/11-my-crafting-project-became-critical-infrastructure/" target="_blank">BoosterConf (March 2023)</a></li>
+		<li><a href="https://agiletestingdays.com/2022/session/my-crafting-project-became-critical-infrastructure/" target="_blank">Agile Testing Days (November 2022)</a></li>
+	</li>
+</ul>
+
+<a href="#" class="accordion" data-toggle="collapse" data-target="#api-security-panel"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i></a> Panel Discussion - API Quality and Security
+<ul id="api-security-panel" class="collapse">
+	<li>Presented at: <a href="https://live.infoq.com/?utm_source=linkedin&utm_medium=social&utm_campaign=il1222" target="_blank">InfoQ Live (December 2022)</a></li>
 </ul>
 
 <a href="#" class="accordion" data-toggle="collapse" data-target="#strengthen-your-code-review-skills"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i> <i class="fa fa-file-powerpoint"></i></a> Talk - Strengthen Your Code Review Skills

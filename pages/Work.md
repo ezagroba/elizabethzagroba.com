@@ -18,7 +18,7 @@ Elizabeth is Quality Lead at [Mendix](https://www.mendix.com/) in The Netherland
 
 She injects what she learns from books, conferences, and meetups into her daily work, spreading her knowledge through the workshops and Agile guild she facilitates. She's appreciated as an exploratory tester with an “[extraordinary power of observation and categorization](https://www.exploratorytestingacademy.com/appreciationmap/index.html).” Her goal is to build enough skills in individuals and teams to make herself redundant. She’s currently serving as a co-organizer for the Friends of Good Software Conference ([FroGS Conf](https://frogsconf.nl/])) and program committee member for [Agile Testing Days](https://frogsconf.nl/). 
 
-You can find Elizabeth's big thoughts on this blog and little thoughts on [Mastodon](https://chaos.social/@ez) and [Twitter](https://twitter.com/ezagroba). 
+You can find Elizabeth's big thoughts on this blog and little thoughts on [Mastodon](https://chaos.social/@ez).
 
 ### Email
 [me@elizabethzagroba.com](mailto:me@elizabethzagroba.com)
