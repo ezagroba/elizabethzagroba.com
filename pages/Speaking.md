@@ -28,9 +28,11 @@
 <ul id="crafting-project-infrastructure" class="collapse">
 	<li><a href="../../assets/slides/cloud-deployment-script.pdf">Slides</a></li>
 	<li>Presented at:
-		<li><a href="https://www.oop-konferenz.de/oop-2023-muenchen/startpage/program/conference-program" target="_blank">OOP Konferenz (July 2023)</a></li>
-		<li><a href="https://2023.boosterconf.no/program/thursday/3_short_talks_and_workshops_cont/kongesal_2_3/11-my-crafting-project-became-critical-infrastructure/" target="_blank">BoosterConf (March 2023)</a></li>
-		<li><a href="https://agiletestingdays.com/2022/session/my-crafting-project-became-critical-infrastructure/" target="_blank">Agile Testing Days (November 2022)</a></li>
+		<ul>
+			<li><a href="https://www.oop-konferenz.de/oop-2023-muenchen/startpage/program/conference-program" target="_blank">OOP Konferenz (July 2023)</a></li>
+			<li><a href="https://2023.boosterconf.no/program/thursday/3_short_talks_and_workshops_cont/kongesal_2_3/11-my-crafting-project-became-critical-infrastructure/" target="_blank">BoosterConf (March 2023)</a></li>
+			<li><a href="https://agiletestingdays.com/2022/session/my-crafting-project-became-critical-infrastructure/" target="_blank">Agile Testing Days (November 2022)</a></li>
+		</ul>
 	</li>
 </ul>
 
