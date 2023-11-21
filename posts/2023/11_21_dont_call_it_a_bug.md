@@ -1,4 +1,4 @@
-.. title: You Don't Have To Call It A Bug
+.. title: Don't Call It A Bug
 .. date: 21 November 2023
 .. description: Asking a developer to build a new feature got better results than asking them to fix a bug.
 .. tags: communication, testing, naming, feedback
@@ -39,9 +39,9 @@ Bugs did not have story points. A developer fixing a bug would have completed fe
 
 My boss reacted to my explanation by simply switching their Jira filter from "Bugs created by Elizabeth in the past two weeks" to "Feature requests created by Elizabeth in the past two weeks." 
 
-With the power of hindsight, there's a lot more I could have dug into about a culture that uses numbers from Jira as currency. Regardless, I do think this experience made me a better, more collaborative tester focused not on getting the credit/being right/finding the most bugs, but on getting the application fixed. 
-
 ## Lessons learned
+
+With the power of hindsight, there's a lot more I could have dug into about a culture that uses numbers from Jira as currency. Regardless, I do think this experience made me a better, more collaborative tester focused not on getting the credit/being right/finding the most bugs, but on getting the application fixed. 
 
 I like to think back on my time at this company as my fastest learning experience. But when I was in the thick of it, all I knew I had learned from this experience is:
 
@@ -49,6 +49,8 @@ I like to think back on my time at this company as my fastest learning experienc
 - Approaching a situation with curiosity or excitement will get you a better outcome than approaching it as a fight.
 - Getting the bug fixed is more important than labelling it as a bug.
 - Keeping the lines of communication open to be able to deliver a message might be more important than any particular message. 
+
+In susequent years, I learned from Rapid Software Testing that (paraphrasing) an effective tester is someone who gets bugs _fixed_. Liz Keogh's Agile Testing Days keynote in 2018 on [how to tell people they failed (and make them feel great)](https://www.youtube.com/watch?v=KvKFlMfEqxM) argued in favor of positive reinforcement. In digging that link up, I found [this old post of mine](https://elizabethzagroba.com/posts/2021/praise_the_messenger/) included a bit on keeping lines of communication open. 
 
 What political games have you played in order to get things done? When have you sacrificed credit or acknowledgement for progress? What's a worse metric to track in Jira to pit developers against each other than story points? 
 
