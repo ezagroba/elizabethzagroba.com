@@ -50,7 +50,7 @@ I like to think back on my time at this company as my fastest learning experienc
 - Getting the bug fixed is more important than labelling it as a bug.
 - Keeping the lines of communication open to be able to deliver a message might be more important than any particular message. 
 
-In susequent years, I learned from Rapid Software Testing that (paraphrasing) an effective tester is someone who gets bugs _fixed_. Liz Keogh's Agile Testing Days keynote in 2018 on [how to tell people they failed (and make them feel great)](https://www.youtube.com/watch?v=KvKFlMfEqxM) argued in favor of positive reinforcement. In digging that link up, I found [this old post of mine](https://elizabethzagroba.com/posts/2021/praise_the_messenger/) included a bit on keeping lines of communication open. 
+Other lessons reinforced these ideas for me. I learned from [Black Box Software Testing](https://bbst.courses/) that (paraphrasing) an effective tester is someone who gets bugs _fixed_. Liz Keogh's Agile Testing Days keynote in 2018 on [how to tell people they failed (and make them feel great)](https://www.youtube.com/watch?v=KvKFlMfEqxM) argued in favor of positive reinforcement. In digging that link up, I found [this old post of mine](https://elizabethzagroba.com/posts/2021/praise_the_messenger/) included a bit on keeping lines of communication open. 
 
 What political games have you played in order to get things done? When have you sacrificed credit or acknowledgement for progress? What's a worse metric to track in Jira to pit developers against each other than story points? 
 
