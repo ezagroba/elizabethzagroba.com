@@ -3,12 +3,12 @@
 ## Software Communities 
 
 - I co-organize Friends of Good Software conference ([FroGSConf](https://frogsconf.nl/)).
-- I've spoken at and served on the program committee for [Agile Testing Days](https://agiletestingdays.com/). 
-- I've done a bunch of stuff for the [Ministry of Testing](https://www.ministryoftesting.com/): spoken at TestBashes, written articles, had people Ask Me Anything live and on the club, facilitated a 99-minute workshop. 
+- I've spoken at and served on the program committee for [Agile Testing Days](https://agiletestingdays.com/). I'm currently on the program committee for [HUSTEF](https://hustef.hu/).
+- I've done a bunch of stuff for the [Ministry of Testing](https://www.ministryoftesting.com/): spoken at TestBashes, written articles, had people Ask Me Anything live and on the club, facilitated a 99-minute workshop, volunteered at a TestBash. 
 
 ## Presentations
 
-### Invite me to present about
+### Invite me to present about these topics in 2025
 
 - exploratory testing
 - API testing
@@ -16,13 +16,25 @@
 - ensemble testing (mob testing)
 - Python scripting
 
+Or reach out to me about finding another presenter for 2024 on similar topics. The private Women in Testing Slack channel has a strong community of testers and presenters from around the world who might have more time than I do left for professional obligations this year.
+
 ### Upcoming events
 
-- [Testμ](https://www.lambdatest.com/testmuconf-2023/) (August 2023)
-- [Agile Testing Days](https://agiletestingdays.com/) (November 2023)
+- [BoosterConf](https://2024.boosterconf.no/) (March 2024)
+- [Agile on the Beach](https://agileonthebeach.com/) (July 2024)
+- At least three other yet-to-be-announced conference programs in 2024
 
 ### Recent presentations
 #### Topics: API testing, exploratory testing, code review, test reporting, ensemble testing, and Python scripting
+
+<a href="#" class="accordion" data-toggle="collapse" data-target="#ensemble-testing-workshop"><i class="fa fa-users"></i> </a> Workshop (w/Lisi Hocke and Joep Schuurkes) - Ensemble Testing 
+<ul id="ensemble-testing-workshop" class="collapse">
+	<li>Presented at:
+		<ul>
+			<li><a href="https://agiletestingdays.com/2023/session/ensemble-testing/" target="_blank">Agile Testing Days (November 2023)</a></li>
+		</ul>
+	</li>
+</ul>
 
 <a href="#" class="accordion" data-toggle="collapse" data-target="#crafting-project-infrastructure"><i class="fa fa-bullhorn"></i> <i class="fa fa-file-powerpoint"></i></a> Talk - My Crafting Project Became Critical Infrastructure
 <ul id="crafting-project-infrastructure" class="collapse">
@@ -32,6 +44,7 @@
 			<li><a href="https://www.oop-konferenz.de/oop-2023-muenchen/startpage/program/conference-program" target="_blank">OOP Konferenz (July 2023)</a></li>
 			<li><a href="https://2023.boosterconf.no/program/thursday/3_short_talks_and_workshops_cont/kongesal_2_3/11-my-crafting-project-became-critical-infrastructure/" target="_blank">BoosterConf (March 2023)</a></li>
 			<li><a href="https://agiletestingdays.com/2022/session/my-crafting-project-became-critical-infrastructure/" target="_blank">Agile Testing Days (November 2022)</a></li>
+			<li><a href="https://www.lambdatest.com/blog/my-crafting-project-became-critical-infrastructure/" target="_blank">Testμ (August 2023)</a></li>
 		</ul>
 	</li>
 </ul>
@@ -215,6 +228,7 @@
 ### Past peer conferences
 
 - [Friends of Good Software [FroGS Conf]](http://frogsconf.nl/) *organizer*
+	- December 2023
 	- June 2023
 	- March 2023
 	- December 2022
