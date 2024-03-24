@@ -14,18 +14,30 @@
 - API testing
 - test reporting
 - ensemble testing (mob testing)
-- Python scripting
+- a variety of lightning talks stolen from my blog
 
-Or reach out to me about finding another presenter for 2024 on similar topics. The private Women in Testing Slack channel has a strong community of testers and presenters from around the world who might have more time than I do left for professional obligations this year.
+Or reach out to me about finding another presenter for 2024 on similar topics. The private Women in Testing Slack channel has a strong community of testers and presenters from around the world who might have more energy than I do left for professional obligations this year.
 
 ### Upcoming events
 
-- [BoosterConf](https://2024.boosterconf.no/) (March 2024)
+- [NewCrafts](https://ncrafts.io/) (May 2024)
+- [DDD Europe](https://2024.dddeurope.com/) (May 2024)
 - [Agile on the Beach](https://agileonthebeach.com/) (July 2024)
-- At least three other yet-to-be-announced conference programs in 2024
+- [HUSTEF](https://hustef.hu/) (October 2024)
+- and one more yet-to-be-announced conference for 2024
 
 ### Recent presentations
-#### Topics: API testing, exploratory testing, code review, test reporting, ensemble testing, and Python scripting
+#### Topics: API testing, exploratory testing, code review, test reporting, ensemble testing, and facilitating architecture decisions
+
+<a href="#" class="accordion" data-toggle="collapse" data-target="#anarchist-software-architecture"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i></a> Lightning Talk - Anarchist Software Architecture
+<ul id="anarchist-software-architecture" class="collapse">
+	<li><a href="https://vimeo.com/924280210" target="_blank">BoosterConf recording</a></li>
+	<li>Presented at:
+		<ul>
+			<li><a href="https://2024.boosterconf.no/program/thursday/7_lightning_talks/kongesalen_1/anarchist-software-architecture/" target="_blank">BoosterConf (March 2024)</a></li>
+		</ul>
+	</li>
+</ul>
 
 <a href="#" class="accordion" data-toggle="collapse" data-target="#ensemble-testing-workshop"><i class="fa fa-users"></i> </a> Workshop (w/Lisi Hocke and Joep Schuurkes) - Ensemble Testing 
 <ul id="ensemble-testing-workshop" class="collapse">
@@ -54,7 +66,7 @@ Or reach out to me about finding another presenter for 2024 on similar topics. T
 	<li>Presented at: <a href="https://live.infoq.com/?utm_source=linkedin&utm_medium=social&utm_campaign=il1222" target="_blank">InfoQ Live (December 2022)</a></li>
 </ul>
 
-<a href="#" class="accordion" data-toggle="collapse" data-target="#strengthen-your-code-review-skills"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i> <i class="fa fa-file-powerpoint"></i></a> Talk - Strengthen Your Code Review Skills
+<a href="#" class="accordion" data-toggle="collapse" data-target="#strengthen-your-code-review-skills"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i> <i class="fa fa-file-powerpoint"></i></a> Lightning Talk - Strengthen Your Code Review Skills
 <ul id="strengthen-your-code-review-skills" class="collapse">
 	<li><a href="https://vimeo.com/691777585" target="_blank">BoosterConf recording</a></li>
 	<li><a href="../../assets/slides/code-review.pdf">Slides</a></li>
@@ -228,6 +240,7 @@ Or reach out to me about finding another presenter for 2024 on similar topics. T
 ### Past peer conferences
 
 - [Friends of Good Software [FroGS Conf]](http://frogsconf.nl/) *organizer*
+	- March 2024
 	- December 2023
 	- June 2023
 	- March 2023
