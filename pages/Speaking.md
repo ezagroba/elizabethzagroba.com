@@ -20,14 +20,33 @@ Or reach out to me about finding another presenter for 2024 on similar topics. T
 
 ### Upcoming events
 
-- [NewCrafts](https://ncrafts.io/) (May 2024)
-- [DDD Europe](https://2024.dddeurope.com/) (May 2024)
 - [Agile on the Beach](https://agileonthebeach.com/) (July 2024)
 - [HUSTEF](https://hustef.hu/) (October 2024)
-- and one more yet-to-be-announced conference for 2024
 
 ### Recent presentations
 #### Topics: API testing, exploratory testing, code review, test reporting, ensemble testing, and facilitating architecture decisions
+
+<a href="#" class="accordion" data-toggle="collapse" data-target="#ensemble-way-of-working"><i class="fa fa-users"></i> </a> Workshop (w/Joep Schuurkes) - Experience ensemble (mob) ways of working
+<ul id="ensemble-way-of-working" class="collapse">
+	<li>Presented at:
+		<ul>
+			<li><a href="https://2024.dddeurope.com/schedule/" target="_blank">Agile on the Beach (July 2024)</a></li>
+			<li><a href="https://agileonthebeach.com/the-conference/schedule/" target="_blank">DDD Europe (May 2024)</a></li>
+		</ul>
+	</li>
+</ul>
+
+<a href="#" class="accordion" data-toggle="collapse" data-target="#live-exploratory-testing"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i> <i class="fa fa-file-powerpoint"></i></a> Talk - Live Exploratory Testing
+<ul id="live-exploratory-testing" class="collapse">
+	<li><a href="https://workflowy.com/s/new-crafts-2024-prem/QDLSCFLW92Q01tBH">"Slides"</a></li>
+	<li><a href="https://vimeo.com/949429357">NewCrafts recording</a></li>
+	<li>Presented at:
+		<ul>
+			<li><a href="https://ncrafts.io/speaker/elizabethzagroba" target="_blank">NewCrafts (May 2024)</a></li>
+		</ul>
+	</li>
+</ul>
+
 
 <a href="#" class="accordion" data-toggle="collapse" data-target="#anarchist-software-architecture"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i></a> Lightning Talk - Anarchist Software Architecture
 <ul id="anarchist-software-architecture" class="collapse">
