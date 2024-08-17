@@ -20,8 +20,8 @@ Or reach out to me about finding another presenter for 2024 on similar topics. T
 
 ### Upcoming events
 
-- [Agile on the Beach](https://agileonthebeach.com/) (July 2024)
 - [HUSTEF](https://hustef.hu/) (October 2024)
+- [Agile Testing Days](https://agiletestingdays.com/) (November 2024)
 
 ### Recent presentations
 #### Topics: API testing, exploratory testing, code review, test reporting, ensemble testing, and facilitating architecture decisions
@@ -259,6 +259,7 @@ Or reach out to me about finding another presenter for 2024 on similar topics. T
 ### Past peer conferences
 
 - [Friends of Good Software [FroGS Conf]](http://frogsconf.nl/) *organizer*
+	- June 2024
 	- March 2024
 	- December 2023
 	- June 2023
