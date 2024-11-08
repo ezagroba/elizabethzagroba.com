@@ -1,264 +1,124 @@
-.. description: Talks, workshops, panels, and AMAs I've done, plus software communities and peer conferences I'm a part of. 
+.. description: Talks, workshops, panels, interviews, and AMAs I've done, plus software communities and peer conferences I'm a part of. 
 
 ## Software Communities 
 
 - I co-organize Friends of Good Software conference ([FroGSConf](https://frogsconf.nl/)).
-- I've spoken at and served on the program committee for [Agile Testing Days](https://agiletestingdays.com/). I'm currently on the program committee for [HUSTEF](https://hustef.hu/).
-- I've done a bunch of stuff for the [Ministry of Testing](https://www.ministryoftesting.com/): spoken at TestBashes, written articles, had people Ask Me Anything live and on the club, facilitated a 99-minute workshop, volunteered at a TestBash. 
+- I've spoken at and served on the program committee for [Agile Testing Days](https://agiletestingdays.com/), the [Hungarian Software Testing Forum (HUSTEF)](https://hustef.hu/), and the Agile Alliance.
+- I've done a bunch of stuff for the [Ministry of Testing](https://www.ministryoftesting.com/): spoken at TestBashes, written articles, reviewed abstracts, had people Ask Me Anything live and on the club, facilitated a 99-minute workshop, joined a fireside chat, and volunteered at a TestBash. 
 
 ## Presentations
 
-### Invite me to present about these topics in 2025
+### Invite me to present about these topics
 
 - exploratory testing
-- API testing
 - test reporting
 - ensemble testing (mob testing)
 - a variety of lightning talks stolen from my blog
 
-Or reach out to me about finding another presenter for 2024 on similar topics. The private Women in Testing Slack channel has a strong community of testers and presenters from around the world who might have more energy than I do left for professional obligations this year.
-
 ### Upcoming events
 
-- [HUSTEF](https://hustef.hu/) (October 2024)
-- [Agile Testing Days](https://agiletestingdays.com/) (November 2024)
+For 2025, I have a couple of peer conferences I hope to participate in, but no specific speaking engagements just yet! 
 
 ### Recent presentations
-#### Topics: API testing, exploratory testing, code review, test reporting, ensemble testing, and facilitating architecture decisions
+#### Topics: exploratory testing, code review, ensemble testing, and facilitating architecture decisions
 
-<a href="#" class="accordion" data-toggle="collapse" data-target="#ensemble-way-of-working"><i class="fa fa-users"></i> </a> Workshop (w/Joep Schuurkes) - Experience ensemble (mob) ways of working
-<ul id="ensemble-way-of-working" class="collapse">
-	<li>Presented at:
-		<ul>
-			<li><a href="https://2024.dddeurope.com/schedule/" target="_blank">Agile on the Beach (July 2024)</a></li>
-			<li><a href="https://agileonthebeach.com/the-conference/schedule/" target="_blank">DDD Europe (May 2024)</a></li>
-		</ul>
-	</li>
-</ul>
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#live-exploratory-testing"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i> <i class="fa fa-file-powerpoint"></i></a> Talk - Live Exploratory Testing
-<ul id="live-exploratory-testing" class="collapse">
-	<li><a href="https://workflowy.com/s/new-crafts-2024-prem/QDLSCFLW92Q01tBH">"Slides"</a></li>
-	<li><a href="https://vimeo.com/949429357">NewCrafts recording</a></li>
-	<li>Presented at:
-		<ul>
-			<li><a href="https://ncrafts.io/speaker/elizabethzagroba" target="_blank">NewCrafts (May 2024)</a></li>
-		</ul>
-	</li>
-</ul>
-
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#anarchist-software-architecture"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i></a> Lightning Talk - Anarchist Software Architecture
-<ul id="anarchist-software-architecture" class="collapse">
-	<li><a href="https://vimeo.com/924280210" target="_blank">BoosterConf recording</a></li>
-	<li>Presented at:
-		<ul>
-			<li><a href="https://2024.boosterconf.no/program/thursday/7_lightning_talks/kongesalen_1/anarchist-software-architecture/" target="_blank">BoosterConf (March 2024)</a></li>
-		</ul>
-	</li>
-</ul>
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#ensemble-testing-workshop"><i class="fa fa-users"></i> </a> Workshop (w/Lisi Hocke and Joep Schuurkes) - Ensemble Testing 
-<ul id="ensemble-testing-workshop" class="collapse">
-	<li>Presented at:
-		<ul>
-			<li><a href="https://agiletestingdays.com/2023/session/ensemble-testing/" target="_blank">Agile Testing Days (November 2023)</a></li>
-		</ul>
-	</li>
-</ul>
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#crafting-project-infrastructure"><i class="fa fa-bullhorn"></i> <i class="fa fa-file-powerpoint"></i></a> Talk - My Crafting Project Became Critical Infrastructure
-<ul id="crafting-project-infrastructure" class="collapse">
-	<li><a href="../../assets/slides/cloud-deployment-script.pdf">Slides</a></li>
-	<li>Presented at:
-		<ul>
-			<li><a href="https://www.oop-konferenz.de/oop-2023-muenchen/startpage/program/conference-program" target="_blank">OOP Konferenz (July 2023)</a></li>
-			<li><a href="https://2023.boosterconf.no/program/thursday/3_short_talks_and_workshops_cont/kongesal_2_3/11-my-crafting-project-became-critical-infrastructure/" target="_blank">BoosterConf (March 2023)</a></li>
-			<li><a href="https://agiletestingdays.com/2022/session/my-crafting-project-became-critical-infrastructure/" target="_blank">Agile Testing Days (November 2022)</a></li>
-			<li><a href="https://www.lambdatest.com/blog/my-crafting-project-became-critical-infrastructure/" target="_blank">Testμ (August 2023)</a></li>
-		</ul>
-	</li>
-</ul>
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#api-security-panel"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i></a> Panel Discussion - API Quality and Security
-<ul id="api-security-panel" class="collapse">
-	<li>Presented at: <a href="https://live.infoq.com/?utm_source=linkedin&utm_medium=social&utm_campaign=il1222" target="_blank">InfoQ Live (December 2022)</a></li>
-</ul>
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#strengthen-your-code-review-skills"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i> <i class="fa fa-file-powerpoint"></i></a> Lightning Talk - Strengthen Your Code Review Skills
-<ul id="strengthen-your-code-review-skills" class="collapse">
-	<li><a href="https://vimeo.com/691777585" target="_blank">BoosterConf recording</a></li>
-	<li><a href="../../assets/slides/code-review.pdf">Slides</a></li>
-	<li>Presented at:</li>
-		<ul>
-			<li><a href="https://joyofcoding.org/2022/speakers/lightning-talks.html" target="_blank">Joy of Coding (June 2022)</a></li>
-			<li><a href="https://2022.boosterconf.no/talk/70-strengthen-your-code-review-skills/" target="_blank">BoosterConf (March 2022)</a></li>
-		</ul>
-</ul>
+- Live Exploratory Testing (talk)
+	- [Agile Testing Days (November 2024)](https://agiletestingdays.com/2024/session/live-exploratory-testing/)
+	- [Hungarian Software Testing Forum (October 2024)](https://hustef.hu/elizabeth_zagroba_2024/) [[Slides]](https://workflowy.com/s/hustef-2024/WQuzSkc2OPwEA6sA)
+	- [NewCrafts (May 2024)](https://ncrafts.io/speaker/elizabethzagroba) [[Slides]](https://workflowy.com/s/new-crafts-2024-prem/QDLSCFLW92Q01tBH)
+- Experience ensemble (mob) ways of working (workshop with Joep Schuurkes)
+	- [Agile on the Beach (July 2024)](https://2024.dddeurope.com/schedule/)
+	- [DDD Europe (May 2024)](https://agileonthebeach.com/the-conference/schedule/)
+- Anarchist Software Architecture (lightning talk)
+	- [BoosterConf (March 2024)](https://2024.boosterconf.no/program/thursday/7_lightning_talks/kongesalen_1/anarchist-software-architecture/) [[Video]](https://vimeo.com/924280210)
+- Ensemble Testing (workshop with Lisi Hocke and Joep Schuurkes)
+	- [Agile Testing Days (November 2023)](https://agiletestingdays.com/2023/session/ensemble-testing/)
+- My Crafting Project Became Critical Infrastructure (talk)
+	- [Testμ (August 2023)](https://www.lambdatest.com/blog/my-crafting-project-became-critical-infrastructure/) [[Slides]](../../assets/slides/cloud-deployment-script.pdf)
+	- [OOP Konferenz (July 2023)](https://www.oop-konferenz.de/oop-2023-muenchen/startpage/program/conference-program)
+	- [BoosterConf (March 2023)](https://2023.boosterconf.no/program/thursday/3_short_talks_and_workshops_cont/kongesal_2_3/11-my-crafting-project-became-critical-infrastructure/)
+	- [Agile Testing Days (November 2022)](https://agiletestingdays.com/2022/session/my-crafting-project-became-critical-infrastructure/)
+- Strengthen Your Code Review Skills (lightning talk)
+	- [Joy of Coding (June 2022)](https://joyofcoding.org/2022/speakers/lightning-talks.html) [Slides](../../assets/slides/code-review.pdf)
+	- [BoosterConf (March 2022)](https://2022.boosterconf.no/talk/70-strengthen-your-code-review-skills/) [Video](https://vimeo.com/691777585)
 
 
-<a href="#" class="accordion" data-toggle="collapse" data-target="#reporting-your-testing-99-minute-workshop"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i></a> 99-Minute Workshop - An Introduction to Reporting Your Testing
-<ul id="reporting-your-testing-99-minute-workshop" class="collapse">
-	<li>Presented at: <a href="https://www.ministryoftesting.com/dojo/series/99-minute-workshops-essentials/lessons/an-introduction-to-reporting-your-testing" target="_blank">Ministry of Testing Dojo video recording [paywall] (October 2021)</a></li>
-</ul>
+### Archived presentations, panels, and interviews
+#### Topics: ensemble testing, pairing, interviewing, and communication
 
-<a href="#" class="accordion" data-toggle="collapse" data-target="#agile-2021-ensemble-testing-panel"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i></a> Panel Discussion - Ensemble Testing
-<ul id="agile-2021-ensemble-testing-panel" class="collapse">
-	<li>Presented at: Agile2021 (July 2021)</a></li>
-</ul>
+- The Testing Planet News (with Simon Tomes, Alessandra Moreira, Jesse Buckley, and Simon Tomes)
+	- [Ministry of Testing (October 2024)](https://www.ministryoftesting.com/the-testing-planet-sessions/essentials-the-testing-planet-news-episode-06)
+- Creating CVs that get noticed (panel)
+	- [Ministry of Testing Dojo (January 2023)](https://www.ministryoftesting.com/discussions/creating-cvs-that-get-noticed)
+- API Quality and Security (panel)
+	- [InfoQ Live (December 2022)](https://live.infoq.com/?utm_source=linkedin&utm_medium=social&utm_campaign=il1222)
+- An Introduction to Reporting Your Testing (workshop)
+	- [Ministry of Testing Dojo (October 2021)](https://www.ministryoftesting.com/dojo/series/99-minute-workshops-essentials/lessons/an-introduction-to-reporting-your-testing)
+- Interview (podcast with Keith Klain)
+	- [Quality Remarks (July 2021)](https://qualityremarks.com/qr-podcast/)
+- Ensemble Testing (panel discussion with Joep Schuurkes, Maaret Pyhäjärvi, Louise Perold)
+	- [Agile2021 (July 2021)](https://www.agilealliance.org/resources/sessions/ensemble-testing/)
+- Wander With A Purpose: Writing Charters for your Exploratory Testing Sessions (workshop)
+	- [Ministry of Testing Exploratory Testing Week (April 2021)](https://club.ministryoftesting.com/t/wander-with-a-purpose-writing-charters-for-your-exploratory-test-sessions/49746)
+	- Let's Test (November 2019) [[Slides]](https://ezagroba.github.io/charters/)
+- Test Reporting (ask me anything)
+	- [Ministry of Testing Dojo (January 2021)](https://www.ministryoftesting.com/dojo/lessons/testing-ask-me-anything-test-reporting-elizabeth-zagroba)
+- Mob Programming (panel discussion)
+	- [Agile New England (June 2020)](https://www.youtube.com/watch?v=VM7En7eV4ZE)
+- Mob Testing: Building Good Habits (talk with Joep Schuurkes)
+	- [European Testing Conference (February 2020)](https://europeantestingconference.eu/2020/topics/#elizabeth-zagroba) [[Slides]](https://ezagroba.github.io/mob-testing/)
+- Interview (podcast with Huib Schoots and Jitesh Gosai)
+	- [Ministry of Testing Podcast (February 2020)](https://www.ministryoftesting.com/dojo/series/the-ministry-of-testing-podcast-2020/lessons/mot-podcast-adam-meets-elizabeth-zagroba-huib-schoots-jitesh-gosai)
+- Turn on your headlights: Testing in DevOps and Continuous Delivery (with Lisa Crispin)
+	- Cegeka Agility Days (September 2019)
+- How test reporting changes your testing (workshop with Joep Schuurkes)
+	- [TestBash Manchester (September/October 2019)](https://ministryoftesting.com/events/testbash-manchester-2019)
+- Doubt Builds Trust (talk)
+	- [TESTJam! *keynote* (September 2019)](https://www.eventbrite.nl/e/testjam-a-conference-for-testers-by-testers-tickets-59516901655)
+	- [Nordic Testing Days (May 2019)](https://nordictestingdays.eu/2019-2/) [[Video]](https://youtube.com/watch?v=SM57HMJpkZc)
+	- Agile, Testing & DevOps Showcase (January 2019)
+	- Let's Test *keynote* (November 2018) [[Slides]](../../assets/slides/doubt-builds-trust.pdf)
+	- SoftTest Conference (October 2019)
+	- EuroSTAR (November 2018)
+	- [Agile Testing Days (November 2018)](https://agiletestingdays.com/2018/session/doubt-builds-trust/)
+	- [TestBash Germany (September 2018)](https://dojo.ministryoftesting.com/events/testbash-germany-2018) [[Video]](https://dojo.ministryoftesting.com/dojo/lessons/doubt-builds-trust-elizabeth-zagroba)
+- Building your own API testing framework (workshop with Joep Schuurkes)
+	- [TestBash Netherlands (May 2019)](https://www.ministryoftesting.com/events/testbash-netherlands-2019) [[Exercises]](https://github.com/j19sch/building-an-api-testing-framework)
+	- [Nordic Testing Days (May 2019)](https://nordictestingdays.eu/2019-2/)
+- Interview (podcast with Neil Studd)
+	- [Testers' Island Discs episode 23](https://www.ministryoftesting.com/dojo/lessons/testers-island-discs-ep23-elizabeth-zagroba)
+- How To Interview Like A Tester (workshop with Martin Hynie)
+	- [TestBash Brighton (March 2018)](https://dojo.ministryoftesting.com/events/testbash-brighton-2018)
+	- Let's Test (November 2018)
+- Using Mindmaps for Team Communication (talk)
+	- Ministry of Testing - Utrecht Meetup (July 2018) [[Slides]](../../assets/slides/mindmaps.pdf)
+- Less Is More (talk with Diana Wendruff)
+	- [TestBash Brighton (March 2018)](https://dojo.ministryoftesting.com/events/testbash-brighton-2018) [[Video]](https://www.ministryoftesting.com/dojo/lessons/less-is-more-diana-wendruff-elizabeth-zagroba) [[Slides]](../../assets/slides/less-more.pdf)
+- Introducing Pair Testing to a Team (talk)
+	- Agile Testing Days Webinar (June 2017) [[Video]](https://www.youtube.com/watch?v=jyFNzHFd_80)
+- Succeeding as an Introvert (talk)
+	- [Think About! Meetup (July 2019)](https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/262967473/) [[Slides]](../../assets/slides/introvert.pdf)
+	- [Agile Testing Days USA (June 2018)](https://web.archive.org/web/20220119005054/https://agiletestingdays.us/session/succeeding-as-an-introvert/)
+	- [Agile Testing Days (November 2017)](https://web.archive.org/web/20220119005054/https://agiletestingdays.us/session/succeeding-as-an-introvert/)
+	- Quality Jam London (October 2017)
+	- Copenhagen Context (September 2017)
+	- [Dutch PHP Conference (June/July 2017)](https://www.phpconference.nl/) [[Video]](https://www.youtube.com/watch?v=3SdoCJQsXB4)
+	- [Romanian Testing Conference (May 2017)](https://romaniatesting.ro/rtc2017/)
+	- [TestBash Philadelphia (November 2016)](https://www.ministryoftesting.com/dojo/series/testbash-philadelphia-2016-ministry-of-testing) [[Video]](https://dojo.ministryoftesting.com/lessons/succeeding-as-an-introvert-elizabeth-zagroba)
+- Interview (podcast with Dan Ashby and Steven Janaway)
+	- [Testing in the Pub (November 2016)](https://www.ministryoftesting.com/dojo/series/the-ministry-of-testing-podcast-2016/lessons/elizabeth-live-from-testing-in-the-pub-at-testbash-philadelphia)
+- Testing When The World Is Watching (talk)
+	- Let's Test (May 2016) [[Slides]](../../assets/slides/testing-when-the-world-is-watching.pdf)
+	- [NYC Testers Meetup (April 2016)](http://www.meetup.com/NYC-Testers/events/230377700/)
+	- [ConFoo Montreal (March 2017)](https://confoo.ca/en/yul2017/schedule)
+- Challenges in Audio Mobile Testing (talk)
+	- [NYC Testers Meetup (August 2015)](http://www.meetup.com/NYC-Testers/events/224194458/) [[Slides]](../../assets/slides/audio-mobile-testing.pdf)
 
-<a href="#" class="accordion" data-toggle="collapse" data-target="#test-reporting-ama"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i></a> Ask Me Anything - Test Reporting
-<ul id="test-reporting-ama" class="collapse">
-	<li><a href="https://www.ministryoftesting.com/dojo/lessons/testing-ask-me-anything-test-reporting-elizabeth-zagroba" target="_blank">Ministry of Testing Dojo video recording [paywall] (January 2021)</a></li>
-</ul>
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#mob-programming-agile-new-england"><i class="fa fa-bullhorn"></i> <i class="fab fa-youtube"></i></a> Panel Discussion - Mob Programming
-<ul id="mob-programming-agile-new-england" class="collapse">
-	<li><a href="https://www.youtube.com/watch?v=VM7En7eV4ZE" target="_blank">Agile New England video recording (June 2020)</a></li>
-</ul>
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#mob-testing"><i class="fa fa-bullhorn"></i> <i class="fa fa-file-powerpoint"></i></a> Talk (w/Joep Schuurkes) - Mob Testing: Building Good Habits
-<ul id="mob-testing" class="collapse">
-	<li><a href="https://ezagroba.github.io/mob-testing/" target="_blank">Slides</a></li>
-	<li>Presented at: <a href="https://europeantestingconference.eu/2020/topics/#elizabeth-zagroba" target="_blank">European Testing Conference [The Netherlands] (February 2020)</a></li>
-</ul>
-
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#wander"><i class="fa fa-users"></i> <i class="fa fa-file-powerpoint"></i> <i class="fas fa-book-open"></i></a> Workshop - Wander With A Purpose: Writing Charters for your Exploratory Testing Sessions
-<ul id="wander" class="collapse">
-<li><a href="https://ezagroba.github.io/charters/" target="_blank">Slides</a></li>
-<li><a href="https://www.ministryoftesting.com/dojo/series/the-ministry-of-testing-podcast-2020/lessons/mot-podcast-adam-meets-elizabeth-zagroba-huib-schoots-jitesh-gosai" target="_blank">Ministry of Testing Podcast - Adam Meets Elizabeth Zagroba, Huib Schoots & Jitesh Gosai</a></li>
-<li>Presented at:</li>
-	<ul>
-		<li><a href="https://club.ministryoftesting.com/t/wander-with-a-purpose-writing-charters-for-your-exploratory-test-sessions/49746" target="_blank">Exploratory Testing Week [Ministry of Testing] (April 2021)</a></li>
-		<li>Let's Test [South Africa] (November 2019)</li>
-	</ul>
-</ul>
-
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#cegeka"><i class="fa fa-users"></i></a> Workshop (w/Lisa Crispin) - Turn on your headlights: Testing in DevOps and Continuous Delivery
-<ul id="cegeka" class="collapse">
-	<li>Presented at: The Cegeka Agility Days [Belgium] (September 2019)</li>
-</ul>
-
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#test-reporting"><i class="fa fa-users"></i></a> Workshop (w/Joep Schuurkes) - How test reporting changes your testing
-<ul id="test-reporting" class="collapse">
-	<li>Presented at: <a href="https://ministryoftesting.com/events/testbash-manchester-2019" target="_blank">TestBash Manchester (September/October 2019)</a></li>
-</ul>
-
-
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#python-api-framework"><i class="fa fa-users"></i> <i class="fa fa-file-powerpoint"></i></a> Workshop (w/Joep Schuurkes) - Building your own API testing framework</a>
-<ul id="python-api-framework" class="collapse">
-	<li><a href="https://github.com/j19sch/building-an-api-testing-framework" target="_blank">Exercises</a></li>
-	<li>Presented at:</li>
-		<ul>
-			<li><a href="https://www.ministryoftesting.com/events/testbash-netherlands-2019" target="_blank">TestBash Netherlands (May 2019)</a></li>
-			<li><a href="https://nordictestingdays.eu/2019-2/" target="_blank">Nordic Testing Days [Estonia] (May 2019)</a></li>
-		</ul>
-</ul>
-
-### Archived presentations 
-#### Topics: pairing, interviewing, & communication
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#doubt-trust"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i>  <i class="fab fa-youtube"></i> <i class="fa fa-file-powerpoint"></i> <i class="fa fa-podcast"></i> <i class="fa fa-book-open"></i></a> Keynote - Doubt Builds Trust
-<ul id="doubt-trust" class="collapse">
-<li><a href="https://dojo.ministryoftesting.com/dojo/lessons/doubt-builds-trust-elizabeth-zagroba" target="_blank">Ministry of Testing Dojo video recording [paywall]</a></li>
-<li><a href="https://youtube.com/watch?v=SM57HMJpkZc" target="_blank">Nordic Testing Days video recording</a></li>
-<li><a href="https://www.ministryoftesting.com/dojo/lessons/testers-island-discs-ep23-elizabeth-zagroba" target="_blank">Testers' Island Discs podcast episode 23</a></li>
-<li><a href="../../assets/slides/doubt-builds-trust.pdf">Slides</a></li>
-<li>Presented at:</li>
-	<ul>
-		<li><a href="https://dojo.ministryoftesting.com/events/testbash-germany-2018" target="_blank">TestBash Germany (September 2018)</a></li>
-		<li><a href="https://agiletestingdays.com/2018/session/doubt-builds-trust/" target="_blank">Agile Testing Days [Germany] (November 2018)</a></li>
-		<li>EuroSTAR [The Netherlands] (November 2018)</li>
-		<li>Let's Test [South Africa] *keynote* (November 2018)</li>
-		<li>Agile, Testing & DevOps Showcase [The Netherlands] (January 2019)</li>
-		<li><a href="https://nordictestingdays.eu/2019-2/" target="_blank">Nordic Testing Days [Estonia] (May 2019)</a></li>
-		<li><a href="https://www.eventbrite.nl/e/testjam-a-conference-for-testers-by-testers-tickets-59516901655" target="_blank">TESTJam! [The Netherlands] *keynote* (September 2019)</a></li>
-		<li>SoftTest Conference [Ireland] (October 2019)</li>
-	</ul>
-</ul>
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#interview"><i class="fa fa-users"></i></a> Workshop (w/Martin Hynie) - How To Interview Like A Tester</a>
-
-<ul id="interview" class="collapse">
-	<li>Presented at:</li>
-		<ul>
-			<li><a href="https://dojo.ministryoftesting.com/events/testbash-brighton-2018" target="_blank">TestBash Brighton (March 2018)</a></li>
-			<li>Let's Test [South Africa] (November 2018)</li>
-		</ul>
-</ul>	
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#mindmaps"><i class="fa fa-bullhorn"></i> <i class="fa fa-file-powerpoint"></i></a> Talk - Using Mindmaps for Team Communication
-<ul id="mindmaps" class="collapse">
-	<li><a href="../../assets/slides/mindmaps.pdf">Slides</a></li>
-	<li>Presented at:</li>
-		<ul>
-			<li>Ministry of Testing - Utrecht Meetup (July 2018)</li>
-		</ul>
-</ul>
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#less-more"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i> <i class="fa fa-file-powerpoint"></i></a> Talk (w/Diana Wendruff) - Less Is More
-<ul id="less-more" class="collapse">
-	<li><a href="../../assets/slides/less-more.pdf">Slides</a></li>
-	<li>Presented at:</li>
-		<ul>
-			<li><a href="https://dojo.ministryoftesting.com/events/testbash-brighton-2018" target="_blank">TestBash Brighton (March 2018)</a> <a href="https://www.ministryoftesting.com/dojo/lessons/less-is-more-diana-wendruff-elizabeth-zagroba" target="_blank">[paywall video recording]</a></li>
-		</ul>
-</ul>
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#pair-testing"><i class="fa fa-bullhorn"></i> <i class="fa fa-file-powerpoint"></i></a> Talk - Introducing Pair Testing to a Team
-<ul id="pair-testing" class="collapse">
-	<li><a href="https://drive.google.com/drive/folders/0Bwh-vIQL_6mKb1VZQWswbFNCY0U?resourcekey=0-QCcWTmslD8_GJz9WbxzqvA">Slides</a></li>
-	<li>Presented at:</li>
-		<ul>
-			<li>Agile Testing Days Webinar (June 2017)</li>
-		</ul>
-</ul>
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#introvert"><i class="fa fa-bullhorn"></i> <i class="fa fa-video"></i> <i class="fa fa-photo-video"></i> <i class="fa fa-podcast"></i> <i class="fa fa-file-powerpoint"></i> <i class="fas fa-book-open"></i></a> Talk - Succeeding as an Introvert
-<ul id="introvert" class="collapse">
-<li><a href="https://dojo.ministryoftesting.com/lessons/succeeding-as-an-introvert-elizabeth-zagroba">Ministry of Testing Dojo video recording [paywall]</a></li>
-<li><a href="https://www.youtube.com/watch?v=3SdoCJQsXB4">Dutch PHP Conference audio + slides recording</a></li>
-<li><a href="https://www.ministryoftesting.com/dojo/series/the-ministry-of-testing-podcast-2016/lessons/elizabeth-live-from-testing-in-the-pub-at-testbash-philadelphia" target="_blank">Testing in the Pub podcast at TestBash Philadelphia</a></li>
-<li><a href="../../assets/slides/introvert.pdf">Slides</a></li>
-<li>Presented at:</li>
-	<ul>
-		<li><a href="https://www.ministryoftesting.com/dojo/series/testbash-philadelphia-2016-ministry-of-testing" target="_blank">TestBash Philadelphia (November 2016)</a></li>
-		<li><a href="https://romaniatesting.ro/rtc2017/" target="_blank">Romanian Testing Conference (May 2017)</a></li>
-		<li><a href="https://www.phpconference.nl/" target="_blank">Dutch PHP Conference (June/July 2017)</a></li>
-		<li>Copenhagen Context (September 2017)</li>
-		<li>Quality Jam London (October 2017)</li>
-		<li><a href="https://web.archive.org/web/20220119005054/https://agiletestingdays.us/session/succeeding-as-an-introvert/" target="_blank">Agile Testing Days [Germany] (November 2017)</a></li>
-		<li><a href="https://web.archive.org/web/20220119005054/https://agiletestingdays.us/session/succeeding-as-an-introvert/" target="_blank">Agile Testing Days USA (June 2018)</a></li>
-		<li><a href="https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/262967473/" target="_blank">Think About! Meetup [Germany] (July 2019)</a></li>
-	</ul>
-</ul>
-
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#watching"><i class="fa fa-bullhorn"></i> <i class="fa fa-file-powerpoint"></i></a> Talk - Testing When The World Is Watching
-<ul id="watching" class="collapse">
-	<li><a href="../../assets/slides/testing-when-the-world-is-watching.pdf">Slides</a></li>
-	<li>Presented at:</li>
-	<ul>
-		<li>Let's Test [Sweden] (May 2016)</li>
-		<li><a href="http://www.meetup.com/NYC-Testers/events/230377700/" target="_blank">NYC Testers Meetup (April 2016)</a></li>
-		<li><a href="https://confoo.ca/en/yul2017/schedule" target="_blank">ConFoo Montreal (March 2017)</a></li>
-	</ul>
-</ul>
-
-
-<a href="#" class="accordion" data-toggle="collapse" data-target="#audio-mobile"><i class="fa fa-bullhorn"></i> <i class="fa fa-file-powerpoint"></i></a> Talk - Challenges in Audio Mobile Testing
-<ul id="audio-mobile" class="collapse">
-	<li><a href="../../assets/slides/audio-mobile-testing.pdf">Slides</a></li>
-	<li>Presented at: <a href="http://www.meetup.com/NYC-Testers/events/224194458/" target="_blank">NYC Testers Meetup (August 2015)</a></li>
-</ul>
 
 ### Past peer conferences
 
 - [Friends of Good Software [FroGS Conf]](http://frogsconf.nl/) *organizer*
+	- September 2024
 	- June 2024
 	- March 2024
 	- December 2023
@@ -274,6 +134,7 @@ Or reach out to me about finding another presenter for 2024 on similar topics. T
 	 - September 2020
 	 - September 2019
 - Llandegfan Exploratory Workshop on Testing [LLEWT]
+	- June 2024
 	- June 2023
 	- June 2022
 - [Dutch Exploratory Workshop on Testing [DEWT]](https://dewt.wordpress.com/)
