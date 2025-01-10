@@ -2,7 +2,7 @@
 .. date: 10 January 2025
 .. description: Is A.I. coming for my job? Not this week. 
 .. tags: automation, critical-thinking, humans, leadership, testing
-.. previewimage: /images/posts/2025/colored-ines.jpg
+.. previewimage: /images/posts/2025/colored-lines.jpg
 
 We're in a tough spot these days. When a tester leaves the company, it can be hard to justify hiring another tester by looking at a balance sheet. The departure of even one tester, who supported a couple of teams, can impact the rest of the unit as quality declines and integration points deteriorate. 
 
@@ -28,7 +28,7 @@ It is a responsible manager move to ask the question "can this product we alread
 - getting two applications for my new team running locally on my machine, and updating the README so the new developers on the team can do the same.
 - understanding enough architecture diagrams from my new team to write bullet points on the testing story; then talking about it for a half-hour at the refinement meeting — long enough to realize the API endpoints I wanted to call don’t exist, and we should add a testability feature first.
 - spending the rest of refinement discussing how we could prove the other task was completed, and that we need monitoring.
-- looking at the failing k8s tests, figuring out a change happened on another team, confirming with Tester 1 the new UI behavior in their application and that only the first of the three test failures matters right now, removing some fixtures, and then getting stuck on a UI page that used to work because the selector Playwright automagically tells me to use actually returns two items instead of one unique one.
+- looking at the failing kubernetes tests, figuring out a change happened on another team, confirming with Tester 1 the new UI behavior in their application and that only the first of the three test failures matters right now, removing some fixtures, and then getting stuck on a UI page that used to work because the selector Playwright automagically tells me to use actually returns two items instead of one unique one.
 
 > If I come across work that a human is not necessary for, I would _gladly_ delegate it to a machine. I’m not sure which of these tasks I could hand over. (Let me know if other people have different kinds of work that can be delegated.)
 
