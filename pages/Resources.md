@@ -110,6 +110,7 @@ I've learned things from these places, and I'd recommend them.
 	<li><a href="https://testpages.herokuapp.com/styled/index.html" target="_blank">Selenium Test Pages</a></li>
 	<li><a href="http://selenium.thinkcode.se/" target="_blank">Selenium Think Code</a></li>
 	<li><a href="https://testersplayground.herokuapp.com/devtools.php" target="_blank">Testers Playground</a></li>
+	<li><a href="http://testingchallenges.thetestingmap.org/" target="_blank">Testing Challenges</a></li>
 	<li><a href="https://www.decisionproblem.com/paperclips/" target="_blank">Universal Paperclips</a></li>
 	<li><a href="https://the-internet.herokuapp.com/" target="_blank">Welcome to the-internet</a></li>
 	<li><a href="http://zero.webappsecurity.com/" target="_blank">Zero Bank</a></li>
